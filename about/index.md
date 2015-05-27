@@ -13,4 +13,4 @@ Looking for a coder? a photographer? a climber? Here comes with all my blogs, ph
 
 Tags of me: University of Missouri, Computer Science, Photography, Sports Climbing, Hiking, Tennis, Go
 
-Leave me a message or send emails if you have any questions!
+Leave me a message or send me emails if you have any questions!
