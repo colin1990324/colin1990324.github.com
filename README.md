@@ -1,4 +1,4 @@
-# My Blog using Jekyll on Github
+# My Blog Using Jekyll On Github
 
 After the expiration of ruiwu.me, I'm looking for a new cheap solution for my personal blog. The original AWS EC2 & Wordpress solution is a little bit expensive for individuals and I know one of my friend [Zhaoyu](http://hackecho.com/) is using a Github & Jekyll solution. Since all those services are free and I bought the new domain [wurui.cc](http://wurui.cc) for 7 years at the price 318 rmb, this solution should be easy and reasonable.
 
