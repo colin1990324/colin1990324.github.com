@@ -1,30 +1,26 @@
-# So Simple Theme
+# My Blog using Jekyll on Github
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes/) -- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+After the expiration of ruiwu.me, I'm looking for a new cheap solution for my personal blog. The original AWS EC2 & Wordpress solution is a little bit expensive for individuals and I know one of my friend [Zhaoyu](http://hackecho.com/) is using a Github & Jekyll solution. Since all those services are free and I bought the new domain [wurui.cc](http://wurui.cc) for 7 years at the price 318 rmb, this solution should be easy and reasonable.
 
-[![Build Status](https://travis-ci.org/mmistakes/so-simple-theme.svg?branch=master)](https://travis-ci.org/mmistakes/so-simple-theme)
+So you can find lots of instructions for set up a blog on github.
+Here gives the outline and some links I used.
 
-## So Simple Theme is all about:
+### Set up Github
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page](http://mmistakes.github.io/so-simple-theme/404.html) to get you started.
-* Basic [search capabilities](https://github.com/mathaywarduk/jekyll-search)
-* Support for Disqus Comments
+If you don't have a github account. [Click](https://github.com/join) to register.
 
-![screenshot of So Simple Theme](http://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
+[Github getting started](https://help.github.com/articles/set-up-git/)
 
-See a [live version of So Simple](http://mmistakes.github.io/so-simple-theme/) hosted on GitHub.
+### Start your blog by fork
 
----
+[Build A Blog With Jekyll And GitHub Pages](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/)
 
-## Getting Started
+### The theme I use
 
-So Simple takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
+[So Simple Theme](http://mmistakes.github.io/so-simple-theme/theme-setup/)
 
-To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/so-simple-theme/theme-setup/) for more information.
+### 中文指南
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+Qian jiye 的[基于Jekyll的GitHub建站指南](http://qianjiye.de/2012/07/host-your-pages-at-github-using-jekyll/)
 
+Cellier.me 的[每个人都应该有一个Jekyll博客](http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/)
