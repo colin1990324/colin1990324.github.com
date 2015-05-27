@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Wu Rui's Home</title>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2015-05-27T17:47:17+08:00</updated>
+<id>http://localhost:4000/</id>
+<author>
+  <name>Wu Rui</name>
+  <uri>http://localhost:4000/</uri>
+  <email>ruiwu1990324@gmail.com</email>
+</author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Hello World]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/hello-world/" />
+  <id>http://localhost:4000/blog/hello-world</id>
+  <published>2015-05-28T03:39:55+08:00</published>
+  <updated>2015-05-28T03:39:55+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://localhost:4000</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;这是雏龙的一声怒吼，wurui.cc 今天上线啦！这标志着即上代主页ruiwu.me之后，更轻巧，更持久的新生主页的破壳而出，惊动天地，紫云东方！&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 28, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[New Domain and Web Site]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tech/nenew-domain-and-web-site/" />
+  <id>http://localhost:4000/tech/nenew-domain-and-web-site</id>
+  <published>2015-05-27T17:06:02+08:00</published>
+  <updated>2015-05-27T17:06:02+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://localhost:4000</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;After the expiration of ruiwu.me, I’m looking for a new cheap solution for my personal blog. The original AWS EC2 &amp;amp; Wordpress solution is a little bit expensive for individuals and I know one of my friend &lt;a href=&quot;http://hackecho.com/&quot;&gt;Zhaoyu&lt;/a&gt; is using a Github &amp;amp; Jekyll solution. Since all those services are free and I bought the new domain wurui.cc for 7 years at the price 318 rmb, this solution should be easy and reasonable.&lt;/p&gt;
+
+&lt;p&gt;So you can find lots of instructions for set up a blog on github.
+Here gives the outline and some links I used.&lt;/p&gt;
+
+&lt;h3 id=&quot;set-up-github&quot;&gt;Set up Github&lt;/h3&gt;
+
+&lt;p&gt;If you don’t have a github account. &lt;a href=&quot;https://github.com/join&quot;&gt;Click&lt;/a&gt; to register.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/set-up-git/&quot;&gt;Github getting started&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;start-your-blog-by-fork&quot;&gt;Start your blog by fork&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/&quot;&gt;Build A Blog With Jekyll And GitHub Pages&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-theme-i-use&quot;&gt;The theme I use&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mmistakes.github.io/so-simple-theme/theme-setup/&quot;&gt;So Simple Theme&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;中文指南&lt;/h3&gt;
+
+&lt;p&gt;Qian jiye 的&lt;a href=&quot;http://qianjiye.de/2012/07/host-your-pages-at-github-using-jekyll/&quot;&gt;基于Jekyll的GitHub建站指南&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Cellier.me 的&lt;a href=&quot;http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/&quot;&gt;每个人都应该有一个Jekyll博客&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tech/nenew-domain-and-web-site/&quot;&gt;New Domain and Web Site&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>

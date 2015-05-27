@@ -1,0 +1,25 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Blog
+  url: /blog/
+
+- title: Life
+  url: /Life/
+
+- title: Tech
+  url: /Tech/
+
+# - title: Articles
+#   url: /articles/
+
+# - title: Theme Setup
+#   url: /theme-setup/
+
+# - title: Made Mistakes
+#   url: http://mademistakes.com
+
+- title: Search
+  url: /search/

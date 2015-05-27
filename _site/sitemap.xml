@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:4000/blog/hello-world/</loc>
+    <lastmod>2015-05-28T03:39:55+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tech/nenew-domain-and-web-site/</loc>
+    <lastmod>2015-05-27T17:06:02+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/</loc>
+    <lastmod>2015-05-27T17:47:17+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/articles/</loc>
+    <lastmod>2015-05-27T17:47:17+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/blog/</loc>
+    <lastmod>2015-05-27T17:47:17+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/life/</loc>
+    <lastmod>2015-05-27T17:47:17+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tech/</loc>
+    <lastmod>2015-05-27T17:47:17+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tags/</loc>
+    <lastmod>2015-05-27T17:47:17+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/theme-setup/</loc>
+    <lastmod>2015-05-27T17:47:17+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/about/</loc>
+    <lastmod>2015-05-27T17:47:17+08:00</lastmod>
+  </url>
+</urlset>
