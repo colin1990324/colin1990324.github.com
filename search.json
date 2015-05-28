@@ -1,25 +1,49 @@
----
-sitemap: false
----
-
 [
-{% for post in site.posts %}
-  {% if post.title != null and post.title != empty and post.search_omit != true %}
-    {% if forloop.index > 1 %},{% endif %}{
-      "title"			: {{ post.title | jsonify }},
-      "link"			: "{{ site.url }}{{ post.url }}",
-      "excerpt"		: "{{ post.excerpt }}"
-    }
-  {% endif %}
-{% endfor %}
 
-{% for page in site.pages %}
-  {% if page.layout != 'none' and page.layout != 'none' and page.title != null and page.title != empty and page.search_omit != true %}
-    {% if forloop.index > 1 %},{% endif %}{
-      "title"			: {{ page.title | jsonify }},
-      "link"			: "{{ site.url }}{{ page.url | replace: 'index.html', '' }}",
-      "excerpt"		: "{{ page.excerpt }}"
+  
+    {
+      "title"			: "Hello World",
+      "link"			: "http://localhost:4000/blog/hello-world/",
+      "excerpt"		: ""
     }
-  {%endif%}
-{% endfor %}
+  
+
+  
+    ,{
+      "title"			: "New Domain and Web Site",
+      "link"			: "http://localhost:4000/tech/nenew-domain-and-web-site/",
+      "excerpt"		: ""
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "About Wu Rui",
+      "link"			: "http://localhost:4000/about/",
+      "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
+    }
+  
+
+  
+
+  
+
 ]
