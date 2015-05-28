@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-05-28T11:58:06+08:00</updated>
+<updated>2015-05-28T12:13:24+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -100,9 +100,107 @@ Here gives the outline and some links I used.&lt;/p&gt;
   <content type="html">
     &lt;p&gt;Siracusa, Sicily (ITALY). Walter, is a Labrador. He’s a special dog, who really loves the sea!&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/watch?v=UowkIRSDHfs&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/UowkIRSDHfs&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/run-walter-runclear/&quot;&gt;Run Walter, Runclear&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[StarCraft II TVZ 4M Polt]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/" />
+  <id>http://wurui.cc/blog/starcraft-ii-tvz-4m-polt</id>
+  <published>2013-10-22T12:07:53+08:00</published>
+  <updated>2013-10-22T12:07:53+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;I’ve played Starcraft since primary school. So when Starcraft II came out, I bought the game immediately. Here’s a article from &lt;a href=&quot;http://www.teamliquid.net/forum/viewmessage.php?topic_id=432956&quot;&gt;Teamliquit&lt;/a&gt; analysing terrain player, WCS North American Champion, Polt’s TVZ strategy. And I translated it into Chinese, originally posted on bbs.neotv.cn.&lt;/p&gt;
+
+&lt;p&gt;介绍
+TvZ的战局是在不断变化的。对局中双方的策略会在重发展和重进攻之前切换。玩家需要给偷经济的对手以足够的压力，同时又有能防住对方的一波的 准备，还要在攻防之间寻求平衡。不管你是双开还是三开，你都要有足够的侦查，并作出快速有效的应对。&lt;/p&gt;
+
+&lt;p&gt;Polt就是这样一名不做无侦查的决策，从而能在刀尖上跳舞的选手。我们将深入剖析Polt是如何做到的，并从中学习。&lt;/p&gt;
+
+&lt;p&gt;本教程会提到Polt的多场比赛，包括建造顺序和一些TvZ的变化。我们将详细讨论第一场比赛，以此作为基线。接下来的三场比赛将演示针对不同对手（的不同反应）所作出的一些变化。&lt;/p&gt;
+
+&lt;p&gt;Polt如何赢得比赛
+如果你看过Polt的大量比赛，你很快就会发现，Polt其实一直被一些弱项困扰着。他的多线不如顶尖韩T，大局观时常不如队友的T，微操火车时超高余钱的例子数都数不清。有时还会因为没注意损失一小坨部队。&lt;/p&gt;
+
+&lt;p&gt;不过这些都可以接受。Polt并不是靠这些小细节来赢得比赛的。他靠的是大师级的控图，战术决策以及漂亮的走位。你很难在SC2中找到以上方面做得更好的选手。他对比赛中各方面的理解是令人敬佩而恐惧的。这些都值得我们细细品味，下面我们来看看Polt独特的TzV风格。&lt;/p&gt;
+
+&lt;p&gt;Polt的TvZ
+Polt靠决策赢得比赛。TvZ时，他很喜欢4M mid打法，开局具有很强的适应性，能够同时应对偷经济或者Rush型的开局。他已经使用这种开局一个多月了，而没有遇到很有针对性的解法。&lt;/p&gt;
+
+&lt;p&gt;Polt vs Jaedong 贝尔石遗迹
+链接&lt;/p&gt;
+
+&lt;p&gt;大家要注意，这场比试Polt仍然使用上面提到的最常用的开局。Jaedong肯定已经非常熟悉，Polt也没有使出任何新的花样。同时作为WCS美洲区的决赛，冠军的奖金将比第二名多上数千美金。
+第一部分的比赛将会被事无巨细的分析，Polt的每一个操作都会被分析来充实第二部分的分析。&lt;/p&gt;
+
+&lt;p&gt;[0:00 - 5:40] Polt出生在地图下方，使用标准的死神、火车开局。他没有使用相对激进的11农民兵营开，也没有把第二个死神早早的派出去。第一个死神直接进入对方主矿，而第二个死神在家防守。第一个死神进家后发现4只正在孵化的小狗，点一下气矿，已经采集了30左右。这个死神没有造成任何杀伤，在5:30适时撤退而保留下来。同时家里，下双倍，重工（好了以后交换挂件），地堡。唯一不算标准流程的是，早早的下了一个机场。&lt;/p&gt;
+
+&lt;p&gt;[5:40 - 7:20]
+双死神守一下二矿路口（枪兵没有），兵营挂科技挂件，下二气。两火车去三矿找一下，产一个维京。四火车开始清理自己这边的地图，寻找藏狗。6:30发现对方三基地，去主矿又发现对方两个铺菌毯的女王，撤退去瞭望塔等待后面上来的两个火车，然后去占另一个瞭望塔。六火车产出的时候家里遇到遛狗的袭击，用家里的死神火车等防住，损失甚微。这个时候维京出来shift到各个房子必经之处清理，将对方视野控制在菌毯的范围内。兵营产光头，主矿用房子堵死。&lt;/p&gt;
+
+&lt;p&gt;[7:20 - 8:30]
+这时候有一个标准的六火车，两死神前压timing，先清瞭望塔，然后直指虫族三矿。同时家里升兴奋剂，造光头、地雷、第一个运输机。前线部队到三矿的时候木有发现农民，于是往二矿走，成功绕过了3个走位靠外的女王和两个堵口的BV[8:05]。战果是发现二矿两气全开，主矿有一气未开，还杀了几个农民。因为Polt操作的老毛病，这波部队自然是要牺牲的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/FFV5zv3.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;[8:30 - 9:30]
+前线英勇杀敌（并牺牲）的时候，Polt把注意力放在家里运营上，下三基地，再下两兵营，两气矿，两BE。新出来的运输机载两颗雷去对手主矿。停了光头，继续造地雷和运输机。二三兵营造一半的时候再补两兵营。前线运输机在主矿扔下一颗地雷再转到二块扔下另一颗，同时看到虫族二本。&lt;/p&gt;
+
+&lt;p&gt;[9:30 to 11:00]
+兴奋剂马上就要好的时候，运输机把所有四个头哥加速到对方三矿，虫族家里运营的差不多了。Polt升级枪兵攻防和盾牌，兵营挂双倍。前线的4个光头干掉了两个铺毯的女王，然后飞去可能的四矿位置。攻防到一半的时候下VA，从此枪兵，地雷，运输机不停。&lt;/p&gt;
+
+&lt;p&gt;[11:30 to 13:00]
+4个头哥去四矿看了一下木有，然后嚣张的晃迹于菌毯边缘。家里，三基地（星轨）飘到三矿，房子马上修起来防御绕狗，并下了两个地堡，地雷分散在地堡旁边卖好。12分钟下第二个重工。前线4个光头发现了对方开四矿的意图，啊，四个光头哥足以终结这一切。小狗前来报仇的时候，光头哥留下一句狠话：~！@#￥%……，就登机跑路了。这个时候家里攻防升级完毕，又造了两个防御性地堡在要害位置，下感应塔，防空，三矿开一个气，第二个重工马上挂上科技附件。&lt;/p&gt;
+
+&lt;p&gt;[13:00 to 16:15]
+双升2级攻防，埋地抓。16枪兵，3运输机的部队出门占领靠近自己的瞭望塔。飞龙突然出现打爆了之前觉得自己是无敌的维京。前线部队分一个去侦查对手有没有开五矿，剩下的部队以防守阵型占领瞭望塔。Polt家里补到8BB。当有7个地雷和一大波枪兵运输机的时候出门，向对方四矿移动。这个时候看图，左边的瞭望塔和右边的部队控制的视野可以有效克制对方的偷袭路线。右边放出诱饵的同时在左边清掉了一大块区域的菌毯瘤。Polt将部队分散在对手四矿前面的高地上，这样Jaedong必须想办法处理这里的危机。Jaedong绕狗（14条）攻击Polt三矿，同时用龙狗毒爆来跟四矿住的4M部队交换。Polt最后三个兵营好了以后挂件都不挂直接开始产枪兵。虫族试图用新出来的一波部队清掉前线高地的对方残余，而Polt也指挥接上来的部队在下面的通路上站住了。这时候Polt生了机械一防，下四基地。前线往虫族四矿推进了一点，但是没有上菌毯。&lt;/p&gt;
+
+&lt;p&gt;[16:15 to 19:45]
+凉宫两房升级完毕，三攻开始升级。一波小狗成功对人族三矿经济造成了一定破坏。Polt开始操作前线小股部队勾引虫族，后面部队提前散好，地雷埋下就等你来冲（有点耳熟?)。Jaedong组织的一波反扑被提前站好的人族部队轻松化解，而Polt并没有乘胜疯狂前压，而是满足于在菌毯边缘游走，打掉一个气矿来惹恼虫族。Jaedong接下来的反击均未成功。&lt;/p&gt;
+
+&lt;p&gt;[19:46 to 21:35]
+19:46Polt终于一阵兴奋剂冲进虫族四矿，并提前散好，同时雷达扫到上面的位置看到虫族的部队。19:55，人族三攻完成，屌丝瞬感高富帅。Jaedong纠结了一大票的龙狗毒爆来抵御三攻城管。Polt以损失20枪兵的代价换掉了虫族大量部队，后续接兵也很快，雷达兴奋剂插入到基地和气矿之间，枪兵集火飞龙，飞龙损失严重。接上来的人族部队操翻了空门的虫族四矿。Jaedong向人族主矿发起最后一波自杀式冲锋，然后GG。&lt;/p&gt;
+
+&lt;p&gt;分析：Polt的战略目标，如何赢得游戏
+现在让我换一种方式来分析这场比赛。为了更好的理解Polt是如何赢得比赛的，我们将这场比赛划分为一系列的决策以及对应的目标。如果我们从比赛的最后开始往前分析，我们将能清晰的看到他是如何完成一系列目标的。完成这些目标给Polt带了各方面的优势，并最终获得一场明快的胜利。&lt;/p&gt;
+
+&lt;p&gt;作者语：我非常推荐使用这样的分析方式来分析一位选手的战术风格。我将比赛像上一部分那样分为若干个阶段，然后进行逆向分析。你将会看到每一个部分是如何串联起来的（已经完成的战略目标和接下来的战略目标）。&lt;/p&gt;
+
+&lt;p&gt;[19:46 to 21:35] 是游戏的最后阶段，Polt将三攻枪兵送入对手四矿，并赢得比赛。虽然这场比赛三防忘记升了。但更常见的是，Polt使用三攻三防的timing来给虫族强力一击。&lt;/p&gt;
+
+&lt;p&gt;什么这会奏效？
+回答这个问题的方法总是去观察这波攻击到来前后对方的部队情况。让我们来看看Jaedong在19：45时在干什么。&lt;/p&gt;
+
+&lt;p&gt;虫族刚刚完成三本，三攻三防在提，但是没有下新的科技建筑。继续生产龙狗毒爆部队，没有余钱，钧毯铺的并不是很好，四矿位置就算最前端了。Jaedong试图快速提升科技，但是飞龙毒爆占用了大量的气体资源，这也是没有办法的选择。&lt;/p&gt;
+
+&lt;p&gt;另一面，Polt增加了枪兵的产能来处理飞龙毒爆，三攻让这些屌丝跟打了鸡血的疯子一样猛，对飞龙毒爆的杀伤力非常强。看看产能，Polt每轮能产12枪兵，2运输机，三地雷。运输机能够在枪兵死光的情况下加速撤离，地雷埋在Jaedong的安全区外，Polt布下一个阵法，迫使虫族使用有气的部队和人族不需要气体的枪兵做交换。&lt;/p&gt;
+
+&lt;p&gt;Polt的终极目标是抓住虫族三本的timing，迫使虫族用气体来交换枪兵，没有办法把气体花在真正三本科技的单位上面。&lt;/p&gt;
+
+&lt;p&gt;以下翻译从略，原文作者太TM拖拉了。&lt;/p&gt;
+
+&lt;p&gt;目标：在三攻三防完成时攻克下虫族四矿
+方法：利用两攻两防枪兵卡主要害位置（色总说法是赖住），持续勾引虫族，持续交换，一来不给虫族蓄兵的时间，而来用枪兵交换虫族气体单位。当三攻三防完成之时，能够接上一坨兵，来完成关键性突破。&lt;/p&gt;
+
+&lt;p&gt;控图：站位技巧
+一攻一防时，Polt定位对手三矿，并占领瞭望塔，这成为克制Jaedong发挥的软性枷锁，可以阻止左侧菌毯扩张和对手的侦查。更典型的Polt特征是，他在虫族五矿位置放了一个枪兵，又使得瞭望塔的部队可以再往前一步。&lt;/p&gt;
+
+&lt;p&gt;前端部队能够及早发现第一波飞龙，从而估算对手三本进度，也能确认对手是否选择一波。更重要的是，能确认对手在哪个点位开出四矿，从而为上面描述的一系列战术做好铺垫。Polt已经写好了剧本。&lt;/p&gt;
+
+&lt;p&gt;从此时到赖住对手四矿之前有一步是必须的，即清理到四矿高台或者下方位置的道路。（此位置即要遏制从菌毯方向的进攻，也要对虫族四矿施加持续的威胁。）从虫族方面讲，Jaedong必然是会提早阻击人族的推进的。此时Polt的套路是，用一小波枪兵吸引虫族部队进入地雷阵，在毒爆消耗光以后让后续部队打兴奋剂上前，连散两把雷达清掉更多的菌毯。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/&quot;&gt;StarCraft II TVZ 4M Polt&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on October 22, 2013.&lt;/p&gt;
   </content>
 </entry>
 
