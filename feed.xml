@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-05-28T09:35:57+08:00</updated>
+<updated>2015-05-28T11:58:06+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -38,8 +38,8 @@
 
 <entry>
   <title type="html"><![CDATA[New Domain and Web Site]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/nenew-domain-and-web-site/" />
-  <id>http://wurui.cc/tech/nenew-domain-and-web-site</id>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/new-domain-and-web-site/" />
+  <id>http://wurui.cc/tech/new-domain-and-web-site</id>
   <published>2015-05-27T17:06:02+08:00</published>
   <updated>2015-05-27T17:06:02+08:00</updated>
   <author>
@@ -71,13 +71,38 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 &lt;p&gt;If you use plugins that are not officially supported, you need manualy deploy your pages. &lt;a href=&quot;http://www.sitepoint.com/jekyll-plugins-github/&quot;&gt;Here’s a way around&lt;/a&gt;.&lt;/p&gt;
 
+&lt;p&gt;I found this one easier to understand later. &lt;a href=&quot;http://charliepark.org/jekyll-with-plugins/&quot;&gt;Charlie Park&lt;/a&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;section&quot;&gt;中文指南&lt;/h3&gt;
 
 &lt;p&gt;Qian jiye 的&lt;a href=&quot;http://qianjiye.de/2012/07/host-your-pages-at-github-using-jekyll/&quot;&gt;基于Jekyll的GitHub建站指南&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Cellier.me 的&lt;a href=&quot;http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/&quot;&gt;每个人都应该有一个Jekyll博客&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/nenew-domain-and-web-site/&quot;&gt;New Domain and Web Site&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/new-domain-and-web-site/&quot;&gt;New Domain and Web Site&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Run Walter, Runclear]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/run-walter-runclear/" />
+  <id>http://wurui.cc/life/run-walter-runclear</id>
+  <published>2014-09-23T11:54:33+08:00</published>
+  <updated>2014-09-23T11:54:33+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Siracusa, Sicily (ITALY). Walter, is a Labrador. He’s a special dog, who really loves the sea!&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/watch?v=UowkIRSDHfs&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/run-walter-runclear/&quot;&gt;Run Walter, Runclear&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 

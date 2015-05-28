@@ -11,7 +11,15 @@
   
     ,{
       "title"			: "New Domain and Web Site",
-      "link"			: "http://wurui.cc/tech/nenew-domain-and-web-site/",
+      "link"			: "http://wurui.cc/tech/new-domain-and-web-site/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Run Walter, Runclear",
+      "link"			: "http://wurui.cc/life/run-walter-runclear/",
       "excerpt"		: ""
     }
   
