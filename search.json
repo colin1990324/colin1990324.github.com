@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "New Domain and Web Site",
+      "link"			: "http://wurui.cc/tech/new-domain-and-web-site/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Hello World",
       "link"			: "http://wurui.cc/blog/hello-world/",
       "excerpt"		: ""
@@ -10,8 +18,40 @@
 
   
     ,{
-      "title"			: "New Domain and Web Site",
-      "link"			: "http://wurui.cc/tech/new-domain-and-web-site/",
+      "title"			: "Light Up",
+      "link"			: "http://wurui.cc/life/light-up/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "2014 MIZZOU Homecoming",
+      "link"			: "http://wurui.cc/life/2014-mizzou-homecoming/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Horseshoe Canyon Ranch",
+      "link"			: "http://wurui.cc/life/horseshoe-canyon-ranch/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "G高达定格——《自恋刑警》神同步",
+      "link"			: "http://wurui.cc/life/gundam-figure-animation/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "舞者",
+      "link"			: "http://wurui.cc/blog/dancer/",
       "excerpt"		: ""
     }
   
@@ -26,6 +66,166 @@
 
   
     ,{
+      "title"			: "Microsoft Coding Competition - University of Missouri",
+      "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Microsoft Coding Competition - University of Missouri",
+      "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Microsoft Coding Competition - University of Missouri",
+      "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "We Won This Game",
+      "link"			: "http://wurui.cc/life/we-won-this-game/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "How a Science Experiment Turns Into Art",
+      "link"			: "http://wurui.cc/life/how-a-science-experiment-turns-into-art/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Google Code Jam 2014",
+      "link"			: "http://wurui.cc/tech/google-code-jam-2014/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "GoPro 360 Degree Video",
+      "link"			: "http://wurui.cc/life/gopro-360-degree-video/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "一地鸡毛",
+      "link"			: "http://wurui.cc/blog/ground_covered_with_chicken_feathers/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "《码农故事》",
+      "link"			: "http://wurui.cc/blog/programmers-story/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Promising Young Climbers",
+      "link"			: "http://wurui.cc/life/promising-young-climbers/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "An Invisible Sign",
+      "link"			: "http://wurui.cc/blog/an-invisible-sign/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Sanya",
+      "link"			: "http://wurui.cc/life/sanya/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "The Romance of a Man",
+      "link"			: "http://wurui.cc/life/the-romance-of-a-man/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "My Cooking",
+      "link"			: "http://wurui.cc/life/my-cooking/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Opening Orchid",
+      "link"			: "http://wurui.cc/life/opening-orchid/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Alex Honnold - El Sendero Luminoso",
+      "link"			: "http://wurui.cc/life/alex-honnold-el-sendero-luminoso/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Climbing at Red River George",
+      "link"			: "http://wurui.cc/life/climbing-at-red-river-george/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Go Tigers",
+      "link"			: "http://wurui.cc/life/go-tigers/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Cicada Slough and Rosin",
+      "link"			: "http://wurui.cc/life/cicada-slough-and-rosin/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Hermann",
+      "link"			: "http://wurui.cc/life/hermann/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "StarCraft II TVZ 4M Polt",
       "link"			: "http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/",
       "excerpt"		: ""
@@ -34,8 +234,32 @@
 
   
     ,{
+      "title"			: "Havasupai",
+      "link"			: "http://wurui.cc/life/havasupai/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Mount Siguniang Through Hike",
+      "link"			: "http://wurui.cc/life/mount-siguniang-through-hike/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Eat Sour Grapefruit",
       "link"			: "http://wurui.cc/blog/eat-sour-grapefruit/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Qinghai Lake",
+      "link"			: "http://wurui.cc/life/qinghai-lake/",
       "excerpt"		: ""
     }
   
@@ -57,21 +281,21 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
     ,{
       "title"			: "About Wu Rui",
       "link"			: "http://wurui.cc/about/",
       "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
     }
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   

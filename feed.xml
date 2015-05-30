@@ -4,34 +4,13 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-05-28T22:48:12+08:00</updated>
+<updated>2015-05-30T13:33:13+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
   <uri>http://wurui.cc/</uri>
   <email>ruiwu1990324@gmail.com</email>
 </author>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Hello World]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/hello-world/" />
-  <id>http://wurui.cc/blog/hello-world</id>
-  <published>2015-05-28T03:39:55+08:00</published>
-  <updated>2015-05-28T03:39:55+08:00</updated>
-  <author>
-    <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
-    <email>ruiwu1990324@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;这是雏龙的一声怒吼，wurui.cc 今天上线啦！这标志着即上代主页ruiwu.me之后，更轻巧，更持久的新生主页的破壳而出，惊动天地，紫云东方！&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 28, 2015.&lt;/p&gt;
-  </content>
-</entry>
 
 
   
@@ -73,6 +52,10 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 &lt;p&gt;I found this one easier to understand later. &lt;a href=&quot;http://charliepark.org/jekyll-with-plugins/&quot;&gt;Charlie Park&lt;/a&gt;&lt;/p&gt;
 
+&lt;h3 id=&quot;import-from-your-old-wordpress-site&quot;&gt;import from your old Wordpress site&lt;/h3&gt;
+
+&lt;p&gt;Here’s a nice tool &lt;a href=&quot;http://www.adamwadeharris.com/how-to-convert-a-wordpress-site-to-jekyll-with-github-pages/&quot;&gt;jekyll-import&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h3 id=&quot;section&quot;&gt;中文指南&lt;/h3&gt;
 
 &lt;p&gt;Qian jiye 的&lt;a href=&quot;http://qianjiye.de/2012/07/host-your-pages-at-github-using-jekyll/&quot;&gt;基于Jekyll的GitHub建站指南&lt;/a&gt;&lt;/p&gt;
@@ -80,6 +63,177 @@ Here gives the outline and some links I used.&lt;/p&gt;
 &lt;p&gt;Cellier.me 的&lt;a href=&quot;http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/&quot;&gt;每个人都应该有一个Jekyll博客&lt;/a&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/new-domain-and-web-site/&quot;&gt;New Domain and Web Site&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Hello World]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/hello-world/" />
+  <id>http://wurui.cc/blog/hello-world</id>
+  <published>2015-05-27T15:39:55+08:00</published>
+  <updated>2015-05-27T15:39:55+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;这是雏龙的一声怒吼，wurui.cc 今天上线啦！这标志着即上代主页ruiwu.me之后，更轻巧，更持久的新生主页的破壳而出，惊动天地，紫云东方！&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Light Up]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/light-up/" />
+  <id>http://wurui.cc/life/light-up</id>
+  <published>2015-02-04T12:18:04+08:00</published>
+  <updated>2015-02-04T12:18:04+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;img src=&quot;/images/blog/export_2015-35-17.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Feb 4th 2015, snow before sunset, street lamp just up, a quiet day at home. Photoed outside my apartment, Tara, Columbia, MO.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/light-up/&quot;&gt;Light Up&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on February 04, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[2014 MIZZOU Homecoming]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/2014-mizzou-homecoming/" />
+  <id>http://wurui.cc/life/2014-mizzou-homecoming</id>
+  <published>2015-02-04T12:17:38+08:00</published>
+  <updated>2015-02-04T12:17:38+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;This Saturday we had the Homecoming Parade and I tried to comprehend a little bit of Documentary Photography.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_2014-32-6.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_2014-32-12.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_2014-32-287.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_2014-32-162.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_2014-32-21.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_2014_32-193.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_2014-32.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/2014-mizzou-homecoming/&quot;&gt;2014 MIZZOU Homecoming&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on February 04, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Horseshoe Canyon Ranch]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/horseshoe-canyon-ranch/" />
+  <id>http://wurui.cc/life/horseshoe-canyon-ranch</id>
+  <published>2014-10-19T12:11:49+08:00</published>
+  <updated>2014-10-19T12:11:49+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;img src=&quot;/images/blog/export_2014-31-13.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This weekend I went to Horseshoe Canyon Ranch, a fantastic place for climbers, with MU climbing club. We slept under beautiful starry sky, set up the largest campfire among all groups on the mountain and climbed some cool rocks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_2014-31-27.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;gallery here.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/horseshoe-canyon-ranch/&quot;&gt;Horseshoe Canyon Ranch&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on October 19, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[G高达定格——《自恋刑警》神同步]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/gundam-figure-animation/" />
+  <id>http://wurui.cc/life/gundam-figure-animation</id>
+  <published>2014-10-04T12:10:16+08:00</published>
+  <updated>2014-10-04T12:10:16+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;百看不腻啊，每次都笑死了&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/ZHMDAslnH4M?feature=oembed&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;然后我还把《自恋刑警》看了一遍。。。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/gundam-figure-animation/&quot;&gt;G高达定格——《自恋刑警》神同步&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on October 04, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[舞者]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/dancer/" />
+  <id>http://wurui.cc/blog/dancer</id>
+  <published>2014-09-27T12:04:34+08:00</published>
+  <updated>2014-09-27T12:04:34+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;要是舞者不能跳舞的话，那活着也就没什么意思了。&lt;/p&gt;
+
+&lt;p&gt;她把食指按在嘴唇上，眼中回想着故事情节开始陈述起来。&lt;/p&gt;
+
+&lt;p&gt;“那个女孩子有一个仰慕的男性。那是个新涌现的政治家，那女孩无论如何都想让他在改选中胜出。她妈妈很有钱，听了女儿的愿望后，就提出要向那个政治家援助资金。但是他却非常气愤，他不想被孩子的一时高兴所利用。”&lt;/p&gt;
+
+&lt;p&gt;“这心情可以理解。”加贺说。&lt;/p&gt;
+
+&lt;p&gt;“然后她妈妈就向他道明了事情原委，原来那个女孩患了白血病，已经不能活多久了，所以想在她的有生之年为其实现更多的愿望。而且那个女孩儿也知道自己的病。于是那个年轻政治家就答应了她们母女俩的要求。两人还进行了短途旅行。而在旅行途中得知正在上演‘核桃夹子’的舞剧后，他和主办方进行了交涉，并得到了允许让那个女孩儿出演。总彩排的时候那个女孩儿展现了完美的舞姿，赢得了大家的掌声。女孩儿高兴地说，明天就是正式演出了，在舞台上跳舞真像做梦一样啊。”&lt;/p&gt;
+
+&lt;p&gt;“然而，”未绪接着说，“在回家的地铁上她的病犯了，妈妈我头痛——随即她就死去了。不过在她留下的日记上她写着：请不要为我的死而悲伤。之后那个年轻政治家也赢得了选举。”&lt;/p&gt;
+
+&lt;p&gt;“真是伤感的故事。”&lt;/p&gt;
+
+&lt;p&gt;“嗯，但是，”未绪说，“但我觉得并不令人沮丧，完美地完成舞蹈，到明天就可以放心离世了，虽说她那么年轻就死去很可怜，但作为一个舞者，她死而无憾。”&lt;/p&gt;
+
+&lt;p&gt;————《沉睡的森林》&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/9787544256988.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/dancer/&quot;&gt;舞者&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 27, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -110,97 +264,92 @@ Here gives the outline and some links I used.&lt;/p&gt;
   
 
 <entry>
-  <title type="html"><![CDATA[StarCraft II TVZ 4M Polt]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/" />
-  <id>http://wurui.cc/blog/starcraft-ii-tvz-4m-polt</id>
-  <published>2013-10-22T12:07:53+08:00</published>
-  <updated>2013-10-22T12:07:53+08:00</updated>
+  <title type="html"><![CDATA[Microsoft Coding Competition - University of Missouri]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/" />
+  <id>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3</id>
+  <published>2014-09-23T11:52:20+08:00</published>
+  <updated>2014-09-23T11:52:20+08:00</updated>
   <author>
     <name>Wu Rui</name>
     <uri>http://wurui.cc</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;I’ve played Starcraft since primary school. So when Starcraft II came out, I bought the game immediately. Here’s a article from &lt;a href=&quot;http://www.teamliquid.net/forum/viewmessage.php?topic_id=432956&quot;&gt;Teamliquit&lt;/a&gt; analysing terrain player, WCS North American Champion, Polt’s TVZ strategy. And I translated it into Chinese, originally posted on &lt;a href=&quot;bbs.neotv.cn&quot;&gt;NeoTV BBS&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;Here are two problems value 1 point each. Most team can get these 2 points and I spent 30 minutes on each one.&lt;/p&gt;
 
-&lt;p&gt;介绍
-TvZ的战局是在不断变化的。对局中双方的策略会在重发展和重进攻之前切换。玩家需要给偷经济的对手以足够的压力，同时又有能防住对方的一波的 准备，还要在攻防之间寻求平衡。不管你是双开还是三开，你都要有足够的侦查，并作出快速有效的应对。&lt;/p&gt;
+&lt;h2 id=&quot;question-five-a-variation-on-anagrams--1-points&quot;&gt;Question Five A variation on anagrams | 1 point(s)&lt;/h2&gt;
 
-&lt;p&gt;Polt就是这样一名不做无侦查的决策，从而能在刀尖上跳舞的选手。我们将深入剖析Polt是如何做到的，并从中学习。&lt;/p&gt;
+&lt;p&gt;Let’s assume you were recently hired by a Start-up. On the first day, you meet the CEO and are given an assignment. Your CEO has decided that all products will be named according to the following pattern.&lt;/p&gt;
 
-&lt;p&gt;本教程会提到Polt的多场比赛，包括建造顺序和一些TvZ的变化。我们将详细讨论第一场比赛，以此作为基线。接下来的三场比赛将演示针对不同对手（的不同反应）所作出的一些变化。&lt;/p&gt;
+&lt;p&gt;Your CEO calls the pattern “P@tter”. Two product names obey P@tter if they are permutations of each other, ignoring spaces and capitalization.
+Your task is to determine whether two product names obey P@tter.&lt;/p&gt;
 
-&lt;p&gt;Polt如何赢得比赛
-如果你看过Polt的大量比赛，你很快就会发现，Polt其实一直被一些弱项困扰着。他的多线不如顶尖韩T，大局观时常不如队友的T，微操火车时超高余钱的例子数都数不清。有时还会因为没注意损失一小坨部队。&lt;/p&gt;
+&lt;p&gt;Input description/format
+The input will consist of two product names per line, in quotation marks, which are not part of the names. The quoted names will be separated by a comma and potentially whitespace.
+You can assume that there will be ≤ 1000 lines in the input file. Also, product name length will be ≤ 255 characters and product names will contain only ASCII characters.&lt;/p&gt;
 
-&lt;p&gt;不过这些都可以接受。Polt并不是靠这些小细节来赢得比赛的。他靠的是大师级的控图，战术决策以及漂亮的走位。你很难在SC2中找到以上方面做得更好的选手。他对比赛中各方面的理解是令人敬佩而恐惧的。这些都值得我们细细品味，下面我们来看看Polt独特的TzV风格。&lt;/p&gt;
+&lt;p&gt;Output description/format
+For each line of input, output the result in one of the following 2 ways (case sensitive):
+Valid Pattern
+Invalid Pattern&lt;/p&gt;
 
-&lt;p&gt;Polt的TvZ
-Polt靠决策赢得比赛。TvZ时，他很喜欢4M mid打法，开局具有很强的适应性，能够同时应对偷经济或者Rush型的开局。他已经使用这种开局一个多月了，而没有遇到很有针对性的解法。&lt;/p&gt;
+&lt;p&gt;Example input&lt;/p&gt;
 
-&lt;p&gt;Polt vs Jaedong 贝尔石遗迹
-链接&lt;/p&gt;
+&lt;p&gt;“Calculate”, “Acute Call”&lt;/p&gt;
 
-&lt;p&gt;大家要注意，这场比试Polt仍然使用上面提到的最常用的开局。Jaedong肯定已经非常熟悉，Polt也没有使出任何新的花样。同时作为WCS美洲区的决赛，冠军的奖金将比第二名多上数千美金。
-第一部分的比赛将会被事无巨细的分析，Polt的每一个操作都会被分析来充实第二部分的分析。&lt;/p&gt;
+&lt;p&gt;“Drop Cue” , “Cued Pro”&lt;/p&gt;
 
-&lt;p&gt;[0:00 - 5:40] Polt出生在地图下方，使用标准的死神、火车开局。他没有使用相对激进的11农民兵营开，也没有把第二个死神早早的派出去。第一个死神直接进入对方主矿，而第二个死神在家防守。第一个死神进家后发现4只正在孵化的小狗，点一下气矿，已经采集了30左右。这个死神没有造成任何杀伤，在5:30适时撤退而保留下来。同时家里，下双倍，重工（好了以后交换挂件），地堡。唯一不算标准流程的是，早早的下了一个机场。&lt;/p&gt;
+&lt;p&gt;“carE Not”, “raCe On”&lt;/p&gt;
 
-&lt;p&gt;[5:40 - 7:20]
-双死神守一下二矿路口（枪兵没有），兵营挂科技挂件，下二气。两火车去三矿找一下，产一个维京。四火车开始清理自己这边的地图，寻找藏狗。6:30发现对方三基地，去主矿又发现对方两个铺菌毯的女王，撤退去瞭望塔等待后面上来的两个火车，然后去占另一个瞭望塔。六火车产出的时候家里遇到遛狗的袭击，用家里的死神火车等防住，损失甚微。这个时候维京出来shift到各个房子必经之处清理，将对方视野控制在菌毯的范围内。兵营产光头，主矿用房子堵死。&lt;/p&gt;
+&lt;p&gt;Example output&lt;/p&gt;
 
-&lt;p&gt;[7:20 - 8:30]
-这时候有一个标准的六火车，两死神前压timing，先清瞭望塔，然后直指虫族三矿。同时家里升兴奋剂，造光头、地雷、第一个运输机。前线部队到三矿的时候木有发现农民，于是往二矿走，成功绕过了3个走位靠外的女王和两个堵口的BV[8:05]。战果是发现二矿两气全开，主矿有一气未开，还杀了几个农民。因为Polt操作的老毛病，这波部队自然是要牺牲的。&lt;/p&gt;
+&lt;p&gt;Valid Pattern&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/FFV5zv3.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Valid Pattern&lt;/p&gt;
 
-&lt;p&gt;[8:30 - 9:30]
-前线英勇杀敌（并牺牲）的时候，Polt把注意力放在家里运营上，下三基地，再下两兵营，两气矿，两BE。新出来的运输机载两颗雷去对手主矿。停了光头，继续造地雷和运输机。二三兵营造一半的时候再补两兵营。前线运输机在主矿扔下一颗地雷再转到二块扔下另一颗，同时看到虫族二本。&lt;/p&gt;
+&lt;p&gt;Invalid Pattern&lt;/p&gt;
 
-&lt;p&gt;[9:30 to 11:00]
-兴奋剂马上就要好的时候，运输机把所有四个头哥加速到对方三矿，虫族家里运营的差不多了。Polt升级枪兵攻防和盾牌，兵营挂双倍。前线的4个光头干掉了两个铺毯的女王，然后飞去可能的四矿位置。攻防到一半的时候下VA，从此枪兵，地雷，运输机不停。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/colin1990324/LeetCode/blob/master/src/microsoftCodingCompetition2014/VriationOnAnagrams.java&quot;&gt;My Solution in Java&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;[11:30 to 13:00]
-4个头哥去四矿看了一下木有，然后嚣张的晃迹于菌毯边缘。家里，三基地（星轨）飘到三矿，房子马上修起来防御绕狗，并下了两个地堡，地雷分散在地堡旁边卖好。12分钟下第二个重工。前线4个光头发现了对方开四矿的意图，啊，四个光头哥足以终结这一切。小狗前来报仇的时候，光头哥留下一句狠话：~！@#￥%……，就登机跑路了。这个时候家里攻防升级完毕，又造了两个防御性地堡在要害位置，下感应塔，防空，三矿开一个气，第二个重工马上挂上科技附件。&lt;/p&gt;
+&lt;p&gt;This is kind of straight forward. First you decompose each input and then tell if they are anagrams or not.&lt;/p&gt;
 
-&lt;p&gt;[13:00 to 16:15]
-双升2级攻防，埋地抓。16枪兵，3运输机的部队出门占领靠近自己的瞭望塔。飞龙突然出现打爆了之前觉得自己是无敌的维京。前线部队分一个去侦查对手有没有开五矿，剩下的部队以防守阵型占领瞭望塔。Polt家里补到8BB。当有7个地雷和一大波枪兵运输机的时候出门，向对方四矿移动。这个时候看图，左边的瞭望塔和右边的部队控制的视野可以有效克制对方的偷袭路线。右边放出诱饵的同时在左边清掉了一大块区域的菌毯瘤。Polt将部队分散在对手四矿前面的高地上，这样Jaedong必须想办法处理这里的危机。Jaedong绕狗（14条）攻击Polt三矿，同时用龙狗毒爆来跟四矿住的4M部队交换。Polt最后三个兵营好了以后挂件都不挂直接开始产枪兵。虫族试图用新出来的一波部队清掉前线高地的对方残余，而Polt也指挥接上来的部队在下面的通路上站住了。这时候Polt生了机械一防，下四基地。前线往虫族四矿推进了一点，但是没有上菌毯。&lt;/p&gt;
+&lt;h2 id=&quot;question-six-detecting-unreachable-instructions--1-points&quot;&gt;Question Six Detecting unreachable instructions | 1 point(s)&lt;/h2&gt;
 
-&lt;p&gt;[16:15 to 19:45]
-凉宫两房升级完毕，三攻开始升级。一波小狗成功对人族三矿经济造成了一定破坏。Polt开始操作前线小股部队勾引虫族，后面部队提前散好，地雷埋下就等你来冲（有点耳熟?)。Jaedong组织的一波反扑被提前站好的人族部队轻松化解，而Polt并没有乘胜疯狂前压，而是满足于在菌毯边缘游走，打掉一个气矿来惹恼虫族。Jaedong接下来的反击均未成功。&lt;/p&gt;
+&lt;p&gt;Untouched instructions in code can cause some serious problems. You may have heard about a recent security hole related to this topic. Your task is to write a small program that catches the “untouched” lines of code written in our simplified programming language. The program starts at line 1. You may assume the program will be terminated if it infinitely loops or continues past its last instruction.&lt;/p&gt;
 
-&lt;p&gt;[19:46 to 21:35]
-19:46Polt终于一阵兴奋剂冲进虫族四矿，并提前散好，同时雷达扫到上面的位置看到虫族的部队。19:55，人族三攻完成，屌丝瞬感高富帅。Jaedong纠结了一大票的龙狗毒爆来抵御三攻城管。Polt以损失20枪兵的代价换掉了虫族大量部队，后续接兵也很快，雷达兴奋剂插入到基地和气矿之间，枪兵集火飞龙，飞龙损失严重。接上来的人族部队操翻了空门的虫族四矿。Jaedong向人族主矿发起最后一波自杀式冲锋，然后GG。&lt;/p&gt;
+&lt;p&gt;Input description/format
+Each line of input contains an instruction (NEXT or GOTO).
+NEXT: the program will move to the next line.
+GOTO X: the program will go to line number X.&lt;/p&gt;
 
-&lt;p&gt;分析：Polt的战略目标，如何赢得游戏
-现在让我换一种方式来分析这场比赛。为了更好的理解Polt是如何赢得比赛的，我们将这场比赛划分为一系列的决策以及对应的目标。如果我们从比赛的最后开始往前分析，我们将能清晰的看到他是如何完成一系列目标的。完成这些目标给Polt带了各方面的优势，并最终获得一场明快的胜利。&lt;/p&gt;
+&lt;p&gt;Output description/format
+Please print out the line number of instructions that the program doesn’t touch (one line number per line in the output file).&lt;/p&gt;
 
-&lt;p&gt;作者语：我非常推荐使用这样的分析方式来分析一位选手的战术风格。我将比赛像上一部分那样分为若干个阶段，然后进行逆向分析。你将会看到每一个部分是如何串联起来的（已经完成的战略目标和接下来的战略目标）。&lt;/p&gt;
+&lt;p&gt;Example input&lt;/p&gt;
 
-&lt;p&gt;[19:46 to 21:35] 是游戏的最后阶段，Polt将三攻枪兵送入对手四矿，并赢得比赛。虽然这场比赛三防忘记升了。但更常见的是，Polt使用三攻三防的timing来给虫族强力一击。&lt;/p&gt;
+&lt;p&gt;NEXT&lt;/p&gt;
 
-&lt;p&gt;什么这会奏效？
-回答这个问题的方法总是去观察这波攻击到来前后对方的部队情况。让我们来看看Jaedong在19：45时在干什么。&lt;/p&gt;
+&lt;p&gt;NEXT&lt;/p&gt;
 
-&lt;p&gt;虫族刚刚完成三本，三攻三防在提，但是没有下新的科技建筑。继续生产龙狗毒爆部队，没有余钱，钧毯铺的并不是很好，四矿位置就算最前端了。Jaedong试图快速提升科技，但是飞龙毒爆占用了大量的气体资源，这也是没有办法的选择。&lt;/p&gt;
+&lt;p&gt;GOTO 5&lt;/p&gt;
 
-&lt;p&gt;另一面，Polt增加了枪兵的产能来处理飞龙毒爆，三攻让这些屌丝跟打了鸡血的疯子一样猛，对飞龙毒爆的杀伤力非常强。看看产能，Polt每轮能产12枪兵，2运输机，三地雷。运输机能够在枪兵死光的情况下加速撤离，地雷埋在Jaedong的安全区外，Polt布下一个阵法，迫使虫族使用有气的部队和人族不需要气体的枪兵做交换。&lt;/p&gt;
+&lt;p&gt;NEXT&lt;/p&gt;
 
-&lt;p&gt;Polt的终极目标是抓住虫族三本的timing，迫使虫族用气体来交换枪兵，没有办法把气体花在真正三本科技的单位上面。&lt;/p&gt;
+&lt;p&gt;GOTO 1&lt;/p&gt;
 
-&lt;p&gt;以下翻译从略，原文作者太TM拖拉了。&lt;/p&gt;
+&lt;p&gt;NEXT&lt;/p&gt;
 
-&lt;p&gt;目标：在三攻三防完成时攻克下虫族四矿
-方法：利用两攻两防枪兵卡主要害位置（色总说法是赖住），持续勾引虫族，持续交换，一来不给虫族蓄兵的时间，而来用枪兵交换虫族气体单位。当三攻三防完成之时，能够接上一坨兵，来完成关键性突破。&lt;/p&gt;
+&lt;p&gt;Example output&lt;/p&gt;
 
-&lt;p&gt;控图：站位技巧
-一攻一防时，Polt定位对手三矿，并占领瞭望塔，这成为克制Jaedong发挥的软性枷锁，可以阻止左侧菌毯扩张和对手的侦查。更典型的Polt特征是，他在虫族五矿位置放了一个枪兵，又使得瞭望塔的部队可以再往前一步。&lt;/p&gt;
+&lt;p&gt;4&lt;/p&gt;
 
-&lt;p&gt;前端部队能够及早发现第一波飞龙，从而估算对手三本进度，也能确认对手是否选择一波。更重要的是，能确认对手在哪个点位开出四矿，从而为上面描述的一系列战术做好铺垫。Polt已经写好了剧本。&lt;/p&gt;
+&lt;p&gt;6&lt;/p&gt;
 
-&lt;p&gt;从此时到赖住对手四矿之前有一步是必须的，即清理到四矿高台或者下方位置的道路。（此位置即要遏制从菌毯方向的进攻，也要对虫族四矿施加持续的威胁。）从虫族方面讲，Jaedong必然是会提早阻击人族的推进的。此时Polt的套路是，用一小波枪兵吸引虫族部队进入地雷阵，在毒爆消耗光以后让后续部队打兴奋剂上前，连散两把雷达清掉更多的菌毯。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/colin1990324/LeetCode/blob/master/src/microsoftCodingCompetition2014/DetectingUnreachableInstructions.java&quot;&gt;My Solution in Java&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/&quot;&gt;StarCraft II TVZ 4M Polt&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on October 22, 2013.&lt;/p&gt;
+&lt;p&gt;This instructions structure is like a linked list. First store all instructions with its line number in a set. Execute instructions and remove executed one from the set. if there’s no next instruction or next instruction is already removed from the set( means loop happens), stop execution.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/&quot;&gt;Microsoft Coding Competition - University of Missouri&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -208,22 +357,78 @@ Polt靠决策赢得比赛。TvZ时，他很喜欢4M mid打法，开局具有很�
   
 
 <entry>
-  <title type="html"><![CDATA[Eat Sour Grapefruit]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/eat-sour-grapefruit/" />
-  <id>http://wurui.cc/blog/eat-sour-grapefruit</id>
-  <published>2012-01-04T22:38:06+08:00</published>
-  <updated>2012-01-04T22:38:06+08:00</updated>
+  <title type="html"><![CDATA[Microsoft Coding Competition - University of Missouri]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/" />
+  <id>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2</id>
+  <published>2014-09-23T11:52:20+08:00</published>
+  <updated>2014-09-23T11:52:20+08:00</updated>
   <author>
     <name>Wu Rui</name>
     <uri>http://wurui.cc</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
-    &lt;h1 id=&quot;section&quot;&gt;寝室吃酸柚子记&lt;/h1&gt;
+    &lt;p&gt;Here posts  3 problems without solution.&lt;/p&gt;
 
-&lt;p&gt;新年伊始，关山口技院，意淫十六分舵，四二五档口，李兄买了一酸柚子，生涩，不能入口，遂弃之桌侧。日暮，各兄弟归来，漫夜长长，无以聊赖，思卑鄙龌龊，蝇营狗苟之事。余曰，何不玩牌，失者食酸柚？众兄皆曰好。遂订下规矩，二十一点，轮胜一，终败者须食一柚。少倾，开战，激战三百回合，互有胜负，食柚者表情乖戾，似笑非笑，似哭非哭，无以言表，只以战意激扬，恨柚之瘦小。杜工部有诗云，莫自使眼枯，收汝泪纵横。眼枯即见骨，天地终无情！存者无消息，死者为尘泥。贱子因阵败，归来寻旧蹊。久行见空巷，日瘦气惨凄。可见战况之惨烈。须臾，战罢，众兄各食柚少许，欢愉而罢。&lt;/p&gt;
+&lt;h2 id=&quot;question-two-odata-service--2-points&quot;&gt;Question Two OData service | 2 point(s)&lt;/h2&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/eat-sour-grapefruit/&quot;&gt;Eat Sour Grapefruit&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on January 04, 2012.&lt;/p&gt;
+&lt;p&gt;The Open Data Protocol (OData) is a data access protocol created by Microsoft that builds on simple REST principles. Your task is to retrieve certain data from a sample (live) OData service. For this problem you will be working with the OData service located &lt;a href=&quot;http://services.odata.org/Northwind/Northwind.svc/&quot;&gt;here&lt;/a&gt;. You will retrieve data from an entity set called ‘Products’. An entity set is equivalent to a table in a relational database. The Products entity set is located &lt;a href=&quot;http://services.odata.org/Northwind/Northwind.svc/Products&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Your input file will consist of a series of simple queries to perform on the Products entity set. The input will contain a $filter expression to perform on Products. This is equivalent to a WHERE clause in SQL. Your job is simply to see how many entities (rows in a table) are returned from the specified query.&lt;/p&gt;
+
+&lt;p&gt;Normally a request to the endpoint specified above would return product data - but since you are only interested in the number of entities that would be returned, you can send requests to this special &lt;a href=&quot;http://services.odata.org/Northwind/Northwind.svc/Products/$count&quot;&gt;$count endpoint&lt;/a&gt;. After sending an appropriate request to this endpoint, it will respond with the number of entities that match the query. Print out this value on a line in the output file. Your output file will have one line per line of input containing one number.&lt;/p&gt;
+
+&lt;p&gt;Input description/format
+The input will be a series of $filter queries to perform. Each line of input will correspond to a single query. For instance, the input line: Discontinued eq true should send a GET request to the following URL: http://services.odata.org/Northwind/Northwind.svc/Products/$count?$filter=Discontinued eq true&lt;/p&gt;
+
+&lt;p&gt;Output description/format
+Your output will be a single number per line of input, indicating how many entities match the given query.&lt;/p&gt;
+
+&lt;p&gt;Example input&lt;/p&gt;
+
+&lt;p&gt;Discontinued eq true&lt;/p&gt;
+
+&lt;p&gt;SupplierID eq 4&lt;/p&gt;
+
+&lt;p&gt;CategoryID eq 2&lt;/p&gt;
+
+&lt;p&gt;Example output&lt;/p&gt;
+
+&lt;p&gt;8&lt;/p&gt;
+
+&lt;p&gt;3&lt;/p&gt;
+
+&lt;p&gt;12&lt;/p&gt;
+
+&lt;h2 id=&quot;question-three-unicode-email-addresses--2-points&quot;&gt;Question Three Unicode email addresses | 2 point(s)&lt;/h2&gt;
+
+&lt;p&gt;With the expansion of the Internet across the world, the demand is growing for everyone to have an email address. Until everyone is ready to use international characters, you are now in charge of writing a converter that will take UTF-8 characters and bring them back to something DNS servers will be able to handle.
+To do so, you must take an email string and break it into 3 pieces: first@second.third. Process each piece as follows: Leave all characters that have ASCII codes between 33 and 126 as is, except convert uppercase letters to lowercase letters Represent all other characters (referred to hereinafter as special characters) using the format +position?UTF-8_hexadecimal_representation The position is the 0-indexed position of the represented character The UTF-8 hexadecimal representation must not contain spaces and must be finalized If at least one special character was present in the string, append a ~ and each special character at the end of the address.&lt;/p&gt;
+
+&lt;p&gt;For example, the piece Pøpø would be processed to pp+1?C3B8+3?C3B8~øø
+Clarifications
+There shouldn’t be any spaces.
+You will receive only characters contained within the UTF-8 standard&lt;/p&gt;
+
+&lt;p&gt;Input description/format&lt;/p&gt;
+
+&lt;p&gt;Each line will be an email address with Unicode characters.&lt;/p&gt;
+
+&lt;p&gt;Output description/format&lt;/p&gt;
+
+&lt;p&gt;new email address composition characters removed in order&lt;/p&gt;
+
+&lt;p&gt;Example input&lt;/p&gt;
+
+&lt;p&gt;WoRlD_ReAdY@Microsoft.COM&lt;/p&gt;
+
+&lt;p&gt;Café@Chaud.tôt&lt;/p&gt;
+
+&lt;p&gt;Trinitŷ@߷.com&lt;/p&gt;
+
+&lt;p&gt;ա@մ.կ&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/&quot;&gt;Microsoft Coding Competition - University of Missouri&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -231,50 +436,607 @@ Polt靠决策赢得比赛。TvZ时，他很喜欢4M mid打法，开局具有很�
   
 
 <entry>
-  <title type="html"><![CDATA[Treasured Spring, Wait in Hope of Summer]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/treasured-spring-wait-in-hope-of-summer/" />
-  <id>http://wurui.cc/blog/treasured-spring-wait-in-hope-of-summer</id>
-  <published>2010-02-26T22:41:53+08:00</published>
-  <updated>2010-02-26T22:41:53+08:00</updated>
+  <title type="html"><![CDATA[Microsoft Coding Competition - University of Missouri]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/" />
+  <id>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1</id>
+  <published>2014-09-23T11:52:20+08:00</published>
+  <updated>2014-09-23T11:52:20+08:00</updated>
   <author>
     <name>Wu Rui</name>
     <uri>http://wurui.cc</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
-    &lt;h1 id=&quot;section&quot;&gt;惜春思夏&lt;/h1&gt;
+    &lt;p&gt;This is a Coding Competition MS held at University of Missouri - Columbia on Sep 17th 2014. Similar events will be held in several Universities.&lt;/p&gt;
 
-&lt;p&gt;２４号回来了,一下飞机就迎面一股干燥的热风,着陆前提示：武汉地面温度１８度;&lt;/p&gt;
+&lt;p&gt;Team up to 3 people. Six problems are given and you have 2 hours to get as many scores as you can. There’s no partial score for each question. The best strategy I would recommend is starting from the easiest and moving on to harder problems.&lt;/p&gt;
 
-&lt;p&gt;惜春&lt;/p&gt;
+&lt;h2 id=&quot;question-one-cure-the-virus--3-points&quot;&gt;Question One Cure the virus | 3 point(s)&lt;/h2&gt;
 
-&lt;p&gt;想来今年成都的冬天也还算冷了,海棠都开烂了,兰花也开始抽出花苞,稀稀拉拉的雨,是否我已经错过了成都的冬而追上了春的开头?第一天就注意到田野里的油菜花,只是星星的一点,透出对春的期待,春已然开始却又送我回武汉了.&lt;/p&gt;
+&lt;p&gt;There is an outbreak of VirusX in Redmond. The local authorities have discovered a vaccine that protects against infection by VirusX. However, they can only produce so many vaccines per week. Your job is to figure out the best order in which people should be vaccinated. Everyone will get vaccinated, but the people more likely to be sick should be vaccinated first. You are more likely to get sick if the virus` DNA closely matches somewhere in your DNA.&lt;/p&gt;
 
-&lt;p&gt;说武汉是只有冬夏两季的,一阵寒风过后便从夏转入冬.雪散在依旧青葱的树木上,也褪不去夏的遗迹.&lt;/p&gt;
+&lt;p&gt;However, there is a catch: the virus can mutate. Over time, the virus can “cut” letters from its DNA. So it is possible that the AAAAG virus mutates into the AAAG, AAAA, …, A viruses. Removing letters is the only possible mutation: the virus cannot change any letter.&lt;/p&gt;
 
-&lt;p&gt;地面温度１８度—-于是衣着厚重的我捂着热汗登上机场大巴.&lt;/p&gt;
+&lt;p&gt;For example, if your DNA is GGGGGGGAAAAGGGGGG and the virus DNA is AAAAG, you have 1.0 probability of getting infected because all of the letters of the virus are found in the same order in your DNA. If your DNA was TTTTTTTAAAATTTTTT, then the virus only partially matches your DNA. For partial matches, we define the probability to get sick by the numbers of continuous letters of the virus’ DNA that matches your DNA divided by the total number of letters in the un-mutated virus’ DNA. With the example above, AAAA is the longest possible mutation that matches in your DNA, so your probability of getting sick is len(AAAA) / len(AAAAG): 0.8.&lt;/p&gt;
 
-&lt;p&gt;一回寝室就脱掉了毛衣.得珍惜这暖意,兴许我正面对的,就是春的全部.&lt;/p&gt;
+&lt;p&gt;You are provided with the DNA of every inhabitant of Redmond and the virus’ DNA. For every inhabitant, you need to output the order in which he/she should get vaccinated. Everyone that has the same probability to get sick should get vaccinated in the same batch. For example, the order of vaccination for inhabitants with the following probability to get sick: [0.0, 0.5, 0.5, 0.0, 1.0] is: [3, 2, 2, 3, 1].&lt;/p&gt;
 
-&lt;p&gt;晚上是炸雷,是阵雨;翌日醒来,是雾气是潮湿,墙壁都可以吸出水来.&lt;/p&gt;
+&lt;p&gt;Tip
+Here is a tip for how to get from the “Canonical Sample Input” to “Canonical Sample Output” (described below). Given the TAAT virus and its highest infection score possible mutation for persons 0 to 4, here are the longest matching mutations and the attached probability to get sick for every person:&lt;/p&gt;
 
-&lt;p&gt;思夏&lt;/p&gt;
+&lt;p&gt;Person #0: T, 0.250&lt;/p&gt;
 
-&lt;p&gt;拂开阴霾的天,露出灿烂的日,我要燃烧的太阳,烧灼烘烤阴冷的心情,蒸干汗水,照亮失落的背影.&lt;/p&gt;
+&lt;p&gt;Person #1: TAA, 0.750&lt;/p&gt;
 
-&lt;p&gt;期待球场上流淌的汗水,沿着脸颊流下,顺着鼻尖掉落&lt;/p&gt;
+&lt;p&gt;Person #2: TT, 0.500&lt;/p&gt;
 
-&lt;p&gt;期待冷水浴,唱着军歌,振奋激情.&lt;/p&gt;
+&lt;p&gt;Person #3: TAAT, 1.000&lt;/p&gt;
 
-&lt;p&gt;期待骄阳烘烤后衣服上那种晚香玉的暗香.&lt;/p&gt;
+&lt;p&gt;Person #4: TA, 0.500&lt;/p&gt;
 
-&lt;p&gt;期待夏日校园里清爽的一抹抹亮色.&lt;/p&gt;
+&lt;p&gt;Therefore, person 3 has a 1.0 probability of getting sick, so he or she gets vaccinated first. Person 1 is the next highest, so he or she gets vaccinated second. We continue to vaccinate in batches of probability of getting sick, with person 0 getting vaccinated last because he or she has the least probability to get sick.
+Note that what is described above is not the output you should generate, but a tip on how you can get to the desired output inside your code.&lt;/p&gt;
 
-&lt;p&gt;不谈感情.日子,基本上平静如水.对过去的,总有那么点愤恨,不满足;现在的,有更多的迷惘,逃避;将来的,是期待,是恐慌.我,普通的一个大学生而已.&lt;/p&gt;
+&lt;p&gt;Input description/format&lt;/p&gt;
 
-&lt;p&gt;这些个日子,大家总写过去的,我这篇献给将来.&lt;/p&gt;
+&lt;p&gt;The first line of the file contains three numbers: the number of citizens in Redmond, the length of the citizen’s DNA and the length of the virus’ DNA.
+This is followed by one sequence of DNA per line, representing in order the citizens’ DNA. The last DNA sequence of the file is the virus’ DNA.
+You can assume that the virus’ DNA sequence is always shorter than the citizen’s DNA sequences.
+Output description/format
+The below example becomes clear if we give the “DNA match score” as well as the longest sequence of DNA matched.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/treasured-spring-wait-in-hope-of-summer/&quot;&gt;Treasured Spring, Wait in Hope of Summer&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on February 26, 2010.&lt;/p&gt;
+&lt;p&gt;Person #0: G, 0.333&lt;/p&gt;
+
+&lt;p&gt;Person #1: GCC, 1.000&lt;/p&gt;
+
+&lt;p&gt;Person #2: CC, 0.667&lt;/p&gt;
+
+&lt;p&gt;Person #3: GC, 0.667&lt;/p&gt;
+
+&lt;p&gt;Person #4: GC, 0.667&lt;/p&gt;
+
+&lt;p&gt;Person 1 has a 1.0 probability of getting sick, so he gets vaccinated first. Persons 2, 3, and 4 are the next highest probable to get sick, so they get vaccinated second. Person 0 has the least chance to get sick; he gets vaccinated last.&lt;/p&gt;
+
+&lt;p&gt;Example input&lt;/p&gt;
+
+&lt;p&gt;5 10 3&lt;/p&gt;
+
+&lt;p&gt;AGGAAAAGAG&lt;/p&gt;
+
+&lt;p&gt;CGAGGCCAAC&lt;/p&gt;
+
+&lt;p&gt;GACAAAACCG&lt;/p&gt;
+
+&lt;p&gt;GCGACGCAGA&lt;/p&gt;
+
+&lt;p&gt;AACAGCGCAG&lt;/p&gt;
+
+&lt;p&gt;GCC&lt;/p&gt;
+
+&lt;p&gt;Example output&lt;/p&gt;
+
+&lt;p&gt;Person #0: 3.&lt;/p&gt;
+
+&lt;p&gt;Person #1: 1.&lt;/p&gt;
+
+&lt;p&gt;Person #2: 2.&lt;/p&gt;
+
+&lt;p&gt;Person #3: 2.&lt;/p&gt;
+
+&lt;p&gt;Person #4: 2.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/colin1990324/LeetCode/blob/master/src/microsoftCodingCompetition2014/Cure_the_virus.java&quot;&gt;My Solution in Java&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In a competition environment, it’s really easy for people like me to scan the problem description really quick and start coding.  I trade this problem as a typical longest common substring at first glimpse but actually it’s  not. The virus can mutate, letters can be cut out from its sequence while people’s DNA need to be continuos which makes this problem a mix of longest common substring and longest common subsequence.
+Then, if you are familiar with DP( Dynamic Program) solution for LCS, you can easily modify it into the correct answer of this problem.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/&quot;&gt;Microsoft Coding Competition - University of Missouri&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[We Won This Game]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/we-won-this-game/" />
+  <id>http://wurui.cc/life/we-won-this-game</id>
+  <published>2014-08-31T11:47:21+08:00</published>
+  <updated>2014-08-31T11:47:21+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h3 id=&quot;mizzou-vs-sdsu-8302014&quot;&gt;MIZZOU VS SDSU 8/30/2014&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_IMG_2360.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/we-won-this-game/&quot;&gt;We Won This Game&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on August 31, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[How a Science Experiment Turns Into Art]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/how-a-science-experiment-turns-into-art/" />
+  <id>http://wurui.cc/life/how-a-science-experiment-turns-into-art</id>
+  <published>2014-04-23T11:42:58+08:00</published>
+  <updated>2014-04-23T11:42:58+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;img src=&quot;/images/blog/orangeeee.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/Fruit-Battery-Still-Life-Citrus.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&quot;http://www.wired.com/2014/04/middle-school-science-experiment-turned-gorgeous-photographs/&quot;&gt;wired.com&lt;/a&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/how-a-science-experiment-turns-into-art/&quot;&gt;How a Science Experiment Turns Into Art&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 23, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Google Code Jam 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/google-code-jam-2014/" />
+  <id>http://wurui.cc/tech/google-code-jam-2014</id>
+  <published>2014-04-12T11:33:08+08:00</published>
+  <updated>2014-04-12T11:33:08+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;The Qualification Round of Google Code Jam 2014 just ended. Here shares my solutions on the &lt;a href=&quot;https://github.com/colin1990324/LeetCode/tree/master/src/codejam2014&quot;&gt;Github&lt;/a&gt; for the following problems.&lt;/p&gt;
+
+&lt;p&gt;Google Code Jam 2014 has begun, You need to get 25 points to get to the next round, there are 4 problems out of which two problems needs to be solved for sure to get into next round.&lt;/p&gt;
+
+&lt;h2 id=&quot;problem-a-magic-trick-6pt&quot;&gt;Problem A Magic Trick 6pt&lt;/h2&gt;
+
+&lt;p&gt;Recently you went to a magic show. You were very impressed by one of the tricks, so you decided to try to figure out the secret behind it! The magician starts by arranging 16 cards in a square grid: 4 rows of cards, with 4 cards in each row. Each card has a different number from 1 to 16 written on the side that is showing. Next, the magician asks a volunteer to choose a card, and to tell him which row that card is in. &lt;/p&gt;
+
+&lt;p&gt;Finally, the magician arranges the 16 cards in a square grid again, possibly in a different order. Once again, he asks the volunteer which row her card is in. With only the answers to these two questions, the magician then correctly determines which card the volunteer chose. Amazing, right?&lt;/p&gt;
+
+&lt;p&gt;You decide to write a program to help you understand the magician’s technique. The program will be given the two arrangements of the cards, and the volunteer’s answers to the two questions: the row number of the selected card in the first arrangement, and the row number of the selected card in the second arrangement. The rows are numbered 1 to 4 from top to bottom.
+Your program should determine which card the volunteer chose; or if there is more than one card the volunteer might have chosen (the magician did a bad job); or if there’s no card consistent with the volunteer’s answers (the volunteer cheated).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Input
+The first line of the input gives the number of test cases, T. T test cases follow. Each test case starts with a line containing an integer: the answer to the first question. The next 4 lines represent the first arrangement of the cards: each contains 4 integers, separated by a single space. The next line contains the answer to the second question, and the following four lines contain the second arrangement in the same format.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Output
+For each test case, output one line containing “Case #x: y”, where x is the test case number (starting from 1).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If there is a single card the volunteer could have chosen, y should be the number on the card. If there are multiple cards the volunteer could have chosen, y should be “Bad magician!”, without the quotes. If there are no cards consistent with the volunteer’s answers, y should be “Volunteer cheated!”, without the quotes. The text needs to be exactly right, so consider copying/pasting it from here.&lt;/p&gt;
+
+&lt;p&gt;Limits
+1 ≤ T ≤ 100.
+1 ≤ both answers ≤ 4.
+Each number from 1 to 16 will appear exactly once in each arrangement.&lt;/p&gt;
+
+&lt;p&gt;Sample Input
+3
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+3
+1 2 5 4
+3 11 6 15
+9 10 7 12
+13 14 8 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+3
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 &lt;/p&gt;
+
+&lt;p&gt;Output
+Case #1: 7
+Case #2: Bad magician!
+Case #3: Volunteer cheated!&lt;/p&gt;
+
+&lt;h2 id=&quot;problem-b-cookie-clicker-alpha-8pt11pt&quot;&gt;Problem B Cookie Clicker Alpha 8pt+11pt&lt;/h2&gt;
+
+&lt;p&gt;In this problem, you start with 0 cookies. You gain cookies at a rate of 2 cookies per second, by clicking on a giant cookie. Any time you have at least C cookies, you can buy a cookie farm. Every time you buy a cookie farm, it costs you C cookies and gives you an extra F cookies per second.
+Once you have X cookies that you haven’t spent on farms, you win! Figure out how long it will take you to win if you use the best possible strategy.&lt;/p&gt;
+
+&lt;p&gt;Example
+Suppose C=500.0, F=4.0 and X=2000.0. Here’s how the best possible strategy plays out: You start with 0 cookies, but producing 2 cookies per second. After 250 seconds, you will have C=500 cookies and can buy a farm that producesF=4 cookies per second. After buying the farm, you have 0 cookies, and your total cookie production is 6 cookies per second. The next farm will cost 500 cookies, which you can buy after about 83.3333333seconds. After buying your second farm, you have 0 cookies, and your total cookie production is 10 cookies per second. Another farm will cost 500 cookies, which you can buy after 50 seconds. After buying your third farm, you have 0 cookies, and your total cookie production is 14 cookies per second. Another farm would cost 500 cookies, but it actually makes sense not to buy it: instead you can just wait until you have X=2000 cookies, which takes about142.8571429 seconds. Total time: 250 + 83.3333333 + 50 + 142.8571429 = 526.1904762 seconds.
+Notice that you get cookies continuously: so 0.1 seconds after the game starts you’ll have 0.2 cookies, and π seconds after the game starts you’ll have 2π cookies.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Input
+The first line of the input gives the number of test cases, T. T lines follow. Each line contains three space-separated real-valued numbers: C, F and X, whose meanings are described earlier in the problem statement. C, F and X will each consist of at least 1 digit followed by 1 decimal point followed by from 1 to 5 digits. There will be no leading zeroes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Output
+For each test case, output one line containing “Case #x: y”, where x is the test case number (starting from 1) and y is the minimum number of seconds it takes before you can have X delicious cookies.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We recommend outputting y to 7 decimal places, but it is not required. y will be considered correct if it is close enough to the correct number: within an absolute or relative error of 10-6. See the FAQ for an explanation of what that means, and what formats of real numbers we accept.&lt;/p&gt;
+
+&lt;p&gt;Limits
+1 ≤ T ≤ 100.
+Small dataset
+1 ≤ C ≤ 500.
+1 ≤ F ≤ 4.
+1 ≤ X ≤ 2000.
+Large dataset
+1 ≤ C ≤ 10000.
+1 ≤ F ≤ 100.
+1 ≤ X ≤ 100000.&lt;/p&gt;
+
+&lt;p&gt;Sample Input
+4
+30.0 1.0 2.0
+30.0 2.0 100.0
+30.50000 3.14159 1999.19990
+500.0 4.0 2000.0&lt;/p&gt;
+
+&lt;p&gt;Output
+Case #1: 1.0000000
+Case #2: 39.1666667
+Case #3: 63.9680013
+Case #4: 526.1904762&lt;/p&gt;
+
+&lt;h2 id=&quot;problem-c-minesweeper-master-11pt24pt&quot;&gt;Problem C Minesweeper Master 11pt+24pt&lt;/h2&gt;
+
+&lt;p&gt;Minesweeper is a computer game that became popular in the 1980s, and is still included in some versions of the Microsoft Windows operating system. This problem has a similar idea, but it does not assume you have played Minesweeper.&lt;/p&gt;
+
+&lt;p&gt;In this problem, you are playing a game on a grid of identical cells. The content of each cell is initially hidden. There are M mines hidden in M different cells of the grid. No other cells contain mines. You may click on any cell to reveal it. If the revealed cell contains a mine, then the game is over, and you lose. Otherwise, the revealed cell will contain a digit between 0 and 8, inclusive, which corresponds to the number of neighboring cells that contain mines. Two cells are neighbors if they share a corner or an edge. Additionally, if the revealed cell contains a 0, then all of the neighbors of the revealed cell are automatically revealed as well, recursively. When all the cells that don’t contain mines have been revealed, the game ends, and you win.&lt;/p&gt;
+
+&lt;p&gt;For example, an initial configuration of the board may look like this (‘&lt;em&gt;’ denotes a mine, and ‘c’ is the first clicked cell):
+*..&lt;/em&gt;…&lt;strong&gt;.
+….&lt;em&gt;…..
+..c..&lt;/em&gt;….
+……..&lt;em&gt;.
+……….
+There are no mines adjacent to the clicked cell, so when it is revealed, it becomes a 0, and its 8 adjacent cells are revealed as well. This process continues, resulting in the following board:
+*..&lt;/em&gt;…&lt;/strong&gt;.
+1112&lt;em&gt;…..
+00012&lt;/em&gt;….
+00001111*.
+00000001..
+At this point, there are still un-revealed cells that do not contain mines (denoted by ‘.’ characters), so the player has to click again in order to continue the game.
+You want to win the game as quickly as possible. There is nothing quicker than winning in one click. Given the size of the board (R x C) and the number of hidden mines M, is it possible (however unlikely) to win in one click? You may choose where you click. If it is possible, then print any valid mine configuration and the coordinates of your click, following the specifications in the Output section. Otherwise, print “Impossible”.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Input
+The first line of the input gives the number of test cases, T. T lines follow. Each line contains three space-separated integers: R, C, and M.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Output
+For each test case, output a line containing “Case #x:”, where x is the test case number (starting from 1). On the following R lines, output the board configuration with C characters per line, using ‘.’ to represent an empty cell, ‘*’ to represent a cell that contains a mine, and ‘c’ to represent the clicked cell.
+If there is no possible configuration, then instead of the grid, output a line with”Impossible” instead. If there are multiple possible configurations, output any one of them.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Limits
+0 ≤ M &amp;lt; R * C.
+Small dataset
+1 ≤ T ≤ 230.
+1 ≤ R, C ≤ 5.
+Large dataset
+1 ≤ T ≤ 140.
+1 ≤ R, C ≤ 50.&lt;/p&gt;
+
+&lt;p&gt;Sample Input
+5
+5 5 23
+3 1 1
+2 2 1
+4 7 3
+10 10 82
+Output
+Case #1:
+Impossible
+Case #2:
+c
+.
+*
+Case #3:
+Impossible
+Case #4:
+……*
+.c….*
+…….
+..&lt;em&gt;….
+Case #5:
+&lt;strong&gt;**&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt;*
+**&lt;/strong&gt;&lt;strong&gt;**&lt;/strong&gt;
+&lt;strong&gt;**&lt;/strong&gt;&lt;strong&gt;**
+**&lt;/strong&gt;….**
+&lt;strong&gt;&lt;em&gt;…..**
+**&lt;/em&gt;.c…&lt;/strong&gt;
+&lt;strong&gt;&lt;em&gt;….&lt;/em&gt;&lt;/strong&gt;
+&lt;strong&gt;**&lt;/strong&gt;&lt;strong&gt;**
+**&lt;/strong&gt;&lt;strong&gt;**&lt;/strong&gt;
+&lt;strong&gt;**&lt;/strong&gt;&lt;em&gt;**&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;problem-d-deceitful-war-14pt16pt&quot;&gt;Problem D Deceitful War 14pt+16pt&lt;/h2&gt;
+
+&lt;p&gt;Naomi and Ken sometimes play games together. Before they play, each of them gets N identical-looking blocks of wood with masses between 0.0kg and 1.0kg (exclusive). All of the blocks have different weights. There are lots of games they could play with those blocks, but they usually play something they call War. Here is how War works:
+Each player weighs each of his or her own blocks, so each player knows the weights of all of his or her own blocks, but not the weights of the other player’s blocks. They repeat the following process N times: Naomi chooses one of her own blocks, with mass ChosenNaomi. Naomi tells Ken the mass of the block she chose. Ken chooses one of his own blocks, with mass ChosenKen.
+They each put their block on one side of a balance scale, and the person whose block is heavier gets one point. Both blocks are destroyed in a fire. Naomi has realized three things about War. First, she has realized that she loses a lot. Second, she has realized that there is a unique strategy that Ken can follow to maximize his points without assuming anything about Naomi’s strategy, and that Ken always uses it. Third, she has realized that she hates to lose. Naomi has decided that instead of playing War, she will play a game she calls Deceitful War. The great thing about Deceitful War is that Ken will think they’re playing War!&lt;/p&gt;
+
+&lt;p&gt;Here is how Deceitful War works, with differences between Deceitful War and War in bold:
+Each player weighs each of his or her own blocks. Naomi also weighs Ken’s blocks while he isn’t looking, so Naomi knows the weights of all blocks and Ken only knows the weights of his own blocks.
+They repeat the following process N times: Naomi chooses one of her own blocks, with mass ChosenNaomi. Naomi tells Ken a number, ToldNaomi, between 0.0kg and 1.0kg exclusive. Ken, who thinks they’re playing War, thinks the number Naomi just told him is ChosenNaomi. Ken chooses one of his own blocks, with mass ChosenKen. They each put their block on one side of a balance scale, and the person whose block is heavier gets one point. Both blocks are destroyed in a fire. Naomi doesn’t want Ken to know that she isn’t playing War; so when she is choosing which block to play, and what mass to tell Ken, she must make sure that the balance scale won’t reveal that ChosenNaomi ≠ ToldNaomi. In other words, she must make decisions so that: ChosenNaomi, ChosenKen if, and only if, ToldNaomi, ChosenKen, and ToldNaomi is not equal to the mass of any of Ken’s blocks, because he knows that isn’t possible. It might seem like Naomi won’t win any extra points by being deceitful, because Ken might discover that she wasn’t playing War; but Naomi knows Ken thinks both players are playing War, and she knows what he knows, and she knows Ken will always follow his unique optimal strategy for War, so she can always predict what he will play.&lt;/p&gt;
+
+&lt;p&gt;You’ll be given the masses of the blocks Naomi and Ken started with. Naomi will play Deceitful War optimally to gain the maximum number of points. Ken will play War optimally to gain the maximum number of points assuming that both players are playing War. What will Naomi’s score be? What would it have been if she had played War optimally instead?&lt;/p&gt;
+
+&lt;p&gt;Examples
+If each player has a single block left, where Naomi has 0.5kg and Ken has 0.6kg, then Ken is guaranteed to score the point. Naomi can’t say her number is ≥ 0.6kg, or Ken will know she isn’t playing War when the balance scale shows his block was heavier.
+If each player has two blocks left, where Naomi has [0.7kg, 0.2kg] and Ken has [0.8kg, 0.3kg], then Naomi could choose her 0.2kg block, and deceive Ken by telling him that she chose a block that was 0.6kg. Ken assumes Naomi is telling the truth (as in how the War game works) and will play his 0.8kg block to score a point. Ken was just deceived, but he will never realize it because the balance scale shows that his 0.8kg block is, like he expected, heavier than the block Naomi played. Now Naomi can play her 0.7kg block, tell Ken it is 0.7kg, and score a point. If Naomi had played War instead of Deceitful War, then Ken would have scored two points and Naomi would have scored zero.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Input
+The first line of the input gives the number of test cases, T. T test cases follow. Each test case starts with a line containing a single integer N, the number of blocks each player has. Next follows a line containing N space-separated real numbers: the masses of Naomi’s blocks, in kg. Finally there will be a line containing N space-separated real numbers: the masses of Ken’s blocks, in kg.
+Each of the masses given to Ken and Naomi will be represented as a 0, followed by a decimal point, followed by 1-5 digits. Even though all the numbers in the input have 1-5 digits after the decimal point, Ken and Naomi don’t know that; so Naomi can still tell Ken that she played a block with mass 0.5000001kg, and Ken has no reason not to believe her.&lt;/li&gt;
+  &lt;li&gt;Output
+For each test case, output one line containing “Case #x: y z”, where x is the test case number (starting from 1), y is the number of points Naomi will score if she plays Deceitful War optimally, and z is the number of points Naomi will score if she plays War optimally.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Limits
+1 ≤ T ≤ 50.
+All the masses given to Ken and Naomi are distinct, and between 0.0 and 1.0 exclusive.
+Small dataset
+1 ≤ N ≤ 10.
+Large dataset
+1 ≤ N ≤ 1000.&lt;/p&gt;
+
+&lt;p&gt;Sample Input
+4
+1
+0.5
+0.6
+2
+0.7 0.2
+0.8 0.3
+3
+0.5 0.1 0.9
+0.6 0.4 0.3
+9
+0.186 0.389 0.907 0.832 0.959 0.557 0.300 0.992 0.899
+0.916 0.728 0.271 0.520 0.700 0.521 0.215 0.341 0.458
+Output
+Case #1: 0 0
+Case #2: 1 0
+Case #3: 2 1
+Case #4: 8 4&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/google-code-jam-2014/&quot;&gt;Google Code Jam 2014&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 12, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[GoPro 360 Degree Video]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/gopro-360-degree-video/" />
+  <id>http://wurui.cc/life/gopro-360-degree-video</id>
+  <published>2014-04-06T11:24:34+08:00</published>
+  <updated>2014-04-06T11:24:34+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;This video is made by Jonas Ginter with 6 GoPro Cameras and I find it quite interesting.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/h1msuWVZZmQ?feature=oembed&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;And here’s how he made it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/1200px_360_degree_gopro_mount_3d_print_jonas_ginter.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://thenextweb.com/shareables/2014/04/05/360-video-shot-6-gopro-cameras-will-blow-mind/&quot;&gt;More details&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/gopro-360-degree-video/&quot;&gt;GoPro 360 Degree Video&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 06, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[一地鸡毛]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/ground_covered_with_chicken_feathers/" />
+  <id>http://wurui.cc/blog/ground_covered_with_chicken_feathers</id>
+  <published>2014-03-31T11:06:44+08:00</published>
+  <updated>2014-03-31T11:06:44+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;blockquote&gt;
+  &lt;p&gt;啤酒虽然夺了过去，但小林脑袋已经发懵，这天夜里睡得很死。半夜做了一个梦，梦见自己睡觉，上边盖着一堆鸡毛，下边铺着许多人掉下的皮屑，柔软舒服，度年如日。又梦见黑鸦鸦无边无际的人群向前涌动，又变成一队队祈雨的蚂蚁。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;能帮忙先说不能帮忙，好办先说不好办，这才会成熟。不帮忙不好办最后帮忙办成了，人家才感激你。一开始就满口答应，如果中间出了岔子没办成，本来答应人家，最后没办成，反倒落人家埋怨。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;两人都是大学生，谁也不是没有事业心，大家都奋斗过，发愤过，挑灯夜读过，有过一番宏伟的理想，单位的处长局长，社会上的大大小小机关，都不在眼里，哪里会想到几年之后，他们也跟大家一样，很快淹没到黑压压的千篇一律千人一面的人群之中呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;你也无非是买豆腐、上班下班、吃饭睡觉洗衣服，对付保姆弄孩子，到了晚上你一页书也不想翻，什么宏图大志，什么事业理想，狗屁，那是年轻时候的事，大家都这么混，不也活了一辈子？有宏图大志怎么了？有事业理想怎么了？“古今将相在何方，荒冢一堆草没了！”一辈子下来谁不知道谁！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;找人办事，如同在单位混事，只能投靠一个主子，人家才死力给你办；找的人多了，大家都不会出力；何况你找多了，证明你认识的人多，显得你很高明，既然你高明能再找人，何必再找我？这时除了不帮忙不说，还容易产生抵触心理，说不定背后再给你帮点倒忙，看你不依靠我依靠别人这事能办成!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;《一地鸡毛》 ——刘震云&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/small_news_pic7190.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/ground_covered_with_chicken_feathers/&quot;&gt;一地鸡毛&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 31, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[《码农故事》]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/programmers-story/" />
+  <id>http://wurui.cc/blog/programmers-story</id>
+  <published>2014-03-29T11:06:44+08:00</published>
+  <updated>2014-03-29T11:06:44+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;创业公司核心代码被盗，作案者到底是黑客还是内奸？社交网站遭遇DDoS攻击，究竟是何人所为？顶级大牛程序员改行送外卖的背后又有什么隐情？当精英创业团队面临理想与现实的冲突，他们各自做出了怎样的选择？前端女汉子和美女市场经理谁最终会得到钻石王老五的青睐？成功的曙光出现之时，又发生了什么匪夷所思的事情？当一切都尘埃落定之时，是技术改变了世界，还是资本扭曲了人性？————&lt;a href=&quot;http://coderlmn.github.io/coderStory/&quot;&gt;《码农故事》&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一般有程序员小说我都是要读读看的，一来帮助我这种行业菜鸡初窥一下行业规则，二来可以从一个程序员的眼睛重新看待一些人和事。总得来说，多半是有趣而丰富的。&lt;/p&gt;
+
+&lt;p&gt;由于是在线更新连载，时间线比较长，前期的想法已经记不清了。我这里主要说说公司CEO赵川的人物性格演变。创业初期，赵川带着追随自己并一同离职的莫楠开发了一个健康社区，公司只有寥寥数人，当同事追问赵川为什么要从待遇丰厚、条件稳定的大公司离职时，赵川是这么回答的：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我出来是因为讨厌给客户做开发。在咱们这儿多好，只有用户，没有客户。一切工作都是为了让用户满意，直截了当，也有成就感。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;刚刚摆脱大公司的束缚，单干起来，赵川只觉得神清气爽，上楼也不累了，干活也有劲了。而到了A轮融资的前期，经历了诸如对投资方行事路子野的不适应到麻木；公司发展目标的巨大压力，18个月用户翻10倍到12个月翻10倍；人员流动带来的核心代码流失；DDoS攻击竞争对手。公司CEO赵川，受到方方面面施加的巨大而持续性的压力。最后的结果就是人格、世界观，方法论都发生了巨大的变化甚至是扭曲。第九十四回，莫楠最后一次找赵川谈话。 赵川面无表情地答道：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;莫楠，人不能一辈子只活在理想里。咱们生活在一个讲现实的社会，没人真正会关心你的理想，除非你的理想可以转化为利益。再说，如果没有现实的利益给它送去口粮，理想也会饿死的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;莫楠又一次愣住了：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;老大，你真的变得让我觉得很陌生。以前我觉得你是一个理想主义者，我是受你的影响，成了半理想半现实。可现在呢，我快进化成真正的理想主义者了，你却突然变成了现实主义者！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;所谓一将功成万骨枯，公司最终A轮融资成功，公司估值达12亿元，办公室也重新搬回了市中心的高级写字楼。然而人走茶凉，铁杆小弟和日益成熟的产品经理受不了公司气氛变化双双辞职。天使投资人套现身退，赶在东窗事发前跑路。跟公司相关联的高中同学开发区主任和顶头的副市长均被带着调查。坐在宽敞的独立办公室里，赵川呆呆的望着落地窗外鳞次栉比的商业楼。这十二个月，自己到底是收获了，还是失去了。&lt;/p&gt;
+
+&lt;p&gt;作者微博：&lt;a href=&quot;http://weibo.com/ned11&quot;&gt;老码农的自留地&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/programmers-story/&quot;&gt;《码农故事》&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 29, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Promising Young Climbers]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/promising-young-climbers/" />
+  <id>http://wurui.cc/life/promising-young-climbers</id>
+  <published>2014-03-22T11:04:44+08:00</published>
+  <updated>2014-03-22T11:04:44+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;This girl is so cute and pretty, and she is one of the two 11-year old record keepers in the world. I like how she talks and smiles.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/TgzxqXfGDLQ?feature=oembed&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/promising-young-climbers/&quot;&gt;Promising Young Climbers&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 22, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[An Invisible Sign]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/an-invisible-sign/" />
+  <id>http://wurui.cc/blog/an-invisible-sign</id>
+  <published>2014-03-21T11:01:00+08:00</published>
+  <updated>2014-03-21T11:01:00+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;img src=&quot;/images/blog/An_Invisible_Sign_Poster.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;影片中的斧子很关键，据说小说原作的第一句话，就是“我二十岁去店里买了一把斧子”——我其实未读过小说、或许理解有所偏差——光从影片看，很多问题都直接牵涉到开头父亲的童话，王国人口爆炸，国王要处死面包师傅家人，父亲提出砍去每位家人的肢体以替代死刑。于是，小女孩失去了她的脚。不过，童话以家人美满团圆而告终&lt;/p&gt;
+
+&lt;p&gt;斧子——正是那个布偶“心魔”（行刑者）砍断所有人肢体的道具。童话中和现实中的父亲把“牺牲”——被迫的付出，作为家庭圆满、幸福、甚至是有钱（童话情节）的先决条件。显然，父亲也强迫家人和他一起如此“牺牲”。小女孩除了根据这个观念，自己理解演绎出一套怪癖之外，还将斧子视为“牺牲”的象征，她也需要这件象征物时时提醒自己。&lt;/p&gt;
+
+&lt;p&gt;女孩成人之后，这个“执念”毕竟显得怪异，所以她时时在伪装，“撒谎”。买了斧子后，她特地将斧子装裱粉饰为“7”，挂在教室里，恐怕也是这个原因吧。这个教室是她最初爱上数字的地方，“斧子7”其实是对她自己的教具。之后，阴差阳错，伤了自己的腿，恐怕是幼年童话的投射吧。不过，女孩走出“牺牲观”的怪圈，亦是由此而起。&lt;/p&gt;
+
+&lt;p&gt;我觉得，这种“牺牲”观在美国，自然有宗教的背景，可我们对此可一点儿也不陌生！从小到大，受的都是“牺牲观”教育。被迫的付出，是成就从个人到国家种种目的的先决条件。影片之所以在最后触动我，不是圆满的结局，而是提出了这样一个答案：靠伤害自己、被迫付出的“牺牲”都是某种妄想症（从国家层面来扮演父亲角色，以“牺牲观”来推广教育民众，就更是别有用心了），追求幸福圆满的唯一道路，是积极去追求自己真正渴望的东西，去创造，实现部分（个体价值）的总和大于整体，而非相反！&lt;/p&gt;
+
+&lt;p&gt;转自：&lt;a href=&quot;http://movie.douban.com/review/5442223/&quot;&gt;从斧头开始的牺牲观妄想症&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/an-invisible-sign/&quot;&gt;An Invisible Sign&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 21, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Sanya]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/life/sanya/" />
+  <id>http://wurui.cc/life/sanya</id>
+  <published>2014-03-16T10:54:32+08:00</published>
+  <updated>2014-03-16T10:54:32+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Beautiful Sanya and my beautiful girl~&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/export_IMG_3356.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;大概玩了蜈支洲岛，潜水，呀偌达热带雨林，海鲜市场，亚龙湾，飞鱼~~&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/sanya/&quot;&gt;Sanya&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 16, 2014.&lt;/p&gt;
   </content>
 </entry>
 

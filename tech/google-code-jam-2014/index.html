@@ -1,0 +1,465 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Google Code Jam 2014 &#8211; Wu Rui's Home</title>
+
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Google Code Jam 2014">
+
+<meta name="twitter:site" content="@coin1990324">
+<meta name="twitter:creator" content="@coin1990324">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wurui.cc/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Google Code Jam 2014">
+
+<meta property="og:url" content="http://wurui.cc/tech/google-code-jam-2014/">
+<meta property="og:site_name" content="Wu Rui's Home">
+
+
+
+
+
+<link rel="canonical" href="http://wurui.cc/tech/google-code-jam-2014/">
+<link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://wurui.cc/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://wurui.cc/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://wurui.cc/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://wurui.cc/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://wurui.cc/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wurui.cc/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wurui.cc/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wurui.cc/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/life/" >Life</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://wurui.cc/" class="site-logo" rel="home" title="Wu Rui's Home"><img src="http://wurui.cc/images/site-logo.png" width="200" height="200" alt="Wu Rui's Home logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://wurui.cc/">Wu Rui's Home</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">独乐乐不如众乐乐</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"></span>
+        
+          <h1 class="entry-title">Google Code Jam 2014</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Wu Rui</span></span>
+        <span class="entry-date date published"><time datetime="2014-04-12T11:33:08+08:00"><i class="fa fa-calendar-o"></i> April 12, 2014</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>The Qualification Round of Google Code Jam 2014 just ended. Here shares my solutions on the <a href="https://github.com/colin1990324/LeetCode/tree/master/src/codejam2014">Github</a> for the following problems.</p>
+
+<p>Google Code Jam 2014 has begun, You need to get 25 points to get to the next round, there are 4 problems out of which two problems needs to be solved for sure to get into next round.</p>
+
+<h2 id="problem-a-magic-trick-6pt">Problem A Magic Trick 6pt</h2>
+
+<p>Recently you went to a magic show. You were very impressed by one of the tricks, so you decided to try to figure out the secret behind it! The magician starts by arranging 16 cards in a square grid: 4 rows of cards, with 4 cards in each row. Each card has a different number from 1 to 16 written on the side that is showing. Next, the magician asks a volunteer to choose a card, and to tell him which row that card is in. </p>
+
+<p>Finally, the magician arranges the 16 cards in a square grid again, possibly in a different order. Once again, he asks the volunteer which row her card is in. With only the answers to these two questions, the magician then correctly determines which card the volunteer chose. Amazing, right?</p>
+
+<p>You decide to write a program to help you understand the magician’s technique. The program will be given the two arrangements of the cards, and the volunteer’s answers to the two questions: the row number of the selected card in the first arrangement, and the row number of the selected card in the second arrangement. The rows are numbered 1 to 4 from top to bottom.
+Your program should determine which card the volunteer chose; or if there is more than one card the volunteer might have chosen (the magician did a bad job); or if there’s no card consistent with the volunteer’s answers (the volunteer cheated).</p>
+
+<ul>
+  <li>
+    <p>Input
+The first line of the input gives the number of test cases, T. T test cases follow. Each test case starts with a line containing an integer: the answer to the first question. The next 4 lines represent the first arrangement of the cards: each contains 4 integers, separated by a single space. The next line contains the answer to the second question, and the following four lines contain the second arrangement in the same format.</p>
+  </li>
+  <li>
+    <p>Output
+For each test case, output one line containing “Case #x: y”, where x is the test case number (starting from 1).</p>
+  </li>
+</ul>
+
+<p>If there is a single card the volunteer could have chosen, y should be the number on the card. If there are multiple cards the volunteer could have chosen, y should be “Bad magician!”, without the quotes. If there are no cards consistent with the volunteer’s answers, y should be “Volunteer cheated!”, without the quotes. The text needs to be exactly right, so consider copying/pasting it from here.</p>
+
+<p>Limits
+1 ≤ T ≤ 100.
+1 ≤ both answers ≤ 4.
+Each number from 1 to 16 will appear exactly once in each arrangement.</p>
+
+<p>Sample Input
+3
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+3
+1 2 5 4
+3 11 6 15
+9 10 7 12
+13 14 8 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+3
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 </p>
+
+<p>Output
+Case #1: 7
+Case #2: Bad magician!
+Case #3: Volunteer cheated!</p>
+
+<h2 id="problem-b-cookie-clicker-alpha-8pt11pt">Problem B Cookie Clicker Alpha 8pt+11pt</h2>
+
+<p>In this problem, you start with 0 cookies. You gain cookies at a rate of 2 cookies per second, by clicking on a giant cookie. Any time you have at least C cookies, you can buy a cookie farm. Every time you buy a cookie farm, it costs you C cookies and gives you an extra F cookies per second.
+Once you have X cookies that you haven’t spent on farms, you win! Figure out how long it will take you to win if you use the best possible strategy.</p>
+
+<p>Example
+Suppose C=500.0, F=4.0 and X=2000.0. Here’s how the best possible strategy plays out: You start with 0 cookies, but producing 2 cookies per second. After 250 seconds, you will have C=500 cookies and can buy a farm that producesF=4 cookies per second. After buying the farm, you have 0 cookies, and your total cookie production is 6 cookies per second. The next farm will cost 500 cookies, which you can buy after about 83.3333333seconds. After buying your second farm, you have 0 cookies, and your total cookie production is 10 cookies per second. Another farm will cost 500 cookies, which you can buy after 50 seconds. After buying your third farm, you have 0 cookies, and your total cookie production is 14 cookies per second. Another farm would cost 500 cookies, but it actually makes sense not to buy it: instead you can just wait until you have X=2000 cookies, which takes about142.8571429 seconds. Total time: 250 + 83.3333333 + 50 + 142.8571429 = 526.1904762 seconds.
+Notice that you get cookies continuously: so 0.1 seconds after the game starts you’ll have 0.2 cookies, and π seconds after the game starts you’ll have 2π cookies.</p>
+
+<ul>
+  <li>
+    <p>Input
+The first line of the input gives the number of test cases, T. T lines follow. Each line contains three space-separated real-valued numbers: C, F and X, whose meanings are described earlier in the problem statement. C, F and X will each consist of at least 1 digit followed by 1 decimal point followed by from 1 to 5 digits. There will be no leading zeroes.</p>
+  </li>
+  <li>
+    <p>Output
+For each test case, output one line containing “Case #x: y”, where x is the test case number (starting from 1) and y is the minimum number of seconds it takes before you can have X delicious cookies.</p>
+  </li>
+</ul>
+
+<p>We recommend outputting y to 7 decimal places, but it is not required. y will be considered correct if it is close enough to the correct number: within an absolute or relative error of 10-6. See the FAQ for an explanation of what that means, and what formats of real numbers we accept.</p>
+
+<p>Limits
+1 ≤ T ≤ 100.
+Small dataset
+1 ≤ C ≤ 500.
+1 ≤ F ≤ 4.
+1 ≤ X ≤ 2000.
+Large dataset
+1 ≤ C ≤ 10000.
+1 ≤ F ≤ 100.
+1 ≤ X ≤ 100000.</p>
+
+<p>Sample Input
+4
+30.0 1.0 2.0
+30.0 2.0 100.0
+30.50000 3.14159 1999.19990
+500.0 4.0 2000.0</p>
+
+<p>Output
+Case #1: 1.0000000
+Case #2: 39.1666667
+Case #3: 63.9680013
+Case #4: 526.1904762</p>
+
+<h2 id="problem-c-minesweeper-master-11pt24pt">Problem C Minesweeper Master 11pt+24pt</h2>
+
+<p>Minesweeper is a computer game that became popular in the 1980s, and is still included in some versions of the Microsoft Windows operating system. This problem has a similar idea, but it does not assume you have played Minesweeper.</p>
+
+<p>In this problem, you are playing a game on a grid of identical cells. The content of each cell is initially hidden. There are M mines hidden in M different cells of the grid. No other cells contain mines. You may click on any cell to reveal it. If the revealed cell contains a mine, then the game is over, and you lose. Otherwise, the revealed cell will contain a digit between 0 and 8, inclusive, which corresponds to the number of neighboring cells that contain mines. Two cells are neighbors if they share a corner or an edge. Additionally, if the revealed cell contains a 0, then all of the neighbors of the revealed cell are automatically revealed as well, recursively. When all the cells that don’t contain mines have been revealed, the game ends, and you win.</p>
+
+<p>For example, an initial configuration of the board may look like this (‘<em>’ denotes a mine, and ‘c’ is the first clicked cell):
+*..</em>…<strong>.
+….<em>…..
+..c..</em>….
+……..<em>.
+……….
+There are no mines adjacent to the clicked cell, so when it is revealed, it becomes a 0, and its 8 adjacent cells are revealed as well. This process continues, resulting in the following board:
+*..</em>…</strong>.
+1112<em>…..
+00012</em>….
+00001111*.
+00000001..
+At this point, there are still un-revealed cells that do not contain mines (denoted by ‘.’ characters), so the player has to click again in order to continue the game.
+You want to win the game as quickly as possible. There is nothing quicker than winning in one click. Given the size of the board (R x C) and the number of hidden mines M, is it possible (however unlikely) to win in one click? You may choose where you click. If it is possible, then print any valid mine configuration and the coordinates of your click, following the specifications in the Output section. Otherwise, print “Impossible”.</p>
+
+<ul>
+  <li>
+    <p>Input
+The first line of the input gives the number of test cases, T. T lines follow. Each line contains three space-separated integers: R, C, and M.</p>
+  </li>
+  <li>
+    <p>Output
+For each test case, output a line containing “Case #x:”, where x is the test case number (starting from 1). On the following R lines, output the board configuration with C characters per line, using ‘.’ to represent an empty cell, ‘*’ to represent a cell that contains a mine, and ‘c’ to represent the clicked cell.
+If there is no possible configuration, then instead of the grid, output a line with”Impossible” instead. If there are multiple possible configurations, output any one of them.</p>
+  </li>
+</ul>
+
+<p>Limits
+0 ≤ M &lt; R * C.
+Small dataset
+1 ≤ T ≤ 230.
+1 ≤ R, C ≤ 5.
+Large dataset
+1 ≤ T ≤ 140.
+1 ≤ R, C ≤ 50.</p>
+
+<p>Sample Input
+5
+5 5 23
+3 1 1
+2 2 1
+4 7 3
+10 10 82
+Output
+Case #1:
+Impossible
+Case #2:
+c
+.
+*
+Case #3:
+Impossible
+Case #4:
+……*
+.c….*
+…….
+..<em>….
+Case #5:
+<strong>**</strong></em><strong>*
+**</strong><strong>**</strong>
+<strong>**</strong><strong>**
+**</strong>….**
+<strong><em>…..**
+**</em>.c…</strong>
+<strong><em>….</em></strong>
+<strong>**</strong><strong>**
+**</strong><strong>**</strong>
+<strong>**</strong><em>**</em></p>
+
+<h2 id="problem-d-deceitful-war-14pt16pt">Problem D Deceitful War 14pt+16pt</h2>
+
+<p>Naomi and Ken sometimes play games together. Before they play, each of them gets N identical-looking blocks of wood with masses between 0.0kg and 1.0kg (exclusive). All of the blocks have different weights. There are lots of games they could play with those blocks, but they usually play something they call War. Here is how War works:
+Each player weighs each of his or her own blocks, so each player knows the weights of all of his or her own blocks, but not the weights of the other player’s blocks. They repeat the following process N times: Naomi chooses one of her own blocks, with mass ChosenNaomi. Naomi tells Ken the mass of the block she chose. Ken chooses one of his own blocks, with mass ChosenKen.
+They each put their block on one side of a balance scale, and the person whose block is heavier gets one point. Both blocks are destroyed in a fire. Naomi has realized three things about War. First, she has realized that she loses a lot. Second, she has realized that there is a unique strategy that Ken can follow to maximize his points without assuming anything about Naomi’s strategy, and that Ken always uses it. Third, she has realized that she hates to lose. Naomi has decided that instead of playing War, she will play a game she calls Deceitful War. The great thing about Deceitful War is that Ken will think they’re playing War!</p>
+
+<p>Here is how Deceitful War works, with differences between Deceitful War and War in bold:
+Each player weighs each of his or her own blocks. Naomi also weighs Ken’s blocks while he isn’t looking, so Naomi knows the weights of all blocks and Ken only knows the weights of his own blocks.
+They repeat the following process N times: Naomi chooses one of her own blocks, with mass ChosenNaomi. Naomi tells Ken a number, ToldNaomi, between 0.0kg and 1.0kg exclusive. Ken, who thinks they’re playing War, thinks the number Naomi just told him is ChosenNaomi. Ken chooses one of his own blocks, with mass ChosenKen. They each put their block on one side of a balance scale, and the person whose block is heavier gets one point. Both blocks are destroyed in a fire. Naomi doesn’t want Ken to know that she isn’t playing War; so when she is choosing which block to play, and what mass to tell Ken, she must make sure that the balance scale won’t reveal that ChosenNaomi ≠ ToldNaomi. In other words, she must make decisions so that: ChosenNaomi, ChosenKen if, and only if, ToldNaomi, ChosenKen, and ToldNaomi is not equal to the mass of any of Ken’s blocks, because he knows that isn’t possible. It might seem like Naomi won’t win any extra points by being deceitful, because Ken might discover that she wasn’t playing War; but Naomi knows Ken thinks both players are playing War, and she knows what he knows, and she knows Ken will always follow his unique optimal strategy for War, so she can always predict what he will play.</p>
+
+<p>You’ll be given the masses of the blocks Naomi and Ken started with. Naomi will play Deceitful War optimally to gain the maximum number of points. Ken will play War optimally to gain the maximum number of points assuming that both players are playing War. What will Naomi’s score be? What would it have been if she had played War optimally instead?</p>
+
+<p>Examples
+If each player has a single block left, where Naomi has 0.5kg and Ken has 0.6kg, then Ken is guaranteed to score the point. Naomi can’t say her number is ≥ 0.6kg, or Ken will know she isn’t playing War when the balance scale shows his block was heavier.
+If each player has two blocks left, where Naomi has [0.7kg, 0.2kg] and Ken has [0.8kg, 0.3kg], then Naomi could choose her 0.2kg block, and deceive Ken by telling him that she chose a block that was 0.6kg. Ken assumes Naomi is telling the truth (as in how the War game works) and will play his 0.8kg block to score a point. Ken was just deceived, but he will never realize it because the balance scale shows that his 0.8kg block is, like he expected, heavier than the block Naomi played. Now Naomi can play her 0.7kg block, tell Ken it is 0.7kg, and score a point. If Naomi had played War instead of Deceitful War, then Ken would have scored two points and Naomi would have scored zero.</p>
+
+<ul>
+  <li>Input
+The first line of the input gives the number of test cases, T. T test cases follow. Each test case starts with a line containing a single integer N, the number of blocks each player has. Next follows a line containing N space-separated real numbers: the masses of Naomi’s blocks, in kg. Finally there will be a line containing N space-separated real numbers: the masses of Ken’s blocks, in kg.
+Each of the masses given to Ken and Naomi will be represented as a 0, followed by a decimal point, followed by 1-5 digits. Even though all the numbers in the input have 1-5 digits after the decimal point, Ken and Naomi don’t know that; so Naomi can still tell Ken that she played a block with mass 0.5000001kg, and Ken has no reason not to believe her.</li>
+  <li>Output
+For each test case, output one line containing “Case #x: y z”, where x is the test case number (starting from 1), y is the number of points Naomi will score if she plays Deceitful War optimally, and z is the number of points Naomi will score if she plays War optimally.</li>
+</ul>
+
+<p>Limits
+1 ≤ T ≤ 50.
+All the masses given to Ken and Naomi are distinct, and between 0.0 and 1.0 exclusive.
+Small dataset
+1 ≤ N ≤ 10.
+Large dataset
+1 ≤ N ≤ 1000.</p>
+
+<p>Sample Input
+4
+1
+0.5
+0.6
+2
+0.7 0.2
+0.8 0.3
+3
+0.5 0.1 0.9
+0.6 0.4 0.3
+9
+0.186 0.389 0.907 0.832 0.959 0.557 0.300 0.992 0.899
+0.916 0.728 0.271 0.520 0.700 0.521 0.215 0.341 0.458
+Output
+Case #1: 0 0
+Case #2: 1 0
+Case #3: 2 1
+Case #4: 8 4</p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wurui-cc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://wurui.cc/life/gopro-360-degree-video/" class="btn" title="GoPro 360 Degree Video">Previous</a>
+      
+      
+        <a href="http://wurui.cc/life/how-a-science-experiment-turns-into-art/" class="btn" title="How a Science Experiment Turns Into Art">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2015 Wu Rui. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="http://twitter.com/coin1990324" title="Wu Rui on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="http://facebook.com/colin.wu.92" title="Wu Rui on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	<a href="http://plus.google.com/+ColinWu90" title="Wu Rui on Google+" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+	<a href="http://linkedin.com/in/ruiwu90" title="Wu Rui on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="http://instagram.com/colin1990324" title="Wu Rui on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/colin1990324" title="Wu Rui on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	<a href="http://www.weibo.com/colin1990324/" title="Wu Rui on Weibo" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+  <a href="http://wurui.cc/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://wurui.cc';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wurui.cc/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://wurui.cc/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
