@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Cicada Slough and Rosin &#8211; Wu Rui's Home</title>
+<title>Whole Site Word Cloud &#8211; Wu Rui's Home</title>
 
-<meta name="keywords" content="school">
+
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Cicada Slough and Rosin">
+<meta name="twitter:title" content="Whole Site Word Cloud">
 
 <meta name="twitter:site" content="@coin1990324">
 <meta name="twitter:creator" content="@coin1990324">
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cicada Slough and Rosin">
+<meta property="og:title" content="Whole Site Word Cloud">
 
-<meta property="og:url" content="http://localhost:4000/life/cicada-slough-and-rosin/">
+<meta property="og:url" content="http://localhost:4000/word-cloud/">
 <meta property="og:site_name" content="Wu Rui's Home">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/life/cicada-slough-and-rosin/">
+<link rel="canonical" href="http://localhost:4000/word-cloud/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -72,7 +72,7 @@
 
 </head>
 
-<body id="post">
+<body id="page">
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
@@ -123,71 +123,168 @@
 
 
 <div id="main" role="main">
-  <article class="hentry">
+  <article class="entry">
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="http://localhost:4000/tags/#school" title="Pages tagged school">school</a></span>
-        
-          <h1 class="entry-title">Cicada Slough and Rosin</h1>
-        
+        <h1 class="entry-title">Whole Site Word Cloud</h1>
       </header>
-      <footer class="entry-meta">
-        
-        
-        
-          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
-        
-        <span class="author vcard">By <span class="fn">Wu Rui</span></span>
-        <span class="entry-date date published"><time datetime="2013-11-02T10:33:40+08:00"><i class="fa fa-calendar-o"></i> November 02, 2013</time></span>
-        
-        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
-        
-        
-      </footer>
       <div class="entry-content">
-        <h1 id="section">哥村拾遗：蝉蜕和松香</h1>
+        <script src="index.js"></script>
 
-<p><img src="/images/blog/6ba72844jw1ea738azf6pj20qo0hwgma.jpg" alt="Model-View-Controller" /></p>
+<script src="lib/d3/d3.js"></script>
 
-<p>校园拾趣，美和自然就在细微处，等你去发现~</p>
+<script src="d3.layout.cloud.js"></script>
 
-        
-          <div id="disqus_thread"></div><!-- /#disqus_thread -->
-          
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'wurui-cc'; // required: replace example with your forum shortname
+<script>
+  var fill = d3.scale.category20();
+  var myMap = new Map();
+  myMap.set("Polt", 100);
+myMap.set("Ken", 78);
+myMap.set("Naomi", 75);
+myMap.set("each", 63);
+myMap.set("one", 61);
+myMap.set("War", 58);
+myMap.set("cookies", 56);
+myMap.set("DNA", 56);
+myMap.set("http", 56);
+myMap.set("site", 53);
+myMap.set("View", 51);
+myMap.set("Controller", 51);
+myMap.set("com", 51);
+myMap.set("Model", 51);
+myMap.set("images", 48);
+myMap.set("input", 48);
+myMap.set("blocks", 48);
+myMap.set("url", 48);
+myMap.set("jpg", 48);
+myMap.set("life", 46);
+myMap.set("output", 41);
+myMap.set("Person", 39);
+myMap.set("virus", 39);
+myMap.set("first", 36);
+myMap.set("test", 34);
+myMap.set("point", 31);
+myMap.set("block", 31);
+myMap.set("Output", 31);
+myMap.set("Input", 29);
+myMap.set("second", 29);
+myMap.set("github", 29);
+myMap.set("here", 29);
+myMap.set("per", 29);
+myMap.set("Jaedong", 27);
+myMap.set("sick", 27);
+myMap.set("Here", 24);
+myMap.set("game", 24);
+myMap.set("export", 24);
+myMap.set("characters", 24);
+myMap.set("format", 24);
+myMap.set("card", 24);
+myMap.set("possible", 24);
+myMap.set("Each", 24);
+myMap.set("out", 22);
+myMap.set("cell", 22);
+myMap.set("volunteer", 22);
+myMap.set("www", 22);
+myMap.set("vaccinated", 22);
+myMap.set("play", 22);
+myMap.set("following", 22);
+myMap.set("description", 22);
+myMap.set("iframe", 19);
+myMap.set("up", 19);
+myMap.set("next", 19);
+myMap.set("two", 19);
+myMap.set("set", 19);
+myMap.set("Example", 19);
+myMap.set("problem", 19);
+myMap.set("probability", 19);
+myMap.set("contain", 17);
+myMap.set("program", 17);
+myMap.set("center", 17);
+myMap.set("points", 17);
+myMap.set("playing", 17);
+myMap.set("src", 17);
+myMap.set("score", 17);
+myMap.set("containing", 17);
+myMap.set("revealed", 17);
+myMap.set("player", 17);
+myMap.set("contains", 17);
+myMap.set("gallery", 17);
+myMap.set("farm", 17);
+myMap.set("order", 14);
+myMap.set("cards", 14);
+myMap.set("problems", 14);
+myMap.set("school", 14);
+myMap.set("Northwind", 14);
+myMap.set("seconds", 14);
+myMap.set("letters", 14);
+myMap.set("magician", 14);
+myMap.set("jekyll", 14);
+myMap.set("knows", 14);
+myMap.set("mass", 14);
+myMap.set("cells", 14);
+myMap.set("Deceitful", 14);
+myMap.set("strategy", 12);
+myMap.set("mines", 12);
+myMap.set("Products", 12);
+myMap.set("file", 12);
+myMap.set("pt", 12);
+myMap.set("instructions", 12);
+myMap.set("numbers", 12);
+myMap.set("gets", 12);
+myMap.set("people", 12);
+myMap.set("getting", 12);
+myMap.set("given", 12);
+myMap.set("lines", 12);
+myMap.set("separated", 10);
+myMap.set("feet", 10);
+myMap.set("longest", 10);
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
+  d3.layout.cloud().size([960, 600])
+      .words([
+        "Polt","Ken","Naomi","each","one","War","cookies","DNA","http","site",
+"View","Controller","com","Model","images","input","blocks","url","jpg","life",
+"output","Person","virus","first","test","point","block","Output","Input","second",
+"github","here","per","Jaedong","sick","Here","game","export","characters","format",
+"card","possible","Each","out","cell","volunteer","www","vaccinated","play","following",
+"description","iframe","up","next","two","set","Example","problem","probability","contain",
+"program","center","points","playing","src","score","containing","revealed","player","contains",
+"gallery","farm","order","cards","problems","school","Northwind","seconds","letters","magician",
+"jekyll","knows","mass","cells","Deceitful","strategy","mines","Products","file","pt",
+"instructions","numbers","gets","people","getting","given","lines","separated","feet","longest"].map(function(d) {
+        return {text: d, size: myMap.get(d)};
+      }))
+      .padding(5)
+      .rotate(function() { return ~~(Math.random() * 5) * 30 - 60; })
+      .font("Impact")
+      .fontSize(function(d) { return d.size; })
+      .on("end", draw)
+      .start();
+
+  function draw(words) {
+    d3.select("body").append("svg")
+        .attr("width", 1420)
+        .attr("height", 600)
+      .append("g")
+        .attr("transform", "translate(710,300)")
+      .selectAll("text")
+        .data(words)
+      .enter().append("text")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("font-family", "Impact")
+        .style("fill", function(d, i) { return fill(i); })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+  }
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-        
+
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
-    <nav class="pagination" role="navigation">
-      
-        <a href="http://localhost:4000/life/hermann/" class="btn" title="Hermann">Previous</a>
-      
-      
-        <a href="http://localhost:4000/life/go-tigers/" class="btn" title="Go Tigers">Next</a>
-      
-    </nav><!-- /.pagination -->
   </article>
 </div><!-- /#main -->
 
