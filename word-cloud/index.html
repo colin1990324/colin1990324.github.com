@@ -130,7 +130,7 @@
         <h1 class="entry-title">Whole Site Word Cloud</h1>
       </header>
       <div class="entry-content">
-        <script src="index.js"></script>
+        <div id="chart" style="width: 100%; margin: 0px auto;"></div>
 
 <script src="lib/d3/d3.js"></script>
 
@@ -241,7 +241,7 @@ myMap.set("feet", 10);
 myMap.set("longest", 10);
 
 
-  d3.layout.cloud().size([960, 600])
+  d3.layout.cloud().size([760, 600])
       .words([
         "Polt","Ken","Naomi","each","one","War","cookies","DNA","http","site",
 "View","Controller","com","Model","images","input","blocks","url","jpg","life",
@@ -263,11 +263,11 @@ myMap.set("longest", 10);
       .start();
 
   function draw(words) {
-    d3.select("body").append("svg")
-        .attr("width", 1420)
+    d3.select("#chart").append("svg")
+        .attr("width", 760)
         .attr("height", 600)
       .append("g")
-        .attr("transform", "translate(710,300)")
+        .attr("transform", "translate(380,300)")
       .selectAll("text")
         .data(words)
       .enter().append("text")
