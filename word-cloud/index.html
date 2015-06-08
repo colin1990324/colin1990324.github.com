@@ -257,8 +257,7 @@ var width = 760,
 "instructions","numbers","gets","people","getting","given","lines","separated","feet","longest"].map(function(d) {
         return {text: d, size: myMap.get(d)};
       }))
-      .timeInterval(10)
-      .padding(1)
+      .padding(5)
       .rotate(function() { return ~~(Math.random() * 5) * 30 - 60; })
       .font("Impact")
       .fontSize(function(d) { return d.size; })
