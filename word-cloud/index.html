@@ -243,18 +243,18 @@ myMap.set("longest", 10);
 var width = 760,
     height = 500,
 
-  d3.layout.cloud().size([width, height])
+  d3.layout.cloud().size([760, 500])
       .words([
         "Polt","Ken","Naomi","each","one","War","cookies","DNA","http","site",
-"View","Controller","com","Model","images","input","blocks","url","jpg","life",
-"output","Person","virus","first","test","point","block","Output","Input","second",
-"github","here","per","Jaedong","sick","Here","game","export","characters","format",
-"card","possible","Each","out","cell","volunteer","www","vaccinated","play","following",
-"description","iframe","up","next","two","set","Example","problem","probability","contain",
-"program","center","points","playing","src","score","containing","revealed","player","contains",
-"gallery","farm","order","cards","problems","school","Northwind","seconds","letters","magician",
-"jekyll","knows","mass","cells","Deceitful","strategy","mines","Products","file","pt",
-"instructions","numbers","gets","people","getting","given","lines","separated","feet","longest"].map(function(d) {
+        "View","Controller","com","Model","images","input","blocks","url","jpg","life",
+        "output","Person","virus","first","test","point","block","Output","Input","second",
+        "github","here","per","Jaedong","sick","Here","game","export","characters","format",
+        "card","possible","Each","out","cell","volunteer","www","vaccinated","play","following",
+        "description","iframe","up","next","two","set","Example","problem","probability","contain",
+        "program","center","points","playing","src","score","containing","revealed","player","contains",
+        "gallery","farm","order","cards","problems","school","Northwind","seconds","letters","magician",
+        "jekyll","knows","mass","cells","Deceitful","strategy","mines","Products","file","pt",
+        "instructions","numbers","gets","people","getting","given","lines","separated","feet","longest"].map(function(d) {
         return {text: d, size: myMap.get(d)};
       }))
       .padding(5)
