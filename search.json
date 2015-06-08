@@ -281,6 +281,8 @@
   
 
   
+
+  
     ,{
       "title"			: "About Wu Rui",
       "link"			: "http://wurui.cc/about/",
@@ -295,11 +297,17 @@
   
 
   
-
-  
     ,{
       "title"			: "Whole Site Word Cloud",
       "link"			: "http://wurui.cc/word-cloud/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Zoomable Sunburst",
+      "link"			: "http://wurui.cc/sunburst/",
       "excerpt"		: ""
     }
   
