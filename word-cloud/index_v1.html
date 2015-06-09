@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Zoomable Sunburst &#8211; Wu Rui's Home</title>
+<title>Whole Site Word Cloud &#8211; Wu Rui's Home</title>
 
 
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Zoomable Sunburst">
+<meta name="twitter:title" content="Whole Site Word Cloud">
 
 <meta name="twitter:site" content="@coin1990324">
 <meta name="twitter:creator" content="@coin1990324">
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Zoomable Sunburst">
+<meta property="og:title" content="Whole Site Word Cloud">
 
-<meta property="og:url" content="http://wurui.cc/sunburst/">
+<meta property="og:url" content="http://wurui.cc/word-cloud/index_v1.html">
 <meta property="og:site_name" content="Wu Rui's Home">
 
 
 
 
 
-<link rel="canonical" href="http://wurui.cc/sunburst/">
+<link rel="canonical" href="http://wurui.cc/word-cloud/index_v1.html">
 <link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -127,125 +127,161 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title">Zoomable Sunburst</h1>
+        <h1 class="entry-title">Whole Site Word Cloud</h1>
       </header>
       <div class="entry-content">
-        <style>
+        <div id="chart" style="width: 100%; margin: 0px auto; position: relative;"></div>
 
-path {
-  stroke: #fff;
-  fill-rule: evenodd;
-}
+<script src="lib/d3/d3.js"></script>
 
-
-.tooltip {
-  font-size: 14px;
-  font-family: Arial, sans-serif;
-}
-</style>
-
-<div id="chart" style="width: 100%; margin: 0px auto; position: relative;">
-</div>
-
-<script src="d3.v3.min.js"></script>
+<script src="d3.layout.cloud.js"></script>
 
 <script>
+  var fill = d3.scale.category20();
+  var myMap = new Map();
+  myMap.set("github", 100);
+myMap.set("virus", 100);
+myMap.set("each", 100);
+myMap.set("polt", 91);
+myMap.set("理想", 82);
+myMap.set("card", 73);
+myMap.set("first", 64);
+myMap.set("school", 55);
+myMap.set("volunteer", 55);
+myMap.set("products", 55);
+myMap.set("northwind", 55);
+myMap.set("公司", 46);
+myMap.set("problems", 46);
+myMap.set("斧子", 46);
+myMap.set("sick", 46);
+myMap.set("cards", 37);
+myMap.set("feet", 37);
+myMap.set("climbing", 37);
+myMap.set("女孩", 37);
+myMap.set("product", 37);
+myMap.set("magician", 37);
+myMap.set("people", 37);
+myMap.set("question", 37);
+myMap.set("probability", 37);
+myMap.set("following", 37);
+myMap.set("names", 37);
+myMap.set("test", 28);
+myMap.set("width", 28);
+myMap.set("data", 28);
+myMap.set("next", 28);
+myMap.set("simple", 28);
+myMap.set("missouri", 28);
+myMap.set("父亲", 28);
+myMap.set("童话", 28);
+myMap.set("services", 28);
+myMap.set("example", 28);
+myMap.set("现实", 28);
+myMap.set("letters", 28);
+myMap.set("university", 28);
+myMap.set("solution", 28);
+myMap.set("vaccinated", 28);
+myMap.set("matches", 28);
+myMap.set("havasupai", 28);
+myMap.set("water", 28);
+myMap.set("youtube", 28);
+myMap.set("given", 28);
+myMap.set("little", 19);
+myMap.set("point", 19);
+myMap.set("query", 19);
+myMap.set("coding", 19);
+myMap.set("pattern", 19);
+myMap.set("climb", 19);
+myMap.set("more", 19);
+myMap.set("second", 19);
+myMap.set("sample", 19);
+myMap.set("政治家", 19);
+myMap.set("same", 19);
+myMap.set("free", 19);
+myMap.set("need", 19);
+myMap.set("around", 19);
+myMap.set("microsoft", 19);
+myMap.set("really", 19);
+myMap.set("theme", 19);
+myMap.set("valley", 19);
+myMap.set("活", 19);
+myMap.set("many", 19);
+myMap.set("competition", 19);
+myMap.set("事", 19);
+myMap.set("gopro", 19);
+myMap.set("孩儿", 19);
+myMap.set("good", 19);
+myMap.set("best", 19);
+myMap.set("entities", 19);
+myMap.set("arrangement", 19);
+myMap.set("beautiful", 19);
+myMap.set("人家", 19);
+myMap.set("故事", 19);
+myMap.set("possible", 19);
+myMap.set("description", 19);
+myMap.set("hiking", 19);
+myMap.set("entity", 19);
+myMap.set("video", 19);
+myMap.set("discontinued", 10);
+myMap.set("book", 10);
+myMap.set("filter", 10);
+myMap.set("rest", 10);
+myMap.set("contain", 10);
+myMap.set("program", 10);
+myMap.set("开局", 10);
+myMap.set("answers", 10);
+myMap.set("google", 10);
+myMap.set("service", 10);
+myMap.set("用户", 10);
+myMap.set("鸡毛", 10);
+myMap.set("land", 10);
+myMap.set("round", 10);
+myMap.set("place", 10);
+myMap.set("snow", 10);
+myMap.set("mutation", 10);
+myMap.set("starcraft", 10);
 
-var width = 760,
-    height = 500,
-    radius = Math.min(width, height) / 2;
-    rate = 1.25;
+var width = 860,
+    height = 500;
 
-var x = d3.scale.linear()
-    .range([0, 2 * Math.PI]);
+  d3.layout.cloud().size([width, height])
+      .words([
+        "github","virus","each","polt","理想","card","first","school","volunteer","products",
+        "northwind","公司","problems","斧子","sick","cards","feet","climbing","女孩","product",
+        "magician","people","question","probability","following","names","test","width","data","next",
+        "simple","missouri","父亲","童话","services","example","现实","letters","university","solution",
+        "vaccinated","matches","havasupai","water","youtube","given","little","point","query","coding",
+        "pattern","climb","more","second","sample","政治家","same","free","need","around",
+        "microsoft","really","theme","valley","活","many","competition","事","gopro","孩儿",
+        "good","best","entities","arrangement","beautiful","人家","故事","possible","description","hiking",
+        "entity","video","discontinued","book","filter","rest","contain","program","开局","answers",
+        "google","service","用户","鸡毛","land","round","place","snow","mutation","starcraft"].map(function(d) {
+        return {text: d, size: myMap.get(d)};
+      }))
+      .padding(5)
+      .rotate(function() { return ~~(Math.random() * 5) * 30 - 60; })
+      .font("Impact")
+      .fontSize(function(d) { return d.size; })
+      .on("end", draw)
+      .start();
 
-var y = d3.scale.sqrt()
-    .range([0, radius]);
-
-var color = d3.scale.category20c();
-
-var svg = d3.select("#chart").append("svg")
-    .attr("width", '80%')
-    .attr("height", '80%')
-    .attr('viewBox','0 0 '+(Math.min(width,height)+120)+' '+Math.min(width,height))
-    .attr('preserveAspectRatio','xMinYMin')
-    .append("g")
-    .attr("transform", "translate(" + (Math.min(width,height) / 2 + 120)+"," + Math.min(width,height) / 2 + ")");
-
-var partition = d3.layout.partition()
-    .value(function(d) { return d.value; });
-
-var arc = d3.svg.arc()
-    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
-    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
-    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
-    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
-
-
-  var tooltip = d3.select("#chart")
-    .append("div")
-    .attr("class", "tooltip")
-    .style("position", "absolute")
-    .style("z-index", "10")
-    .style("opacity", 0);
-
-  function format_number(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-
-
-  function format_name(d) {
-    var name = d.name;
-        return  '<b>' + name + '</b><br> (' + format_number(d.value) + ')';
-  }
-  
-d3.json("blog.json", function(error, root) {
-
-  var path = svg.selectAll("path")
-      .data(partition.nodes(root))
-    .enter().append("path")
-      .attr("d", arc)
-      .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
-      .on("click", click)
-       .on("mouseover", function(d) {
-          tooltip.html(function() {
-              var name = format_name(d);
-              return name;
-         });
-          return tooltip.transition()
-            .duration(50)
-            .style("opacity", 0.9);
+  function draw(words) {
+    d3.select("#chart").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+      .append("g")
+        .attr("transform", "translate(" + (width / 2 -30) + "," + (height / 2 + 10) + ")")
+      .selectAll("text")
+        .data(words)
+      .enter().append("text")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("font-family", "Impact")
+        .style("fill", function(d, i) { return fill(i); })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
         })
-        .on("mousemove", function(d) {
-          return tooltip
-            .style("top", (d3.event.pageY-(Math.min(width,height) * 0.4 + 300))+"px")
-            .style("left", (d3.event.pageX-(Math.min(width,height) * 0.4))+"px");
-        })
-        .on("mouseout", function(){return tooltip.style("opacity", 0);});
-
- 
-
-  function click(d) {
-    path.transition()
-      .duration(750)
-      .attrTween("d", arcTween(d));
+        .text(function(d) { return d.text; });
   }
-});
-
-d3.select(self.frameElement).style("height", height + "px");
-
-// Interpolate the scales!
-function arcTween(d) {
-  var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-      yd = d3.interpolate(y.domain(), [d.y, 1]),
-      yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-  return function(d, i) {
-    return i
-        ? function(t) { return arc(d); }
-        : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
-  };
-}
-
 </script>
 
 

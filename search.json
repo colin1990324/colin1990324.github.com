@@ -279,20 +279,6 @@
   
 
   
-    ,{
-      "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/word-cloud/index%20copy.html",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/sunburst/index%20copy.html",
-      "excerpt"		: ""
-    }
-  
 
   
 
@@ -301,18 +287,6 @@
       "title"			: "About Wu Rui",
       "link"			: "http://wurui.cc/about/",
       "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
-    }
-  
-
-  
-
-  
-
-  
-    ,{
-      "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/word-cloud/",
-      "excerpt"		: ""
     }
   
 
@@ -331,9 +305,35 @@
   
 
   
+
+  
+    ,{
+      "title"			: "Whole Site Word Cloud",
+      "link"			: "http://wurui.cc/word-cloud/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Zoomable Sunburst",
+      "link"			: "http://wurui.cc/sunburst/index_label.html",
+      "excerpt"		: ""
+    }
+  
+
+  
     ,{
       "title"			: "Zoomable Sunburst",
       "link"			: "http://wurui.cc/sunburst/index_no_label.html",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Whole Site Word Cloud",
+      "link"			: "http://wurui.cc/word-cloud/index_v1.html",
       "excerpt"		: ""
     }
   
