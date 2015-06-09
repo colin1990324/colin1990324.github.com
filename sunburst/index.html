@@ -215,8 +215,8 @@ d3.json("blog.json", function(error, root) {
         })
         .on("mousemove", function(d) {
           return tooltip
-            .style("top", (height / 2 + 30)+"px")
-            .style("left", (width / 2 -40)+"px");
+            .style("top", (height / 2 - 20)+"px")
+            .style("left", (width / 2 + 25)+"px");
         })
         .on("mouseout", function(){return tooltip.style("opacity", 0);});
 
