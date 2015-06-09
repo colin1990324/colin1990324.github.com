@@ -66,7 +66,7 @@
 
   
     ,{
-      "title"			: "Microsoft Coding Competition - University of Missouri",
+      "title"			: "Microsoft Coding Competition - University of Missouri III",
       "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/",
       "excerpt"		: ""
     }
@@ -74,7 +74,7 @@
 
   
     ,{
-      "title"			: "Microsoft Coding Competition - University of Missouri",
+      "title"			: "Microsoft Coding Competition - University of Missouri II",
       "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/",
       "excerpt"		: ""
     }
@@ -82,7 +82,7 @@
 
   
     ,{
-      "title"			: "Microsoft Coding Competition - University of Missouri",
+      "title"			: "Microsoft Coding Competition - University of Missouri I",
       "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/",
       "excerpt"		: ""
     }
@@ -281,6 +281,12 @@
   
 
   
+    ,{
+      "title"			: "Zoomable Sunburst",
+      "link"			: "http://wurui.cc/sunburst/",
+      "excerpt"		: ""
+    }
+  
 
   
     ,{
@@ -288,6 +294,8 @@
       "link"			: "http://wurui.cc/about/",
       "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
     }
+  
+
   
 
   
@@ -305,13 +313,13 @@
   
 
   
+
+  
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/sunburst/",
+      "link"			: "http://wurui.cc/sunburst/index_no_label.html",
       "excerpt"		: ""
     }
-  
-
   
 
   

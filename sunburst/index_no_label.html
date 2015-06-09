@@ -5,15 +5,15 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Tech &#8211; Wu Rui's Home</title>
-<meta name="description" content="An archive of tech posts sorted by date.">
+<title>Zoomable Sunburst &#8211; Wu Rui's Home</title>
+
 
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Tech">
-<meta name="twitter:description" content="An archive of tech posts sorted by date.">
+<meta name="twitter:title" content="Zoomable Sunburst">
+
 <meta name="twitter:site" content="@coin1990324">
 <meta name="twitter:creator" content="@coin1990324">
 
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Tech">
-<meta property="og:description" content="An archive of tech posts sorted by date.">
-<meta property="og:url" content="http://wurui.cc/tech/">
+<meta property="og:title" content="Zoomable Sunburst">
+
+<meta property="og:url" content="http://wurui.cc/sunburst/index_no_label.html">
 <meta property="og:site_name" content="Wu Rui's Home">
 
 
 
 
 
-<link rel="canonical" href="http://wurui.cc/tech/">
+<link rel="canonical" href="http://wurui.cc/sunburst/index_no_label.html">
 <link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -127,22 +127,140 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title">Tech</h1>
+        <h1 class="entry-title">Zoomable Sunburst</h1>
       </header>
       <div class="entry-content">
-        <ul class="post-list">
- 
-  <li><article><a href="http://wurui.cc/tech/new-domain-and-web-site/">New Domain and Web Site <span class="entry-date"><time datetime="2015-05-27T17:06:02+08:00">May 27, 2015</time></span></a></article></li>
- 
-  <li><article><a href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/">Microsoft Coding Competition - University of Missouri III <span class="entry-date"><time datetime="2014-09-23T11:52:20+08:00">September 23, 2014</time></span></a></article></li>
- 
-  <li><article><a href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/">Microsoft Coding Competition - University of Missouri II <span class="entry-date"><time datetime="2014-09-23T11:52:20+08:00">September 23, 2014</time></span></a></article></li>
- 
-  <li><article><a href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/">Microsoft Coding Competition - University of Missouri I <span class="entry-date"><time datetime="2014-09-23T11:52:20+08:00">September 23, 2014</time></span></a></article></li>
- 
-  <li><article><a href="http://wurui.cc/tech/google-code-jam-2014/">Google Code Jam 2014 <span class="entry-date"><time datetime="2014-04-12T11:33:08+08:00">April 12, 2014</time></span></a></article></li>
+        <style>
 
-</ul>
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+path {
+  stroke: #fff;
+  fill-rule: evenodd;
+}
+
+</style>
+
+<div id="chart" style="width: 100%; margin: 0px auto; position: relative;">
+<form>
+  <label><input type="radio" name="mode" value="size" /> Size</label>
+  <label><input type="radio" name="mode" value="count" checked="" /> Count</label>
+</form>
+</div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+var width = 760,
+    height = 500,
+    radius = Math.min(width, height) / 2;
+
+var x = d3.scale.linear()
+    .range([0, 2 * Math.PI]);
+
+var y = d3.scale.sqrt()
+    .range([0, radius]);
+
+var color = d3.scale.category20c();
+
+var svg = d3.select("#chart").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + (width / 2 -30) + "," + (height / 2 + 10) + ")");
+
+var partition = d3.layout.partition()
+    .sort(null)
+    .value(function(d) { return 1; });
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+
+// Keep track of the node that is currently being displayed as the root.
+var node;
+
+d3.json("blog.json", function(error, root) {
+  node = root;
+  var path = svg.datum(root).selectAll("path")
+      .data(partition.nodes)
+    .enter().append("path")
+      .attr("d", arc)
+      .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+      .on("click", click)
+      .each(stash);
+
+  d3.selectAll("input").on("change", function change() {
+    var value = this.value === "count"
+        ? function() { return 1; }
+        : function(d) { return d.size; };
+
+    path
+        .data(partition.value(value).nodes)
+      .transition()
+        .duration(1000)
+        .attrTween("d", arcTweenData);
+  });
+
+  function click(d) {
+    node = d;
+    path.transition()
+      .duration(1000)
+      .attrTween("d", arcTweenZoom(d));
+  }
+});
+
+d3.select(self.frameElement).style("height", height + "px");
+
+// Setup for switching data: stash the old values for transition.
+function stash(d) {
+  d.x0 = d.x;
+  d.dx0 = d.dx;
+}
+
+// When switching data: interpolate the arcs in data space.
+function arcTweenData(a, i) {
+  var oi = d3.interpolate({x: a.x0, dx: a.dx0}, a);
+  function tween(t) {
+    var b = oi(t);
+    a.x0 = b.x;
+    a.dx0 = b.dx;
+    return arc(b);
+  }
+  if (i == 0) {
+   // If we are on the first arc, adjust the x domain to match the root node
+   // at the current zoom level. (We only need to do this once.)
+    var xd = d3.interpolate(x.domain(), [node.x, node.x + node.dx]);
+    return function(t) {
+      x.domain(xd(t));
+      return tween(t);
+    };
+  } else {
+    return tween;
+  }
+}
+
+// When zooming: interpolate the scales.
+function arcTweenZoom(d) {
+  var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+      yd = d3.interpolate(y.domain(), [d.y, 1]),
+      yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+  return function(d, i) {
+    return i
+        ? function(t) { return arc(d); }
+        : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
+  };
+}
+
+</script>
+
 
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
