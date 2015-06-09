@@ -25,14 +25,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Zoomable Sunburst">
 
-<meta property="og:url" content="http://wurui.cc/sunburst/">
+<meta property="og:url" content="http://wurui.cc/sunburst/index%20copy.html">
 <meta property="og:site_name" content="Wu Rui's Home">
 
 
 
 
 
-<link rel="canonical" href="http://wurui.cc/sunburst/">
+<link rel="canonical" href="http://wurui.cc/sunburst/index%20copy.html">
 <link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -154,7 +154,6 @@ path {
 var width = 760,
     height = 500,
     radius = Math.min(width, height) / 2;
-    rate = 1.25;
 
 var x = d3.scale.linear()
     .range([0, 2 * Math.PI]);
@@ -165,12 +164,10 @@ var y = d3.scale.sqrt()
 var color = d3.scale.category20c();
 
 var svg = d3.select("#chart").append("svg")
-    .attr("width", '80%')
-    .attr("height", '80%')
-    .attr('viewBox','0 0 '+(Math.min(width,height)+120)+' '+Math.min(width,height))
-    .attr('preserveAspectRatio','xMinYMin')
-    .append("g")
-    .attr("transform", "translate(" + (Math.min(width,height) / 2 + 120)+"," + Math.min(width,height) / 2 + ")");
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
 var partition = d3.layout.partition()
     .value(function(d) { return d.value; });
@@ -218,8 +215,8 @@ d3.json("blog.json", function(error, root) {
         })
         .on("mousemove", function(d) {
           return tooltip
-            .style("top", (height / 2 - 40)+"px")
-            .style("left", (width / 2 )+"px");
+            .style("top", (height / 2 - 20)+"px")
+            .style("left", (width / 2 + 25)+"px");
         })
         .on("mouseout", function(){return tooltip.style("opacity", 0);});
 

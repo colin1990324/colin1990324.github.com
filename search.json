@@ -279,13 +279,21 @@
   
 
   
+    ,{
+      "title"			: "Whole Site Word Cloud",
+      "link"			: "http://wurui.cc/word-cloud/index%20copy.html",
+      "excerpt"		: ""
+    }
+  
 
   
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/sunburst/",
+      "link"			: "http://wurui.cc/sunburst/index%20copy.html",
       "excerpt"		: ""
     }
+  
+
   
 
   
@@ -301,13 +309,21 @@
   
 
   
+    ,{
+      "title"			: "Whole Site Word Cloud",
+      "link"			: "http://wurui.cc/word-cloud/",
+      "excerpt"		: ""
+    }
+  
+
+  
 
   
 
   
     ,{
-      "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/word-cloud/",
+      "title"			: "Zoomable Sunburst",
+      "link"			: "http://wurui.cc/sunburst/",
       "excerpt"		: ""
     }
   
