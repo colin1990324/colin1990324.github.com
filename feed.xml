@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-06-11T17:29:43+08:00</updated>
+<updated>2015-06-11T17:42:09+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -27,7 +27,9 @@
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;_Gephi_是一个全平台的交互式可视化平台，它特别适用于复杂的大数据可视化工作。&lt;a href=&quot;http://gephi.github.io/&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/firewall_sigma_circle.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gephi是一个全平台的交互式可视化平台，它特别适用于复杂的大数据可视化工作。&lt;a href=&quot;http://gephi.github.io/&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;section&quot;&gt;实时可视化&lt;/h4&gt;
 &lt;hr /&gt;
@@ -41,12 +43,11 @@
 
 &lt;h4 id=&quot;section-1&quot;&gt;高效简易的布局工具&lt;/h4&gt;
 &lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;http://gephi.github.io/images/screenshots/layout1.png&quot; alt=&quot;Model-View-Controller&quot; style=&quot;float:right&quot; /&gt;
-&lt;img src=&quot;http://gephi.github.io/images/screenshots/layout2-mini.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://gephi.github.io/images/screenshots/layout1.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;对复杂图进行布局是一个困难的问题，而Gephi提供了最简易高效的布局算法。软件还支持在迭代的同时移动单个或是一片节点。你还可以在market中下载更多的plugin，其中也包括了来自不同开发者的其他布局算法。&lt;/p&gt;
 
-&lt;p&gt;[简单翻译自 Gephi Features]（http://gephi.github.io/features/）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://gephi.github.io/features/&quot;&gt;简单翻译自 Gephi Features&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;快速入门&lt;/h2&gt;
 
@@ -94,16 +95,13 @@
 
 &lt;h4 id=&quot;sigmajs&quot;&gt;Sigma.js&lt;/h4&gt;
 &lt;hr /&gt;
-&lt;p&gt;如果你对sigma.js很熟悉，或者希望得到能够在网页动态展示的数据，或者neo4j的展示能力不能满足你的需要，那sigma plugin就很对你的胃口。这里展示两张我生成的图在sigma.js上展示的效果。&lt;/p&gt;
+&lt;p&gt;如果你对sigma.js很熟悉，或者希望得到能够在网页动态展示的数据，或者neo4j的展示能力不能满足你的需要，那sigma plugin就很对你的胃口。文章第一张图和下面这张是我生成的图在sigma.js上展示的效果。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/firewall_sigma.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/firewall_sigma_circle.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;这里要允许chrome从本地获取文件，在mac上的用法是 1 先关闭所有的chrome进程，2 带参数启动chrome。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;/Applications/Google&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Chrome.app/Contents/MacOS/Google&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Chrome --allow-file-access-from-files&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/gephi/&quot;&gt;可视化平台Gephi&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 11, 2015.&lt;/p&gt;
