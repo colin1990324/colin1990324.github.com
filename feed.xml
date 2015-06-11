@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-06-11T17:42:09+08:00</updated>
+<updated>2015-06-11T17:59:15+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -16,7 +16,7 @@
   
 
 <entry>
-  <title type="html"><![CDATA[可视化平台Gephi]]></title>
+  <title type="html"><![CDATA[可视化网络 Gephi]]></title>
   <link rel="alternate" type="text/html" href="http://wurui.cc/tech/gephi/" />
   <id>http://wurui.cc/tech/gephi</id>
   <published>2015-06-11T16:16:47+08:00</published>
@@ -104,7 +104,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;/Applications/Google&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Chrome.app/Contents/MacOS/Google&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Chrome --allow-file-access-from-files&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/gephi/&quot;&gt;可视化平台Gephi&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 11, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/gephi/&quot;&gt;可视化网络 Gephi&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 11, 2015.&lt;/p&gt;
   </content>
 </entry>
 
