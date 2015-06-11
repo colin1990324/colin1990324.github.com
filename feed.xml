@@ -4,13 +4,117 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-06-09T21:11:23+08:00</updated>
+<updated>2015-06-11T17:20:44+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
   <uri>http://wurui.cc/</uri>
   <email>ruiwu1990324@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[可视化平台Gephi]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/gephi/" />
+  <id>http://wurui.cc/tech/gephi</id>
+  <published>2015-06-11T16:16:47+08:00</published>
+  <updated>2015-06-11T16:16:47+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Gephi是一个全平台的交互式可视化平台，它特别适用于复杂的大数据可视化工作。&lt;a href=&quot;http://gephi.github.io/&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;特点&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;实时可视化&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;http://gephi.github.io/images/screenshots/select-tool-mini.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gephi使用的高速引擎可以快速迭代出你想要的图像。&lt;/li&gt;
+  &lt;li&gt;超大网络，从5w节点到100w节点都可以支持。&lt;/li&gt;
+  &lt;li&gt;大量可以工具。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;布局工具&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;http://gephi.github.io/images/screenshots/layout1.png&quot; alt=&quot;Model-View-Controller&quot; style=&quot;float:right&quot; /&gt;
+&lt;img src=&quot;http://gephi.github.io/images/screenshots/select-tool-mini.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;)&lt;/p&gt;
+
+&lt;p&gt;Gephi提供了最先进的布局算法，又快又好。同时允许在迭代的同时操作单个或是一片节点。你还可以在market中下载更多的plugin，其中也包括了布局算法。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;统计分析工具&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;包括基础的统计分析，Community detection，随机数等。&lt;/p&gt;
+
+&lt;p&gt;[简单翻译自：Gephi Features]（http://gephi.github.io/features/）&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;快速入门&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://gephi.github.io/tutorials/gephi-tutorial-quick_start.pdf&quot;&gt;原始文档&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;图数据导入&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;Gephi支持所有主流的图数据格式导入，例如GEFX，GraphML，GML。同时也支持简单的CSV格式导入，缺点是只认前三列，不方便添加Label或者其他属性。如果你在使用neo4j，可以使用neo4j-shell来导出图数据。如果以上方法都不合适，可以找到以上几种文件的格式，自己生产图文件。我有一些简单程序，有需要的可以留言。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.49.48%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;布局算法&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;在左下角有布局算法区，大可以随意尝试几种不同的算法和参数，点击run看看效果~&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.50.10%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;常用的汇聚算法有ForceAtlas，ForceAtlas2。分散法有Fruchterman。如果是Community比较分散的情况，Yifan Hu有不错的效果。&lt;/p&gt;
+
+&lt;p&gt;参数比较常用的有scale控制大小，speed控制迭代的速度和精度。有的算法也提供一个noverlap选项。&lt;/p&gt;
+
+&lt;h3 id=&quot;ranking&quot;&gt;Ranking&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;左中部有常用的Ranking功能，此功能够对节点的小大，颜色；边的颜色，粗细进行调节。一般进行完布局和大小调节以后，你的图就有了一定的信息量和可读性了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.46.45%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;统计和分割&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;在窗口右边有各种统计功能，举个例子，像Modularity，能够对数据进行聚类，聚类的数据可以在子窗口调节。获得结果之后可以使用Ranking左边的Partition功能，这里提供根据之前的结果进行配色的方案。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.55.04%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;preview&quot;&gt;预览（Preview）&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;之前的操作都是在Overview视图中进行的，Gephi的预览视图提供了多套更为生动的整体配色模板。你也可以对具体的参数进行调节。在左下方有导出选项。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.58.34%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;data-laboratory&quot;&gt;数据实验室（Data Laboratory）&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;数据实验室提供对具体数据进行操作的视图，然后并不怎么好用，推荐还是在生成导入文件的时候把需要的属性、标签都加入。Partition部分也支持使用标签来进行分类配色。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%205.01.53%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sigmajs&quot;&gt;Sigma.js&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;如果你对sigma.js很熟悉，或者希望得到能够在网页动态展示的数据，或者neo4j的展示能力不能满足你的需要，那sigma plugin就很对你的胃口。这里展示两张我生成的图在sigma.js上展示的效果。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/firewall_sigma.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/firewall_sigma_circle.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里要允许chrome从本地获取文件，在mac上的用法是 1 先关闭所有的chrome进程，2 带参数启动chrome。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
+&lt;/code&gt;&lt;/pre&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/gephi/&quot;&gt;可视化平台Gephi&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 11, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -1014,31 +1118,6 @@ Case #4: 8 4&lt;/p&gt;
 &lt;p&gt;转自：&lt;a href=&quot;http://movie.douban.com/review/5442223/&quot;&gt;从斧头开始的牺牲观妄想症&lt;/a&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/an-invisible-sign/&quot;&gt;An Invisible Sign&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 21, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Sanya]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/sanya/" />
-  <id>http://wurui.cc/life/sanya</id>
-  <published>2014-03-16T10:54:32+08:00</published>
-  <updated>2014-03-16T10:54:32+08:00</updated>
-  <author>
-    <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
-    <email>ruiwu1990324@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Beautiful Sanya and my beautiful girl~&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/export_IMG_3356.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;大概玩了蜈支洲岛，潜水，呀偌达热带雨林，海鲜市场，亚龙湾，飞鱼~~&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/sanya/&quot;&gt;Sanya&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 16, 2014.&lt;/p&gt;
   </content>
 </entry>
 
