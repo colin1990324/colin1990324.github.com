@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-06-12T14:28:41+08:00</updated>
+<updated>2015-06-12T14:30:06+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -159,6 +159,8 @@ Here gives the outline and some links I used.&lt;/p&gt;
 &lt;p&gt;Cellier.me 的&lt;a href=&quot;http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/&quot;&gt;每个人都应该有一个Jekyll博客&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://9leg.com/other/2015/01/15/optimization-of-jekyll-blog-access-slow-problem.html&quot;&gt;优化Jekyll博客访问慢的问题&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://liberize.me/tech/jekyll-add-back-to-top-button.html&quot;&gt;返回顶部按钮&lt;/a&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/new-domain-and-web-site/&quot;&gt;New Domain and Web Site&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
   </content>
