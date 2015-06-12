@@ -275,7 +275,7 @@ Then, if you are familiar with DP( Dynamic Program) solution for LCS, you can ea
 $("#back-top").hide();
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 150) {
       $('#back-top').fadeIn();
     } else {
       $('#back-top').fadeOut();
@@ -283,7 +283,7 @@ $(document).ready(function () {
   });
   $('#back-top a').click(function () {
     $('body,html').animate({
-      scrollTop: 0
+      scrollTop: 100
     }, 800);
     return false;
   });

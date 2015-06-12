@@ -266,7 +266,7 @@ Please print out the line number of instructions that the program doesn’t touc
 $("#back-top").hide();
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 150) {
       $('#back-top').fadeIn();
     } else {
       $('#back-top').fadeOut();
@@ -274,7 +274,7 @@ $(document).ready(function () {
   });
   $('#back-top a').click(function () {
     $('body,html').animate({
-      scrollTop: 0
+      scrollTop: 100
     }, 800);
     return false;
   });

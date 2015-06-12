@@ -271,7 +271,7 @@ Polt靠决策赢得比赛。TvZ时，他很喜欢4M mid打法，开局具有很�
 $("#back-top").hide();
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 150) {
       $('#back-top').fadeIn();
     } else {
       $('#back-top').fadeOut();
@@ -279,7 +279,7 @@ $(document).ready(function () {
   });
   $('#back-top a').click(function () {
     $('body,html').animate({
-      scrollTop: 0
+      scrollTop: 100
     }, 800);
     return false;
   });
