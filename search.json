@@ -266,6 +266,14 @@
 
   
     ,{
+      "title"			: "Wuhan 2011",
+      "link"			: "http://wurui.cc/life/wuhan-2011/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Qinghai Lake",
       "link"			: "http://wurui.cc/life/qinghai-lake/",
       "excerpt"		: ""
@@ -299,10 +307,6 @@
   
 
   
-
-  
-
-  
     ,{
       "title"			: "Zoomable Sunburst",
       "link"			: "http://wurui.cc/sunburst/",
@@ -310,6 +314,18 @@
     }
   
 
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Travel China",
+      "link"			: "http://wurui.cc/travel-china/",
+      "excerpt"		: ""
+    }
   
 
   

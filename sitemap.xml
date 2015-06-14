@@ -133,6 +133,10 @@
     <lastmod>2012-01-04T22:38:06+08:00</lastmod>
   </url>
   <url>
+    <loc>http://wurui.cc/life/wuhan-2011/</loc>
+    <lastmod>2011-10-14T17:04:30+08:00</lastmod>
+  </url>
+  <url>
     <loc>http://wurui.cc/life/qinghai-lake/</loc>
     <lastmod>2011-07-13T10:31:49+08:00</lastmod>
   </url>
@@ -142,46 +146,50 @@
   </url>
   <url>
     <loc>http://wurui.cc/</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/about/</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
     <loc>http://wurui.cc/blog/</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
-    <loc>http://wurui.cc/life/</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <loc>http://wurui.cc/about/</loc>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
     <loc>http://wurui.cc/sunburst/</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
-    <loc>http://wurui.cc/tags/</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <loc>http://wurui.cc/life/</loc>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
     <loc>http://wurui.cc/tech/</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://wurui.cc/tags/</loc>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://wurui.cc/travel-china/</loc>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
     <loc>http://wurui.cc/word-cloud/</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
     <loc>http://wurui.cc/sunburst/index_label.html</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
     <loc>http://wurui.cc/sunburst/index_no_label.html</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
   <url>
     <loc>http://wurui.cc/word-cloud/index_v1.html</loc>
-    <lastmod>2015-06-12T14:37:38+08:00</lastmod>
+    <lastmod>2015-06-14T17:22:33+08:00</lastmod>
   </url>
 </urlset>

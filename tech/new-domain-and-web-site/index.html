@@ -177,13 +177,13 @@ Here gives the outline and some links I used.</p>
 
 <h3 id="section">中文指南</h3>
 
-<p>Qian jiye 的<a href="http://qianjiye.de/2012/07/host-your-pages-at-github-using-jekyll/">基于Jekyll的GitHub建站指南</a></p>
+<p>qianjiye.de <a href="http://qianjiye.de/2012/07/host-your-pages-at-github-using-jekyll/">基于Jekyll的GitHub建站指南</a></p>
 
-<p>Cellier.me 的<a href="http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">每个人都应该有一个Jekyll博客</a></p>
+<p>Cellier.me <a href="http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">每个人都应该有一个Jekyll博客</a></p>
 
-<p><a href="http://9leg.com/other/2015/01/15/optimization-of-jekyll-blog-access-slow-problem.html">优化Jekyll博客访问慢的问题</a></p>
+<p>9leg.com <a href="http://9leg.com/other/2015/01/15/optimization-of-jekyll-blog-access-slow-problem.html">优化Jekyll博客访问慢的问题</a></p>
 
-<p><a href="http://liberize.me/tech/jekyll-add-back-to-top-button.html">返回顶部按钮</a></p>
+<p>liberize.me <a href="http://liberize.me/tech/jekyll-add-back-to-top-button.html">返回顶部按钮</a></p>
 
         
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
@@ -227,24 +227,6 @@ Here gives the outline and some links I used.</p>
 <div id="back-top">
   <a href="#top" title="Back To Top"></a>
 </div>
-<script type="text/javascript">
-$("#back-top").hide();
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 150) {
-      $('#back-top').fadeIn();
-    } else {
-      $('#back-top').fadeOut();
-    }
-  });
-  $('#back-top a').click(function () {
-    $('body,html').animate({
-      scrollTop: 100
-    }, 800);
-    return false;
-  });
-});
-</script>
 
 <div class="footer-wrapper">
   <footer role="contentinfo" class="entry-wrapper">
@@ -276,6 +258,25 @@ $(document).ready(function () {
 <script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://wurui.cc/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://wurui.cc/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top a').click(function () {
+    $('body,html').animate({
+      scrollTop: 100
+    }, 800);
+    return false;
+  });
+});
+</script>
 
 
 <!-- Asynchronous Google Analytics snippet -->
