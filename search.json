@@ -3,7 +3,7 @@
   
     {
       "title"			: "可视化网络 Gephi",
-      "link"			: "http://localhost:4000/tech/gephi/",
+      "link"			: "http://wurui.cc/tech/gephi/",
       "excerpt"		: ""
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "New Domain and Web Site",
-      "link"			: "http://localhost:4000/tech/new-domain-and-web-site/",
+      "link"			: "http://wurui.cc/tech/new-domain-and-web-site/",
       "excerpt"		: ""
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Hello World",
-      "link"			: "http://localhost:4000/blog/hello-world/",
+      "link"			: "http://wurui.cc/blog/hello-world/",
       "excerpt"		: ""
     }
   
@@ -27,7 +27,7 @@
   
     ,{
       "title"			: "Light Up",
-      "link"			: "http://localhost:4000/life/light-up/",
+      "link"			: "http://wurui.cc/life/light-up/",
       "excerpt"		: ""
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "2014 MIZZOU Homecoming",
-      "link"			: "http://localhost:4000/life/2014-mizzou-homecoming/",
+      "link"			: "http://wurui.cc/life/2014-mizzou-homecoming/",
       "excerpt"		: ""
     }
   
@@ -43,7 +43,7 @@
   
     ,{
       "title"			: "Horseshoe Canyon Ranch",
-      "link"			: "http://localhost:4000/life/horseshoe-canyon-ranch/",
+      "link"			: "http://wurui.cc/life/horseshoe-canyon-ranch/",
       "excerpt"		: ""
     }
   
@@ -51,7 +51,7 @@
   
     ,{
       "title"			: "G高达定格——《自恋刑警》神同步",
-      "link"			: "http://localhost:4000/life/gundam-figure-animation/",
+      "link"			: "http://wurui.cc/life/gundam-figure-animation/",
       "excerpt"		: ""
     }
   
@@ -59,7 +59,7 @@
   
     ,{
       "title"			: "舞者",
-      "link"			: "http://localhost:4000/blog/dancer/",
+      "link"			: "http://wurui.cc/blog/dancer/",
       "excerpt"		: ""
     }
   
@@ -67,7 +67,7 @@
   
     ,{
       "title"			: "Run Walter, Run!!!",
-      "link"			: "http://localhost:4000/life/run-walter-run/",
+      "link"			: "http://wurui.cc/life/run-walter-run/",
       "excerpt"		: ""
     }
   
@@ -75,7 +75,7 @@
   
     ,{
       "title"			: "Microsoft Coding Competition - University of Missouri III",
-      "link"			: "http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-3/",
+      "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/",
       "excerpt"		: ""
     }
   
@@ -83,7 +83,7 @@
   
     ,{
       "title"			: "Microsoft Coding Competition - University of Missouri II",
-      "link"			: "http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-2/",
+      "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/",
       "excerpt"		: ""
     }
   
@@ -91,7 +91,7 @@
   
     ,{
       "title"			: "Microsoft Coding Competition - University of Missouri I",
-      "link"			: "http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-1/",
+      "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/",
       "excerpt"		: ""
     }
   
@@ -99,7 +99,7 @@
   
     ,{
       "title"			: "We Won This Game",
-      "link"			: "http://localhost:4000/life/we-won-this-game/",
+      "link"			: "http://wurui.cc/life/we-won-this-game/",
       "excerpt"		: ""
     }
   
@@ -107,7 +107,7 @@
   
     ,{
       "title"			: "How a Science Experiment Turns Into Art",
-      "link"			: "http://localhost:4000/life/how-a-science-experiment-turns-into-art/",
+      "link"			: "http://wurui.cc/life/how-a-science-experiment-turns-into-art/",
       "excerpt"		: ""
     }
   
@@ -115,7 +115,7 @@
   
     ,{
       "title"			: "Google Code Jam 2014",
-      "link"			: "http://localhost:4000/tech/google-code-jam-2014/",
+      "link"			: "http://wurui.cc/tech/google-code-jam-2014/",
       "excerpt"		: ""
     }
   
@@ -123,7 +123,7 @@
   
     ,{
       "title"			: "GoPro 360 Degree Video",
-      "link"			: "http://localhost:4000/life/gopro-360-degree-video/",
+      "link"			: "http://wurui.cc/life/gopro-360-degree-video/",
       "excerpt"		: ""
     }
   
@@ -131,7 +131,7 @@
   
     ,{
       "title"			: "一地鸡毛",
-      "link"			: "http://localhost:4000/blog/ground_covered_with_chicken_feathers/",
+      "link"			: "http://wurui.cc/blog/ground_covered_with_chicken_feathers/",
       "excerpt"		: ""
     }
   
@@ -139,7 +139,7 @@
   
     ,{
       "title"			: "《码农故事》",
-      "link"			: "http://localhost:4000/blog/programmers-story/",
+      "link"			: "http://wurui.cc/blog/programmers-story/",
       "excerpt"		: ""
     }
   
@@ -147,7 +147,7 @@
   
     ,{
       "title"			: "Promising Young Climbers",
-      "link"			: "http://localhost:4000/life/promising-young-climbers/",
+      "link"			: "http://wurui.cc/life/promising-young-climbers/",
       "excerpt"		: ""
     }
   
@@ -155,7 +155,7 @@
   
     ,{
       "title"			: "An Invisible Sign",
-      "link"			: "http://localhost:4000/blog/an-invisible-sign/",
+      "link"			: "http://wurui.cc/blog/an-invisible-sign/",
       "excerpt"		: ""
     }
   
@@ -163,7 +163,7 @@
   
     ,{
       "title"			: "Sanya",
-      "link"			: "http://localhost:4000/life/sanya/",
+      "link"			: "http://wurui.cc/life/sanya/",
       "excerpt"		: ""
     }
   
@@ -171,7 +171,7 @@
   
     ,{
       "title"			: "The Romance of a Man",
-      "link"			: "http://localhost:4000/life/the-romance-of-a-man/",
+      "link"			: "http://wurui.cc/life/the-romance-of-a-man/",
       "excerpt"		: ""
     }
   
@@ -179,7 +179,7 @@
   
     ,{
       "title"			: "My Cooking",
-      "link"			: "http://localhost:4000/life/my-cooking/",
+      "link"			: "http://wurui.cc/life/my-cooking/",
       "excerpt"		: ""
     }
   
@@ -187,7 +187,7 @@
   
     ,{
       "title"			: "Opening Orchid",
-      "link"			: "http://localhost:4000/life/opening-orchid/",
+      "link"			: "http://wurui.cc/life/opening-orchid/",
       "excerpt"		: ""
     }
   
@@ -195,7 +195,7 @@
   
     ,{
       "title"			: "Alex Honnold - El Sendero Luminoso",
-      "link"			: "http://localhost:4000/life/alex-honnold-el-sendero-luminoso/",
+      "link"			: "http://wurui.cc/life/alex-honnold-el-sendero-luminoso/",
       "excerpt"		: ""
     }
   
@@ -203,7 +203,7 @@
   
     ,{
       "title"			: "Climbing at Red River George",
-      "link"			: "http://localhost:4000/life/climbing-at-red-river-george/",
+      "link"			: "http://wurui.cc/life/climbing-at-red-river-george/",
       "excerpt"		: ""
     }
   
@@ -211,7 +211,7 @@
   
     ,{
       "title"			: "Go Tigers",
-      "link"			: "http://localhost:4000/life/go-tigers/",
+      "link"			: "http://wurui.cc/life/go-tigers/",
       "excerpt"		: ""
     }
   
@@ -219,7 +219,7 @@
   
     ,{
       "title"			: "Cicada Slough and Rosin",
-      "link"			: "http://localhost:4000/life/cicada-slough-and-rosin/",
+      "link"			: "http://wurui.cc/life/cicada-slough-and-rosin/",
       "excerpt"		: ""
     }
   
@@ -227,7 +227,7 @@
   
     ,{
       "title"			: "Hermann",
-      "link"			: "http://localhost:4000/life/hermann/",
+      "link"			: "http://wurui.cc/life/hermann/",
       "excerpt"		: ""
     }
   
@@ -235,7 +235,7 @@
   
     ,{
       "title"			: "StarCraft II TVZ 4M Polt",
-      "link"			: "http://localhost:4000/blog/starcraft-ii-tvz-4m-polt/",
+      "link"			: "http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/",
       "excerpt"		: ""
     }
   
@@ -243,7 +243,7 @@
   
     ,{
       "title"			: "Havasupai",
-      "link"			: "http://localhost:4000/life/havasupai/",
+      "link"			: "http://wurui.cc/life/havasupai/",
       "excerpt"		: ""
     }
   
@@ -251,7 +251,7 @@
   
     ,{
       "title"			: "Mount Siguniang Through Hike",
-      "link"			: "http://localhost:4000/life/mount-siguniang-through-hike/",
+      "link"			: "http://wurui.cc/life/mount-siguniang-through-hike/",
       "excerpt"		: ""
     }
   
@@ -259,7 +259,7 @@
   
     ,{
       "title"			: "Eat Sour Grapefruit",
-      "link"			: "http://localhost:4000/blog/eat-sour-grapefruit/",
+      "link"			: "http://wurui.cc/blog/eat-sour-grapefruit/",
       "excerpt"		: ""
     }
   
@@ -267,7 +267,7 @@
   
     ,{
       "title"			: "Wuhan 2011",
-      "link"			: "http://localhost:4000/life/wuhan-2011/",
+      "link"			: "http://wurui.cc/life/wuhan-2011/",
       "excerpt"		: ""
     }
   
@@ -275,7 +275,7 @@
   
     ,{
       "title"			: "Qinghai Lake",
-      "link"			: "http://localhost:4000/life/qinghai-lake/",
+      "link"			: "http://wurui.cc/life/qinghai-lake/",
       "excerpt"		: ""
     }
   
@@ -283,7 +283,7 @@
   
     ,{
       "title"			: "Treasured Spring, Wait in Hope of Summer",
-      "link"			: "http://localhost:4000/blog/treasured-spring-wait-in-hope-of-summer/",
+      "link"			: "http://wurui.cc/blog/treasured-spring-wait-in-hope-of-summer/",
       "excerpt"		: ""
     }
   
@@ -301,7 +301,7 @@
   
     ,{
       "title"			: "Chord Diagram",
-      "link"			: "http://localhost:4000/chord/",
+      "link"			: "http://wurui.cc/chord/",
       "excerpt"		: ""
     }
   
@@ -311,7 +311,7 @@
   
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://localhost:4000/sunburst/",
+      "link"			: "http://wurui.cc/sunburst/",
       "excerpt"		: ""
     }
   
@@ -319,7 +319,7 @@
   
     ,{
       "title"			: "About Wu Rui",
-      "link"			: "http://localhost:4000/about/",
+      "link"			: "http://wurui.cc/about/",
       "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
     }
   
@@ -331,7 +331,7 @@
   
     ,{
       "title"			: "Travel China",
-      "link"			: "http://localhost:4000/travel-china/",
+      "link"			: "http://wurui.cc/travel-china/",
       "excerpt"		: ""
     }
   
@@ -341,7 +341,7 @@
   
     ,{
       "title"			: "Whole Site Word Cloud",
-      "link"			: "http://localhost:4000/word-cloud/",
+      "link"			: "http://wurui.cc/word-cloud/",
       "excerpt"		: ""
     }
   
@@ -349,7 +349,7 @@
   
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://localhost:4000/sunburst/index_label.html",
+      "link"			: "http://wurui.cc/sunburst/index_label.html",
       "excerpt"		: ""
     }
   
@@ -357,7 +357,7 @@
   
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://localhost:4000/sunburst/index_no_label.html",
+      "link"			: "http://wurui.cc/sunburst/index_no_label.html",
       "excerpt"		: ""
     }
   
@@ -365,7 +365,7 @@
   
     ,{
       "title"			: "Whole Site Word Cloud",
-      "link"			: "http://localhost:4000/word-cloud/index_v1.html",
+      "link"			: "http://wurui.cc/word-cloud/index_v1.html",
       "excerpt"		: ""
     }
   
