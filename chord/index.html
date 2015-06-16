@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>New Domain and Web Site &#8211; Wu Rui's Home</title>
+<title>Chord Diagram &#8211; Wu Rui's Home</title>
 
-<meta name="keywords" content="">
+
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="New Domain and Web Site">
+<meta name="twitter:title" content="Chord Diagram">
 
 
 
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="New Domain and Web Site">
+<meta property="og:title" content="Chord Diagram">
 
-<meta property="og:url" content="http://localhost:4000/tech/new-domain-and-web-site/">
+<meta property="og:url" content="http://localhost:4000/chord/">
 <meta property="og:site_name" content="Wu Rui's Home">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/tech/new-domain-and-web-site/">
+<link rel="canonical" href="http://localhost:4000/chord/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -72,7 +72,7 @@
 
 </head>
 
-<body id="post">
+<body id="page">
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
@@ -123,112 +123,145 @@
 
 
 <div id="main" role="main">
-  <article class="hentry">
+  <article class="entry">
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"></span>
-        
-          <h1 class="entry-title">New Domain and Web Site</h1>
-        
+        <h1 class="entry-title">Chord Diagram</h1>
       </header>
-      <footer class="entry-meta">
-        
-        
-        
-          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
-        
-        <span class="author vcard">By <span class="fn">Wu Rui</span></span>
-        <span class="entry-date date published"><time datetime="2015-05-27T17:06:02+08:00"><i class="fa fa-calendar-o"></i> May 27, 2015</time></span>
-        
-        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
-        
-        
-      </footer>
       <div class="entry-content">
-        <p>After the expiration of ruiwu.me, I’m looking for a new cheap solution for my personal blog. The original AWS EC2 &amp; Wordpress solution is a little bit expensive for individuals and I know one of my friend <a href="http://hackecho.com/">Zhaoyu</a> is using a Github &amp; Jekyll solution. Since all those services are free and I bought the new domain wurui.cc for 7 years at the price 318 rmb, this solution should be easy and reasonable.</p>
+        <div id="chart" style="width: 100%; margin: 0px auto; position: relative;"></div>
 
-<p>So you can find lots of instructions for set up a blog on github.
-Here gives the outline and some links I used.</p>
+<p style="color:black; font-size: 100%; text-align: center;">This chord diagram shows pairwise similarity between articles in this blog.</p>
 
-<h3 id="set-up-github">Set up Github</h3>
+<p style="color:black; font-size: 100%; text-align: center;">credit for <a href="http://bost.ocks.org/mike/uberdata/">http://bost.ocks.org/</a></p>
 
-<p>If you don’t have a github account. <a href="https://github.com/join">Click</a> to register.</p>
+<style>
 
-<p><a href="https://help.github.com/articles/set-up-git/">Github getting started</a></p>
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
 
-<h3 id="start-your-blog-from-fork">Start your blog from fork</h3>
+.group path {
+  fill-opacity: .5;
+}
 
-<p><a href="http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/">Build A Blog With Jekyll And GitHub Pages</a></p>
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+}
 
-<h3 id="the-theme-i-use">The theme I use</h3>
+#circle:hover path.fade {
+  display: none;
+}
 
-<p><a href="http://mmistakes.github.io/so-simple-theme/theme-setup/">So Simple Theme</a></p>
+</style>
 
-<h3 id="getting-around">Getting around</h3>
+<script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
 
-<p>If you use plugins that are not officially supported, you need manualy deploy your pages. <a href="http://www.sitepoint.com/jekyll-plugins-github/">Here’s a way around</a>.</p>
+<script>
 
-<p>I found this one easier to understand later. <a href="http://charliepark.org/jekyll-with-plugins/">Charlie Park</a></p>
+var width = 720,
+    height = 720,
+    outerRadius = Math.min(width, height) / 2 - 10,
+    innerRadius = outerRadius - 24;
 
-<h3 id="import-from-your-old-wordpress-site">import from your old Wordpress site</h3>
+var formatPercent = d3.format(".1%");
 
-<p>Here’s a nice tool <a href="http://www.adamwadeharris.com/how-to-convert-a-wordpress-site-to-jekyll-with-github-pages/">jekyll-import</a>.</p>
+var arc = d3.svg.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius);
 
-<h3 id="section">中文指南</h3>
+var layout = d3.layout.chord()
+    .padding(.04)
+    .sortSubgroups(d3.descending)
+    .sortChords(d3.ascending);
 
-<p>qianjiye.de <a href="http://qianjiye.de/2012/07/host-your-pages-at-github-using-jekyll/">基于Jekyll的GitHub建站指南</a></p>
+var path = d3.svg.chord()
+    .radius(innerRadius);
 
-<p>Cellier.me <a href="http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">每个人都应该有一个Jekyll博客</a></p>
+var svg = d3.select("#chart").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("id", "circle")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-<p>9leg.com <a href="http://9leg.com/other/2015/01/15/optimization-of-jekyll-blog-access-slow-problem.html">优化Jekyll博客访问慢的问题</a></p>
+svg.append("circle")
+    .attr("r", outerRadius);
 
-<p>wuxiaolong.me <a href="http://wuxiaolong.me/github/2014/10/30/qiniu-photo-bed/">七牛做cdn加速或者做图床</a></p>
+d3.csv("articles.csv", function(cities) {
+  d3.json("max.json", function(matrix) {
 
-<p>liberize.me <a href="http://liberize.me/tech/jekyll-add-back-to-top-button.html">返回顶部按钮</a></p>
+    // Compute the chord layout.
+    layout.matrix(matrix);
 
-        
-          <div id="disqus_thread"></div><!-- /#disqus_thread -->
-          
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'wurui-cc'; // required: replace example with your forum shortname
+    // Add a group per neighborhood.
+    var group = svg.selectAll(".group")
+        .data(layout.groups)
+      .enter().append("g")
+        .attr("class", "group")
+        .on("mouseover", mouseover);
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+    // Add a mouseover title.
+    group.append("title").text(function(d, i) {
+      return cities[i].name + ": " + formatPercent(d.value) + " of origins";
+    });
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
+    // Add the group arc.
+    var groupPath = group.append("path")
+        .attr("id", function(d, i) { return "group" + i; })
+        .attr("d", arc)
+        .style("fill", function(d, i) { return cities[i].color; });
+
+    // Add a text label.
+    var groupText = group.append("text")
+        .attr("x", 6)
+        .attr("dy", 15);
+
+    groupText.append("textPath")
+        .attr("xlink:href", function(d, i) { return "#group" + i; })
+        .text(function(d, i) { return cities[i].name; });
+
+    // Remove the labels that don't fit. :(
+    groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
+        .remove();
+
+    // Add the chords.
+    var chord = svg.selectAll(".chord")
+        .data(layout.chords)
+      .enter().append("path")
+        .attr("class", "chord")
+        .style("fill", function(d) { return cities[d.source.index].color; })
+        .attr("d", path);
+
+    // Add an elaborate mouseover title for each chord.
+    chord.append("title").text(function(d) {
+      return cities[d.source.index].name
+          + " → " + cities[d.target.index].name
+          + ": " + formatPercent(d.source.value)
+          + "\n" + cities[d.target.index].name
+          + " → " + cities[d.source.index].name
+          + ": " + formatPercent(d.target.value);
+    });
+
+    function mouseover(d, i) {
+      chord.classed("fade", function(p) {
+        return p.source.index != i
+            && p.target.index != i;
+      });
+    }
+  });
+});
+
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-        
+
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
-    <nav class="pagination" role="navigation">
-      
-        <a href="http://localhost:4000/blog/hello-world/" class="btn" title="Hello World">Previous</a>
-      
-      
-        <a href="http://localhost:4000/tech/gephi/" class="btn" title="可视化网络 Gephi">Next</a>
-      
-    </nav><!-- /.pagination -->
   </article>
 </div><!-- /#main -->
-
-<div id="back-top">
-  <a href="#top" title="Back To Top"></a>
-</div>
 
 <div class="footer-wrapper">
   <footer role="contentinfo" class="entry-wrapper">

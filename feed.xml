@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Wu Rui's Home</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
-<link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-06-15T15:46:03+08:00</updated>
-<id>http://wurui.cc/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2015-06-16T17:42:09+08:00</updated>
+<id>http://localhost:4000/</id>
 <author>
   <name>Wu Rui</name>
-  <uri>http://wurui.cc/</uri>
+  <uri>http://localhost:4000/</uri>
   <email>ruiwu1990324@gmail.com</email>
 </author>
 
@@ -17,13 +17,13 @@
 
 <entry>
   <title type="html"><![CDATA[可视化网络 Gephi]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/gephi/" />
-  <id>http://wurui.cc/tech/gephi</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tech/gephi/" />
+  <id>http://localhost:4000/tech/gephi</id>
   <published>2015-06-11T16:16:47+08:00</published>
   <updated>2015-06-11T16:16:47+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -104,7 +104,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;/Applications/Google&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Chrome.app/Contents/MacOS/Google&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Chrome --allow-file-access-from-files&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/gephi/&quot;&gt;可视化网络 Gephi&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 11, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tech/gephi/&quot;&gt;可视化网络 Gephi&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 11, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -113,13 +113,13 @@
 
 <entry>
   <title type="html"><![CDATA[New Domain and Web Site]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/new-domain-and-web-site/" />
-  <id>http://wurui.cc/tech/new-domain-and-web-site</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tech/new-domain-and-web-site/" />
+  <id>http://localhost:4000/tech/new-domain-and-web-site</id>
   <published>2015-05-27T17:06:02+08:00</published>
   <updated>2015-05-27T17:06:02+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -164,7 +164,7 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 &lt;p&gt;liberize.me &lt;a href=&quot;http://liberize.me/tech/jekyll-add-back-to-top-button.html&quot;&gt;返回顶部按钮&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/new-domain-and-web-site/&quot;&gt;New Domain and Web Site&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tech/new-domain-and-web-site/&quot;&gt;New Domain and Web Site&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -173,19 +173,19 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Hello World]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/hello-world/" />
-  <id>http://wurui.cc/blog/hello-world</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/hello-world/" />
+  <id>http://localhost:4000/blog/hello-world</id>
   <published>2015-05-27T15:39:55+08:00</published>
   <updated>2015-05-27T15:39:55+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
     &lt;p&gt;这是雏龙的一声怒吼，wurui.cc 今天上线啦！这标志着即上代主页ruiwu.me之后，更轻巧，更持久的新生主页的破壳而出，惊动天地，紫云东方！&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on May 27, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -194,13 +194,13 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Light Up]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/light-up/" />
-  <id>http://wurui.cc/life/light-up</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/light-up/" />
+  <id>http://localhost:4000/life/light-up</id>
   <published>2015-02-04T12:18:04+08:00</published>
   <updated>2015-02-04T12:18:04+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -208,7 +208,7 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 &lt;p&gt;Feb 4th 2015, snow before sunset, street lamp just up, a quiet day at home. Photoed outside my apartment, Tara, Columbia, MO.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/light-up/&quot;&gt;Light Up&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on February 04, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/light-up/&quot;&gt;Light Up&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on February 04, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -217,13 +217,13 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[2014 MIZZOU Homecoming]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/2014-mizzou-homecoming/" />
-  <id>http://wurui.cc/life/2014-mizzou-homecoming</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/2014-mizzou-homecoming/" />
+  <id>http://localhost:4000/life/2014-mizzou-homecoming</id>
   <published>2015-02-04T12:17:38+08:00</published>
   <updated>2015-02-04T12:17:38+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -244,7 +244,7 @@ Here gives the outline and some links I used.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/export_2014-32.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/2014-mizzou-homecoming/&quot;&gt;2014 MIZZOU Homecoming&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on February 04, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/2014-mizzou-homecoming/&quot;&gt;2014 MIZZOU Homecoming&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on February 04, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -253,13 +253,13 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Horseshoe Canyon Ranch]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/horseshoe-canyon-ranch/" />
-  <id>http://wurui.cc/life/horseshoe-canyon-ranch</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/horseshoe-canyon-ranch/" />
+  <id>http://localhost:4000/life/horseshoe-canyon-ranch</id>
   <published>2014-10-19T12:11:49+08:00</published>
   <updated>2014-10-19T12:11:49+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -279,7 +279,7 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/export_2014 31-15.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/horseshoe-canyon-ranch/&quot;&gt;Horseshoe Canyon Ranch&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on October 19, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/horseshoe-canyon-ranch/&quot;&gt;Horseshoe Canyon Ranch&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on October 19, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -288,13 +288,13 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[G高达定格——《自恋刑警》神同步]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/gundam-figure-animation/" />
-  <id>http://wurui.cc/life/gundam-figure-animation</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/gundam-figure-animation/" />
+  <id>http://localhost:4000/life/gundam-figure-animation</id>
   <published>2014-10-04T12:10:16+08:00</published>
   <updated>2014-10-04T12:10:16+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -304,7 +304,7 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 &lt;p&gt;然后我还把《自恋刑警》看了一遍。。。&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/gundam-figure-animation/&quot;&gt;G高达定格——《自恋刑警》神同步&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on October 04, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/gundam-figure-animation/&quot;&gt;G高达定格——《自恋刑警》神同步&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on October 04, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -313,13 +313,13 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[舞者]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/dancer/" />
-  <id>http://wurui.cc/blog/dancer</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/dancer/" />
+  <id>http://localhost:4000/blog/dancer</id>
   <published>2014-09-27T12:04:34+08:00</published>
   <updated>2014-09-27T12:04:34+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -343,7 +343,7 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/9787544256988.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/dancer/&quot;&gt;舞者&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 27, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/dancer/&quot;&gt;舞者&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 27, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -352,13 +352,13 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Run Walter, Run!!!]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/run-walter-run/" />
-  <id>http://wurui.cc/life/run-walter-run</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/run-walter-run/" />
+  <id>http://localhost:4000/life/run-walter-run</id>
   <published>2014-09-23T11:54:33+08:00</published>
   <updated>2014-09-23T11:54:33+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -366,7 +366,7 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/UowkIRSDHfs&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/run-walter-run/&quot;&gt;Run Walter, Run!!!&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/run-walter-run/&quot;&gt;Run Walter, Run!!!&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -375,13 +375,13 @@ Here gives the outline and some links I used.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Microsoft Coding Competition - University of Missouri III]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/" />
-  <id>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-3/" />
+  <id>http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-3</id>
   <published>2014-09-23T11:52:20+08:00</published>
   <updated>2014-09-23T11:52:20+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -459,7 +459,7 @@ Please print out the line number of instructions that the program doesn’t touc
 
 &lt;p&gt;This instructions structure is like a linked list. First store all instructions with its line number in a set. Execute instructions and remove executed one from the set. if there’s no next instruction or next instruction is already removed from the set( means loop happens), stop execution.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/&quot;&gt;Microsoft Coding Competition - University of Missouri III&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-3/&quot;&gt;Microsoft Coding Competition - University of Missouri III&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -468,13 +468,13 @@ Please print out the line number of instructions that the program doesn’t touc
 
 <entry>
   <title type="html"><![CDATA[Microsoft Coding Competition - University of Missouri II]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/" />
-  <id>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-2/" />
+  <id>http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-2</id>
   <published>2014-09-23T11:52:20+08:00</published>
   <updated>2014-09-23T11:52:20+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -538,7 +538,7 @@ You will receive only characters contained within the UTF-8 standard&lt;/p&gt;
 
 &lt;p&gt;ա@մ.կ&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/&quot;&gt;Microsoft Coding Competition - University of Missouri II&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-2/&quot;&gt;Microsoft Coding Competition - University of Missouri II&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -547,13 +547,13 @@ You will receive only characters contained within the UTF-8 standard&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Microsoft Coding Competition - University of Missouri I]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/" />
-  <id>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-1/" />
+  <id>http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-1</id>
   <published>2014-09-23T11:52:20+08:00</published>
   <updated>2014-09-23T11:52:20+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -640,7 +640,7 @@ The below example becomes clear if we give the “DNA match score” as well as 
 &lt;p&gt;In a competition environment, it’s really easy for people like me to scan the problem description really quick and start coding.  I trade this problem as a typical longest common substring at first glimpse but actually it’s  not. The virus can mutate, letters can be cut out from its sequence while people’s DNA need to be continuos which makes this problem a mix of longest common substring and longest common subsequence.
 Then, if you are familiar with DP( Dynamic Program) solution for LCS, you can easily modify it into the correct answer of this problem.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/&quot;&gt;Microsoft Coding Competition - University of Missouri I&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tech/microsoft-coding-competition-university-of-missouri-1/&quot;&gt;Microsoft Coding Competition - University of Missouri I&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -649,13 +649,13 @@ Then, if you are familiar with DP( Dynamic Program) solution for LCS, you can ea
 
 <entry>
   <title type="html"><![CDATA[We Won This Game]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/we-won-this-game/" />
-  <id>http://wurui.cc/life/we-won-this-game</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/we-won-this-game/" />
+  <id>http://localhost:4000/life/we-won-this-game</id>
   <published>2014-08-31T11:47:21+08:00</published>
   <updated>2014-08-31T11:47:21+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -663,7 +663,7 @@ Then, if you are familiar with DP( Dynamic Program) solution for LCS, you can ea
 
 &lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/export_IMG_2360.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/we-won-this-game/&quot;&gt;We Won This Game&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on August 31, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/we-won-this-game/&quot;&gt;We Won This Game&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on August 31, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -672,13 +672,13 @@ Then, if you are familiar with DP( Dynamic Program) solution for LCS, you can ea
 
 <entry>
   <title type="html"><![CDATA[How a Science Experiment Turns Into Art]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/how-a-science-experiment-turns-into-art/" />
-  <id>http://wurui.cc/life/how-a-science-experiment-turns-into-art</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/how-a-science-experiment-turns-into-art/" />
+  <id>http://localhost:4000/life/how-a-science-experiment-turns-into-art</id>
   <published>2014-04-23T11:42:58+08:00</published>
   <updated>2014-04-23T11:42:58+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -689,7 +689,7 @@ Then, if you are familiar with DP( Dynamic Program) solution for LCS, you can ea
 &lt;p&gt;From &lt;a href=&quot;http://www.wired.com/2014/04/middle-school-science-experiment-turned-gorgeous-photographs/&quot;&gt;wired.com&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/how-a-science-experiment-turns-into-art/&quot;&gt;How a Science Experiment Turns Into Art&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 23, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/how-a-science-experiment-turns-into-art/&quot;&gt;How a Science Experiment Turns Into Art&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -698,13 +698,13 @@ Then, if you are familiar with DP( Dynamic Program) solution for LCS, you can ea
 
 <entry>
   <title type="html"><![CDATA[Google Code Jam 2014]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/google-code-jam-2014/" />
-  <id>http://wurui.cc/tech/google-code-jam-2014</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tech/google-code-jam-2014/" />
+  <id>http://localhost:4000/tech/google-code-jam-2014</id>
   <published>2014-04-12T11:33:08+08:00</published>
   <updated>2014-04-12T11:33:08+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -950,7 +950,7 @@ Case #2: 1 0
 Case #3: 2 1
 Case #4: 8 4&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/google-code-jam-2014/&quot;&gt;Google Code Jam 2014&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 12, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tech/google-code-jam-2014/&quot;&gt;Google Code Jam 2014&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 12, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -959,13 +959,13 @@ Case #4: 8 4&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[GoPro 360 Degree Video]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/gopro-360-degree-video/" />
-  <id>http://wurui.cc/life/gopro-360-degree-video</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/gopro-360-degree-video/" />
+  <id>http://localhost:4000/life/gopro-360-degree-video</id>
   <published>2014-04-06T11:24:34+08:00</published>
   <updated>2014-04-06T11:24:34+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -979,7 +979,7 @@ Case #4: 8 4&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://thenextweb.com/shareables/2014/04/05/360-video-shot-6-gopro-cameras-will-blow-mind/&quot;&gt;More details&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/gopro-360-degree-video/&quot;&gt;GoPro 360 Degree Video&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 06, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/gopro-360-degree-video/&quot;&gt;GoPro 360 Degree Video&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 06, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -988,13 +988,13 @@ Case #4: 8 4&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[一地鸡毛]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/ground_covered_with_chicken_feathers/" />
-  <id>http://wurui.cc/blog/ground_covered_with_chicken_feathers</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/ground_covered_with_chicken_feathers/" />
+  <id>http://localhost:4000/blog/ground_covered_with_chicken_feathers</id>
   <published>2014-03-31T11:06:44+08:00</published>
   <updated>2014-03-31T11:06:44+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -1022,7 +1022,7 @@ Case #4: 8 4&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/small_news_pic7190.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/ground_covered_with_chicken_feathers/&quot;&gt;一地鸡毛&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 31, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/ground_covered_with_chicken_feathers/&quot;&gt;一地鸡毛&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 31, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -1031,13 +1031,13 @@ Case #4: 8 4&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[《码农故事》]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/programmers-story/" />
-  <id>http://wurui.cc/blog/programmers-story</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/programmers-story/" />
+  <id>http://localhost:4000/blog/programmers-story</id>
   <published>2014-03-29T11:06:44+08:00</published>
   <updated>2014-03-29T11:06:44+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -1067,7 +1067,7 @@ Case #4: 8 4&lt;/p&gt;
 
 &lt;p&gt;作者微博：&lt;a href=&quot;http://weibo.com/ned11&quot;&gt;老码农的自留地&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/programmers-story/&quot;&gt;《码农故事》&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 29, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/programmers-story/&quot;&gt;《码农故事》&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 29, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -1076,13 +1076,13 @@ Case #4: 8 4&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Promising Young Climbers]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/promising-young-climbers/" />
-  <id>http://wurui.cc/life/promising-young-climbers</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/life/promising-young-climbers/" />
+  <id>http://localhost:4000/life/promising-young-climbers</id>
   <published>2014-03-22T11:04:44+08:00</published>
   <updated>2014-03-22T11:04:44+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -1090,7 +1090,7 @@ Case #4: 8 4&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/TgzxqXfGDLQ?feature=oembed&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/promising-young-climbers/&quot;&gt;Promising Young Climbers&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 22, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/life/promising-young-climbers/&quot;&gt;Promising Young Climbers&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 22, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -1099,13 +1099,13 @@ Case #4: 8 4&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[An Invisible Sign]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/an-invisible-sign/" />
-  <id>http://wurui.cc/blog/an-invisible-sign</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/an-invisible-sign/" />
+  <id>http://localhost:4000/blog/an-invisible-sign</id>
   <published>2014-03-21T11:01:00+08:00</published>
   <updated>2014-03-21T11:01:00+08:00</updated>
   <author>
     <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
+    <uri>http://localhost:4000</uri>
     <email>ruiwu1990324@gmail.com</email>
   </author>
   <content type="html">
@@ -1121,7 +1121,7 @@ Case #4: 8 4&lt;/p&gt;
 
 &lt;p&gt;转自：&lt;a href=&quot;http://movie.douban.com/review/5442223/&quot;&gt;从斧头开始的牺牲观妄想症&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/an-invisible-sign/&quot;&gt;An Invisible Sign&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 21, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/an-invisible-sign/&quot;&gt;An Invisible Sign&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://localhost:4000&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 21, 2014.&lt;/p&gt;
   </content>
 </entry>
 
