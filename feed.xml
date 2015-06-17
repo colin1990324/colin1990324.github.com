@@ -4,13 +4,108 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-06-16T17:42:43+08:00</updated>
+<updated>2015-06-17T10:49:55+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
   <uri>http://wurui.cc/</uri>
   <email>ruiwu1990324@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[D3.js实战练手]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/d3-js/" />
+  <id>http://wurui.cc/tech/d3-js</id>
+  <published>2015-06-17T09:21:17+08:00</published>
+  <updated>2015-06-17T09:21:17+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;工作相关，了解流行的可视化库，（如百度echarts，GoogleCharts，Gephi等）最后还是&lt;a href=&quot;https://github.com/mbostock/d3/wiki/Gallery&quot;&gt;D3 Gallery&lt;/a&gt;的诸多Demo惊艳了我。简单介绍后带来我的实战。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;D3是一个基于数据操作文档JavaScript库。D3帮助你给数据带来活力通过使用HTML、SVG和CSS。D3重视Web标准为你提供现代浏览器的全部功能，而不是给你一个专有的框架。结合强大的可视化组件和数据驱动方式操作Dom。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;D3允许绑定任何数据到DOM对象模型，然后应用数据驱动转换到文档。例如：你可以用D3从数组生成HTML表格，或者使用相同数据平滑和动态创建一个SVG图表。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;D3不是一个庞大的框架，像想象那样提供许多功能。相反，D3解决这关键问题：基于数据文档高效操作。避免专有的表现，同时提供良好适应性。公开全部功能，如CSS3、HTML5和SVG网页标准，很少的开销，D3速度非常快。支持大数据集和动态交互和动画效果。D3的功能设计允许代码重用，通过集合不同的组件和插件。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;引用自&lt;a href=&quot;http://segmentfault.com/a/1190000000701746&quot;&gt;小渝人儿&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;实战一 标签云&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/word_cloud.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;
+&lt;a href=&quot;http://wurui.cc/word-cloud/&quot;&gt;live example http://wurui.cc/word-cloud/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;首先是数据准备，我用Java写了一个采集全站高频词的&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/blob/master/src/WordCloud/WordFrequency.java&quot;&gt;程序&lt;/a&gt;，输出一个&amp;lt;单词，字号&amp;gt;的map。需要注意的大概是对中文进行分词，Stopwords的排除以及根据词频计算字号。&lt;/p&gt;
+
+&lt;p&gt;然后我们使用前人写好的布局函数d3.layout.cloud.js,感谢&lt;a href=&quot;https://www.jasondavies.com/wordcloud/#%2F%2Fwww.jasondavies.com%2Fwordcloud%2Fabout%2F&quot;&gt;www.jasondavies.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;最后根据map设置字号，颜色随机就可以了~&lt;/p&gt;
+
+&lt;h3 id=&quot;sunburst&quot;&gt;实战二 Sunburst&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/sunburst.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;
+&lt;a href=&quot;http://wurui.cc/sunburst/&quot;&gt;live example http://wurui.cc/sunburst/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;sunburst不知道怎么翻译好，光芒？简而言之是一个圆盘的多级结构，也可以说是一个单层无先后的树结构。&lt;/p&gt;
+
+&lt;p&gt;同样写一个&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/blob/master/src/Sunburst/Sunburst.java&quot;&gt;程序&lt;/a&gt;来获取数据。这次进步一点，把数据放在一个json文件中。这里我想展示一个博客-分类-文章的多级结构，最外圈每一个扇形的大小由文章的字节数来确定。内圈的累计计算由D3自动完成。&lt;/p&gt;
+
+&lt;p&gt;绘制部分感谢&lt;a href=&quot;http://bl.ocks.org/mbostock/4348373&quot;&gt;bl.ocks.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;给每个部分加上标签坡费了我一番周折，最后还是没有理解mousemove事件鼠标位置的问题，如果知道怎么调，欢迎留言。&lt;/p&gt;
+
+&lt;h3 id=&quot;geo-map&quot;&gt;实战三 Geo Map&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/travel-china.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;
+&lt;a href=&quot;http://wurui.cc/travel-china/&quot;&gt;live example http://wurui.cc/travel-china/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在页面上绘制地图，这里每一条边都是现场绘制出来的哦。数据源请搜索“GeoJson”（&lt;a href=&quot;https://github.com/colin1990324/colin1990324.github.io/tree/master/travel-china/Map_files&quot;&gt;懒人请进&lt;/a&gt;）。&lt;/p&gt;
+
+&lt;p&gt;源码简单易懂，值得一提的球体经纬度如何投影到二维平面上，这里使用常见的墨卡托投影。投影方式千奇百怪，世界中心到底在哪，有兴趣的同学可以&lt;a href=&quot;http://www.zhihu.com/question/27614116&quot;&gt;看一看&lt;/a&gt;。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var projection = d3.geo.mercator()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;添加一个map，根据我到过的省份频次给不同区块上色。&lt;/p&gt;
+
+&lt;p&gt;然后添加了简单的交互，类似刮刮乐，鼠标扫过便能揭开真相！&lt;/p&gt;
+
+&lt;h3 id=&quot;chord-diagram&quot;&gt;实战四 Chord Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/chord.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;
+&lt;a href=&quot;http://wurui.cc/chord/&quot;&gt;live example http://wurui.cc/chord/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Chord既是和弦的意思，第一次看到这种类型的图时简直闪瞎我的狗眼，惹得我非常想自己做一个。&lt;/p&gt;
+
+&lt;p&gt;这个类型的图非常适合点对点的数据类型，比如&lt;a href=&quot;http://bost.ocks.org/mike/uberdata/&quot;&gt;Uber流量图&lt;/a&gt;。那我一个小博客，页面间跳转少的可怜，做个河图还可以，怎么也撑不起chord。哪里去找点对点的数据呢？最后我非常无耻的选择了pairwise document similarities。。。即博文间的相似度。。。。&lt;/p&gt;
+
+&lt;p&gt;这里用了TF-IDF建立向量，简单的用余弦值来作相似度。&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/blob/master/src/chordDiagram/TfIdfMain.java&quot;&gt;程序&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;D3提供现成的d3.layout.chord，调用即可，每条弦的宽度会根据你带入的值自动计算。再给不同分类的文章加上颜色，炫酷的Chord Diagram就出炉啦！&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;小结&lt;/h3&gt;
+
+&lt;p&gt;四篇实战之后，对D3的select, layout, data import, text, event, 回调函数有了简单的认识。&lt;/p&gt;
+
+&lt;p&gt;我这样的前端小白也能成功做出一定的效果，这突显了D3的易用性。还没有体验过的朋友一定不要错过！&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/d3-js/&quot;&gt;D3.js实战练手&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 17, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -1091,37 +1186,6 @@ Case #4: 8 4&lt;/p&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/TgzxqXfGDLQ?feature=oembed&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/promising-young-climbers/&quot;&gt;Promising Young Climbers&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 22, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[An Invisible Sign]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/an-invisible-sign/" />
-  <id>http://wurui.cc/blog/an-invisible-sign</id>
-  <published>2014-03-21T11:01:00+08:00</published>
-  <updated>2014-03-21T11:01:00+08:00</updated>
-  <author>
-    <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
-    <email>ruiwu1990324@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/An_Invisible_Sign_Poster.jpg&quot; alt=&quot;Model-View-Controller&quot; style=&quot;float:right&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;影片中的斧子很关键，据说小说原作的第一句话，就是“我二十岁去店里买了一把斧子”——我其实未读过小说、或许理解有所偏差——光从影片看，很多问题都直接牵涉到开头父亲的童话，王国人口爆炸，国王要处死面包师傅家人，父亲提出砍去每位家人的肢体以替代死刑。于是，小女孩失去了她的脚。不过，童话以家人美满团圆而告终&lt;/p&gt;
-
-&lt;p&gt;斧子——正是那个布偶“心魔”（行刑者）砍断所有人肢体的道具。童话中和现实中的父亲把“牺牲”——被迫的付出，作为家庭圆满、幸福、甚至是有钱（童话情节）的先决条件。显然，父亲也强迫家人和他一起如此“牺牲”。小女孩除了根据这个观念，自己理解演绎出一套怪癖之外，还将斧子视为“牺牲”的象征，她也需要这件象征物时时提醒自己。&lt;/p&gt;
-
-&lt;p&gt;女孩成人之后，这个“执念”毕竟显得怪异，所以她时时在伪装，“撒谎”。买了斧子后，她特地将斧子装裱粉饰为“7”，挂在教室里，恐怕也是这个原因吧。这个教室是她最初爱上数字的地方，“斧子7”其实是对她自己的教具。之后，阴差阳错，伤了自己的腿，恐怕是幼年童话的投射吧。不过，女孩走出“牺牲观”的怪圈，亦是由此而起。&lt;/p&gt;
-
-&lt;p&gt;我觉得，这种“牺牲”观在美国，自然有宗教的背景，可我们对此可一点儿也不陌生！从小到大，受的都是“牺牲观”教育。被迫的付出，是成就从个人到国家种种目的的先决条件。影片之所以在最后触动我，不是圆满的结局，而是提出了这样一个答案：靠伤害自己、被迫付出的“牺牲”都是某种妄想症（从国家层面来扮演父亲角色，以“牺牲观”来推广教育民众，就更是别有用心了），追求幸福圆满的唯一道路，是积极去追求自己真正渴望的东西，去创造，实现部分（个体价值）的总和大于整体，而非相反！&lt;/p&gt;
-
-&lt;p&gt;转自：&lt;a href=&quot;http://movie.douban.com/review/5442223/&quot;&gt;从斧头开始的牺牲观妄想症&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/an-invisible-sign/&quot;&gt;An Invisible Sign&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 21, 2014.&lt;/p&gt;
   </content>
 </entry>
 

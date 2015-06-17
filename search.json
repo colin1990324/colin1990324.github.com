@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "D3.js实战练手",
+      "link"			: "http://wurui.cc/tech/d3-js/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "可视化网络 Gephi",
       "link"			: "http://wurui.cc/tech/gephi/",
       "excerpt"		: ""

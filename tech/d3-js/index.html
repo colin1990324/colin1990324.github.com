@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>可视化网络 Gephi &#8211; Wu Rui's Home</title>
+<title>D3.js实战练手 &#8211; Wu Rui's Home</title>
 
 <meta name="keywords" content="visualization, big data, graph">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="可视化网络 Gephi">
+<meta name="twitter:title" content="D3.js实战练手">
 
 
 
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="可视化网络 Gephi">
+<meta property="og:title" content="D3.js实战练手">
 
-<meta property="og:url" content="http://wurui.cc/tech/gephi/">
+<meta property="og:url" content="http://wurui.cc/tech/d3-js/">
 <meta property="og:site_name" content="Wu Rui's Home">
 
 
 
 
 
-<link rel="canonical" href="http://wurui.cc/tech/gephi/">
+<link rel="canonical" href="http://wurui.cc/tech/d3-js/">
 <link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -129,7 +129,7 @@
       <header class="entry-header">
         <span class="entry-tags"><a href="http://wurui.cc/tags/#visualization" title="Pages tagged visualization">visualization</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#big data" title="Pages tagged big data">big data</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#graph" title="Pages tagged graph">graph</a></span>
         
-          <h1 class="entry-title">可视化网络 Gephi</h1>
+          <h1 class="entry-title">D3.js实战练手</h1>
         
       </header>
       <footer class="entry-meta">
@@ -139,88 +139,87 @@
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Wu Rui</span></span>
-        <span class="entry-date date published"><time datetime="2015-06-11T16:16:47+08:00"><i class="fa fa-calendar-o"></i> June 11, 2015</time></span>
+        <span class="entry-date date published"><time datetime="2015-06-17T09:21:17+08:00"><i class="fa fa-calendar-o"></i> June 17, 2015</time></span>
         
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         
         
       </footer>
       <div class="entry-content">
-        <p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/firewall_sigma_circle.png" alt="Model-View-Controller" /></p>
+        <p>工作相关，了解流行的可视化库，（如百度echarts，GoogleCharts，Gephi等）最后还是<a href="https://github.com/mbostock/d3/wiki/Gallery">D3 Gallery</a>的诸多Demo惊艳了我。简单介绍后带来我的实战。</p>
 
-<p>Gephi是一个全平台的交互式可视化平台，它特别适用于复杂的大数据可视化工作。<a href="http://gephi.github.io/">下载</a></p>
+<blockquote>
+  <p>D3是一个基于数据操作文档JavaScript库。D3帮助你给数据带来活力通过使用HTML、SVG和CSS。D3重视Web标准为你提供现代浏览器的全部功能，而不是给你一个专有的框架。结合强大的可视化组件和数据驱动方式操作Dom。</p>
+</blockquote>
 
-<h4 id="section">实时可视化</h4>
-<hr />
-<p><img src="http://gephi.github.io/images/screenshots/select-tool-mini.png" alt="Model-View-Controller" /></p>
+<blockquote>
+  <p>D3允许绑定任何数据到DOM对象模型，然后应用数据驱动转换到文档。例如：你可以用D3从数组生成HTML表格，或者使用相同数据平滑和动态创建一个SVG图表。</p>
+</blockquote>
 
-<ul>
-  <li>Gephi使用的高速引擎可以快速迭代出你想要的图像。</li>
-  <li>超大网络，从5w节点到100w节点都可以支持。</li>
-  <li>大量可用工具。</li>
-</ul>
+<blockquote>
+  <p>D3不是一个庞大的框架，像想象那样提供许多功能。相反，D3解决这关键问题：基于数据文档高效操作。避免专有的表现，同时提供良好适应性。公开全部功能，如CSS3、HTML5和SVG网页标准，很少的开销，D3速度非常快。支持大数据集和动态交互和动画效果。D3的功能设计允许代码重用，通过集合不同的组件和插件。</p>
+</blockquote>
 
-<h4 id="section-1">高效简易的布局工具</h4>
-<hr />
-<p><img src="http://gephi.github.io/images/screenshots/layout1.png" alt="Model-View-Controller" /></p>
+<p>引用自<a href="http://segmentfault.com/a/1190000000701746">小渝人儿</a></p>
 
-<p>对复杂图进行布局是一个困难的问题，而Gephi提供了最简易高效的布局算法。软件还支持在迭代的同时移动单个或是一片节点。你还可以在market中下载更多的plugin，其中也包括了来自不同开发者的其他布局算法。</p>
+<h3 id="section">实战一 标签云</h3>
 
-<p><a href="http://gephi.github.io/features/">简单翻译自 Gephi Features</a></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/word_cloud.png" alt="Model-View-Controller" />
+<a href="http://wurui.cc/word-cloud/">live example http://wurui.cc/word-cloud/</a></p>
 
-<h2 id="section-2">快速入门</h2>
+<p>首先是数据准备，我用Java写了一个采集全站高频词的<a href="https://github.com/colin1990324/DataVisualization/blob/master/src/WordCloud/WordFrequency.java">程序</a>，输出一个&lt;单词，字号&gt;的map。需要注意的大概是对中文进行分词，Stopwords的排除以及根据词频计算字号。</p>
 
-<p><a href="http://gephi.github.io/tutorials/gephi-tutorial-quick_start.pdf">原始文档</a></p>
+<p>然后我们使用前人写好的布局函数d3.layout.cloud.js,感谢<a href="https://www.jasondavies.com/wordcloud/#%2F%2Fwww.jasondavies.com%2Fwordcloud%2Fabout%2F">www.jasondavies.com</a>.</p>
 
-<h4 id="section-3">图数据导入</h4>
-<hr />
-<p>Gephi支持所有主流的图数据格式导入，例如GEFX，GraphML，GML。同时也支持简单的CSV格式导入，缺点是只认前三列，不方便添加Label或者其他属性。如果你在使用neo4j，可以使用neo4j-shell来导出图数据。如果以上方法都不合适，可以找到以上几种文件的格式，自己生产图文件。我有一些简单程序，有需要的可以留言。</p>
+<p>最后根据map设置字号，颜色随机就可以了~</p>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.49.48%20PM.png?raw=true" alt="Model-View-Controller" /></p>
+<h3 id="sunburst">实战二 Sunburst</h3>
 
-<h4 id="section-4">布局算法</h4>
-<hr />
-<p>在左下角有布局算法区，大可以随意尝试几种不同的算法和参数，点击run看看效果~</p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/sunburst.png" alt="Model-View-Controller" />
+<a href="http://wurui.cc/sunburst/">live example http://wurui.cc/sunburst/</a></p>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.50.10%20PM.png?raw=true" alt="Model-View-Controller" /></p>
+<p>sunburst不知道怎么翻译好，光芒？简而言之是一个圆盘的多级结构，也可以说是一个单层无先后的树结构。</p>
 
-<p>常用的汇聚算法有ForceAtlas，ForceAtlas2。分散法有Fruchterman。如果是Community比较分散的情况，Yifan Hu有不错的效果。</p>
+<p>同样写一个<a href="https://github.com/colin1990324/DataVisualization/blob/master/src/Sunburst/Sunburst.java">程序</a>来获取数据。这次进步一点，把数据放在一个json文件中。这里我想展示一个博客-分类-文章的多级结构，最外圈每一个扇形的大小由文章的字节数来确定。内圈的累计计算由D3自动完成。</p>
 
-<p>参数比较常用的有scale控制大小，speed控制迭代的速度和精度。有的算法也提供一个noverlap选项。</p>
+<p>绘制部分感谢<a href="http://bl.ocks.org/mbostock/4348373">bl.ocks.org</a></p>
 
-<h4 id="ranking">Ranking</h4>
-<hr />
-<p>左中部有常用的Ranking功能，此功能够对节点的小大，颜色；边的颜色，粗细进行调节。一般进行完布局和大小调节以后，你的图就有了一定的信息量和可读性了。</p>
+<p>给每个部分加上标签坡费了我一番周折，最后还是没有理解mousemove事件鼠标位置的问题，如果知道怎么调，欢迎留言。</p>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.46.45%20PM.png?raw=true" alt="Model-View-Controller" /></p>
+<h3 id="geo-map">实战三 Geo Map</h3>
 
-<h4 id="section-5">统计和分割</h4>
-<hr />
-<p>在窗口右边有各种统计功能，举个例子，像Modularity，能够对数据进行聚类，聚类的数据可以在子窗口调节。获得结果之后可以使用Ranking左边的Partition功能，这里提供根据之前的结果进行配色的方案。</p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/travel-china.png" alt="Model-View-Controller" />
+<a href="http://wurui.cc/travel-china/">live example http://wurui.cc/travel-china/</a></p>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.55.04%20PM.png?raw=true" alt="Model-View-Controller" /></p>
+<p>在页面上绘制地图，这里每一条边都是现场绘制出来的哦。数据源请搜索“GeoJson”（<a href="https://github.com/colin1990324/colin1990324.github.io/tree/master/travel-china/Map_files">懒人请进</a>）。</p>
 
-<h4 id="preview">预览（Preview）</h4>
-<hr />
-<p>之前的操作都是在Overview视图中进行的，Gephi的预览视图提供了多套更为生动的整体配色模板。你也可以对具体的参数进行调节。在左下方有导出选项。</p>
+<p>源码简单易懂，值得一提的球体经纬度如何投影到二维平面上，这里使用常见的墨卡托投影。投影方式千奇百怪，世界中心到底在哪，有兴趣的同学可以<a href="http://www.zhihu.com/question/27614116">看一看</a>。</p>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.58.34%20PM.png?raw=true" alt="Model-View-Controller" /></p>
+<pre><code>var projection = d3.geo.mercator()
+</code></pre>
 
-<h4 id="data-laboratory">数据实验室（Data Laboratory）</h4>
-<hr />
-<p>数据实验室提供对具体数据进行操作的视图，然后并不怎么好用，推荐还是在生成导入文件的时候把需要的属性、标签都加入。Partition部分也支持使用标签来进行分类配色。</p>
+<p>添加一个map，根据我到过的省份频次给不同区块上色。</p>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%205.01.53%20PM.png?raw=true" alt="Model-View-Controller" /></p>
+<p>然后添加了简单的交互，类似刮刮乐，鼠标扫过便能揭开真相！</p>
 
-<h4 id="sigmajs">Sigma.js</h4>
-<hr />
-<p>如果你对sigma.js很熟悉，或者希望得到能够在网页动态展示的数据，或者neo4j的展示能力不能满足你的需要，那sigma plugin就很对你的胃口。文章第一张图和下面这张是我生成的图在sigma.js上展示的效果。</p>
+<h3 id="chord-diagram">实战四 Chord Diagram</h3>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/firewall_sigma.png" alt="Model-View-Controller" /></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/chord.png" alt="Model-View-Controller" />
+<a href="http://wurui.cc/chord/">live example http://wurui.cc/chord/</a></p>
 
-<p>这里要允许chrome从本地获取文件，在mac上的用法是 1 先关闭所有的chrome进程，2 带参数启动chrome。</p>
+<p>Chord既是和弦的意思，第一次看到这种类型的图时简直闪瞎我的狗眼，惹得我非常想自己做一个。</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">/Applications/Google<span class="se">\ </span>Chrome.app/Contents/MacOS/Google<span class="se">\ </span>Chrome --allow-file-access-from-files</code></pre></div>
+<p>这个类型的图非常适合点对点的数据类型，比如<a href="http://bost.ocks.org/mike/uberdata/">Uber流量图</a>。那我一个小博客，页面间跳转少的可怜，做个河图还可以，怎么也撑不起chord。哪里去找点对点的数据呢？最后我非常无耻的选择了pairwise document similarities。。。即博文间的相似度。。。。</p>
+
+<p>这里用了TF-IDF建立向量，简单的用余弦值来作相似度。<a href="https://github.com/colin1990324/DataVisualization/blob/master/src/chordDiagram/TfIdfMain.java">程序</a></p>
+
+<p>D3提供现成的d3.layout.chord，调用即可，每条弦的宽度会根据你带入的值自动计算。再给不同分类的文章加上颜色，炫酷的Chord Diagram就出炉啦！</p>
+
+<h3 id="section-1">小结</h3>
+
+<p>四篇实战之后，对D3的select, layout, data import, text, event, 回调函数有了简单的认识。</p>
+
+<p>我这样的前端小白也能成功做出一定的效果，这突显了D3的易用性。还没有体验过的朋友一定不要错过！</p>
 
 
         
@@ -253,10 +252,8 @@
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://wurui.cc/tech/new-domain-and-web-site/" class="btn" title="New Domain and Web Site">Previous</a>
+        <a href="http://wurui.cc/tech/gephi/" class="btn" title="可视化网络 Gephi">Previous</a>
       
-      
-        <a href="http://wurui.cc/tech/d3-js/" class="btn" title="D3.js实战练手">Next</a>
       
     </nav><!-- /.pagination -->
   </article>
