@@ -164,34 +164,37 @@
 
 <h3 id="section">实战一 标签云</h3>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/word_cloud.png" alt="Model-View-Controller" />
-<a href="http://wurui.cc/word-cloud/">live example http://wurui.cc/word-cloud/</a></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/word_cloud.png" alt="Model-View-Controller" class="center-image" /></p>
 
-<p>首先是数据准备，我用Java写了一个采集全站高频词的<a href="https://github.com/colin1990324/DataVisualization/blob/master/src/WordCloud/WordFrequency.java">程序</a>，输出一个&lt;单词，字号&gt;的map。需要注意的大概是对中文进行分词，Stopwords的排除以及根据词频计算字号。</p>
+<p style="color:black; font-size: 100%; text-align: center;"><a href="http://wurui.cc/word-cloud/">Live Example: wurui.cc</a></p>
 
-<p>然后我们使用前人写好的布局函数d3.layout.cloud.js,感谢<a href="https://www.jasondavies.com/wordcloud/#%2F%2Fwww.jasondavies.com%2Fwordcloud%2Fabout%2F">www.jasondavies.com</a>.</p>
+<p>首先是数据准备，我用Java写了一个采集全站高频词的<a href="https://github.com/colin1990324/DataVisualization/blob/master/src/WordCloud/WordFrequency.java">程序</a>，输出一个&lt;单词，字号&gt;的map，让高频的词有更大的字体。</p>
 
-<p>最后根据map设置字号，颜色随机就可以了~</p>
+<p>数据采集过程需要注意的是对中文进行分词，Stopwords的排除以及根据词频计算字号。</p>
+
+<p>然后我们使用D3的布局函数d3.layout.cloud.js。再根据map设置字号，颜色随机就可以了~</p>
 
 <h3 id="sunburst">实战二 Sunburst</h3>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/sunburst.png" alt="Model-View-Controller" />
-<a href="http://wurui.cc/sunburst/">live example http://wurui.cc/sunburst/</a></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/sunburst.png" alt="Model-View-Controller" class="center-image" /></p>
 
-<p>sunburst不知道怎么翻译好，光芒？简而言之是一个圆盘的多级结构，也可以说是一个单层无先后的树结构。</p>
+<p style="color:black; font-size: 100%; text-align: center;"><a href="http://wurui.cc/sunburst/">Live Example: wurui.cc</a></p>
+
+<p>sunburst不知道怎么翻译好，光芒？简而言之是一个圆盘的多级结构，也可以说是一个变异的树结构。</p>
 
 <p>同样写一个<a href="https://github.com/colin1990324/DataVisualization/blob/master/src/Sunburst/Sunburst.java">程序</a>来获取数据。这次进步一点，把数据放在一个json文件中。这里我想展示一个博客-分类-文章的多级结构，最外圈每一个扇形的大小由文章的字节数来确定。内圈的累计计算由D3自动完成。</p>
 
-<p>绘制部分感谢<a href="http://bl.ocks.org/mbostock/4348373">bl.ocks.org</a></p>
+<p>绘制部分感谢<a href="http://bl.ocks.org/mbostock/4348373">bl.ocks.org</a>，这次没有现成的layout，基本靠画圈圈来完成的。</p>
 
-<p>给每个部分加上标签坡费了我一番周折，最后还是没有理解mousemove事件鼠标位置的问题，如果知道怎么调，欢迎留言。</p>
+<p>给每个部分加上标签坡费了我一番周折，最后还是没有理解mousemove事件返回的鼠标位置到底在哪儿，如果知道怎么调，欢迎留言。</p>
 
 <h3 id="geo-map">实战三 Geo Map</h3>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/travel-china.png" alt="Model-View-Controller" />
-<a href="http://wurui.cc/travel-china/">live example http://wurui.cc/travel-china/</a></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/travel-china.png" alt="Model-View-Controller" class="center-image" /></p>
 
-<p>在页面上绘制地图，这里每一条边都是现场绘制出来的哦。数据源请搜索“GeoJson”（<a href="https://github.com/colin1990324/colin1990324.github.io/tree/master/travel-china/Map_files">懒人请进</a>）。</p>
+<p style="color:black; font-size: 100%; text-align: center;"><a href="http://wurui.cc/travel-china/">Live Example: wurui.cc</a></p>
+
+<p>在页面上绘制地图，这里每一条边都是现场绘制出来的哦。数据源请搜索“GeoJson china”（<a href="https://github.com/colin1990324/colin1990324.github.io/tree/master/travel-china/Map_files">懒人请进</a>）。</p>
 
 <p>源码简单易懂，值得一提的球体经纬度如何投影到二维平面上，这里使用常见的墨卡托投影。投影方式千奇百怪，世界中心到底在哪，有兴趣的同学可以<a href="http://www.zhihu.com/question/27614116">看一看</a>。</p>
 
@@ -204,14 +207,15 @@
 
 <h3 id="chord-diagram">实战四 Chord Diagram</h3>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/chord.png" alt="Model-View-Controller" />
-<a href="http://wurui.cc/chord/">live example http://wurui.cc/chord/</a></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/chord.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p style="color:black; font-size: 100%; text-align: center;"><a href="http://wurui.cc/chord/">Live Example: wurui.cc</a></p>
 
 <p>Chord既是和弦的意思，第一次看到这种类型的图时简直闪瞎我的狗眼，惹得我非常想自己做一个。</p>
 
 <p>这个类型的图非常适合点对点的数据类型，比如<a href="http://bost.ocks.org/mike/uberdata/">Uber流量图</a>。那我一个小博客，页面间跳转少的可怜，做个河图还可以，怎么也撑不起chord。哪里去找点对点的数据呢？最后我非常无耻的选择了pairwise document similarities。。。即博文间的相似度。。。。</p>
 
-<p>这里用了TF-IDF建立向量，简单的用余弦值来作相似度。<a href="https://github.com/colin1990324/DataVisualization/blob/master/src/chordDiagram/TfIdfMain.java">程序</a></p>
+<p>这里又用到一些简单的自然语言处理方法（包括前面的stopwords）。用TF-IDF建立向量，简单的用余弦值来作相似度。<a href="https://github.com/colin1990324/DataVisualization/blob/master/src/chordDiagram/TfIdfMain.java">程序</a></p>
 
 <p>D3提供现成的d3.layout.chord，调用即可，每条弦的宽度会根据你带入的值自动计算。再给不同分类的文章加上颜色，炫酷的Chord Diagram就出炉啦！</p>
 
@@ -219,7 +223,7 @@
 
 <p>四篇实战之后，对D3的select, layout, data import, text, event, 回调函数有了简单的认识。</p>
 
-<p>我这样的前端小白也能成功做出一定的效果，这突显了D3的易用性。还没有体验过的朋友一定不要错过！</p>
+<p>像我这样的前端小白也能成功做出一定的效果，这突显了D3的易用性。还没有体验过的朋友一定不要错过！做出了漂亮的效果也不要忘了留言分享哦~</p>
 
 
         
