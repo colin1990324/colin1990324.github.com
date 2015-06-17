@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-06-17T11:06:29+08:00</updated>
+<updated>2015-06-17T11:18:03+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -16,7 +16,7 @@
   
 
 <entry>
-  <title type="html"><![CDATA[D3.js实战练手]]></title>
+  <title type="html"><![CDATA[D3 实战练手]]></title>
   <link rel="alternate" type="text/html" href="http://wurui.cc/tech/d3-js/" />
   <id>http://wurui.cc/tech/d3-js</id>
   <published>2015-06-17T09:21:17+08:00</published>
@@ -41,7 +41,7 @@
   &lt;p&gt;D3不是一个庞大的框架，像想象那样提供许多功能。相反，D3解决这关键问题：基于数据文档高效操作。避免专有的表现，同时提供良好适应性。公开全部功能，如CSS3、HTML5和SVG网页标准，很少的开销，D3速度非常快。支持大数据集和动态交互和动画效果。D3的功能设计允许代码重用，通过集合不同的组件和插件。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;引用自&lt;a href=&quot;http://segmentfault.com/a/1190000000701746&quot;&gt;小渝人儿&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;color:black; font-size: 100%; text-align: right;&quot;&gt;引用自&lt;a href=&quot;http://segmentfault.com/a/1190000000701746&quot;&gt;小渝人儿&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;section&quot;&gt;实战一 标签云&lt;/h3&gt;
 
@@ -107,7 +107,7 @@
 &lt;p&gt;像我这样的前端小白也能成功做出一定的效果，这突显了D3的易用性。还没有体验过的朋友一定不要错过！做出了漂亮的效果也不要忘了留言分享哦~&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/d3-js/&quot;&gt;D3.js实战练手&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 17, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/d3-js/&quot;&gt;D3 实战练手&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on June 17, 2015.&lt;/p&gt;
   </content>
 </entry>
 
