@@ -195,7 +195,14 @@ $("#submitmsg").click(function(){
 	var clientmsg = $("#usermsg").val();
     var serviceUri = url+clientmsg;
     $.getJSON(serviceUri, function (result) {
- 		$("#chatbox").text("您的问题："+clientmsg+"    回答："+JSON.stringify(result));
+        if(typeof result.list !== 'undefined' && result.list.length > 0){
+ 	        var obj = $("#chatbox").text("您："+clientmsg+"\n小黄鸡："+JSON.stringify(result)+"\n");
+            obj.html(obj.html().replace(/\n/g,'<br/>'));
+        }
+        else{
+            var obj = $("#chatbox").text("您："+clientmsg+"\n小黄鸡："+result.text+"\n");
+            obj.html(obj.html().replace(/\n/g,'<br/>'));
+        }
     });
 
 	$("#usermsg").val("");
