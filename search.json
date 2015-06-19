@@ -305,6 +305,12 @@
   
 
   
+    ,{
+      "title"			: "百事通小黄鸡",
+      "link"			: "http://wurui.cc/robot/",
+      "excerpt"		: ""
+    }
+  
 
   
     ,{
@@ -314,6 +320,12 @@
     }
   
 
+  
+    ,{
+      "title"			: "About Wu Rui",
+      "link"			: "http://wurui.cc/about/",
+      "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
+    }
   
 
   
@@ -325,11 +337,7 @@
   
 
   
-    ,{
-      "title"			: "About Wu Rui",
-      "link"			: "http://wurui.cc/about/",
-      "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
-    }
+
   
 
   
