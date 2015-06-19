@@ -133,10 +133,17 @@
         <style type="text/css">
 
 #wrapper {
+	width: 90%; 
+	max-width: 150px;
+	position: relative;
     margin:0 auto;
     padding-bottom:25px;
     background:#EBF4FB;
     border:1px solid #ACD8F0; }
+
+#menu { padding:12.5px 25px 12.5px 25px; }
+  
+.welcome { float:left; }
 
 #chatbox {
     text-align:left;
@@ -145,32 +152,32 @@
     padding:10px;
     background:#fff;
     height:270px;
-    width:90%;
+    width:100%;
     border:1px solid #ACD8F0;
     overflow:auto; }
-  
-#usermsg {
-    width:70%;
-    border:1px solid #ACD8F0; }
-
-#menu { padding:12.5px 25px 12.5px 25px; }
-  
-.welcome { float:left; }
-  
-#submit { width: 20%; }
 
 #message { padding:5.5px 25px 5.5px 25px; }
+  
+#usermsg {
+	width: 100%;
+    max-width:80%;
+    border:1px solid #ACD8F0; }
+  
+#submit { 
+	width: 20%;
+    max-width:30px;
+}
 
 </style>
 
-<div id="wrapper" style="width: 90%; margin: 0px auto; position: relative;">
+<div id="wrapper">
      <div id="menu">
         <p class="welcome">Welcome</p>
     </div>
 
     <div id="chatbox"></div>
      
-    <form name="message" id="message" action="">
+    <form name="message" id="message" action="" style="text-align: right">
         <input name="usermsg" type="text" id="usermsg" size="63" />
         <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
     </form>
