@@ -321,6 +321,10 @@
   
 
   
+
+  
+
+  
     ,{
       "title"			: "Chord Diagram",
       "link"			: "http://wurui.cc/chord/",
@@ -337,17 +341,13 @@
   
 
   
+
+  
     ,{
-      "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/sunburst/",
+      "title"			: "Whole Site Word Cloud",
+      "link"			: "http://wurui.cc/word-cloud/",
       "excerpt"		: ""
     }
-  
-
-  
-
-  
-
   
 
   
@@ -363,9 +363,11 @@
   
 
   
+
+  
     ,{
-      "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/word-cloud/",
+      "title"			: "Zoomable Sunburst",
+      "link"			: "http://wurui.cc/sunburst/",
       "excerpt"		: ""
     }
   
