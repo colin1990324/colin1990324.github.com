@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Microsoft Coding Competition - University of Missouri II &#8211; Wu Rui's Home</title>
+<title>知乎爬虫 &#8211; Wu Rui's Home</title>
 
-<meta name="keywords" content="codeing, school, competition">
+<meta name="keywords" content="visualization, big data, graph, d3, 知乎">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Microsoft Coding Competition - University of Missouri II">
+<meta name="twitter:title" content="知乎爬虫">
 
 
 
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Microsoft Coding Competition - University of Missouri II">
+<meta property="og:title" content="知乎爬虫">
 
-<meta property="og:url" content="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/">
+<meta property="og:url" content="http://wurui.cc/tech/zhihu-python-crawler/">
 <meta property="og:site_name" content="Wu Rui's Home">
 
 
 
 
 
-<link rel="canonical" href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/">
+<link rel="canonical" href="http://wurui.cc/tech/zhihu-python-crawler/">
 <link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -127,9 +127,9 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="http://wurui.cc/tags/#codeing" title="Pages tagged codeing">codeing</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#school" title="Pages tagged school">school</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#competition" title="Pages tagged competition">competition</a></span>
+        <span class="entry-tags"><a href="http://wurui.cc/tags/#visualization" title="Pages tagged visualization">visualization</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#big data" title="Pages tagged big data">big data</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#graph" title="Pages tagged graph">graph</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#d3" title="Pages tagged d3">d3</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#知乎" title="Pages tagged 知乎">知乎</a></span>
         
-          <h1 class="entry-title">Microsoft Coding Competition - University of Missouri II</h1>
+          <h1 class="entry-title">知乎爬虫</h1>
         
       </header>
       <footer class="entry-meta">
@@ -139,72 +139,79 @@
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Wu Rui</span></span>
-        <span class="entry-date date published"><time datetime="2014-09-23T11:52:20+08:00"><i class="fa fa-calendar-o"></i> September 23, 2014</time></span>
+        <span class="entry-date date published"><time datetime="2015-07-04T17:54:50+08:00"><i class="fa fa-calendar-o"></i> July 04, 2015</time></span>
         
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         
         
       </footer>
       <div class="entry-content">
-        <p>Here posts  3 problems without solution.</p>
+        <p>一直没有写过爬虫程序。感觉都不只是遗憾而是一种缺失了。之前在知乎看到类似<a href="http://www.zhihu.com/question/27621722">“能利用爬虫技术做到哪些很酷很有趣很有用的事情？”</a>，又一次激发了我玩一玩爬虫的兴趣。而爬虫的对象就用知乎好了，语言用我最近正在磨砺的Python。</p>
 
-<h2 id="question-two-odata-service--2-points">Question Two OData service | 2 point(s)</h2>
+<p>知乎作为知识问答式的网站有很强的社交属性。四月的时候知乎社区酝酿成熟，兴起了一波线下聚会。如何让本来陌生的参与者快速找到共同的痛点，轻松识别大小V？社交网络提供了很好的方法。</p>
 
-<p>The Open Data Protocol (OData) is a data access protocol created by Microsoft that builds on simple REST principles. Your task is to retrieve certain data from a sample (live) OData service. For this problem you will be working with the OData service located <a href="http://services.odata.org/Northwind/Northwind.svc/">here</a>. You will retrieve data from an entity set called ‘Products’. An entity set is equivalent to a table in a relational database. The Products entity set is located <a href="http://services.odata.org/Northwind/Northwind.svc/Products">here</a>.</p>
+<p>先上效果图</p>
 
-<p>Your input file will consist of a series of simple queries to perform on the Products entity set. The input will contain a $filter expression to perform on Products. This is equivalent to a WHERE clause in SQL. Your job is simply to see how many entities (rows in a table) are returned from the specified query.</p>
+<p><img src="https://raw.githubusercontent.com/colin1990324/DataVisualization/master/zhihui-python/Screen%20Shot%202015-07-04%20at%206.12.41%20PM.png" alt="Model-View-Controller" class="center-image" /></p>
 
-<p>Normally a request to the endpoint specified above would return product data - but since you are only interested in the number of entities that would be returned, you can send requests to this special <a href="http://services.odata.org/Northwind/Northwind.svc/Products/$count">$count endpoint</a>. After sending an appropriate request to this endpoint, it will respond with the number of entities that match the query. Print out this value on a line in the output file. Your output file will have one line per line of input containing one number.</p>
+<p><a href="http://wurui.cc/zhihu/">live demo</a></p>
 
-<p>Input description/format
-The input will be a series of $filter queries to perform. Each line of input will correspond to a single query. For instance, the input line: Discontinued eq true should send a GET request to the following URL: http://services.odata.org/Northwind/Northwind.svc/Products/$count?$filter=Discontinued eq true</p>
+<ul>
+  <li>用蓝色点表示用户，用橙色点表示问题。点与点的链接表示用户提出或者回答了某个问题。</li>
+  <li>用户的蓝点大小设置是根据关注数取log，既大V大点，小V小点。</li>
+  <li>鼠标在节点停留会显示名称，用户节点还会显示关注数。</li>
+</ul>
 
-<p>Output description/format
-Your output will be a single number per line of input, indicating how many entities match the given query.</p>
+<p>其他也有一些可以有的功能，但是为了简化砍掉了。我认为一张图不宜包含过量的信息，而应该让用户保持关注核心信息。新式图表容易包含过量，过杂，或者维度过高的信息。这样看起来炫目，然而并不利于用户使用。</p>
 
-<p>Example input</p>
+<h3 id="section">实现细节</h3>
+<hr />
+<p>Python爬虫现有成熟技术，使用 Beautiful Soup 4 解析 html 文档，使用 requests 处理 http 请求。可以预见已经有前辈做过知乎爬虫。在github搜索以后发现egrcc的<a href="https://github.com/egrcc/zhihu-python">zhihu-python</a>fork数高达207。浏览代码以后发现egrcc已经把提取‘问题’，‘用户’，‘回答’等封装的很完美了。</p>
 
-<p>Discontinued eq true</p>
+<p>第一步，qq向‘椒Club’组织联络员小麦要到名单，只要id就可以了。</p>
 
-<p>SupplierID eq 4</p>
+<p>然后遍历id，获得所以Users</p>
 
-<p>CategoryID eq 2</p>
+<pre><code>users = [User(user_url) for user_url in lines]
+</code></pre>
 
-<p>Example output</p>
+<p>分别获得每个user的提问和回答</p>
 
-<p>8</p>
+<pre><code>for user in users:
+    answers = list(user.get_answers())
+    asks = list(user.get_asks())
+</code></pre>
 
-<p>3</p>
+<p>为了简化图，强化社交熟悉，要求每个问题至少需要和两个以上用户产生链接。</p>
 
-<p>12</p>
+<pre><code>questions = defaultdict(int)
 
-<h2 id="question-three-unicode-email-addresses--2-points">Question Three Unicode email addresses | 2 point(s)</h2>
+for ask in asks:        
+    questions[ask.get_question().get_title()] += 1
 
-<p>With the expansion of the Internet across the world, the demand is growing for everyone to have an email address. Until everyone is ready to use international characters, you are now in charge of writing a converter that will take UTF-8 characters and bring them back to something DNS servers will be able to handle.
-To do so, you must take an email string and break it into 3 pieces: first@second.third. Process each piece as follows: Leave all characters that have ASCII codes between 33 and 126 as is, except convert uppercase letters to lowercase letters Represent all other characters (referred to hereinafter as special characters) using the format +position?UTF-8_hexadecimal_representation The position is the 0-indexed position of the represented character The UTF-8 hexadecimal representation must not contain spaces and must be finalized If at least one special character was present in the string, append a ~ and each special character at the end of the address.</p>
+for answer in answers:     
+    questions[answer.get_question().get_title()] += 1
 
-<p>For example, the piece Pøpø would be processed to pp+1?C3B8+3?C3B8~øø
-Clarifications
-There shouldn’t be any spaces.
-You will receive only characters contained within the UTF-8 standard</p>
+questions = { k:v for (k,v) in questions.iteritems() if v &gt; 1 }
+</code></pre>
 
-<p>Input description/format</p>
+<p>最后我们将‘用户节点’，‘问题节点’，‘提问关系’，‘回答关系’一同写入json中，方便后面前段读取。</p>
 
-<p>Each line will be an email address with Unicode characters.</p>
+<pre><code>write_file(usersOut,questionOut,askOut,answerOut)
+</code></pre>
 
-<p>Output description/format</p>
+<p><a href="https://github.com/colin1990324/DataVisualization/tree/master/zhihui-python">源代码请访问Github.com</a></p>
 
-<p>new email address composition characters removed in order</p>
+<h3 id="section-1">前段部分</h3>
+<hr />
+<p>d3是我前端仅有的经验，这里使用d3.js的force directed graph。</p>
 
-<p>Example input</p>
+<p>d3提供了d3.layout.force()来处理节点分布。d3.json()直接读取之前生成的图数据。</p>
 
-<p>WoRlD_ReAdY@Microsoft.COM</p>
+<p>然后就是添加边和点，这里注意分别设置大小，颜色，文本的提取。</p>
 
-<p>Café@Chaud.tôt</p>
+<p>滑动条部分，根据id来显示id&lt;=滑动条的点边，增加一点交互性。这里注意生成图数据的时候，边的Year一定要小于它链接的点的Year，不然就会出现无头边了。</p>
 
-<p>Trinitŷ@߷.com</p>
-
-<p>ա@մ.կ</p>
 
         
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
@@ -236,10 +243,8 @@ You will receive only characters contained within the UTF-8 standard</p>
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/" class="btn" title="Microsoft Coding Competition - University of Missouri I">Previous</a>
+        <a href="http://wurui.cc/life/huanglongxi/" class="btn" title="黄龙溪小游">Previous</a>
       
-      
-        <a href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/" class="btn" title="Microsoft Coding Competition - University of Missouri III">Next</a>
       
     </nav><!-- /.pagination -->
   </article>

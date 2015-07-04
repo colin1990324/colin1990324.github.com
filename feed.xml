@@ -4,13 +4,99 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-07-04T15:33:04+08:00</updated>
+<updated>2015-07-04T20:00:17+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
   <uri>http://wurui.cc/</uri>
   <email>ruiwu1990324@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[知乎爬虫]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/zhihu-python-crawler/" />
+  <id>http://wurui.cc/tech/zhihu-python-crawler</id>
+  <published>2015-07-04T17:54:50+08:00</published>
+  <updated>2015-07-04T17:54:50+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;一直没有写过爬虫程序。感觉都不只是遗憾而是一种缺失了。之前在知乎看到类似&lt;a href=&quot;http://www.zhihu.com/question/27621722&quot;&gt;“能利用爬虫技术做到哪些很酷很有趣很有用的事情？”&lt;/a&gt;，又一次激发了我玩一玩爬虫的兴趣。而爬虫的对象就用知乎好了，语言用我最近正在磨砺的Python。&lt;/p&gt;
+
+&lt;p&gt;知乎作为知识问答式的网站有很强的社交属性。四月的时候知乎社区酝酿成熟，兴起了一波线下聚会。如何让本来陌生的参与者快速找到共同的痛点，轻松识别大小V？社交网络提供了很好的方法。&lt;/p&gt;
+
+&lt;p&gt;先上效果图&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/colin1990324/DataVisualization/master/zhihui-python/Screen%20Shot%202015-07-04%20at%206.12.41%20PM.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wurui.cc/zhihu/&quot;&gt;live demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;用蓝色点表示用户，用橙色点表示问题。点与点的链接表示用户提出或者回答了某个问题。&lt;/li&gt;
+  &lt;li&gt;用户的蓝点大小设置是根据关注数取log，既大V大点，小V小点。&lt;/li&gt;
+  &lt;li&gt;鼠标在节点停留会显示名称，用户节点还会显示关注数。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其他也有一些可以有的功能，但是为了简化砍掉了。我认为一张图不宜包含过量的信息，而应该让用户保持关注核心信息。新式图表容易包含过量，过杂，或者维度过高的信息。这样看起来炫目，然而并不利于用户使用。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;实现细节&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;Python爬虫现有成熟技术，使用 Beautiful Soup 4 解析 html 文档，使用 requests 处理 http 请求。可以预见已经有前辈做过知乎爬虫。在github搜索以后发现egrcc的&lt;a href=&quot;https://github.com/egrcc/zhihu-python&quot;&gt;zhihu-python&lt;/a&gt;fork数高达207。浏览代码以后发现egrcc已经把提取‘问题’，‘用户’，‘回答’等封装的很完美了。&lt;/p&gt;
+
+&lt;p&gt;第一步，qq向‘椒Club’组织联络员小麦要到名单，只要id就可以了。&lt;/p&gt;
+
+&lt;p&gt;然后遍历id，获得所以Users&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;users = [User(user_url) for user_url in lines]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;分别获得每个user的提问和回答&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for user in users:
+    answers = list(user.get_answers())
+    asks = list(user.get_asks())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;为了简化图，强化社交熟悉，要求每个问题至少需要和两个以上用户产生链接。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;questions = defaultdict(int)
+
+for ask in asks:        
+    questions[ask.get_question().get_title()] += 1
+
+for answer in answers:     
+    questions[answer.get_question().get_title()] += 1
+
+questions = { k:v for (k,v) in questions.iteritems() if v &amp;gt; 1 }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后我们将‘用户节点’，‘问题节点’，‘提问关系’，‘回答关系’一同写入json中，方便后面前段读取。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;write_file(usersOut,questionOut,askOut,answerOut)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/tree/master/zhihui-python&quot;&gt;源代码请访问Github.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;前段部分&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;d3是我前端仅有的经验，这里使用d3.js的force directed graph。&lt;/p&gt;
+
+&lt;p&gt;d3提供了d3.layout.force()来处理节点分布。d3.json()直接读取之前生成的图数据。&lt;/p&gt;
+
+&lt;p&gt;然后就是添加边和点，这里注意分别设置大小，颜色，文本的提取。&lt;/p&gt;
+
+&lt;p&gt;滑动条部分，根据id来显示id&amp;lt;=滑动条的点边，增加一点交互性。这里注意生成图数据的时候，边的Year一定要小于它链接的点的Year，不然就会出现无头边了。&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/zhihu-python-crawler/&quot;&gt;知乎爬虫&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on July 04, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -1175,51 +1261,6 @@ Case #4: 8 4&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/small_news_pic7190.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/ground_covered_with_chicken_feathers/&quot;&gt;一地鸡毛&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 31, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[《码农故事》]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/programmers-story/" />
-  <id>http://wurui.cc/blog/programmers-story</id>
-  <published>2014-03-29T11:06:44+08:00</published>
-  <updated>2014-03-29T11:06:44+08:00</updated>
-  <author>
-    <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
-    <email>ruiwu1990324@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;创业公司核心代码被盗，作案者到底是黑客还是内奸？社交网站遭遇DDoS攻击，究竟是何人所为？顶级大牛程序员改行送外卖的背后又有什么隐情？当精英创业团队面临理想与现实的冲突，他们各自做出了怎样的选择？前端女汉子和美女市场经理谁最终会得到钻石王老五的青睐？成功的曙光出现之时，又发生了什么匪夷所思的事情？当一切都尘埃落定之时，是技术改变了世界，还是资本扭曲了人性？————&lt;a href=&quot;http://coderlmn.github.io/coderStory/&quot;&gt;《码农故事》&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;一般有程序员小说我都是要读读看的，一来帮助我这种行业菜鸡初窥一下行业规则，二来可以从一个程序员的眼睛重新看待一些人和事。总得来说，多半是有趣而丰富的。&lt;/p&gt;
-
-&lt;p&gt;由于是在线更新连载，时间线比较长，前期的想法已经记不清了。我这里主要说说公司CEO赵川的人物性格演变。创业初期，赵川带着追随自己并一同离职的莫楠开发了一个健康社区，公司只有寥寥数人，当同事追问赵川为什么要从待遇丰厚、条件稳定的大公司离职时，赵川是这么回答的：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我出来是因为讨厌给客户做开发。在咱们这儿多好，只有用户，没有客户。一切工作都是为了让用户满意，直截了当，也有成就感。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;刚刚摆脱大公司的束缚，单干起来，赵川只觉得神清气爽，上楼也不累了，干活也有劲了。而到了A轮融资的前期，经历了诸如对投资方行事路子野的不适应到麻木；公司发展目标的巨大压力，18个月用户翻10倍到12个月翻10倍；人员流动带来的核心代码流失；DDoS攻击竞争对手。公司CEO赵川，受到方方面面施加的巨大而持续性的压力。最后的结果就是人格、世界观，方法论都发生了巨大的变化甚至是扭曲。第九十四回，莫楠最后一次找赵川谈话。 赵川面无表情地答道：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;莫楠，人不能一辈子只活在理想里。咱们生活在一个讲现实的社会，没人真正会关心你的理想，除非你的理想可以转化为利益。再说，如果没有现实的利益给它送去口粮，理想也会饿死的。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;莫楠又一次愣住了：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;老大，你真的变得让我觉得很陌生。以前我觉得你是一个理想主义者，我是受你的影响，成了半理想半现实。可现在呢，我快进化成真正的理想主义者了，你却突然变成了现实主义者！&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;所谓一将功成万骨枯，公司最终A轮融资成功，公司估值达12亿元，办公室也重新搬回了市中心的高级写字楼。然而人走茶凉，铁杆小弟和日益成熟的产品经理受不了公司气氛变化双双辞职。天使投资人套现身退，赶在东窗事发前跑路。跟公司相关联的高中同学开发区主任和顶头的副市长均被带着调查。坐在宽敞的独立办公室里，赵川呆呆的望着落地窗外鳞次栉比的商业楼。这十二个月，自己到底是收获了，还是失去了。&lt;/p&gt;
-
-&lt;p&gt;作者微博：&lt;a href=&quot;http://weibo.com/ned11&quot;&gt;老码农的自留地&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/programmers-story/&quot;&gt;《码农故事》&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on March 29, 2014.&lt;/p&gt;
   </content>
 </entry>
 
