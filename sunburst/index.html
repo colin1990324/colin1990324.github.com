@@ -171,10 +171,10 @@ var color = d3.scale.category20c();
 var svg = d3.select("#chart").append("svg")
     .attr("width", '80%')
     .attr("height", '80%')
-    .attr('viewBox','0 0 '+(Math.min(width,height)+120)+' '+Math.min(width,height))
+    .attr('viewBox','0 0 '+(Math.min(width,height)+150)+' '+Math.min(width,height))
     .attr('preserveAspectRatio','xMinYMin')
     .append("g")
-    .attr("transform", "translate(" + (Math.min(width,height) / 2 + 120)+"," + Math.min(width,height) / 2 + ")");
+    .attr("transform", "translate(" + (Math.min(width,height) / 2 + 150)+"," + Math.min(width,height) / 2 + ")");
 
 var partition = d3.layout.partition()
     .value(function(d) { return d.value; });
@@ -189,7 +189,7 @@ var arc = d3.svg.arc()
   var tooltip = d3.select("#chart")
     .append("div")
     .attr("class", "tooltip")
-    .style("position", "absolute")
+    .style("position", "relative")
     .style("z-index", "10")
     .style("opacity", 0);
 
@@ -222,8 +222,8 @@ d3.json("blog.json", function(error, root) {
         })
         .on("mousemove", function(d) {
           return tooltip
-            .style("top", (Math.min(width,height)/1.6)+"px")
-            .style("left", (margin.left)+"px");
+            .style("top", (x.invert(d3.mouse(this)[1])-100)+"px")
+            .style("left", (x.invert(d3.mouse(this)[0])+100)+"px");
         })
         .on("mouseout", function(){return tooltip.style("opacity", 0);});
 
