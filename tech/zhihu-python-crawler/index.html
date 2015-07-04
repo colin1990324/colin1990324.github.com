@@ -152,9 +152,9 @@
 
 <p>先上效果图</p>
 
-<p><img src="https://raw.githubusercontent.com/colin1990324/DataVisualization/master/zhihui-python/Screen%20Shot%202015-07-04%20at%206.12.41%20PM.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/zhihu.png" alt="Model-View-Controller" class="center-image" /></p>
 
-<p><a href="http://wurui.cc/zhihu/">live demo</a></p>
+<p style="color:black; font-size: 100%; text-align: center;"><a href="http://wurui.cc/zhihu/">live demo</a></p>
 
 <ul>
   <li>用蓝色点表示用户，用橙色点表示问题。点与点的链接表示用户提出或者回答了某个问题。</li>
@@ -172,33 +172,29 @@
 
 <p>然后遍历id，获得所以Users</p>
 
-<pre><code>users = [User(user_url) for user_url in lines]
-</code></pre>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">User</span><span class="p">(</span><span class="n">user_url</span><span class="p">)</span> <span class="k">for</span> <span class="n">user_url</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span></code></pre></div>
 
 <p>分别获得每个user的提问和回答</p>
 
-<pre><code>for user in users:
-    answers = list(user.get_answers())
-    asks = list(user.get_asks())
-</code></pre>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+    <span class="n">answers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_answers</span><span class="p">())</span>
+    <span class="n">asks</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_asks</span><span class="p">())</span></code></pre></div>
 
 <p>为了简化图，强化社交熟悉，要求每个问题至少需要和两个以上用户产生链接。</p>
 
-<pre><code>questions = defaultdict(int)
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">questions</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 
-for ask in asks:        
-    questions[ask.get_question().get_title()] += 1
+<span class="k">for</span> <span class="n">ask</span> <span class="ow">in</span> <span class="n">asks</span><span class="p">:</span>        
+    <span class="n">questions</span><span class="p">[</span><span class="n">ask</span><span class="o">.</span><span class="n">get_question</span><span class="p">()</span><span class="o">.</span><span class="n">get_title</span><span class="p">()]</span> <span class="o">+=</span> <span class="mi">1</span>
 
-for answer in answers:     
-    questions[answer.get_question().get_title()] += 1
+<span class="k">for</span> <span class="n">answer</span> <span class="ow">in</span> <span class="n">answers</span><span class="p">:</span>     
+    <span class="n">questions</span><span class="p">[</span><span class="n">answer</span><span class="o">.</span><span class="n">get_question</span><span class="p">()</span><span class="o">.</span><span class="n">get_title</span><span class="p">()]</span> <span class="o">+=</span> <span class="mi">1</span>
 
-questions = { k:v for (k,v) in questions.iteritems() if v &gt; 1 }
-</code></pre>
+<span class="n">questions</span> <span class="o">=</span> <span class="p">{</span> <span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">questions</span><span class="o">.</span><span class="n">iteritems</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">}</span></code></pre></div>
 
 <p>最后我们将‘用户节点’，‘问题节点’，‘提问关系’，‘回答关系’一同写入json中，方便后面前段读取。</p>
 
-<pre><code>write_file(usersOut,questionOut,askOut,answerOut)
-</code></pre>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">write_file</span><span class="p">(</span><span class="n">usersOut</span><span class="p">,</span><span class="n">questionOut</span><span class="p">,</span><span class="n">askOut</span><span class="p">,</span><span class="n">answerOut</span><span class="p">)</span></code></pre></div>
 
 <p><a href="https://github.com/colin1990324/DataVisualization/tree/master/zhihui-python">源代码请访问Github.com</a></p>
 
