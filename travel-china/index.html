@@ -136,7 +136,7 @@
 
 <p style="color:black; font-size: 100%; text-align: center;">移动鼠标，看看我去过哪些省份吧</p>
 
-<script src="./Map_files/d3.v3.min.js"></script>
+<script src="//cdn.bootcss.com/d3/3.5.5/d3.min.js"></script>
 
 <script>
 	var width  = 700;
@@ -195,7 +195,7 @@
 	var path = d3.geo.path()
 					.projection(projection);
 	
-	d3.json("./Map_files/china_simplify.json", function(error, root) {
+	d3.json("china_simplify.json", function(error, root) {
 		
 		if (error) 
 			return console.error(error);

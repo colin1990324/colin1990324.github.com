@@ -323,21 +323,21 @@
   
 
   
-
-  
-    ,{
-      "title"			: "Chord Diagram",
-      "link"			: "http://wurui.cc/chord/",
-      "excerpt"		: ""
-    }
-  
-
-  
     ,{
       "title"			: "About Wu Rui",
       "link"			: "http://wurui.cc/about/",
       "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
     }
+  
+
+  
+    ,{
+      "title"			: "Zoomable Sunburst",
+      "link"			: "http://wurui.cc/sunburst/",
+      "excerpt"		: ""
+    }
+  
+
   
 
   
@@ -366,8 +366,8 @@
 
   
     ,{
-      "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/sunburst/",
+      "title"			: "Chord Diagram",
+      "link"			: "http://wurui.cc/chord/",
       "excerpt"		: ""
     }
   

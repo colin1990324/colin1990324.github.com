@@ -197,9 +197,10 @@
 
 </style>
 
-<script src="d3.v3.min.js"></script>
+<script src="//cdn.bootcss.com/d3/3.5.5/d3.min.js"></script>
 
 <div id="chart" align="center">
+
 <script>
 
 
@@ -219,15 +220,19 @@ var force = d3.layout.force()
     .size([width, height]);
 
 var svg = d3.select("#chart").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", '70%')
+    .attr("height", '70%')
+    .attr('viewBox','0 0 '+(Math.min(width,height))+' '+Math.min(width,height))
+    .attr('preserveAspectRatio','xMinYMin')
+    // .attr('version', '1.1')
+    // .attr('xmlns', 'http://www.w3.org/2000/svg')
+    // .attr('xmlns:ex', 'http://www.w3.org/1999/xlink');
 
 
 svg.append("rect")
     .attr("width", "100%")
     .attr("height", "100%")
     .attr("fill", "#F7F7F7");
-
 
 d3.json("network.json", function(error, graph) {
   graphdata=graph;
@@ -248,12 +253,15 @@ d3.json("network.json", function(error, graph) {
       .data(graph.nodes)
       .enter().append("circle")
       .attr("class", "node")
-      .attr("r", 5) // here to adjust node size
+      .attr("xlink:href", function(d){
+          return "http://wurui.cc";
+        })
+      .attr("r", function(d) { return (d.Type=="Question"?5:d.size);}) // here to adjust node size
       .style("fill", function(d) {return (d.Type=="Question"?color(2):color(1)); }) // node color
       .call(force.drag);
 
   node.append("SVG:title")
-      .text(function(d) { return d.label+" ("+String(d.Year)+")"; });
+      .text(function(d) { return (d.Type=="User"?(d.label+" ("+String(d.follower_num)+")"):d.label); });
 
 
   force.on("tick", function() {
@@ -272,7 +280,7 @@ d3.json("network.json", function(error, graph) {
 
 // Add the legend
 
-var colordata=[{value:1,name:"User"},{value:2,name:"Question"}];
+var colordata=[{value:1,name:"用户"},{value:2,name:"问题"}];
 
 var legend = svg.selectAll('.legend')
       .data(colordata)
@@ -293,7 +301,6 @@ legend.append("text")
       .attr('x', 25).attr('y', 15)
       .text(function(d) { return d.name; })
       .attr("stroke","black");
-
 
 // add title
 
@@ -328,7 +335,7 @@ function restart() {
 
 // the brush - slider
 
-var number = 75;
+var number = 90;
 
 var x = d3.scale.linear()
     .domain([1, number])
@@ -397,6 +404,8 @@ function brushed() {
 
 
 </script>
+</div>
+
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
   </article>
