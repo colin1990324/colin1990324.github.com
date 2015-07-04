@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-07-04T20:11:12+08:00</updated>
+<updated>2015-07-04T20:34:30+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -47,7 +47,7 @@
 
 &lt;h3 id=&quot;section&quot;&gt;实现细节&lt;/h3&gt;
 &lt;hr /&gt;
-&lt;p&gt;Python爬虫现有成熟技术，使用 Beautiful Soup 4 解析 html 文档，使用 requests 处理 http 请求。可以预见已经有前辈做过知乎爬虫。在github搜索以后发现egrcc的&lt;a href=&quot;https://github.com/egrcc/zhihu-python&quot;&gt;zhihu-python&lt;/a&gt;fork数高达207。浏览代码以后发现egrcc已经把提取‘问题’，‘用户’，‘回答’等封装的很完美了。&lt;/p&gt;
+&lt;p&gt;Python爬虫现有成熟技术，使用 Beautiful Soup 4 解析 html 文档，使用 requests 处理 http 请求。可以预见已经有前辈做过知乎爬虫。在github搜索以后发现egrcc的&lt;a href=&quot;https://github.com/egrcc/zhihu-python&quot;&gt;zhihu-python&lt;/a&gt; fork数高达207。浏览代码以后发现egrcc已经把提取‘问题’，‘用户’，‘回答’等封装的很完美了。&lt;/p&gt;
 
 &lt;p&gt;第一步，qq向‘椒Club’组织联络员小麦要到名单，只要id就可以了。&lt;/p&gt;
 
@@ -77,9 +77,9 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;write_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usersOut&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;questionOut&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;askOut&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answerOut&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/tree/master/zhihui-python&quot;&gt;源代码请访问Github.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;源代码请访问&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/tree/master/zhihui-python&quot;&gt;github.com/colin1990324/&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;前段部分&lt;/h3&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;前端部分&lt;/h3&gt;
 &lt;hr /&gt;
 &lt;p&gt;d3是我前端仅有的经验，这里使用d3.js的force directed graph。&lt;/p&gt;
 
