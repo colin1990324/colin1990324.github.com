@@ -202,14 +202,6 @@
 
   
     ,{
-      "title"			: "My Cooking",
-      "link"			: "http://wurui.cc/life/my-cooking/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
       "title"			: "Opening Orchid",
       "link"			: "http://wurui.cc/life/opening-orchid/",
       "excerpt"		: ""
@@ -331,12 +323,6 @@
   
 
   
-    ,{
-      "title"			: "About Wu Rui",
-      "link"			: "http://wurui.cc/about/",
-      "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
-    }
-  
 
   
     ,{
@@ -348,6 +334,12 @@
 
   
 
+  
+    ,{
+      "title"			: "About Wu Rui",
+      "link"			: "http://wurui.cc/about/",
+      "excerpt"		: "Wu Rui's Home is a place for my words, images and videos."
+    }
   
 
   
