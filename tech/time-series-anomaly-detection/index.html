@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Time Series Anomaly Detection &#8211; Wu Rui's Home</title>
+<title>时间序列异常检测 &#8211; Wu Rui's Home</title>
 
 <meta name="keywords" content="machine learning, anomaly detection, time series">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Time Series Anomaly Detection">
+<meta name="twitter:title" content="时间序列异常检测">
 
 
 
@@ -23,7 +23,7 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Time Series Anomaly Detection">
+<meta property="og:title" content="时间序列异常检测">
 
 <meta property="og:url" content="http://wurui.cc/tech/time-series-anomaly-detection/">
 <meta property="og:site_name" content="Wu Rui's Home">
@@ -129,7 +129,7 @@
       <header class="entry-header">
         <span class="entry-tags"><a href="http://wurui.cc/tags/#machine learning" title="Pages tagged machine learning">machine learning</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#anomaly detection" title="Pages tagged anomaly detection">anomaly detection</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#time series" title="Pages tagged time series">time series</a></span>
         
-          <h1 class="entry-title">Time Series Anomaly Detection</h1>
+          <h1 class="entry-title">时间序列异常检测</h1>
         
       </header>
       <footer class="entry-meta">
@@ -162,7 +162,7 @@
     <p>Exponential Smoothing Model 一个平滑模型，由简单的数列获得。ETS模型可以自动选择Single、Double、Triple里面匹配最好的输出。</p>
   </li>
   <li>
-    <p>Moving Average Model 也是平滑模型，点Px的预测值取临近点的平均值。</p>
+    <p>Moving Average Model 也是平滑模型，点Px的预测值取邻近点的平均值。</p>
   </li>
   <li>
     <p>Regression Models 一般是线性回归，特殊例子或者异常偏差特别大的时候有用。</p>
@@ -188,15 +188,11 @@
 </ul>
 
 <h3 id="section">实践经验</h3>
-<ul>
-  <li>序列构造自动选优</li>
-</ul>
+<p><strong>序列构造自动选优</strong></p>
 
 <p>不同类型的数据可能适合不同的模型。选择AutoForecastModel，程序会自动把所有TMM都跑一遍，并推选偏差值最小的模型送入异常检测模块。值得注意的是，这里自动选取的标准只关注了还原度，但还原度高并不直接代表能更好的查找异常，在使用本方法的时候要留意在心。</p>
 
-<ul>
-  <li>多数投票算法</li>
-</ul>
+<p><strong>多数投票算法</strong></p>
 
 <p>不同的异常检测算法从不同的角度定义了异常。实践过程中我发现，单一异常算法并不能找出所有异常点，同时还会出现一系列的假阳性异常。使用Majority Voting，规定半数以上算法识别为异常的点才输出为结果，在实际数据中提供了远高于单一算法的准确度。</p>
 
@@ -318,7 +314,7 @@
     <p><a href="https://github.com/numenta/NAB/tree/master/data">Amazon监控数据</a> Amazon EC2性能检测的真实检测数据，放出的数据有真实异常，并且有人工标注。</p>
   </li>
   <li>
-    <p><a href="http://www.cert.org/insider-threat/tools/index.cfm">内部威胁数据</a> CERT人造的内部威胁数据。人造的方法还是比较科学的，不过异常模式比较简单，知道答案倒推非常简单。不过要自己发现异常就需要比较大的工作量了。</p>
+    <p><a href="http://www.cert.org/insider-threat/tools/index.cfm">内部威胁数据</a> CERT人造的内部威胁数据。人造的方法还是比较科学的，不过异常模式比较简单，知道答案倒推就很容易。不过要自己发现异常就需要比较大的工作量了。</p>
   </li>
 </ul>
 
