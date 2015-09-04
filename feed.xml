@@ -4,13 +4,218 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2015-07-31T12:13:38+08:00</updated>
+<updated>2015-09-04T17:45:55+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
   <uri>http://wurui.cc/</uri>
   <email>ruiwu1990324@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[图数据库系列(一) 初见Neo4j]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/neo4j-first-sight/" />
+  <id>http://wurui.cc/tech/neo4j-first-sight</id>
+  <published>2015-09-04T11:08:32+08:00</published>
+  <updated>2015-09-04T11:08:32+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;neo4j&quot;&gt;Neo4j简介&lt;/h2&gt;
+
+&lt;p&gt;Neo4j是一个高性能的图数据库，属于NOSQL数据库中的一类。数据以图的形式存储而不是传统的表结构存储。Neo4j也可以被看作是一个高性能的图引擎，该引擎具有成熟数据库的所有特性。程序员工作在一个面向对象的、灵活的网络结构下而不是严格、静态的表中——但是他们可以享受到具备完全的事务特性、企业级的数据库的所有好处。&lt;/p&gt;
+
+&lt;p&gt;Neo4j因其嵌入式、高性能、轻量级等优势，越来越受到关注。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;图形数据结构&lt;/h2&gt;
+
+&lt;p&gt;在一个图中包含两种基本的数据类型：Nodes（节点） 和 Relationships（关系）。Nodes 和 Relationships 包含key/value形式的属性。Nodes通过Relationships所定义的关系相连起来，形成关系型网络结构。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/neo4j_graph.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;安装&lt;/h2&gt;
+
+&lt;p&gt;Neo4j可以被安装成一个独立运行的服务端程序，客户端程序通过RESTful API进行访问，也可以通过浏览器Console运行Cypher语句。另外Neo4j支持嵌入式安装，即安装为编程语言的第三方类库，目前只支持java和python语言。同时Neo4j也可以同Gephi结合，成为其插件式数据库源。&lt;/p&gt;
+
+&lt;p&gt;因Neo4j是用java语言开发的，所以确保将要安装的机器上已安装了jre或者jdk。&lt;/p&gt;
+
+&lt;p&gt;具体教程参见&lt;a href=&quot;http://www.cnblogs.com/ljhero/archive/2012/05/13/2498039.html&quot;&gt;LjHero&lt;/a&gt;的这篇博文，本文不再累述。&lt;/p&gt;
+
+&lt;h2 id=&quot;cypher&quot;&gt;Cypher简介&lt;/h2&gt;
+
+&lt;p&gt;Cypher是一个描述性的图形查询语言，允许不必编写图形结构的遍历代码对图形存储有表现力和效率的查询。Cyper通过一系列不同的方法和建立于确定的实践为表达查询而激发的。许多关键字如like和order by是受SQL的启发。模式匹配的表达式来自于SPARQL。正则表达式匹配实现实用Scala。Cypher是一个申明式的语言。对比命令式语言如Java和脚本语言如Gremlin和JRuby，它的焦点在于从图中如何找回（what to retrieve），而不是怎么去做。这使得在不对用户公布的实现细节里关心的是怎么优化查询。&lt;/p&gt;
+
+&lt;p&gt;这个查询语言包含以下几个明显的部分：
+* MATCH：图形的匹配模式，束缚于开始点。
+* WHERE：过滤条件。
+* RETURN：返回所需要的。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;实战演示&lt;/h2&gt;
+
+&lt;p&gt;本场实战，我选取了一个邮件头（Email Header）数据集。希望通过构造图数据库，能将邮件的流向关系清晰的展示出来。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;数据预处理&lt;/h3&gt;
+
+&lt;p&gt;原始数据&lt;a href=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/email%20headers.csv&quot;&gt;email_headers.csv&lt;/a&gt;包含了1170封邮件的数据头部分。数据有四列：From, To, Date, Subject。即发件人，收件人（复数），时间，主题。&lt;/p&gt;
+
+&lt;p&gt;经过数据预处理，我将源数据分解为了三个文件：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/addresses.csv&quot;&gt;addresses.csv&lt;/a&gt;:  所有不同的邮件地址，同时加上id。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/emails.csv&quot;&gt;emails.csv&lt;/a&gt;:所有不同的邮件，以及发送时间和主题。每封邮件加上id。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/relations.csv&quot;&gt;relations.csv&lt;/a&gt;:所有的发送，接受邮件关系。包含Email_id，From_id，To_id。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;通过预处理，源数据清晰的分解为了图数据的两个组成部分：节点（邮件地址、邮件），关系（发送、接收关系）。&lt;/p&gt;
+
+&lt;p&gt;接下来我们启动Neo4j server，打开浏览器Console（默认端口7474），开始使用Cypher加载数据。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;清除所有节点和关系&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;MATCH (n)
+OPTIONAL MATCH
+(n)-[r]-()
+DELETE n,r
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;person&quot;&gt;加载邮件地址，生成Person节点&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;LOAD CSV是Cypher支持的从CSV文件载入数据的方式。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;LOAD CSV WITH
+HEADERS FROM &quot;[file:///home/colin/Downloads/data/addresses.csv](file:///home\colin\Downloads\data\addresses.csv)&quot; AS csvLine
+
+CREATE (p:Person {id: toInt(csvLine.id), email: csvLine.address })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Return 55 nodes.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;加载邮件节点。&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;LOAD CSV WITH
+HEADERS FROM &quot;[file:///home/colin/Downloads/data/emails.csv](file:///home\colin\Downloads\data\emails.csv)&quot; AS csvLine
+
+CREATE (e:Email {id: toInt(csvLine.id), time: csvLine.time, content: csvLine.content })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Return 1170 nodes.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;创建索引&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;加载关系时需要大量匹配节点。创建节点索引，提升效率。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE INDEX ON:Person(id);
+
+CREATE INDEX ON:Email(id);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;加载发送、接收关系&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;使用LOAD CSV命令加载大量数据时，可能因为内存限制而失败，产生OutOfMemoryError。这时使用USING PERIODIC COMMIT来分段加载数据。&lt;/p&gt;
+
+&lt;p&gt;加载关系时，通过MATCH找到对应id的节点，然后创建关系：（节点）-[关系]-（节点）。&lt;/p&gt;
+
+&lt;p&gt;每封邮件只有一个发件人，用CREATE UNIQUE创建唯一的关系。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;USING PERIODIC
+COMMIT 500
+
+LOAD CSV WITH
+HEADERS FROM &quot;[file:///home/colin/Downloads/data/relations.csv](file:///home\colin\Downloads\data\relations.csv)&quot; AS csvLine
+
+MATCH (p1:Person {id: toInt(csvLine.fromId)}),(e:Email { id: toInt(csvLine.emailId)}),(p2:Person{ id: toInt(csvLine.toId)})
+
+CREATE UNIQUE (p1)-[:FROM]-&amp;gt;(e)
+
+CREATE(e)-[:TO]-&amp;gt;(p2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Created 10233 relationships, statement executed in 4567 ms.&lt;/p&gt;
+
+&lt;p&gt;加载完成，让我们来试验一下查询语句。&lt;/p&gt;
+
+&lt;h3 id=&quot;id1id2&quot;&gt;查询所有：发件人id=1，收件人id=2的邮件&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;MATCH (p1:Person)-[r1:FROM]-&amp;gt;(e:Email)-[r2:TO]-&amp;gt;(p2:Person)
+WHERE p1.id = 1 and p2.id=2
+RETURN p1,e,p2,r1,r2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%204.05.43%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Displaying 35 nodes, 98 relationships.&lt;/p&gt;
+
+&lt;p&gt;这里返回了对应节点和关系。我们发现有的邮件收件人也包含了发件人，这个关系并不是很有意义。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-8&quot;&gt;查找所有收件人包含发件人的情况，删除这个环形关系。&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;MATCH (p1:Person)-[r1:FROM]-&amp;gt;(e:Email)-[r2:TO]-&amp;gt;(p1:Person)
+delete r2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%204.08.43%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Displaying 35 nodes, 66 relationships.&lt;/p&gt;
+
+&lt;p&gt;Cypher也支持对属性进行模糊查询。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-9&quot;&gt;通过时间戳来筛选邮件&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;注意，Neo4j没有内部支持的时间类型，这里我们需要使用正则表达式。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;MATCH (p1:Person)-[r1:FROM]-&amp;gt;(e:Email)-[r2:TO]-&amp;gt;(p2:Person)
+WHERE p1.id = 1 and p2.id=2 and e.time=~&#39;^1/16/2014.*&#39;
+RETURN p1,e,p2,r1,r2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%204.09.56%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Displaying 7 nodes, 10 relationships.&lt;/p&gt;
+
+&lt;p&gt;使用图数据库，我们可以轻易的解决较为复杂的路径问题。&lt;/p&gt;
+
+&lt;h3 id=&quot;ab&quot;&gt;查询所有从A地址到B地址的路径，通过距离排序&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;MATCH p=(:Person {id: 1})-[r:FROM|:TO*1..5]-(:Person {id : 2 })
+RETURN p
+LIMIT 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%205.40.57%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;通过COUNT可以做聚合操作。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-10&quot;&gt;查询收件人最多的邮件（出度最高）&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;MATCH (n:Email)-[r:TO]-&amp;gt;(x)
+RETURN n as Email,
+COUNT(r) as ReceiverNumber
+ORDER BY COUNT(r) DESC
+LIMIT 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%205.02.37%20PM.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;结果显示这些邮件都是发送给所有人的邮件。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/colin1990324/Neo4j_EmailHeader&quot;&gt;Github项目地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;数据源&lt;a href=&quot;http://vacommunity.org/VAST+Challenge+2014&quot;&gt;VAST2014 Challenge&lt;/a&gt; dataset.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/neo4j-first-sight/&quot;&gt;图数据库系列(一) 初见Neo4j&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on September 04, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -1376,35 +1581,6 @@ Case #3: 2 1
 Case #4: 8 4&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/google-code-jam-2014/&quot;&gt;Google Code Jam 2014&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 12, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[GoPro 360 Degree Video]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/life/gopro-360-degree-video/" />
-  <id>http://wurui.cc/life/gopro-360-degree-video</id>
-  <published>2014-04-06T11:24:34+08:00</published>
-  <updated>2014-04-06T11:24:34+08:00</updated>
-  <author>
-    <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
-    <email>ruiwu1990324@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;This video is made by Jonas Ginter with 6 GoPro Cameras and I find it quite interesting.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/h1msuWVZZmQ?feature=oembed&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
-
-&lt;p&gt;And here’s how he made it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://7xjqmr.com1.z0.glb.clouddn.com/1200px_360_degree_gopro_mount_3d_print_jonas_ginter.jpg&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://thenextweb.com/shareables/2014/04/05/360-video-shot-6-gopro-cameras-will-blow-mind/&quot;&gt;More details&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/gopro-360-degree-video/&quot;&gt;GoPro 360 Degree Video&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Wu Rui's Home&lt;/a&gt; on April 06, 2014.&lt;/p&gt;
   </content>
 </entry>
 
