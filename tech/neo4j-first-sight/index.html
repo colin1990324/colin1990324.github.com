@@ -148,7 +148,7 @@
       <div class="entry-content">
         <h2 id="neo4j">Neo4j简介</h2>
 
-<p>Neo4j是一个高性能的图数据库，属于NOSQL数据库中的一类。数据以图的形式存储而不是传统的表结构存储。Neo4j也可以被看作是一个高性能的图引擎，该引擎具有成熟数据库的所有特性。程序员工作在一个面向对象的、灵活的网络结构下而不是严格、静态的表中——但是他们可以享受到具备完全的事务特性、企业级的数据库的所有好处。</p>
+<p>Neo4j是一个高性能的图数据库，属于NOSQL数据库中的一类。数据以图的形式存储而不是传统的表结构存储。Neo4j也可以被看作是一个高性能的图引擎，该引擎具有成熟数据库的所有特性，以及单机存储10亿级数据的能力。程序员工作在一个面向对象的、灵活的网络结构下而不是严格、静态的表中.</p>
 
 <p>Neo4j因其嵌入式、高性能、轻量级等优势，越来越受到关注。</p>
 
@@ -170,10 +170,13 @@
 
 <p>Cypher是一个描述性的图形查询语言，允许不必编写图形结构的遍历代码对图形存储有表现力和效率的查询。Cyper通过一系列不同的方法和建立于确定的实践为表达查询而激发的。许多关键字如like和order by是受SQL的启发。模式匹配的表达式来自于SPARQL。正则表达式匹配实现实用Scala。Cypher是一个申明式的语言。对比命令式语言如Java和脚本语言如Gremlin和JRuby，它的焦点在于从图中如何找回（what to retrieve），而不是怎么去做。这使得在不对用户公布的实现细节里关心的是怎么优化查询。</p>
 
-<p>这个查询语言包含以下几个明显的部分：
-* MATCH：图形的匹配模式，束缚于开始点。
-* WHERE：过滤条件。
-* RETURN：返回所需要的。</p>
+<p>这个查询语言包含以下几个明显的部分：</p>
+
+<ul>
+  <li>MATCH：图形的匹配模式，束缚于开始点。</li>
+  <li>WHERE：过滤条件。</li>
+  <li>RETURN：返回所需要的。</li>
+</ul>
 
 <h2 id="section-2">实战演示</h2>
 
@@ -187,7 +190,7 @@
 
 <ul>
   <li><a href="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/addresses.csv">addresses.csv</a>:  所有不同的邮件地址，同时加上id。</li>
-  <li><a href="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/emails.csv">emails.csv</a>:所有不同的邮件，以及发送时间和主题。每封邮件加上id。</li>
+  <li><a href="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/emails.csv">emails.csv</a>:所有不同的邮件，以及发送时间和主题。加上id。</li>
   <li><a href="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/relations.csv">relations.csv</a>:所有的发送，接受邮件关系。包含Email_id，From_id，To_id。</li>
 </ul>
 
@@ -198,32 +201,29 @@
 <h3 id="section-4">清除所有节点和关系</h3>
 <hr />
 
-<pre><code>MATCH (n)
-OPTIONAL MATCH
-(n)-[r]-()
-DELETE n,r
-</code></pre>
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+<span class="n">OPTIONAL</span><span class="w"> </span><span class="k">MATCH</span><span class="w"></span>
+<span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="n">r</span><span class="o">]</span><span class="err">-</span><span class="p">()</span><span class="w"></span>
+<span class="k">DELETE</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">r</span><span class="w"></span></code></pre></div>
 
 <h3 id="person">加载邮件地址，生成Person节点</h3>
 <hr />
 <p>LOAD CSV是Cypher支持的从CSV文件载入数据的方式。</p>
 
-<pre><code>LOAD CSV WITH
-HEADERS FROM "[file:///home/colin/Downloads/data/addresses.csv](file:///home\colin\Downloads\data\addresses.csv)" AS csvLine
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="n">LOAD</span><span class="w"> </span><span class="n">CSV</span><span class="w"> </span><span class="k">WITH</span><span class="w"></span>
+<span class="c1">HEADERS FROM &quot;file:///home/colin/Downloads/data/addresses.csv&quot; AS csvLine</span>
 
-CREATE (p:Person {id: toInt(csvLine.id), email: csvLine.address })
-</code></pre>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="p">:</span><span class="n">Person</span><span class="w"> </span><span class="p">{</span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="n">toInt</span><span class="p">(</span><span class="n">csvLine</span><span class="p">.</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">email</span><span class="p">:</span><span class="w"> </span><span class="n">csvLine</span><span class="p">.</span><span class="n">address</span><span class="w"> </span><span class="p">})</span><span class="w"></span></code></pre></div>
 
 <p>Return 55 nodes.</p>
 
 <h3 id="section-5">加载邮件节点。</h3>
 <hr />
 
-<pre><code>LOAD CSV WITH
-HEADERS FROM "[file:///home/colin/Downloads/data/emails.csv](file:///home\colin\Downloads\data\emails.csv)" AS csvLine
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="n">LOAD</span><span class="w"> </span><span class="n">CSV</span><span class="w"> </span><span class="k">WITH</span><span class="w"></span>
+<span class="w">    </span><span class="n">HEADERS</span><span class="w"> </span><span class="n">FROM</span><span class="w"> </span><span class="s">&quot;file:///home/colin/Downloads/data/emails.csv&quot;</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">csvLine</span><span class="w"></span>
 
-CREATE (e:Email {id: toInt(csvLine.id), time: csvLine.time, content: csvLine.content })
-</code></pre>
+<span class="w">    </span><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Email</span><span class="w"> </span><span class="p">{</span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="n">toInt</span><span class="p">(</span><span class="n">csvLine</span><span class="p">.</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">time</span><span class="p">:</span><span class="w"> </span><span class="n">csvLine</span><span class="p">.</span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="p">:</span><span class="w"> </span><span class="n">csvLine</span><span class="p">.</span><span class="n">content</span><span class="w"> </span><span class="p">})</span><span class="w"></span></code></pre></div>
 
 <p>Return 1170 nodes.</p>
 
@@ -231,31 +231,35 @@ CREATE (e:Email {id: toInt(csvLine.id), time: csvLine.time, content: csvLine.con
 <hr />
 <p>加载关系时需要大量匹配节点。创建节点索引，提升效率。</p>
 
-<pre><code>CREATE INDEX ON:Person(id);
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="k">CREATE</span><span class="w"> </span><span class="n">INDEX</span><span class="w"> </span><span class="n">ON</span><span class="p">:</span><span class="n">Person</span><span class="p">(</span><span class="n">id</span><span class="p">);</span><span class="w"></span>
 
-CREATE INDEX ON:Email(id);
-</code></pre>
+<span class="w">    </span><span class="k">CREATE</span><span class="w"> </span><span class="n">INDEX</span><span class="w"> </span><span class="n">ON</span><span class="p">:</span><span class="n">Email</span><span class="p">(</span><span class="n">id</span><span class="p">);</span><span class="w"></span></code></pre></div>
 
 <h3 id="section-7">加载发送、接收关系</h3>
 <hr />
-<p>使用LOAD CSV命令加载大量数据时，可能因为内存限制而失败，产生OutOfMemoryError。这时使用USING PERIODIC COMMIT来分段加载数据。</p>
+<ul>
+  <li>
+    <p>使用LOAD CSV命令加载大量数据时，可能因为内存限制而失败，产生OutOfMemoryError。这时使用USING PERIODIC COMMIT来分段加载数据。</p>
+  </li>
+  <li>
+    <p>加载关系时，通过MATCH找到对应id的节点，然后创建关系：（节点）-[关系]-（节点）。</p>
+  </li>
+  <li>
+    <p>每封邮件只有一个发件人，用CREATE UNIQUE创建唯一的关系。</p>
+  </li>
+</ul>
 
-<p>加载关系时，通过MATCH找到对应id的节点，然后创建关系：（节点）-[关系]-（节点）。</p>
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="n">USING</span><span class="w"> </span><span class="n">PERIODIC</span><span class="w"></span>
+<span class="w">    </span><span class="n">COMMIT</span><span class="w"> </span><span class="m">500</span><span class="w"></span>
 
-<p>每封邮件只有一个发件人，用CREATE UNIQUE创建唯一的关系。</p>
+<span class="w">    </span><span class="n">LOAD</span><span class="w"> </span><span class="n">CSV</span><span class="w"> </span><span class="k">WITH</span><span class="w"></span>
+<span class="w">    </span><span class="n">HEADERS</span><span class="w"> </span><span class="n">FROM</span><span class="w"> </span><span class="err">&quot;</span><span class="o">[</span><span class="n">file</span><span class="p">:</span><span class="err">///</span><span class="n">home</span><span class="err">/</span><span class="n">colin</span><span class="err">/</span><span class="n">Downloads</span><span class="err">/</span><span class="n">data</span><span class="err">/</span><span class="n">relations</span><span class="p">.</span><span class="n">csv</span><span class="o">]</span><span class="p">(</span><span class="n">file</span><span class="p">:</span><span class="err">///</span><span class="n">home</span><span class="err">\</span><span class="n">colin</span><span class="err">\</span><span class="n">Downloads</span><span class="err">\</span><span class="n">data</span><span class="err">\</span><span class="n">relations</span><span class="p">.</span><span class="n">csv</span><span class="p">)</span><span class="err">&quot;</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">csvLine</span><span class="w"></span>
 
-<pre><code>USING PERIODIC
-COMMIT 500
+<span class="w">    </span><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">p1</span><span class="p">:</span><span class="n">Person</span><span class="w"> </span><span class="p">{</span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="n">toInt</span><span class="p">(</span><span class="n">csvLine</span><span class="p">.</span><span class="n">fromId</span><span class="p">)}),(</span><span class="n">e</span><span class="p">:</span><span class="n">Email</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="n">toInt</span><span class="p">(</span><span class="n">csvLine</span><span class="p">.</span><span class="n">emailId</span><span class="p">)}),(</span><span class="n">p2</span><span class="p">:</span><span class="n">Person</span><span class="p">{</span><span class="w"> </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="n">toInt</span><span class="p">(</span><span class="n">csvLine</span><span class="p">.</span><span class="n">toId</span><span class="p">)})</span><span class="w"></span>
 
-LOAD CSV WITH
-HEADERS FROM "[file:///home/colin/Downloads/data/relations.csv](file:///home\colin\Downloads\data\relations.csv)" AS csvLine
+<span class="w">    </span><span class="k">CREATE</span><span class="w"> </span><span class="n">UNIQUE</span><span class="w"> </span><span class="p">(</span><span class="n">p1</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">FROM</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="w"></span>
 
-MATCH (p1:Person {id: toInt(csvLine.fromId)}),(e:Email { id: toInt(csvLine.emailId)}),(p2:Person{ id: toInt(csvLine.toId)})
-
-CREATE UNIQUE (p1)-[:FROM]-&gt;(e)
-
-CREATE(e)-[:TO]-&gt;(p2)
-</code></pre>
+<span class="w">    </span><span class="k">CREATE</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">TO</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">p2</span><span class="p">)</span><span class="w"></span></code></pre></div>
 
 <p>Created 10233 relationships, statement executed in 4567 ms.</p>
 
@@ -264,12 +268,11 @@ CREATE(e)-[:TO]-&gt;(p2)
 <h3 id="id1id2">查询所有：发件人id=1，收件人id=2的邮件</h3>
 <hr />
 
-<pre><code>MATCH (p1:Person)-[r1:FROM]-&gt;(e:Email)-[r2:TO]-&gt;(p2:Person)
-WHERE p1.id = 1 and p2.id=2
-RETURN p1,e,p2,r1,r2
-</code></pre>
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">p1</span><span class="p">:</span><span class="n">Person</span><span class="p">)</span><span class="o">-[</span><span class="n">r1</span><span class="p">:</span><span class="n">FROM</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Email</span><span class="p">)</span><span class="o">-[</span><span class="n">r2</span><span class="p">:</span><span class="n">TO</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">p2</span><span class="p">:</span><span class="n">Person</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">p1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">p2</span><span class="p">.</span><span class="n">id</span><span class="p">=</span><span class="m">2</span><span class="w"></span>
+<span class="w">    </span><span class="k">RETURN</span><span class="w"> </span><span class="n">p1</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="w"></span></code></pre></div>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%204.05.43%20PM.png" alt="Model-View-Controller" /></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neo4j1.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>Displaying 35 nodes, 98 relationships.</p>
 
@@ -277,11 +280,10 @@ RETURN p1,e,p2,r1,r2
 
 <h3 id="section-8">查找所有收件人包含发件人的情况，删除这个环形关系。</h3>
 
-<pre><code>MATCH (p1:Person)-[r1:FROM]-&gt;(e:Email)-[r2:TO]-&gt;(p1:Person)
-delete r2
-</code></pre>
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">p1</span><span class="p">:</span><span class="n">Person</span><span class="p">)</span><span class="o">-[</span><span class="n">r1</span><span class="p">:</span><span class="n">FROM</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Email</span><span class="p">)</span><span class="o">-[</span><span class="n">r2</span><span class="p">:</span><span class="n">TO</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">p1</span><span class="p">:</span><span class="n">Person</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">delete</span><span class="w"> </span><span class="n">r2</span><span class="w"></span></code></pre></div>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%204.08.43%20PM.png" alt="Model-View-Controller" /></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neo4j2.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>Displaying 35 nodes, 66 relationships.</p>
 
@@ -291,46 +293,83 @@ delete r2
 <hr />
 <p>注意，Neo4j没有内部支持的时间类型，这里我们需要使用正则表达式。</p>
 
-<pre><code>MATCH (p1:Person)-[r1:FROM]-&gt;(e:Email)-[r2:TO]-&gt;(p2:Person)
-WHERE p1.id = 1 and p2.id=2 and e.time=~'^1/16/2014.*'
-RETURN p1,e,p2,r1,r2
-</code></pre>
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">p1</span><span class="p">:</span><span class="n">Person</span><span class="p">)</span><span class="o">-[</span><span class="n">r1</span><span class="p">:</span><span class="n">FROM</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Email</span><span class="p">)</span><span class="o">-[</span><span class="n">r2</span><span class="p">:</span><span class="n">TO</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">p2</span><span class="p">:</span><span class="n">Person</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">p1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">p2</span><span class="p">.</span><span class="n">id</span><span class="p">=</span><span class="m">2</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">time</span><span class="p">=</span><span class="err">~&#39;^</span><span class="m">1</span><span class="err">/</span><span class="m">16</span><span class="err">/</span><span class="m">2014</span><span class="p">.*</span><span class="err">&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="k">RETURN</span><span class="w"> </span><span class="n">p1</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="w"></span></code></pre></div>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%204.09.56%20PM.png" alt="Model-View-Controller" /></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neo4j3.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>Displaying 7 nodes, 10 relationships.</p>
 
 <p>使用图数据库，我们可以轻易的解决较为复杂的路径问题。</p>
 
-<h3 id="ab">查询所有从A地址到B地址的路径，通过距离排序</h3>
+<h3 id="ab">查询所有从A地址到B地址的路径</h3>
 <hr />
 
-<pre><code>MATCH p=(:Person {id: 1})-[r:FROM|:TO*1..5]-(:Person {id : 2 })
-RETURN p
-LIMIT 10
-</code></pre>
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="k">MATCH</span><span class="w"> </span><span class="n">p</span><span class="p">=(:</span><span class="n">Person</span><span class="w"> </span><span class="p">{</span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="p">})</span><span class="err">-</span><span class="o">[</span><span class="n">r</span><span class="p">:</span><span class="n">FROM</span><span class="p">|:</span><span class="n">TO</span><span class="p">*</span><span class="m">1</span><span class="p">..</span><span class="m">5</span><span class="o">]</span><span class="err">-</span><span class="p">(:</span><span class="n">Person</span><span class="w"> </span><span class="p">{</span><span class="n">id</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">})</span><span class="w"></span>
+<span class="w">    </span><span class="k">RETURN</span><span class="w"> </span><span class="n">p</span><span class="w"></span>
+<span class="w">    </span><span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span><span class="w"></span></code></pre></div>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%205.40.57%20PM.png" alt="Model-View-Controller" /></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neo4j4.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>通过COUNT可以做聚合操作。</p>
 
 <h3 id="section-10">查询收件人最多的邮件（出度最高）</h3>
 <hr />
 
-<pre><code>MATCH (n:Email)-[r:TO]-&gt;(x)
-RETURN n as Email,
-COUNT(r) as ReceiverNumber
-ORDER BY COUNT(r) DESC
-LIMIT 10
-</code></pre>
+<div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="p">:</span><span class="n">Email</span><span class="p">)</span><span class="o">-[</span><span class="n">r</span><span class="p">:</span><span class="n">TO</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">RETURN</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">Email</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">COUNT</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">ReceiverNumber</span><span class="w"></span>
+<span class="w">    </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="k">DESC</span><span class="w"></span>
+<span class="w">    </span><span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span><span class="w"></span></code></pre></div>
 
-<p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-05-19%20at%205.02.37%20PM.png" alt="Model-View-Controller" /></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neo4j5.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>结果显示这些邮件都是发送给所有人的邮件。</p>
 
+<h3 id="section-11">小结</h3>
+<hr />
+
+<p>通过本次实战，我们实践了：</p>
+
+<ul>
+  <li>
+    <p>使用LOAD CSV加载CSV格式数据</p>
+  </li>
+  <li>
+    <p>使用USING PERIODIC COMMIT分段加载</p>
+  </li>
+  <li>
+    <p>MATCH来进行匹配查询</p>
+  </li>
+  <li>
+    <p>CREATE来创建节点和关系</p>
+  </li>
+  <li>
+    <p>CREATE INDEX ON来创建索引</p>
+  </li>
+  <li>
+    <p>RETURN返回语句</p>
+  </li>
+  <li>
+    <p>DELETE删除语句</p>
+  </li>
+  <li>
+    <p>使用正则表达式~匹配属性</p>
+  </li>
+  <li>
+    <p>查询路径</p>
+  </li>
+  <li>
+    <p>COUNT聚合操作</p>
+  </li>
+</ul>
+
+<p>通过此文，希望你以及对Neo4j有了一个感性的认识，对Cypher语句有了初步的理解。</p>
+
 <p><a href="https://github.com/colin1990324/Neo4j_EmailHeader">Github项目地址</a></p>
 
-<p>数据源<a href="http://vacommunity.org/VAST+Challenge+2014">VAST2014 Challenge</a> dataset.</p>
+<p><a href="http://vacommunity.org/VAST+Challenge+2014">数据源 VAST2014 Challenge</a></p>
 
         
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
