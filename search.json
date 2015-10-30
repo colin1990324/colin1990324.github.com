@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "小游戏1024自动机与AI",
+      "link"			: "http://wurui.cc/tech/1024-autoplayer/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "分离无连接子图",
       "link"			: "http://wurui.cc/tech/isolate-disconnected-subgraph/",
       "excerpt"		: ""
