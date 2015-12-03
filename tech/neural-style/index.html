@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>橡皮章DIY &#8211; Wu Rui's Home</title>
+<title>神经网络风格画 Neural Style Art &#8211; Wu Rui's Home</title>
 
-<meta name="keywords" content="diy, 橡皮章">
+<meta name="keywords" content="neural network, AI, art">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="橡皮章DIY">
+<meta name="twitter:title" content="神经网络风格画 Neural Style Art">
 
 
 
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="橡皮章DIY">
+<meta property="og:title" content="神经网络风格画 Neural Style Art">
 
-<meta property="og:url" content="http://wurui.cc/life/eraser-print/">
+<meta property="og:url" content="http://wurui.cc/tech/neural-style/">
 <meta property="og:site_name" content="Wu Rui's Home">
 
 
 
 
 
-<link rel="canonical" href="http://wurui.cc/life/eraser-print/">
+<link rel="canonical" href="http://wurui.cc/tech/neural-style/">
 <link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Wu Rui's Home Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -127,9 +127,9 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="http://wurui.cc/tags/#diy" title="Pages tagged diy">diy</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#橡皮章" title="Pages tagged 橡皮章">橡皮章</a></span>
+        <span class="entry-tags"><a href="http://wurui.cc/tags/#neural network" title="Pages tagged neural network">neural network</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#AI" title="Pages tagged AI">AI</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#art" title="Pages tagged art">art</a></span>
         
-          <h1 class="entry-title">橡皮章DIY</h1>
+          <h1 class="entry-title">神经网络风格画 Neural Style Art</h1>
         
       </header>
       <footer class="entry-meta">
@@ -139,42 +139,78 @@
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Wu Rui</span></span>
-        <span class="entry-date date published"><time datetime="2015-11-03T21:40:32+08:00"><i class="fa fa-calendar-o"></i> November 03, 2015</time></span>
+        <span class="entry-date date published"><time datetime="2015-12-03T11:17:20+08:00"><i class="fa fa-calendar-o"></i> December 03, 2015</time></span>
         
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         
         
       </footer>
       <div class="entry-content">
-        <p>橡皮章，简单的手工。</p>
+        <p><a href="http://arxiv.org/abs/1508.06576">A Neural Algorithm of Artistic Style</a>这篇论文说明了如何使用神经网络学习一副画的绘画风格，并把这种风格带入自选照片。</p>
 
-<p>玩了一个月，感觉第一阶段已经过去了。记录一下历程，展示一下拙作。</p>
+<p>比如下面这个例子，我们选择文森特·梵高的The Starry Night作为模板。学习过程让梵高灵魂附体我们的电脑，借脑还魂给我们作画。</p>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/eraser_1.JPG" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neural_style_1.png" alt="Model-View-Controller" class="center-image" /></p>
 
-<p style="color:black; font-size: 100%; text-align: center;">“平安” </p>
+<p>是不是很想试试呢？下面简单说说我在Linux上的运行经验。</p>
 
-<p style="color:black; font-size: 100%; text-align: center;">第一个章居然选了刻字，真是有点自不量力。</p>
+<h3 id="torch">安装Torch</h3>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/eraser_2.JPG" alt="Model-View-Controller" class="center-image" /></p>
+<p>在terminal中运行以下命令</p>
 
-<p style="color:black; font-size: 100%; text-align: center;">接着二号三号选了花型，练习曲线。</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-deps <span class="p">|</span> bash 
+git clone https://github.com/torch/distro.git ~/torch --recursive 
+<span class="nb">cd</span> ~/torch<span class="p">;</span> ./install.sh</code></pre></div>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/eraser_3.JPG" alt="Model-View-Controller" class="center-image" /></p>
+<p>第一个命令安装了LuaJIT和Torch需要的依赖。
+第二个命令安装了LuaJIT, LuaRocks,然后用LuaRocks安装了torch, nn，paths等.</p>
 
-<p style="color:black; font-size: 100%; text-align: center;">“年年有余”</p>
+<p>脚本也添加了torch PATH到环境中，所以需要重启终端或者运行</p>
 
-<p style="color:black; font-size: 100%; text-align: center;">传统图案。印的不是很好，但是红黑配很有味道。</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">source</span> ~/.bashrc</code></pre></div>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/eraser_4.JPG" alt="Model-View-Controller" class="center-image" /></p>
+<p>有可能需要更新image包到最新</p>
 
-<p style="color:black; font-size: 100%; text-align: center;">“吴睿私印” “机密” “皮卡丘”</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">luarocks install image</code></pre></div>
 
-<p style="color:black; font-size: 100%; text-align: center;">私印设计哪家强？元代大书法家同名好。。。另外字母刻的不好。。。</p>
+<h3 id="loadcaffe">安装loadcaffe</h3>
 
-<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/eraser_5.JPG" alt="Model-View-Controller" class="center-image" /></p>
+<p>caffe的依赖比较简单，只需要安装protobuf</p>
 
-<p style="color:black; font-size: 100%; text-align: center;">乱乱的大集合~~</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install libprotobuf-dev protobuf-compiler</code></pre></div>
+
+<p>然后安装loadcaffe</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">luarocks install loadcaffe</code></pre></div>
+
+<h3 id="neural-style">下载Neural Style的实现</h3>
+
+<p>先移动到你想存放项目的目录下。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Git clone https://github.com/jcjohnson/neural-style.git
+sh models/download_models.sh</code></pre></div>
+
+<p>Git拷贝实现代码。</p>
+
+<p>第二行下载训练好的神经网络模型VGG-19和它的改进型，VGG-19为默认设置。</p>
+
+<p>默认设置运行使用</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">th neural_style.lua -style_image &lt;image.jpg&gt; -content_image &lt;image.jpg&gt;</code></pre></div>
+
+<p>如果是公司电脑没有显卡，加上 -gpu -1</p>
+
+<h3 id="run-run-run">Run run run</h3>
+
+<p>下面是大师为我画的一些作品~~</p>
+
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neural_style_2.jpg" alt="Model-View-Controller" class="center-image" /></p>
+
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neural_style_3.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neural_style_4.jpg" alt="Model-View-Controller" class="center-image" /></p>
+
+<p><img src="http://7xjqmr.com1.z0.glb.clouddn.com/neural_style_5.jpg" alt="Model-View-Controller" class="center-image" /></p>
 
         
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
@@ -206,10 +242,8 @@
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://wurui.cc/tech/1024-autoplayer/" class="btn" title="小游戏1024自动机与AI">Previous</a>
+        <a href="http://wurui.cc/life/wood-bracelet/" class="btn" title="紫光檀手镯">Previous</a>
       
-      
-        <a href="http://wurui.cc/life/wood-bracelet/" class="btn" title="紫光檀手镯">Next</a>
       
     </nav><!-- /.pagination -->
   </article>
