@@ -379,6 +379,12 @@
   
 
   
+    ,{
+      "title"			: "Chord Diagram",
+      "link"			: "http://wurui.cc/chord/",
+      "excerpt"		: ""
+    }
+  
 
   
     ,{
@@ -420,12 +426,6 @@
 
   
 
-  
-    ,{
-      "title"			: "Chord Diagram",
-      "link"			: "http://wurui.cc/chord/",
-      "excerpt"		: ""
-    }
   
 
   
