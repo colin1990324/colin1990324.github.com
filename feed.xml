@@ -4,13 +4,68 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2016-01-20T11:21:45+08:00</updated>
+<updated>2016-02-21T20:55:31+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
   <uri>http://wurui.cc/</uri>
   <email>ruiwu1990324@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[春夜喜雨]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/spring-rain/" />
+  <id>http://wurui.cc/blog/spring-rain</id>
+  <published>2016-02-21T20:30:46+08:00</published>
+  <updated>2016-02-21T20:30:46+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;猴年的第一场春雨来的有力而急促。正月未过十五，春天已然来了有些时候似的，诧是奇怪的天气。&lt;/p&gt;
+
+&lt;p&gt;而新雨令我喜悦。正是新的一年，振奋的新的一年工作的开始。家里即将添个金猴儿，代步工具托夫人的福得以升级。无不是乐事！&lt;/p&gt;
+
+&lt;p&gt;回忆起一些喜雨的诗句，都是大家熟知的句子，这里再拿出来读一读，也是舒服。&lt;/p&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;春晓 孟浩然&lt;/h4&gt;
+&lt;p&gt;春眠不觉晓，
+处处闻啼鸟。
+夜来风雨声，
+花落知多少。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;绝句 志南&lt;/h4&gt;
+&lt;p&gt;古木阴中系短篷，
+杖藜扶我过桥东。
+沾衣欲湿杏花雨，
+吹面不寒杨柳风。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;春夜喜雨 杜甫&lt;/h4&gt;
+&lt;p&gt;好雨知时节，
+当春乃发生。
+随风潜入夜，
+润物细无声。
+野径云俱黑，
+江船火独明。
+晓看红湿处，
+花重锦官城。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;早春呈水部张十八员外 韩愈&lt;/h4&gt;
+&lt;p&gt;天街小雨润如酥，
+草色遥看近却无。
+最是一年春好处，
+绝胜烟柳满皇都。&lt;/p&gt;
+
+&lt;p&gt;这里志南的绝句和杜甫的‘春夜喜雨’皆是描写成都春雨的诗句。成都春秋多是夜里开始下雨，清晨便停了。记得中学时候周末回家，若是夜里开始下雨，我总会坐在窗台上，静静的听雨滴落在树叶，水面的声音，什么都不想，享受这片刻的放松与舒适。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/spring-rain/&quot;&gt;春夜喜雨&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Rui's Data Lab&lt;/a&gt; on February 21, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -1447,99 +1502,6 @@ Here gives the outline and some links I used.&lt;/p&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/UowkIRSDHfs&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/run-walter-run/&quot;&gt;Run Walter, Run!!!&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Rui's Data Lab&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Microsoft Coding Competition - University of Missouri III]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/" />
-  <id>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3</id>
-  <published>2014-09-23T11:52:20+08:00</published>
-  <updated>2014-09-23T11:52:20+08:00</updated>
-  <author>
-    <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
-    <email>ruiwu1990324@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Here are two problems value 1 point each. Most team can get these 2 points and I spent 30 minutes on each one.&lt;/p&gt;
-
-&lt;h2 id=&quot;question-five-a-variation-on-anagrams--1-points&quot;&gt;Question Five A variation on anagrams | 1 point(s)&lt;/h2&gt;
-
-&lt;p&gt;Let’s assume you were recently hired by a Start-up. On the first day, you meet the CEO and are given an assignment. Your CEO has decided that all products will be named according to the following pattern.&lt;/p&gt;
-
-&lt;p&gt;Your CEO calls the pattern “P@tter”. Two product names obey P@tter if they are permutations of each other, ignoring spaces and capitalization.
-Your task is to determine whether two product names obey P@tter.&lt;/p&gt;
-
-&lt;p&gt;Input description/format
-The input will consist of two product names per line, in quotation marks, which are not part of the names. The quoted names will be separated by a comma and potentially whitespace.
-You can assume that there will be ≤ 1000 lines in the input file. Also, product name length will be ≤ 255 characters and product names will contain only ASCII characters.&lt;/p&gt;
-
-&lt;p&gt;Output description/format
-For each line of input, output the result in one of the following 2 ways (case sensitive):
-Valid Pattern
-Invalid Pattern&lt;/p&gt;
-
-&lt;p&gt;Example input&lt;/p&gt;
-
-&lt;p&gt;“Calculate”, “Acute Call”&lt;/p&gt;
-
-&lt;p&gt;“Drop Cue” , “Cued Pro”&lt;/p&gt;
-
-&lt;p&gt;“carE Not”, “raCe On”&lt;/p&gt;
-
-&lt;p&gt;Example output&lt;/p&gt;
-
-&lt;p&gt;Valid Pattern&lt;/p&gt;
-
-&lt;p&gt;Valid Pattern&lt;/p&gt;
-
-&lt;p&gt;Invalid Pattern&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/colin1990324/LeetCode/blob/master/src/microsoftCodingCompetition2014/VriationOnAnagrams.java&quot;&gt;My Solution in Java&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is kind of straight forward. First you decompose each input and then tell if they are anagrams or not.&lt;/p&gt;
-
-&lt;h2 id=&quot;question-six-detecting-unreachable-instructions--1-points&quot;&gt;Question Six Detecting unreachable instructions | 1 point(s)&lt;/h2&gt;
-
-&lt;p&gt;Untouched instructions in code can cause some serious problems. You may have heard about a recent security hole related to this topic. Your task is to write a small program that catches the “untouched” lines of code written in our simplified programming language. The program starts at line 1. You may assume the program will be terminated if it infinitely loops or continues past its last instruction.&lt;/p&gt;
-
-&lt;p&gt;Input description/format
-Each line of input contains an instruction (NEXT or GOTO).
-NEXT: the program will move to the next line.
-GOTO X: the program will go to line number X.&lt;/p&gt;
-
-&lt;p&gt;Output description/format
-Please print out the line number of instructions that the program doesn’t touch (one line number per line in the output file).&lt;/p&gt;
-
-&lt;p&gt;Example input&lt;/p&gt;
-
-&lt;p&gt;NEXT&lt;/p&gt;
-
-&lt;p&gt;NEXT&lt;/p&gt;
-
-&lt;p&gt;GOTO 5&lt;/p&gt;
-
-&lt;p&gt;NEXT&lt;/p&gt;
-
-&lt;p&gt;GOTO 1&lt;/p&gt;
-
-&lt;p&gt;NEXT&lt;/p&gt;
-
-&lt;p&gt;Example output&lt;/p&gt;
-
-&lt;p&gt;4&lt;/p&gt;
-
-&lt;p&gt;6&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/colin1990324/LeetCode/blob/master/src/microsoftCodingCompetition2014/DetectingUnreachableInstructions.java&quot;&gt;My Solution in Java&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This instructions structure is like a linked list. First store all instructions with its line number in a set. Execute instructions and remove executed one from the set. if there’s no next instruction or next instruction is already removed from the set( means loop happens), stop execution.&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/&quot;&gt;Microsoft Coding Competition - University of Missouri III&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;Rui's Data Lab&lt;/a&gt; on September 23, 2014.&lt;/p&gt;
   </content>
 </entry>
 

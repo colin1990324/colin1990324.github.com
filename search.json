@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "春夜喜雨",
+      "link"			: "http://wurui.cc/blog/spring-rain/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "神经网络风格画 Neural Style Art",
       "link"			: "http://wurui.cc/tech/neural-style/",
       "excerpt"		: ""
