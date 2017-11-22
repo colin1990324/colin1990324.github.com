@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "基于深度学习的二进制恶意样本检测",
+      "link"			: "http://wurui.cc/tech/malware-detection-by-deep-learning/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Lego Technic GMK 6400 Mobile Crane",
       "link"			: "http://wurui.cc/life/gmk-6400-mobile-crane/",
       "excerpt"		: ""
@@ -401,6 +409,26 @@
   
 
   
+    ,{
+      "title"			: "Travel China",
+      "link"			: "http://wurui.cc/travel-china/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Whole Site Word Cloud",
+      "link"			: "http://wurui.cc/word-cloud/",
+      "excerpt"		: ""
+    }
+  
 
   
     ,{
@@ -408,6 +436,8 @@
       "link"			: "http://wurui.cc/chord/",
       "excerpt"		: ""
     }
+  
+
   
 
   
@@ -426,28 +456,6 @@
       "link"			: "http://wurui.cc/about/",
       "excerpt"		: "Rui Makes is a place for my words, images, videos and crafts."
     }
-  
-
-  
-    ,{
-      "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/word-cloud/",
-      "excerpt"		: ""
-    }
-  
-
-  
-
-  
-    ,{
-      "title"			: "Travel China",
-      "link"			: "http://wurui.cc/travel-china/",
-      "excerpt"		: ""
-    }
-  
-
-  
-
   
 
   
