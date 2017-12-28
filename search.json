@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "车旋元年，木工房の诞生",
+      "link"			: "http://wurui.cc/life/woodshop-2017/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "基于深度学习的二进制恶意样本检测",
       "link"			: "http://wurui.cc/tech/malware-detection-by-deep-learning/",
       "excerpt"		: ""
