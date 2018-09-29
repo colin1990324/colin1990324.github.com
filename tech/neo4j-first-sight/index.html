@@ -156,7 +156,7 @@
 
 <p>在一个图中包含两种基本的数据类型：Nodes（节点） 和 Relationships（关系）。Nodes 和 Relationships 包含key/value形式的属性。Nodes通过Relationships所定义的关系相连起来，形成关系型网络结构。</p>
 
-<p><img src="http://wurui-cc/images/blog/neo4j_graph.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui.cc/images/blog/neo4j_graph.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <h2 id="section-1">安装</h2>
 
@@ -268,7 +268,7 @@
 <span class="k">WHERE</span><span class="w"> </span><span class="n">p1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">p2</span><span class="p">.</span><span class="n">id</span><span class="p">=</span><span class="m">2</span><span class="w"></span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">p1</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="w"></span></code></pre></div>
 
-<p><img src="http://wurui-cc/images/blog/neo4j1.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui.cc/images/blog/neo4j1.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>Displaying 35 nodes, 98 relationships.</p>
 
@@ -279,7 +279,7 @@
 <div class="highlight"><pre><code class="language-cypher" data-lang="cypher"><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">p1</span><span class="p">:</span><span class="n">Person</span><span class="p">)</span><span class="o">-[</span><span class="n">r1</span><span class="p">:</span><span class="n">FROM</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Email</span><span class="p">)</span><span class="o">-[</span><span class="n">r2</span><span class="p">:</span><span class="n">TO</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">p1</span><span class="p">:</span><span class="n">Person</span><span class="p">)</span><span class="w"></span>
 <span class="k">delete</span><span class="w"> </span><span class="n">r2</span><span class="w"></span></code></pre></div>
 
-<p><img src="http://wurui-cc/images/blog/neo4j2.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui.cc/images/blog/neo4j2.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>Displaying 35 nodes, 66 relationships.</p>
 
@@ -293,7 +293,7 @@
 <span class="k">WHERE</span><span class="w"> </span><span class="n">p1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">p2</span><span class="p">.</span><span class="n">id</span><span class="p">=</span><span class="m">2</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">time</span><span class="p">=</span><span class="err">~&#39;^</span><span class="m">1</span><span class="err">/</span><span class="m">16</span><span class="err">/</span><span class="m">2014</span><span class="p">.*</span><span class="err">&#39;</span><span class="w"></span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">p1</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="w"></span></code></pre></div>
 
-<p><img src="http://wurui-cc/images/blog/neo4j3.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui.cc/images/blog/neo4j3.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>Displaying 7 nodes, 10 relationships.</p>
 
@@ -306,7 +306,7 @@
 <span class="k">RETURN</span><span class="w"> </span><span class="n">p</span><span class="w"></span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span><span class="w"></span></code></pre></div>
 
-<p><img src="http://wurui-cc/images/blog/neo4j4.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui.cc/images/blog/neo4j4.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>通过COUNT可以做聚合操作。</p>
 
@@ -319,7 +319,7 @@
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="k">DESC</span><span class="w"></span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span><span class="w"></span></code></pre></div>
 
-<p><img src="http://wurui-cc/images/blog/neo4j5.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui.cc/images/blog/neo4j5.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>结果显示这些邮件都是发送给所有人的邮件。</p>
 
