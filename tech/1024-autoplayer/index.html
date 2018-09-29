@@ -166,7 +166,7 @@
 <span class="k">print</span> <span class="s">&#39;origin =&#39;</span><span class="p">,</span> <span class="n">origin_x</span><span class="p">,</span> <span class="n">origin_y</span>
 <span class="n">origin</span> <span class="o">=</span> <span class="mi">27</span> <span class="mi">23</span></code></pre></div>
 
-<p><img src="/1024-board1.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui-cc/images/blog/1024-board1.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>在屏幕上合适的位置取一个区域BOX，作为每次取屏的区域。这里不用特别准确，保证游戏区都在其中就可以了。getOrigin方法取得游戏区的准确位置，帮助校准，后面定位每个块的位置就方便了。我提前测量了游戏区域的尺寸数据，得知每个块的边长大概是214px，块间距是28px。</p>
 
@@ -177,7 +177,7 @@
 
 <p>但是眼残，貌似之前测量的有误差，实验的时候发现取的块不能完全重合，也就是不能用像素值全等来判断异同。。。估计有一两个像素的误差，想来也是人之常情。。。特别是图形特别复杂的时候，难以获得准备定位。第一考虑是用图形匹配算法，比如OpenCV的cv2.matchTemplate()。但是之前没有用过，不知道开销如何，我这里的问题实质又非常简单，无非是偏移了一点点位置。后来做了个实验，简单的把2D图形拉成1D链表，然后两个链表做PearsonCorrelation。结果效果非常好，阳性值都是0.99，阴性值0.3的样子。再后来为了提高速度，只取块中间50*50的区域，识别这几个简单图形仍然又快又好。</p>
 
-<p><img src="/1024-board2.png" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui-cc/images/blog/1024-board2.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <h3 id="section-2">第三步 模拟游戏</h3>
 
@@ -264,7 +264,7 @@
 
 <p>终于完成了整个流程，摆好浏览器的位置，$python 1024.py，我们来跑一跑。</p>
 
-<p><img src="/1024.gif" alt="Model-View-Controller" class="center-image" /></p>
+<p><img src="http://wurui-cc/images/blog/1024.gif" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>流泪！！！毕竟亲生的，有点bug也懒得搞了。。。</p>
 
