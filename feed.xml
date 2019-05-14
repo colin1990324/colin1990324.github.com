@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2018-09-29T21:14:37+08:00</updated>
+<updated>2019-05-14T22:24:02+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -1426,7 +1426,7 @@ sh models/download_models.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/zhihu.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/zhihu/&quot;&gt;live demo&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/zhihu/&quot;&gt;live demo&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;用蓝色点表示用户，用橙色点表示问题。点与点的链接表示用户提出或者回答了某个问题。&lt;/li&gt;
@@ -1571,7 +1571,7 @@ sh models/download_models.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/word_cloud.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/word-cloud/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/word-cloud/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;首先是数据准备，我用Java写了一个采集全站高频词的&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/blob/master/src/WordCloud/WordFrequency.java&quot;&gt;程序&lt;/a&gt;，输出一个&amp;lt;单词，字号&amp;gt;的map，让高频的词有更大的字体。&lt;/p&gt;
 
@@ -1583,7 +1583,7 @@ sh models/download_models.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/sunburst.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/sunburst/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/sunburst/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;sunburst不知道怎么翻译好，光芒？简而言之是一个圆盘的多级结构，也可以说是一个变异的树结构。&lt;/p&gt;
 
@@ -1597,7 +1597,7 @@ sh models/download_models.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/travel-china.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/travel-china/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/travel-china/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;在页面上绘制地图，这里每一条边都是现场绘制出来的哦。数据源请搜索“GeoJson china”（&lt;a href=&quot;https://github.com/colin1990324/colin1990324.github.io/tree/master/travel-china/Map_files&quot;&gt;懒人请进&lt;/a&gt;）。&lt;/p&gt;
 
@@ -1613,7 +1613,7 @@ sh models/download_models.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/chord.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/chord/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/chord/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Chord既是和弦的意思，第一次看到这种类型的图时简直闪瞎我的狗眼，惹得我非常想自己做一个。&lt;/p&gt;
 

@@ -1,0 +1,303 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Travel China &#8211; Rui Makes</title>
+
+
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Travel China">
+
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wurui.cc/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Travel China">
+
+<meta property="og:url" content="http://wurui.cc/visual/travel-china/">
+<meta property="og:site_name" content="Rui Makes">
+
+
+
+
+
+<link rel="canonical" href="http://wurui.cc/visual/travel-china/">
+<link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Rui Makes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://wurui.cc/assets/css/main.css">
+<!-- Webfonts -->
+<!-- <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script> --> 
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://wurui.cc/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://wurui.cc/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://wurui.cc/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://wurui.cc/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wurui.cc/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wurui.cc/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wurui.cc/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="page">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/life/" >Life</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://wurui.cc/" class="site-logo" rel="home" title="Rui Makes"><img src="http://wurui.cc/images/site-logo.png" width="200" height="200" alt="Rui Makes logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://wurui.cc/">Rui Makes</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">独乐乐不如众乐乐</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="entry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <h1 class="entry-title">Travel China</h1>
+      </header>
+      <div class="entry-content">
+        <div id="chart" style="width: 100%; margin: 0px auto; position: relative;"></div>
+
+<p style="color:black; font-size: 100%; text-align: center;">行走中国，览祖国大好河山 </p>
+
+<p style="color:black; font-size: 100%; text-align: center;">移动鼠标，看看我去过哪些省份吧</p>
+
+<script src="//cdn.bootcss.com/d3/3.5.5/d3.min.js"></script>
+
+<script>
+	var width  = 700;
+	var height = 400;
+
+	var myMap = new Map();
+  		myMap.set("甘肃", "#F5A9A9");
+  		myMap.set("青海", "#F5A9A9");
+  		myMap.set("广西", "#A4A4A4");
+  		myMap.set("贵州", "#F5A9A9");
+  		myMap.set("重庆", "#F5A9A9");
+  		myMap.set("北京", "#FA5858");
+  		myMap.set("福建", "#A4A4A4");
+  		myMap.set("安徽", "#A4A4A4");
+  		myMap.set("广东", "#A4A4A4");
+  		myMap.set("西藏", "#A4A4A4");
+  		myMap.set("新疆", "#A4A4A4");
+  		myMap.set("海南", "#F5A9A9");
+  		myMap.set("宁夏", "#A4A4A4");
+  		myMap.set("陕西", "#F5A9A9");
+  		myMap.set("山西", "#A4A4A4");
+  		myMap.set("湖北", "#FA5858");
+  		myMap.set("湖南", "#F5A9A9");
+  		myMap.set("四川", "#FE2E2E");
+  		myMap.set("云南", "#A4A4A4");
+  		myMap.set("河北", "#F5A9A9");
+  		myMap.set("河南", "#A4A4A4");
+  		myMap.set("辽宁", "#A4A4A4");
+  		myMap.set("山东", "#A4A4A4");
+  		myMap.set("天津", "#A4A4A4");
+  		myMap.set("江西", "#A4A4A4");
+  		myMap.set("江苏", "#FA5858");
+  		myMap.set("上海", "#FA5858");
+  		myMap.set("浙江", "#F5A9A9");
+  		myMap.set("吉林", "#A4A4A4");
+  		myMap.set("内蒙古", "#A4A4A4");
+  		myMap.set("黑龙江", "#A4A4A4");
+  		myMap.set("香港", "#F5A9A9");
+  		myMap.set("澳门", "#A4A4A4");
+  		myMap.set("台湾", "#A4A4A4");
+      myMap.set("background", "#2A0A0A");
+	
+	var svg = d3.select("#chart").append("svg")
+    .attr("width", '100%')
+    .attr("height", '100%')
+    .attr('viewBox','0 0 '+(Math.min(width,height))+' '+Math.min(width,height))
+    .attr('preserveAspectRatio','xMinYMin')
+	    .append("g")
+	    .attr("transform", "translate(0,0)");
+	
+	var projection = d3.geo.mercator()
+						.center([107, 31])
+						.scale(350)
+    					.translate([width/2-130, height/2+30]);
+	
+	var path = d3.geo.path()
+					.projection(projection);
+	
+	d3.json("china_simplify.json", function(error, root) {
+		
+		if (error) 
+			return console.error(error);
+		console.log(root.features);
+		
+		svg.selectAll("path")
+			.data( root.features )
+			.enter()
+			.append("path")
+			.attr("stroke","#000")
+			.attr("stroke-width",1)
+			.attr("fill", function(d,i){
+				return myMap.get("background");
+			})
+			.attr("d", path )
+			.on("mouseover",function(d,i){
+                d3.select(this)
+                    .attr("fill","#ACB1E6");
+            })
+            .on("mouseout",function(d,i){
+                d3.select(this)
+                    .attr("fill",myMap.get(d.properties.name));
+            });
+		
+	});
+
+</script>
+
+
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    <!--  -->
+
+<span>&copy; 2019 Wu Rui. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	
+	<a href="http://facebook.com/colin.wu.92" title="Wu Rui on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="http://linkedin.com/in/ruiwu90" title="Wu Rui on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="http://instagram.com/colin1990324" title="Wu Rui on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/colin1990324" title="Wu Rui on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	<a href="http://www.weibo.com/colin1990324/" title="Wu Rui on Weibo" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+  <a href="http://wurui.cc/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://wurui.cc';
+</script>
+
+<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wurui.cc/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://wurui.cc/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-63900366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>

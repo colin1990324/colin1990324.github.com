@@ -1,0 +1,369 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Whole Site Word Cloud &#8211; Rui Makes</title>
+
+
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Whole Site Word Cloud">
+
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wurui.cc/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Whole Site Word Cloud">
+
+<meta property="og:url" content="http://wurui.cc/visual/word-cloud/">
+<meta property="og:site_name" content="Rui Makes">
+
+
+
+
+
+<link rel="canonical" href="http://wurui.cc/visual/word-cloud/">
+<link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="Rui Makes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://wurui.cc/assets/css/main.css">
+<!-- Webfonts -->
+<!-- <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script> --> 
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://wurui.cc/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://wurui.cc/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://wurui.cc/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://wurui.cc/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wurui.cc/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wurui.cc/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wurui.cc/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="page">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/life/" >Life</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://wurui.cc/" class="site-logo" rel="home" title="Rui Makes"><img src="http://wurui.cc/images/site-logo.png" width="200" height="200" alt="Rui Makes logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://wurui.cc/">Rui Makes</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">独乐乐不如众乐乐</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="entry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <h1 class="entry-title">Whole Site Word Cloud</h1>
+      </header>
+      <div class="entry-content">
+        <div id="chart" style="width: 100%; margin: 0px auto; position: relative;"></div>
+
+<p style="color:black; font-size: 100%; text-align: center;">统计本站高频词生成的标签云，每次刷新布局都会不一样哦~</p>
+
+<p style="color:black; font-size: 100%; text-align: center;">想生成属于你的标签云吗？<a href="https://www.jasondavies.com/wordcloud/#%2F%2Fwww.jasondavies.com%2Fwordcloud%2Fabout%2F">猛点这里！</a></p>
+
+<script src="//cdn.bootcss.com/d3/3.5.5/d3.min.js"></script>
+
+<script src="d3.layout.cloud.js"></script>
+
+<script>
+  var fill = d3.scale.category20();
+  var myMap = new Map();
+  myMap.set("github", 100);
+myMap.set("virus", 100);
+myMap.set("each", 100);
+myMap.set("polt", 91);
+myMap.set("理想", 82);
+myMap.set("card", 73);
+myMap.set("first", 64);
+myMap.set("school", 55);
+myMap.set("volunteer", 55);
+myMap.set("products", 55);
+myMap.set("northwind", 55);
+myMap.set("公司", 46);
+myMap.set("problems", 46);
+myMap.set("斧子", 46);
+myMap.set("sick", 46);
+myMap.set("cards", 37);
+myMap.set("feet", 37);
+myMap.set("climbing", 37);
+myMap.set("女孩", 37);
+myMap.set("product", 37);
+myMap.set("magician", 37);
+myMap.set("people", 37);
+myMap.set("question", 37);
+myMap.set("probability", 37);
+myMap.set("following", 37);
+myMap.set("names", 37);
+myMap.set("test", 28);
+myMap.set("width", 28);
+myMap.set("data", 28);
+myMap.set("next", 28);
+myMap.set("simple", 28);
+myMap.set("missouri", 28);
+myMap.set("父亲", 28);
+myMap.set("童话", 28);
+myMap.set("services", 28);
+myMap.set("example", 28);
+myMap.set("现实", 28);
+myMap.set("letters", 28);
+myMap.set("university", 28);
+myMap.set("solution", 28);
+myMap.set("vaccinated", 28);
+myMap.set("matches", 28);
+myMap.set("havasupai", 28);
+myMap.set("water", 28);
+myMap.set("youtube", 28);
+myMap.set("given", 28);
+myMap.set("little", 19);
+myMap.set("point", 19);
+myMap.set("query", 19);
+myMap.set("coding", 19);
+myMap.set("pattern", 19);
+myMap.set("climb", 19);
+myMap.set("more", 19);
+myMap.set("second", 19);
+myMap.set("sample", 19);
+myMap.set("政治家", 19);
+myMap.set("same", 19);
+myMap.set("free", 19);
+myMap.set("need", 19);
+myMap.set("around", 19);
+myMap.set("microsoft", 19);
+myMap.set("really", 19);
+myMap.set("theme", 19);
+myMap.set("valley", 19);
+myMap.set("活", 19);
+myMap.set("many", 19);
+myMap.set("competition", 19);
+myMap.set("事", 19);
+myMap.set("gopro", 19);
+myMap.set("孩儿", 19);
+myMap.set("good", 19);
+myMap.set("best", 19);
+myMap.set("entities", 19);
+myMap.set("arrangement", 19);
+myMap.set("beautiful", 19);
+myMap.set("人家", 19);
+myMap.set("故事", 19);
+myMap.set("possible", 19);
+myMap.set("description", 19);
+myMap.set("hiking", 19);
+myMap.set("entity", 19);
+myMap.set("video", 19);
+myMap.set("discontinued", 10);
+myMap.set("book", 10);
+myMap.set("filter", 10);
+myMap.set("rest", 10);
+myMap.set("contain", 10);
+myMap.set("program", 10);
+myMap.set("开局", 10);
+myMap.set("answers", 10);
+myMap.set("google", 10);
+myMap.set("service", 10);
+myMap.set("用户", 10);
+myMap.set("鸡毛", 10);
+myMap.set("land", 10);
+myMap.set("round", 10);
+myMap.set("place", 10);
+myMap.set("snow", 10);
+myMap.set("mutation", 10);
+myMap.set("starcraft", 10);
+
+var width = 660,
+    height = 500;
+
+  d3.layout.cloud().size([width, height])
+      .words([
+        "github","virus","each","polt","理想","card","first","school","volunteer","products",
+        "northwind","公司","problems","斧子","sick","cards","feet","climbing","女孩","product",
+        "magician","people","question","probability","following","names","test","width","data","next",
+        "simple","missouri","父亲","童话","services","example","现实","letters","university","solution",
+        "vaccinated","matches","havasupai","water","youtube","given","little","point","query","coding",
+        "pattern","climb","more","second","sample","政治家","same","free","need","around",
+        "microsoft","really","theme","valley","活","many","competition","事","gopro","孩儿",
+        "good","best","entities","arrangement","beautiful","人家","故事","possible","description","hiking",
+        "entity","video","discontinued","book","filter","rest","contain","program","开局","answers",
+        "google","service","用户","鸡毛","land","round","place","snow","mutation","starcraft"].map(function(d) {
+        return {text: d, size: myMap.get(d)};
+      }))
+      .padding(5)
+      .rotate(function() { return ~~(Math.random() * 5) * 30 - 60; })
+      .font("Impact")
+      .fontSize(function(d) { return d.size; })
+      .on("end", draw)
+      .start();
+
+  function draw(words) {
+    d3.select("#chart").append("svg")
+    .attr("width", '100%')
+    .attr("height", '100%')
+    .attr('viewBox','0 0 '+(Math.min(width,height)+120)+' '+Math.min(width,height))
+    .attr('preserveAspectRatio','xMinYMin')
+    .append("g")
+    .attr("transform", "translate(" + (Math.min(width,height) / 2 +60)+"," + Math.min(width,height) / 2 + ")")
+      .selectAll("text")
+        .data(words)
+      .enter().append("text")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("font-family", "Impact")
+        .style("fill", function(d, i) { return fill(i); })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+  }
+</script>
+
+
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    <!--  -->
+
+<span>&copy; 2019 Wu Rui. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	
+	<a href="http://facebook.com/colin.wu.92" title="Wu Rui on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="http://linkedin.com/in/ruiwu90" title="Wu Rui on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="http://instagram.com/colin1990324" title="Wu Rui on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/colin1990324" title="Wu Rui on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	<a href="http://www.weibo.com/colin1990324/" title="Wu Rui on Weibo" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+  <a href="http://wurui.cc/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://wurui.cc';
+</script>
+
+<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wurui.cc/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://wurui.cc/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-63900366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>

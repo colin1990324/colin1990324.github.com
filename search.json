@@ -426,42 +426,32 @@
 
   
     ,{
-      "title"			: "Travel China",
-      "link"			: "http://wurui.cc/travel-china/",
+      "title"			: "Zoomable Sunburst",
+      "link"			: "http://wurui.cc/visual/sunburst/",
       "excerpt"		: ""
     }
   
 
-  
-
-  
-
-  
-
-  
-    ,{
-      "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/word-cloud/",
-      "excerpt"		: ""
-    }
   
 
   
     ,{
       "title"			: "Chord Diagram",
-      "link"			: "http://wurui.cc/chord/",
+      "link"			: "http://wurui.cc/visual/chord/",
       "excerpt"		: ""
     }
-  
-
   
 
   
     ,{
-      "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/sunburst/",
+      "title"			: "Whole Site Word Cloud",
+      "link"			: "http://wurui.cc/visual/word-cloud/",
       "excerpt"		: ""
     }
+  
+
+  
+
   
 
   
@@ -475,11 +465,23 @@
   
 
   
+    ,{
+      "title"			: "Travel China",
+      "link"			: "http://wurui.cc/visual/travel-china/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+
+  
 
   
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/sunburst/index_label.html",
+      "link"			: "http://wurui.cc/visual/sunburst/index_label.html",
       "excerpt"		: ""
     }
   
@@ -487,7 +489,7 @@
   
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/sunburst/index_no_label.html",
+      "link"			: "http://wurui.cc/visual/sunburst/index_no_label.html",
       "excerpt"		: ""
     }
   
@@ -495,7 +497,7 @@
   
     ,{
       "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/word-cloud/index_v1.html",
+      "link"			: "http://wurui.cc/visual/word-cloud/index_v1.html",
       "excerpt"		: ""
     }
   
