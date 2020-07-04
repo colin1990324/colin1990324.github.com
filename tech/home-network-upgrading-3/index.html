@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <title>家庭网络升级路3-网络服务 &#8211; RuiMakes</title>
 
-<meta name="keywords" content="network, router, QNAP, NAS, PT, N1, service, theater, gateway, SmartDNS, DDNS, VPN, Adblock, VirtualMachine, Container">
+<meta name="keywords" content="network, router, QNAP, NAS, N1, SmartDNS, DDNS, VPN, Adblock, Container">
 
 
 
@@ -127,7 +127,7 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="http://wurui.cc/tags/#network" title="Pages tagged network">network</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#router" title="Pages tagged router">router</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#QNAP" title="Pages tagged QNAP">QNAP</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#NAS" title="Pages tagged NAS">NAS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#PT" title="Pages tagged PT">PT</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#N1" title="Pages tagged N1">N1</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#service" title="Pages tagged service">service</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#theater" title="Pages tagged theater">theater</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#gateway" title="Pages tagged gateway">gateway</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#SmartDNS" title="Pages tagged SmartDNS">SmartDNS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#DDNS" title="Pages tagged DDNS">DDNS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#VPN" title="Pages tagged VPN">VPN</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Adblock" title="Pages tagged Adblock">Adblock</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#VirtualMachine" title="Pages tagged VirtualMachine">VirtualMachine</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Container" title="Pages tagged Container">Container</a></span>
+        <span class="entry-tags"><a href="http://wurui.cc/tags/#network" title="Pages tagged network">network</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#router" title="Pages tagged router">router</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#QNAP" title="Pages tagged QNAP">QNAP</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#NAS" title="Pages tagged NAS">NAS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#N1" title="Pages tagged N1">N1</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#SmartDNS" title="Pages tagged SmartDNS">SmartDNS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#DDNS" title="Pages tagged DDNS">DDNS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#VPN" title="Pages tagged VPN">VPN</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Adblock" title="Pages tagged Adblock">Adblock</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Container" title="Pages tagged Container">Container</a></span>
         
           <h1 class="entry-title">家庭网络升级路3-网络服务</h1>
         
@@ -174,11 +174,14 @@
 
 <p><img src="http://wurui.cc/images/blog/network-upgrading/15.png" alt="Model-View-Controller" class="center-image" /></p>
 
-<p>在主干网更新之后，我还购入了一台斐讯的N1盒子。刷好Openwrt系统接入主路由作为旁路由（单臂路由）。N1盒子是一款矿渣产品，便宜的时候只要八九十一台，性能却非常强悍，作为电视盒子可以解4K视频。刷了Openwrt以后就成为了一台非常强力的网络设备，功耗却不到3W。Openwrt提供了丰富的功能和插件，现在用到的有：
-  * VPN科学上网，openwrt有好多款支持的插件。我目前使用的是Passwall，看评测性能和开销都是尚可的。
-  * SmartDNS，启用以后可以为家庭网络提供私有DNS服务。能力是在域名查询时，返回你的网络环境下最低延时的IP，从而实现高速打开网页。同时支持第二DNS分组，配合Passwall，可以将内外网的DNS请求分流。避免国内服务查google DNS，国外服务查114导致的绕路情况。
-  * Adblock广告屏蔽。原理很简单，就是对网页内嵌广告HTTP请求做了拦截。黑名单都是在网上同步获取的，使用起来很方便。启用以后在芒果TV看《向往的生活》再也不用等80秒的广告了。
-  * 以上服务在一起组合成了智能网关和智能DNS。由于我是旁路由接入的，希望使用这些功能的设备可以通过手动设置网关和DNS来接入。老人、访客等就使用主路由的默认功能就好了。</p>
+<p>在主干网更新之后，我还购入了一台斐讯的N1盒子。刷好Openwrt系统接入主路由作为旁路由（单臂路由）。N1盒子是一款矿渣产品，便宜的时候只要八九十一台，性能却非常强悍，作为电视盒子可以解4K视频。刷了Openwrt以后就成为了一台非常强力的网络设备，功耗却不到3W。Openwrt提供了丰富的功能和插件，现在用到的有：</p>
+
+<ul>
+  <li>VPN科学上网，openwrt有好多款支持的插件。我目前使用的是Passwall，看评测性能和开销都是尚可的。</li>
+  <li>SmartDNS，启用以后可以为家庭网络提供私有DNS服务。能力是在域名查询时，返回你的网络环境下最低延时的IP，从而实现高速打开网页。同时支持第二DNS分组，配合Passwall，可以将内外网的DNS请求分流。避免国内服务查google DNS，国外服务查114导致的绕路情况。</li>
+  <li>Adblock广告屏蔽。原理很简单，就是对网页内嵌广告HTTP请求做了拦截。黑名单都是在网上同步获取的，使用起来很方便。启用以后在芒果TV看《向往的生活》再也不用等80秒的广告了。</li>
+  <li>以上服务在一起组合成了智能网关和智能DNS。由于我是旁路由接入的，希望使用这些功能的设备可以通过手动设置网关和DNS来接入。老人、访客等就使用主路由的默认功能就好了。</li>
+</ul>
 
 <p><img src="http://wurui.cc/images/blog/network-upgrading/16.png" alt="Model-View-Controller" class="center-image" /></p>
 
