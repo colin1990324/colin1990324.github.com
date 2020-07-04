@@ -1,0 +1,307 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>家庭网络升级路3-网络服务 &#8211; RuiMakes</title>
+
+<meta name="keywords" content="network, router, QNAP, NAS, PT, N1, service, theater, gateway, SmartDNS, DDNS, VPN, Adblock, VirtualMachine, Container">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="家庭网络升级路3-网络服务">
+
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wurui.cc/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="家庭网络升级路3-网络服务">
+
+<meta property="og:url" content="http://wurui.cc/tech/home-network-upgrading-3/">
+<meta property="og:site_name" content="RuiMakes">
+
+
+
+
+
+<link rel="canonical" href="http://wurui.cc/tech/home-network-upgrading-3/">
+<link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="RuiMakes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://wurui.cc/assets/css/main.css">
+<!-- Webfonts -->
+<!-- <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script> --> 
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://wurui.cc/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://wurui.cc/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://wurui.cc/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://wurui.cc/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wurui.cc/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wurui.cc/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wurui.cc/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/life/" >Life</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://wurui.cc/" class="site-logo" rel="home" title="RuiMakes"><img src="http://wurui.cc/images/site-logo.png" width="200" height="200" alt="RuiMakes logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://wurui.cc/">RuiMakes</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">独乐乐不如众乐乐</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="http://wurui.cc/tags/#network" title="Pages tagged network">network</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#router" title="Pages tagged router">router</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#QNAP" title="Pages tagged QNAP">QNAP</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#NAS" title="Pages tagged NAS">NAS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#PT" title="Pages tagged PT">PT</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#N1" title="Pages tagged N1">N1</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#service" title="Pages tagged service">service</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#theater" title="Pages tagged theater">theater</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#gateway" title="Pages tagged gateway">gateway</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#SmartDNS" title="Pages tagged SmartDNS">SmartDNS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#DDNS" title="Pages tagged DDNS">DDNS</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#VPN" title="Pages tagged VPN">VPN</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Adblock" title="Pages tagged Adblock">Adblock</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#VirtualMachine" title="Pages tagged VirtualMachine">VirtualMachine</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Container" title="Pages tagged Container">Container</a></span>
+        
+          <h1 class="entry-title">家庭网络升级路3-网络服务</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Wu Rui</span></span>
+        <span class="entry-date date published"><time datetime="2020-07-02T18:26:20+08:00"><i class="fa fa-calendar-o"></i> July 02, 2020</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>本文是家庭网络升级路的第三篇。前面两篇介绍了主干路由的升级情况，还购置了一台品牌NAS。那么除了单纯的上网冲浪，我们还能为家庭提供哪些便利的服务呢？</p>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/7.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>首先在NAS平台上，系统原生就提供了丰富的应用软件。</p>
+
+<ul>
+  <li>基于存储之上的，有Qsync等文件备份软件。可以将本地文件和NAS文件进行双向同步，即类似于百度和Google的同步盘。</li>
+  <li>使用SMB或者NFS远程挂载，可以把NAS文件夹挂载到本地，像本地空间一样使用，再也不会担心笔记本磁盘空间不够了。</li>
+  <li>在影音娱乐层面，有一大波相册、音乐、视频、影院套件。可以完全支撑HTPC的功能，也能支持智能电视或者电视盒子播放。</li>
+  <li>PT下载也是不能少的，除了自带的DownloadStation，还有好用的Transmission和Qbittorrents。上班时间下片，晚上回家直接播放，再大硬盘都能给你快速塞满。</li>
+  <li>虚拟化，因为是X86的版本，VirtualizationStation支持各类虚拟机。我就跑了一个Windows 10 LTSC版本，不方面直接在NAS部署的日常软件，都可以在虚拟机中得到满足。</li>
+  <li>容器化，依靠自带的ContainerStation，你便拥有了Docker的无限可能。GPU深度学习库，MongoDB/Redis数据库，私有Gitlab/Jenkinds服务，WordPress个人博客，甚至是Minecraft私服，都可以一键部署！小孩子才做选择，成年人当然是全部都要！</li>
+  <li>以上都是个人经验，我玩NAS的时间还很短，肯定不是最优方案，大家谨慎参考。</li>
+</ul>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/14.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>Tplink的路由器体系为我提供了基础的网管功能，这些能力在主流路由器上应该是通用的。值得一提的是Tplink的APP，我用着非常顺手。可以在任何地点远程管理家庭网络，网络拓扑图也很清晰。我在主路由上开启的服务有：</p>
+
+<ul>
+  <li>上网拨号、DHCP、设备管理、流量控制、未来的IPv6支持。</li>
+  <li>在应用管理中，Tplink提供免费的DDNS服务，只要你有公网IP，即可利用NAS提供公网服务了。我家里是300M电信宽带，打电话要到公网IP只花了一分钟，设置DDNS也只需要再花一分钟，非常的方便。</li>
+  <li>主路由作为对外网关，还有一个重要的服务是NAT网络地址转换。对内网服务做端口映射，和DDNS配合起来才能顺利提供便利的外网服务。</li>
+</ul>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/15.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>在主干网更新之后，我还购入了一台斐讯的N1盒子。刷好Openwrt系统接入主路由作为旁路由（单臂路由）。N1盒子是一款矿渣产品，便宜的时候只要八九十一台，性能却非常强悍，作为电视盒子可以解4K视频。刷了Openwrt以后就成为了一台非常强力的网络设备，功耗却不到3W。Openwrt提供了丰富的功能和插件，现在用到的有：
+  * VPN科学上网，openwrt有好多款支持的插件。我目前使用的是Passwall，看评测性能和开销都是尚可的。
+  * SmartDNS，启用以后可以为家庭网络提供私有DNS服务。能力是在域名查询时，返回你的网络环境下最低延时的IP，从而实现高速打开网页。同时支持第二DNS分组，配合Passwall，可以将内外网的DNS请求分流。避免国内服务查google DNS，国外服务查114导致的绕路情况。
+  * Adblock广告屏蔽。原理很简单，就是对网页内嵌广告HTTP请求做了拦截。黑名单都是在网上同步获取的，使用起来很方便。启用以后在芒果TV看《向往的生活》再也不用等80秒的广告了。
+  * 以上服务在一起组合成了智能网关和智能DNS。由于我是旁路由接入的，希望使用这些功能的设备可以通过手动设置网关和DNS来接入。老人、访客等就使用主路由的默认功能就好了。</p>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/16.png" alt="Model-View-Controller" class="center-image" /></p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wurui-cc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://wurui.cc/tech/home-network-upgrading-2/" class="btn" title="家庭网络升级路2-家用NAS搭建">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<!-- <div id="back-top"><a href="#top" title="Back To Top"></a></div> /old image version-->
+
+<div id="back-top" style="display: block;">
+  <svg id="rocket" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64">
+    <path fill="#CCCCCC" d="M42.057,37.732c0,0,4.139-25.58-9.78-36.207c-0.307-0.233-0.573-0.322-0.802-0.329
+        c-0.227,0.002-0.493,0.083-0.796,0.311c-13.676,10.31-8.95,35.992-8.95,35.992c-10.18,8-7.703,9.151-1.894,23.262
+        c1.108,2.693,3.048,2.06,3.926,0.115c0.877-1.943,2.815-6.232,2.815-6.232l11.029,0.128c0,0,2.035,4.334,2.959,6.298
+        c0.922,1.965,2.877,2.644,3.924-0.024C49.974,47.064,52.423,45.969,42.057,37.732z M31.726,23.155
+        c-2.546-0.03-4.633-2.118-4.664-4.665c-0.029-2.547,2.012-4.587,4.559-4.558c2.546,0.029,4.634,2.117,4.663,4.664
+        C36.314,21.143,34.272,23.184,31.726,23.155z">
+    </path>
+ </svg>
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    <!--  -->
+
+<span>&copy; 2020 Wu Rui. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	
+	<a href="http://facebook.com/colin.wu.92" title="Wu Rui on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="http://linkedin.com/in/ruiwu90" title="Wu Rui on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="http://instagram.com/colin1990324" title="Wu Rui on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/colin1990324" title="Wu Rui on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	<a href="http://www.weibo.com/colin1990324/" title="Wu Rui on Weibo" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+  <a href="http://wurui.cc/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://wurui.cc';
+</script>
+
+<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wurui.cc/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://wurui.cc/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-63900366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>

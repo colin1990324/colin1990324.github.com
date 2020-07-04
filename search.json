@@ -2,6 +2,30 @@
 
   
     {
+      "title"			: "家庭网络升级路3-网络服务",
+      "link"			: "http://wurui.cc/tech/home-network-upgrading-3/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "家庭网络升级路2-家用NAS搭建",
+      "link"			: "http://wurui.cc/tech/home-network-upgrading-2/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "家庭网络升级路1-骨干网升级",
+      "link"			: "http://wurui.cc/tech/home-network-upgrading-1/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "那人，那年，那些事儿",
       "link"			: "http://wurui.cc/blog/the-people-the-year-the-story/",
       "excerpt"		: ""

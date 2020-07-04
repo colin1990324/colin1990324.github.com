@@ -1,0 +1,319 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>家庭网络升级路1-骨干网升级 &#8211; RuiMakes</title>
+
+<meta name="keywords" content="network, router, wifi, tplink, speedtest">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="家庭网络升级路1-骨干网升级">
+
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wurui.cc/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="家庭网络升级路1-骨干网升级">
+
+<meta property="og:url" content="http://wurui.cc/tech/home-network-upgrading-1/">
+<meta property="og:site_name" content="RuiMakes">
+
+
+
+
+
+<link rel="canonical" href="http://wurui.cc/tech/home-network-upgrading-1/">
+<link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="RuiMakes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://wurui.cc/assets/css/main.css">
+<!-- Webfonts -->
+<!-- <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script> --> 
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://wurui.cc/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://wurui.cc/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://wurui.cc/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://wurui.cc/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wurui.cc/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wurui.cc/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wurui.cc/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/life/" >Life</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://wurui.cc/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://wurui.cc/" class="site-logo" rel="home" title="RuiMakes"><img src="http://wurui.cc/images/site-logo.png" width="200" height="200" alt="RuiMakes logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://wurui.cc/">RuiMakes</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">独乐乐不如众乐乐</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="http://wurui.cc/tags/#network" title="Pages tagged network">network</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#router" title="Pages tagged router">router</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#wifi" title="Pages tagged wifi">wifi</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#tplink" title="Pages tagged tplink">tplink</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#speedtest" title="Pages tagged speedtest">speedtest</a></span>
+        
+          <h1 class="entry-title">家庭网络升级路1-骨干网升级</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Wu Rui</span></span>
+        <span class="entry-date date published"><time datetime="2020-07-01T11:17:20+08:00"><i class="fa fa-calendar-o"></i> July 01, 2020</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>2015年回成都以后，我多次对家庭网络进行升级。入户带宽从DSL的20Mbps提升到了光纤的300Mbps。这中间也有一些坎坷，简单记录一下。</p>
+
+<p>03年我们一家就搬到了现在住的房子，最开始应该是电话线拨号上网的。中间可能还用过同轴电缆的宽带，记忆都很模糊了。一直到2016年，全家升级到了电信e家的169套餐。但是因为房子太老了，是没有光纤入户的。小区的电信箱子到我家大概有50米的距离，但是电信装机的师傅表示没有合适的走线通道，比如弱电井一类的，这种情况只能我们自己找人先把光纤拉好。后来纠结了好一段时间，再次投诉到电信之后，有位师傅愿意私人出工帮我们拉线，价格谈到700块。700块还是有点贵啊，机智的我想到了拉邻居入伙，简单沟通后一拍即合，看来天下苦电信久已啊！最终是顺利的以350的价格，通过门前的污水道把光纤拉回了家。</p>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/1.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>这时候入户光纤应该是有200Mbps的。仍然是房子太老的原因，墙内布线只有百兆，于是二楼以上都卡在了网线质量上。换线肯定是拉不动的，最后不得已选择了拉明线，室内走墙角，室外走污水管。这样2017年底的时候到二楼书房也有了千兆通路，三楼卧室接收二楼的无线信号。二楼次卧到书房用一个无线中继，有客人来的时候插上就好了。2019年三楼的次卧也启用了，不得不再买一个中继器，但是两级的中继效果就非常差了，看视频经常需要缓存，和亲戚视频连线经常卡主。</p>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/2.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>终于到了2020年，主要矛盾还是视频卡顿和三楼信号的问题。在各个论坛研究了数天以后，终于决定采用Tplink的廉价Mesh组网方案。这套Mesh组网在我的家庭网络场景有很大的优势，看我一一道来：</p>
+
+<ol>
+  <li>Mesh本身非常的健壮和灵活。能网线的地方采用有线回传，没有网线的也可以无线回传。对老破小没有预埋网线的家庭很友好。易展组网确实很方便，新节点一键就能加入。等换代了，老节点还能在信号覆盖不好的地方发挥余热，很适合大户型的房子。</li>
+  <li>双频合并，路由器会自动根据信号强度切换5G和2.4G。（告别Wu_2.4G和Wu_5G）</li>
+  <li>自动漫游，整个网络只有一个SSID，不用人工去切换信号，漫游衔接的速度也非常快。(告别Wu_1F和Wu_2F)</li>
+  <li>新设备都是1900M总带宽，原来是600M。（旧路由是磊科NW755）</li>
+  <li>APP展示的网络拓扑很清晰，各个子节点，接入设备一览无余。远程也能管理路由器，一个月内就发现了多个蹭网的兄弟。APP上还能管理NAT设置，更是自带DDNS。从原始社会过来的我感觉方便的不要不要的。</li>
+</ol>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/4.jpg" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>一共在PDD购入了1台WDR7661和3台WDR7650，一共460元。和Linsys、Netgear相比简直是无与伦比的性价比，使用体验也尚可。</p>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/3.jpg" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>这次顺便把光猫改了桥接，由主路由7661来拨号。一方面降低光猫的负载，提高通路能力，一方面为后面申请公网IP，提供外网服务做好准备。至此基本上家庭网络的骨干就全部升级完成了，网络设备、网线、接口都满足千兆要求，应该可以用一阵子了。在300M光纤入户的情况下，测试成绩如下：</p>
+
+<ol>
+  <li>二楼书房台式机有线：下载410Mbps，上传38Mbps。</li>
+  <li>一楼二楼wifi，300Mbps</li>
+  <li>三楼主卧wifi一层Mesh中继，260Mbps</li>
+  <li>三楼次卧wifi二层Mesh中继，140Mbps</li>
+</ol>
+
+<p><img src="http://wurui.cc/images/blog/network-upgrading/5.jpg" alt="Model-View-Controller" class="center-image" /></p>
+
+<h3 id="section">家庭布网小贴士</h3>
+
+<ol>
+  <li>家庭组网最好是在装修的时候预埋好足够的网线。我建议是书桌或者电视位两个出口，可以满足一个网络设备一台电视的需求。在高处也可以留一个出口，满足挂顶AP或者智能家居设备的接入。在大门或者屋外预留一个监控口和电源口。</li>
+  <li>现在推广的POE交互机+AC+AP面板的方案，没有用过。网上反馈似乎体验不是很好，但简洁美观应该是有优势的。</li>
+  <li>老房子没有预埋网线的，有Mesh、电力猫、无线中继等选择。体验上Mesh毫无疑问是最好的，价格也从原来的上千元降到了普通百元路由器的水平。有兴趣的同学不妨尝试一下。</li>
+  <li>软路由普通家庭不必纠结，应该是用不上的。但如果入户是200M以上的光纤，光猫改桥接，买个性能强力一些的主路由应该是能提升不少体验的。光猫的WIFI、DHCP都关掉，做好一个光猫的本职工作就好了。</li>
+  <li>最后还有一个神奇的方案，就是家里没有预埋网线，但是每个房间都铺设了同轴电缆的。也有同轴电缆转RJ45的适配器可以选择，据说速率最高能支持到200M呢。现在广电的数字电视服务，其实也是接了一个适配器+机顶盒的，改成适配器转RJ45+电视盒子，也没啥区别。</li>
+</ol>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wurui-cc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://wurui.cc/blog/the-people-the-year-the-story/" class="btn" title="那人，那年，那些事儿">Previous</a>
+      
+      
+        <a href="http://wurui.cc/tech/home-network-upgrading-2/" class="btn" title="家庭网络升级路2-家用NAS搭建">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<!-- <div id="back-top"><a href="#top" title="Back To Top"></a></div> /old image version-->
+
+<div id="back-top" style="display: block;">
+  <svg id="rocket" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64">
+    <path fill="#CCCCCC" d="M42.057,37.732c0,0,4.139-25.58-9.78-36.207c-0.307-0.233-0.573-0.322-0.802-0.329
+        c-0.227,0.002-0.493,0.083-0.796,0.311c-13.676,10.31-8.95,35.992-8.95,35.992c-10.18,8-7.703,9.151-1.894,23.262
+        c1.108,2.693,3.048,2.06,3.926,0.115c0.877-1.943,2.815-6.232,2.815-6.232l11.029,0.128c0,0,2.035,4.334,2.959,6.298
+        c0.922,1.965,2.877,2.644,3.924-0.024C49.974,47.064,52.423,45.969,42.057,37.732z M31.726,23.155
+        c-2.546-0.03-4.633-2.118-4.664-4.665c-0.029-2.547,2.012-4.587,4.559-4.558c2.546,0.029,4.634,2.117,4.663,4.664
+        C36.314,21.143,34.272,23.184,31.726,23.155z">
+    </path>
+ </svg>
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    <!--  -->
+
+<span>&copy; 2020 Wu Rui. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	
+	<a href="http://facebook.com/colin.wu.92" title="Wu Rui on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="http://linkedin.com/in/ruiwu90" title="Wu Rui on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="http://instagram.com/colin1990324" title="Wu Rui on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/colin1990324" title="Wu Rui on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	<a href="http://www.weibo.com/colin1990324/" title="Wu Rui on Weibo" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+  <a href="http://wurui.cc/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://wurui.cc';
+</script>
+
+<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wurui.cc/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://wurui.cc/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-63900366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
