@@ -1,287 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://wurui.cc/tech/home-network-upgrading-3/</loc>
-    <lastmod>2020-07-02T18:26:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/home-network-upgrading-2/</loc>
-    <lastmod>2020-07-02T11:06:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/home-network-upgrading-1/</loc>
-    <lastmod>2020-07-01T11:17:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/the-people-the-year-the-story/</loc>
-    <lastmod>2018-08-08T23:30:46+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/woodshop-2017/</loc>
-    <lastmod>2017-12-28T11:38:16+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/malware-detection-by-deep-learning/</loc>
-    <lastmod>2017-11-22T11:17:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/gmk-6400-mobile-crane/</loc>
-    <lastmod>2016-12-03T15:30:16+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/lego-technic-42042rc/</loc>
-    <lastmod>2016-10-24T11:18:22+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/spring-rain/</loc>
-    <lastmod>2016-02-21T20:30:46+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/neural-style/</loc>
-    <lastmod>2015-12-03T11:17:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/wood-bracelet/</loc>
-    <lastmod>2015-11-15T12:14:35+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/eraser-print/</loc>
-    <lastmod>2015-11-03T21:40:32+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/1024-autoplayer/</loc>
-    <lastmod>2015-10-18T14:59:10+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/isolate-disconnected-subgraph/</loc>
-    <lastmod>2015-09-29T17:34:31+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/neo4j-first-sight/</loc>
-    <lastmod>2015-09-04T11:08:32+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/time-series-anomaly-detection/</loc>
-    <lastmod>2015-07-30T16:26:32+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/zhihu-python-crawler/</loc>
-    <lastmod>2015-07-04T17:54:50+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/huanglongxi/</loc>
-    <lastmod>2015-06-29T22:35:24+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/d3-js/</loc>
-    <lastmod>2015-06-17T09:21:17+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/gephi/</loc>
-    <lastmod>2015-06-11T16:16:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/new-domain-and-web-site/</loc>
-    <lastmod>2015-05-27T17:06:02+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/hello-world/</loc>
-    <lastmod>2015-05-27T15:39:55+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/light-up/</loc>
-    <lastmod>2015-02-04T12:18:04+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/2014-mizzou-homecoming/</loc>
-    <lastmod>2015-02-04T12:17:38+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/horseshoe-canyon-ranch/</loc>
-    <lastmod>2014-10-19T12:11:49+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/gundam-figure-animation/</loc>
-    <lastmod>2014-10-04T12:10:16+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/dancer/</loc>
-    <lastmod>2014-09-27T12:04:34+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/run-walter-run/</loc>
-    <lastmod>2014-09-23T11:54:33+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/</loc>
-    <lastmod>2014-09-23T11:52:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/</loc>
-    <lastmod>2014-09-23T11:52:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/</loc>
-    <lastmod>2014-09-23T11:52:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/we-won-this-game/</loc>
-    <lastmod>2014-08-31T11:47:21+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/how-a-science-experiment-turns-into-art/</loc>
-    <lastmod>2014-04-23T11:42:58+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/google-code-jam-2014/</loc>
-    <lastmod>2014-04-12T11:33:08+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/gopro-360-degree-video/</loc>
-    <lastmod>2014-04-06T11:24:34+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/ground_covered_with_chicken_feathers/</loc>
-    <lastmod>2014-03-31T11:06:44+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/programmers-story/</loc>
-    <lastmod>2014-03-29T11:06:44+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/promising-young-climbers/</loc>
-    <lastmod>2014-03-22T11:04:44+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/an-invisible-sign/</loc>
-    <lastmod>2014-03-21T11:01:00+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/sanya/</loc>
-    <lastmod>2014-03-16T10:54:32+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/the-romance-of-a-man/</loc>
-    <lastmod>2014-03-13T10:52:51+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/opening-orchid/</loc>
-    <lastmod>2013-12-30T10:44:44+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/alex-honnold-el-sendero-luminoso/</loc>
-    <lastmod>2013-12-12T10:40:46+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/climbing-at-red-river-george/</loc>
-    <lastmod>2013-11-25T10:39:05+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/go-tigers/</loc>
-    <lastmod>2013-11-03T10:37:21+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/cicada-slough-and-rosin/</loc>
-    <lastmod>2013-11-02T10:33:40+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/hermann/</loc>
-    <lastmod>2013-10-31T10:27:49+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/</loc>
-    <lastmod>2013-10-22T12:07:53+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/havasupai/</loc>
-    <lastmod>2013-04-07T10:24:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/mount-siguniang-through-hike/</loc>
-    <lastmod>2012-02-07T10:15:55+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/eat-sour-grapefruit/</loc>
-    <lastmod>2012-01-04T22:38:06+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/wuhan-2011/</loc>
-    <lastmod>2011-10-14T17:04:30+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/qinghai-lake/</loc>
-    <lastmod>2011-07-13T10:31:49+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/treasured-spring-wait-in-hope-of-summer/</loc>
-    <lastmod>2010-02-26T22:41:53+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/robot/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/sunburst/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/chord/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/word-cloud/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tech/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/zhihu/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/about/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/blog/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/travel-china/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/life/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/tags/</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/sunburst/index_label.html</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/sunburst/index_no_label.html</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/visual/word-cloud/index_v1.html</loc>
-    <lastmod>2020-07-04T18:01:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://wurui.cc/baidu_verify_epOJiO0oFN.html</loc>
-    <lastmod>2019-05-16T08:36:50+08:00</lastmod>
-  </url>
+<url>
+<loc>http://wurui.cc/blog/treasured-spring-wait-in-hope-of-summer/</loc>
+<lastmod>2010-02-26T22:41:53+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/qinghai-lake/</loc>
+<lastmod>2011-07-13T10:31:49+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/wuhan-2011/</loc>
+<lastmod>2011-10-14T17:04:30+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/eat-sour-grapefruit/</loc>
+<lastmod>2012-01-04T22:38:06+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/mount-siguniang-through-hike/</loc>
+<lastmod>2012-02-07T10:15:55+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/havasupai/</loc>
+<lastmod>2013-04-07T10:24:47+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/</loc>
+<lastmod>2013-10-22T12:07:53+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/hermann/</loc>
+<lastmod>2013-10-31T10:27:49+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/cicada-slough-and-rosin/</loc>
+<lastmod>2013-11-02T10:33:40+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/go-tigers/</loc>
+<lastmod>2013-11-03T10:37:21+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/climbing-at-red-river-george/</loc>
+<lastmod>2013-11-25T10:39:05+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/alex-honnold-el-sendero-luminoso/</loc>
+<lastmod>2013-12-12T10:40:46+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/opening-orchid/</loc>
+<lastmod>2013-12-30T10:44:44+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/the-romance-of-a-man/</loc>
+<lastmod>2014-03-13T10:52:51+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/sanya/</loc>
+<lastmod>2014-03-16T10:54:32+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/an-invisible-sign/</loc>
+<lastmod>2014-03-21T11:01:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/promising-young-climbers/</loc>
+<lastmod>2014-03-22T11:04:44+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/programmers-story/</loc>
+<lastmod>2014-03-29T11:06:44+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/ground_covered_with_chicken_feathers/</loc>
+<lastmod>2014-03-31T11:06:44+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/gopro-360-degree-video/</loc>
+<lastmod>2014-04-06T11:24:34+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/google-code-jam-2014/</loc>
+<lastmod>2014-04-12T11:33:08+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/how-a-science-experiment-turns-into-art/</loc>
+<lastmod>2014-04-23T11:42:58+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/we-won-this-game/</loc>
+<lastmod>2014-08-31T11:47:21+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/</loc>
+<lastmod>2014-09-23T11:52:20+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/</loc>
+<lastmod>2014-09-23T11:52:20+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/</loc>
+<lastmod>2014-09-23T11:52:20+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/run-walter-run/</loc>
+<lastmod>2014-09-23T11:54:33+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/dancer/</loc>
+<lastmod>2014-09-27T12:04:34+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/gundam-figure-animation/</loc>
+<lastmod>2014-10-04T12:10:16+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/horseshoe-canyon-ranch/</loc>
+<lastmod>2014-10-19T12:11:49+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/2014-mizzou-homecoming/</loc>
+<lastmod>2015-02-04T12:17:38+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/light-up/</loc>
+<lastmod>2015-02-04T12:18:04+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/hello-world/</loc>
+<lastmod>2015-05-27T15:39:55+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/new-domain-and-web-site/</loc>
+<lastmod>2015-05-27T17:06:02+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/gephi/</loc>
+<lastmod>2015-06-11T16:16:47+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/d3-js/</loc>
+<lastmod>2015-06-17T09:21:17+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/huanglongxi/</loc>
+<lastmod>2015-06-29T22:35:24+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/zhihu-python-crawler/</loc>
+<lastmod>2015-07-04T17:54:50+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/time-series-anomaly-detection/</loc>
+<lastmod>2015-07-30T16:26:32+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/neo4j-first-sight/</loc>
+<lastmod>2015-09-04T11:08:32+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/isolate-disconnected-subgraph/</loc>
+<lastmod>2015-09-29T17:34:31+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/1024-autoplayer/</loc>
+<lastmod>2015-10-18T14:59:10+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/eraser-print/</loc>
+<lastmod>2015-11-03T21:40:32+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/wood-bracelet/</loc>
+<lastmod>2015-11-15T12:14:35+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/neural-style/</loc>
+<lastmod>2015-12-03T11:17:20+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/spring-rain/</loc>
+<lastmod>2016-02-21T20:30:46+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/lego-technic-42042rc/</loc>
+<lastmod>2016-10-24T11:18:22+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/gmk-6400-mobile-crane/</loc>
+<lastmod>2016-12-03T15:30:16+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/malware-detection-by-deep-learning/</loc>
+<lastmod>2017-11-22T11:17:20+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/life/woodshop-2017/</loc>
+<lastmod>2017-12-28T11:38:16+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/blog/the-people-the-year-the-story/</loc>
+<lastmod>2018-08-08T23:30:46+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/home-network-upgrading-1/</loc>
+<lastmod>2020-07-01T11:17:20+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/home-network-upgrading-2/</loc>
+<lastmod>2020-07-02T11:06:20+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/tech/home-network-upgrading-3/</loc>
+<lastmod>2020-07-02T18:26:20+08:00</lastmod>
+</url>
+<url>
+<loc>http://wurui.cc/robot/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/word-cloud/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/travel-china/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/chord/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/sunburst/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/zhihu/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/about/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/life/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/blog/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/tags/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/tech/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/sunburst/index_label/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/sunburst/index_no_label/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/visual/word-cloud/index_v1/</loc>
+</url>
+<url>
+<loc>http://wurui.cc/baidu_verify_epOJiO0oFN.html</loc>
+<lastmod>2019-05-16T08:36:50+08:00</lastmod>
+</url>
 </urlset>
