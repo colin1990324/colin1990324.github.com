@@ -6,14 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>小游戏1024自动机与AI &#8211; RuiMakes</title>
-
+<meta name="description" content="之前看到Coding 4 Fun的博客，使用Qt+BlueStack实现自动天天爱消除。哇塞，好牛逼！写程序来开挂，这么高科技的玩法勾的我跃跃欲试了。
+">
 <meta name="keywords" content="game, python, AI">
-
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="小游戏1024自动机与AI">
-
+<meta name="twitter:description" content="之前看到Coding 4 Fun的博客，使用Qt+BlueStack实现自动天天爱消除。哇塞，好牛逼！写程序来开挂，这么高科技的玩法勾的我跃跃欲试了。
+">
 
 
 
@@ -24,7 +25,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小游戏1024自动机与AI">
-
+<meta property="og:description" content="之前看到Coding 4 Fun的博客，使用Qt+BlueStack实现自动天天爱消除。哇塞，好牛逼！写程序来开挂，这么高科技的玩法勾的我跃跃欲试了。
+">
 <meta property="og:url" content="http://wurui.cc/tech/1024-autoplayer/">
 <meta property="og:site_name" content="RuiMakes">
 
@@ -79,27 +81,17 @@
 	    <ul>
       
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/about/" >About</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/life/" >Life</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/search/" >Search</a></li>
 		  
@@ -135,7 +127,6 @@
       <footer class="entry-meta">
         
         
-        
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Wu Rui</span></span>
@@ -150,27 +141,27 @@
 
 <p>考察一下技术方案，原文提到的Qt+BlueStack我都没有接触过，还是首选Python来的比较快。游戏选择另外一款曾经火热过的小游戏<a href="http://1024game.org/">1024</a>。其实早在1024还火的时期，就有人做出了直接写在JS中的AI来自动玩游戏并获得高分。但是这里我希望也是做成基于图形识别的自动机框架。这样以后遇到别的游戏，图形识别和控制指令部分也能借用相同的代码。</p>
 
-<h3 id="section">第一步 图形抓取</h3>
+<h3 id="第一步-图形抓取">第一步 图形抓取</h3>
 <p>搜索一番发现可以使用Pillow的ImageGrab。但是Windows使用正常，mac却需要使用一个修改过的版本，<a href="https://github.com/colin1990324/1024-AI/blob/master/ImageGrab.py">下载</a>以后直接导入。</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">ImageGrab</span>
-<span class="c"># initial graphic settings</span>
-<span class="n">BOX</span> <span class="o">=</span> <span class="p">(</span><span class="mi">55</span><span class="p">,</span><span class="mi">545</span><span class="p">,</span><span class="mi">1055</span><span class="p">,</span><span class="mi">1545</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">ImageGrab</span>
+<span class="c1"># initial graphic settings
+</span><span class="n">BOX</span> <span class="o">=</span> <span class="p">(</span><span class="mi">55</span><span class="p">,</span><span class="mi">545</span><span class="p">,</span><span class="mi">1055</span><span class="p">,</span><span class="mi">1545</span><span class="p">)</span>
 <span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">214</span>
 <span class="n">INTERVAL</span> <span class="o">=</span> <span class="mi">28</span>
-<span class="c"># position checking</span>
-<span class="n">im_t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">ImageGrab</span><span class="o">.</span><span class="n">grab</span><span class="p">(</span><span class="n">BOX</span><span class="p">))</span>
+<span class="c1"># position checking
+</span><span class="n">im_t</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">ImageGrab</span><span class="p">.</span><span class="n">grab</span><span class="p">(</span><span class="n">BOX</span><span class="p">))</span>
 <span class="n">imshow</span><span class="p">(</span><span class="n">im_t</span><span class="p">)</span>
-<span class="c"># get origin_x, origin_y</span>
-<span class="n">origin_x</span><span class="p">,</span> <span class="n">origin_y</span> <span class="o">=</span> <span class="n">getOrigin</span><span class="p">(</span><span class="n">im_t</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;origin =&#39;</span><span class="p">,</span> <span class="n">origin_x</span><span class="p">,</span> <span class="n">origin_y</span>
-<span class="n">origin</span> <span class="o">=</span> <span class="mi">27</span> <span class="mi">23</span></code></pre></div>
+<span class="c1"># get origin_x, origin_y
+</span><span class="n">origin_x</span><span class="p">,</span> <span class="n">origin_y</span> <span class="o">=</span> <span class="n">getOrigin</span><span class="p">(</span><span class="n">im_t</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">'origin ='</span><span class="p">,</span> <span class="n">origin_x</span><span class="p">,</span> <span class="n">origin_y</span>
+<span class="n">origin</span> <span class="o">=</span> <span class="mi">27</span> <span class="mi">23</span></code></pre></figure>
 
 <p><img src="http://wurui.cc/images/blog/1024-board1.png" alt="Model-View-Controller" class="center-image" /></p>
 
 <p>在屏幕上合适的位置取一个区域BOX，作为每次取屏的区域。这里不用特别准确，保证游戏区都在其中就可以了。getOrigin方法取得游戏区的准确位置，帮助校准，后面定位每个块的位置就方便了。我提前测量了游戏区域的尺寸数据，得知每个块的边长大概是214px，块间距是28px。</p>
 
-<h3 id="section-1">第二步 数字识别</h3>
+<h3 id="第二步-数字识别">第二步 数字识别</h3>
 <p>获得图形以后怎么识别里面的数字呢。简单想想，事先把1，2，4等的对应图形都存起来。识别的时候只需要一一比对就可以了。</p>
 
 <p>但是实力不济，1024以后的图形就没法获得了。。。再观察发现貌似新出的块只可能是1，2，4。如果自己维护一个棋盘，每一步之后的状态自己计算，那就只需要识别随机出现的新块在哪个位置，数字是1还是2还是4就可以了。</p>
@@ -179,12 +170,12 @@
 
 <p><img src="http://wurui.cc/images/blog/1024-board2.png" alt="Model-View-Controller" class="center-image" /></p>
 
-<h3 id="section-2">第三步 模拟游戏</h3>
+<h3 id="第三步-模拟游戏">第三步 模拟游戏</h3>
 
 <p>既然是自动机，我们需要自己维护一个游戏模型。棋盘用一个4*4的矩阵就可以表达。</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># initial board</span>
-<span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># initial board
+</span><span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="nb">int</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
         <span class="n">board</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="n">getNumber</span><span class="p">(</span><span class="n">im_t</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">0</span>
@@ -192,22 +183,22 @@
 <span class="p">[[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">]</span>
  <span class="p">[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">]</span>
  <span class="p">[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">]]</span></code></pre></div>
+ <span class="p">[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">]]</span></code></pre></figure>
 
 <p>游戏允许做上下左右四种操作，所有的块都会按照方向移动到底，相同数字的块合并。编码的时候我只实现了moveLeft，而其他三种操控可以通过矩阵旋转和moveLeft来间接实现。比如moveUp,我们只需要逆时针旋转90度，做moveLeft，再旋转270即可。</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">moveRight</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
-    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fliplr</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">moveRight</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">fliplr</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
     <span class="n">moveLeft</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
-    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fliplr</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">fliplr</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">moveUp</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
-    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rot90</span> <span class="p">(</span><span class="n">board</span><span class="p">)</span>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">rot90</span> <span class="p">(</span><span class="n">board</span><span class="p">)</span>
     <span class="n">moveLeft</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
-    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rot90</span> <span class="p">(</span><span class="n">board</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">rot90</span> <span class="p">(</span><span class="n">board</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">moveDown</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
-    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rot90</span> <span class="p">(</span><span class="n">board</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">rot90</span> <span class="p">(</span><span class="n">board</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
     <span class="n">moveLeft</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
-    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rot90</span> <span class="p">(</span><span class="n">board</span><span class="p">)</span></code></pre></div>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">rot90</span> <span class="p">(</span><span class="n">board</span><span class="p">)</span></code></pre></figure>
 
 <p>玩家完成一次操作之后会随机在空位生成一个新块，这时候我们在棋盘对应为0的所有位置进行识别，找到新块，并赋值在我们的矩阵中。</p>
 
@@ -215,16 +206,16 @@
 
 <p>获取新块之后，如果棋盘中没有0，则可以进行胜负判定。如果所有块的四个相邻块都不能与其合并，则判定游戏结束。</p>
 
-<h3 id="ai">第四步 AI算法</h3>
+<h3 id="第四步-ai算法">第四步 AI算法</h3>
 
 <p>有了一套游戏机制以后可以考虑如何做AI来获取高分了。对抗游戏常用的MiniMax Algorithm这里并不适用。那就先试试普通的DFS。每一步都让程序去试试，每一步的每下一步也让程序去试试。如果试5步，就是对5步以后的4的5次方1024种不同结果进行了评估。评估就是给结果打打分，一般叫score function，优化问题中叫heuristic funciton。</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">lastBoard</span><span class="p">,</span><span class="n">board</span><span class="p">):</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">    <span class="k">if</span> <span class="n">np</span><span class="p">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">lastBoard</span><span class="p">,</span><span class="n">board</span><span class="p">):</span>
         <span class="k">return</span> <span class="o">-</span><span class="mi">1000</span>
     <span class="n">rst</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">rst</span> <span class="o">+=</span> <span class="mi">5</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">==</span><span class="mi">0</span><span class="p">,</span> <span class="n">board</span><span class="o">.</span><span class="n">flatten</span><span class="p">()))</span>
-    <span class="n">rst</span> <span class="o">+=</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">maxValue</span><span class="p">(</span><span class="n">board</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">temp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">board</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">rst</span> <span class="o">+=</span> <span class="mi">5</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">==</span><span class="mi">0</span><span class="p">,</span> <span class="n">board</span><span class="p">.</span><span class="n">flatten</span><span class="p">()))</span>
+    <span class="n">rst</span> <span class="o">+=</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">math</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">maxValue</span><span class="p">(</span><span class="n">board</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">log2</span><span class="p">(</span><span class="n">board</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">y</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
@@ -232,7 +223,7 @@
             <span class="k">if</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
                 <span class="n">rst</span> <span class="o">-=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">temp</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">-</span> <span class="n">temp</span><span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">y</span><span class="p">])</span>
             <span class="n">rst</span> <span class="o">+=</span> <span class="n">temp</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span><span class="o">*</span><span class="n">temp</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">rst</span></code></pre></div>
+    <span class="k">return</span> <span class="n">rst</span></code></pre></figure>
 
 <p>这里有几个简单的考虑，一是空块越多越好（鼓励优先合并），二是最大块越大越好（毕竟想突破1024，2048嘛），三是相邻块的差越小越好（这样以后相邻块有更大合并的可能）。最后算出来的得分越高，就越是我们希望得到的结果。</p>
 
@@ -240,27 +231,27 @@
 
 <p><a href="https://github.com/colin1990324/1024-AI/blob/master/1024AI.ipynb">在notebook的最后</a>，我给出了virtual game的运行代码。</p>
 
-<h3 id="section-3">第五步 与游戏交互</h3>
+<h3 id="第五步-与游戏交互">第五步 与游戏交互</h3>
 
 <p>AI帮忙算出了每一步走哪个方向好，我们要把这个决定用指令发送给游戏。</p>
 
 <p>Windows下用ctypes.windll.user32.SendInput很简单，mac上又麻烦了一些。首先搜到的居然是让我用PyObjC调用ObjC来生成按键事件。。。太绕了，打死不从，我们按键的频率又不高。后来找到了用Apple Script的方法，简单直观了不少。</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">pressKey</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
-    <span class="n">left</span> <span class="o">=</span> <span class="s">&#39;osascript -e </span><span class="se">\&#39;</span><span class="s">tell application &quot;System Events&quot; to key code 123</span><span class="se">\&#39;</span><span class="s">&#39;</span>
-    <span class="n">right</span> <span class="o">=</span> <span class="s">&#39;osascript -e </span><span class="se">\&#39;</span><span class="s">tell application &quot;System Events&quot; to key code 124</span><span class="se">\&#39;</span><span class="s">&#39;</span>
-    <span class="n">up</span> <span class="o">=</span> <span class="s">&#39;osascript -e </span><span class="se">\&#39;</span><span class="s">tell application &quot;System Events&quot; to key code 126</span><span class="se">\&#39;</span><span class="s">&#39;</span>
-    <span class="n">down</span> <span class="o">=</span> <span class="s">&#39;osascript -e </span><span class="se">\&#39;</span><span class="s">tell application &quot;System Events&quot; to key code 125</span><span class="se">\&#39;</span><span class="s">&#39;</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">pressKey</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="s">'osascript -e </span><span class="se">\'</span><span class="s">tell application "System Events" to key code 123</span><span class="se">\'</span><span class="s">'</span>
+    <span class="n">right</span> <span class="o">=</span> <span class="s">'osascript -e </span><span class="se">\'</span><span class="s">tell application "System Events" to key code 124</span><span class="se">\'</span><span class="s">'</span>
+    <span class="n">up</span> <span class="o">=</span> <span class="s">'osascript -e </span><span class="se">\'</span><span class="s">tell application "System Events" to key code 126</span><span class="se">\'</span><span class="s">'</span>
+    <span class="n">down</span> <span class="o">=</span> <span class="s">'osascript -e </span><span class="se">\'</span><span class="s">tell application "System Events" to key code 125</span><span class="se">\'</span><span class="s">'</span>
     <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">left</span><span class="p">)</span>
+        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">left</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
+        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">up</span><span class="p">)</span>
+        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">up</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
-        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">down</span><span class="p">)</span></code></pre></div>
+        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">down</span><span class="p">)</span></code></pre></figure>
 
-<h3 id="section-4">第六步 测试</h3>
+<h3 id="第六步-测试">第六步 测试</h3>
 
 <p>终于完成了整个流程，摆好浏览器的位置，$python 1024.py，我们来跑一跑。</p>
 

@@ -6,14 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>时间序列异常检测 &#8211; RuiMakes</title>
-
+<meta name="description" content="本文总结了我在时间序列异常算法方面的一些经验。读者需要对常规机械学习算法有一定的了解。希望本文能帮助有相关需求的工程师快速切入。
+">
 <meta name="keywords" content="machine learning, anomaly detection, time series">
-
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="时间序列异常检测">
-
+<meta name="twitter:description" content="本文总结了我在时间序列异常算法方面的一些经验。读者需要对常规机械学习算法有一定的了解。希望本文能帮助有相关需求的工程师快速切入。
+">
 
 
 
@@ -24,7 +25,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="时间序列异常检测">
-
+<meta property="og:description" content="本文总结了我在时间序列异常算法方面的一些经验。读者需要对常规机械学习算法有一定的了解。希望本文能帮助有相关需求的工程师快速切入。
+">
 <meta property="og:url" content="http://wurui.cc/tech/time-series-anomaly-detection/">
 <meta property="og:site_name" content="RuiMakes">
 
@@ -79,27 +81,17 @@
 	    <ul>
       
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/about/" >About</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/life/" >Life</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/search/" >Search</a></li>
 		  
@@ -133,7 +125,6 @@
         
       </header>
       <footer class="entry-meta">
-        
         
         
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
@@ -187,7 +178,7 @@
   </li>
 </ul>
 
-<h3 id="section">实践经验</h3>
+<h3 id="实践经验">实践经验</h3>
 <p><strong>序列构造自动选优</strong></p>
 
 <p>不同类型的数据可能适合不同的模型。选择AutoForecastModel，程序会自动把所有TMM都跑一遍，并推选偏差值最小的模型送入异常检测模块。值得注意的是，这里自动选取的标准只关注了还原度，但还原度高并不直接代表能更好的查找异常，在使用本方法的时候要留意在心。</p>
@@ -216,7 +207,7 @@
   </li>
 </ul>
 
-<h3 id="section-1">算法细节</h3>
+<h3 id="算法细节">算法细节</h3>
 
 <p>Robust PCA是一个非常常见的主要成分提取算法。RPCA本质其实是一个矩阵分解算法。目标是将输入X分解为X=L+S+E。L代表了X的low rank approximation（低秩估计）。而低秩估计本质就是将矩阵中相关性强的行投影到更低维的线性空间，实现了一个降维平滑的功能，同时剔除了冗余信息，提取了矩阵特征。提取完主要成分L后，获得了剩下的稀疏矩阵S，和噪点E。</p>
 
@@ -304,7 +295,7 @@
   </li>
 </ol>
 
-<h2 id="section-2">主要数据集</h2>
+<h2 id="主要数据集">主要数据集</h2>
 
 <ul>
   <li>

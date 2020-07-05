@@ -6,14 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>可视化网络 Gephi &#8211; RuiMakes</title>
-
+<meta name="description" content="
+">
 <meta name="keywords" content="visualization, big data, graph, d3">
-
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="可视化网络 Gephi">
-
+<meta name="twitter:description" content="
+">
 
 
 
@@ -24,7 +25,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="可视化网络 Gephi">
-
+<meta property="og:description" content="
+">
 <meta property="og:url" content="http://wurui.cc/tech/gephi/">
 <meta property="og:site_name" content="RuiMakes">
 
@@ -79,27 +81,17 @@
 	    <ul>
       
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/about/" >About</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/life/" >Life</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/search/" >Search</a></li>
 		  
@@ -135,7 +127,6 @@
       <footer class="entry-meta">
         
         
-        
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Wu Rui</span></span>
@@ -150,7 +141,7 @@
 
 <p>Gephi是一个全平台的交互式可视化平台，它特别适用于复杂的大数据可视化工作。<a href="http://gephi.github.io/">下载</a></p>
 
-<h4 id="section">实时可视化</h4>
+<h4 id="实时可视化">实时可视化</h4>
 <hr />
 <p><img src="http://gephi.github.io/images/screenshots/select-tool-mini.png" alt="Model-View-Controller" /></p>
 
@@ -160,7 +151,7 @@
   <li>大量可用工具。</li>
 </ul>
 
-<h4 id="section-1">高效简易的布局工具</h4>
+<h4 id="高效简易的布局工具">高效简易的布局工具</h4>
 <hr />
 <p><img src="http://gephi.github.io/images/screenshots/layout1.png" alt="Model-View-Controller" /></p>
 
@@ -168,17 +159,17 @@
 
 <p><a href="http://gephi.github.io/features/">简单翻译自 Gephi Features</a></p>
 
-<h2 id="section-2">快速入门</h2>
+<h2 id="快速入门">快速入门</h2>
 
 <p><a href="http://gephi.github.io/tutorials/gephi-tutorial-quick_start.pdf">原始文档</a></p>
 
-<h4 id="section-3">图数据导入</h4>
+<h4 id="图数据导入">图数据导入</h4>
 <hr />
 <p>Gephi支持所有主流的图数据格式导入，例如GEFX，GraphML，GML。同时也支持简单的CSV格式导入，缺点是只认前三列，不方便添加Label或者其他属性。如果你在使用neo4j，可以使用neo4j-shell来导出图数据。如果以上方法都不合适，可以找到以上几种文件的格式，自己生产图文件。我有一些简单程序，有需要的可以留言。</p>
 
 <p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.49.48%20PM.png?raw=true" alt="Model-View-Controller" /></p>
 
-<h4 id="section-4">布局算法</h4>
+<h4 id="布局算法">布局算法</h4>
 <hr />
 <p>在左下角有布局算法区，大可以随意尝试几种不同的算法和参数，点击run看看效果~</p>
 
@@ -194,19 +185,19 @@
 
 <p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.46.45%20PM.png?raw=true" alt="Model-View-Controller" /></p>
 
-<h4 id="section-5">统计和分割</h4>
+<h4 id="统计和分割">统计和分割</h4>
 <hr />
 <p>在窗口右边有各种统计功能，举个例子，像Modularity，能够对数据进行聚类，聚类的数据可以在子窗口调节。获得结果之后可以使用Ranking左边的Partition功能，这里提供根据之前的结果进行配色的方案。</p>
 
 <p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.55.04%20PM.png?raw=true" alt="Model-View-Controller" /></p>
 
-<h4 id="preview">预览（Preview）</h4>
+<h4 id="预览preview">预览（Preview）</h4>
 <hr />
 <p>之前的操作都是在Overview视图中进行的，Gephi的预览视图提供了多套更为生动的整体配色模板。你也可以对具体的参数进行调节。在左下方有导出选项。</p>
 
 <p><img src="https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.58.34%20PM.png?raw=true" alt="Model-View-Controller" /></p>
 
-<h4 id="data-laboratory">数据实验室（Data Laboratory）</h4>
+<h4 id="数据实验室data-laboratory">数据实验室（Data Laboratory）</h4>
 <hr />
 <p>数据实验室提供对具体数据进行操作的视图，然后并不怎么好用，推荐还是在生成导入文件的时候把需要的属性、标签都加入。Partition部分也支持使用标签来进行分类配色。</p>
 
@@ -220,7 +211,7 @@
 
 <p>这里要允许chrome从本地获取文件，在mac上的用法是 1 先关闭所有的chrome进程，2 带参数启动chrome。</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">/Applications/Google<span class="se">\ </span>Chrome.app/Contents/MacOS/Google<span class="se">\ </span>Chrome --allow-file-access-from-files</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/Applications/Google<span class="se">\ </span>Chrome.app/Contents/MacOS/Google<span class="se">\ </span>Chrome <span class="nt">--allow-file-access-from-files</span></code></pre></figure>
 
 
         

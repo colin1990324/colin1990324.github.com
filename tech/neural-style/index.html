@@ -6,14 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>神经网络风格画 Neural Style Art &#8211; RuiMakes</title>
-
+<meta name="description" content="A Neural Algorithm of Artistic Style这篇论文说明了如何使用神经网络学习一副画的绘画风格，并把这种风格带入自选照片。
+">
 <meta name="keywords" content="neural network, AI, art">
-
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="神经网络风格画 Neural Style Art">
-
+<meta name="twitter:description" content="A Neural Algorithm of Artistic Style这篇论文说明了如何使用神经网络学习一副画的绘画风格，并把这种风格带入自选照片。
+">
 
 
 
@@ -24,7 +25,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="神经网络风格画 Neural Style Art">
-
+<meta property="og:description" content="A Neural Algorithm of Artistic Style这篇论文说明了如何使用神经网络学习一副画的绘画风格，并把这种风格带入自选照片。
+">
 <meta property="og:url" content="http://wurui.cc/tech/neural-style/">
 <meta property="og:site_name" content="RuiMakes">
 
@@ -79,27 +81,17 @@
 	    <ul>
       
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/about/" >About</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/life/" >Life</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/search/" >Search</a></li>
 		  
@@ -135,7 +127,6 @@
       <footer class="entry-meta">
         
         
-        
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Wu Rui</span></span>
@@ -154,41 +145,41 @@
 
 <p>是不是很想试试呢？下面简单说说我在Linux上的运行经验。</p>
 
-<h3 id="torch">安装Torch</h3>
+<h3 id="安装torch">安装Torch</h3>
 
 <p>在terminal中运行以下命令</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-deps <span class="p">|</span> bash 
-git clone https://github.com/torch/distro.git ~/torch --recursive 
-<span class="nb">cd</span> ~/torch<span class="p">;</span> ./install.sh</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-s</span> https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash 
+git clone https://github.com/torch/distro.git ~/torch <span class="nt">--recursive</span> 
+<span class="nb">cd</span> ~/torch<span class="p">;</span> ./install.sh</code></pre></figure>
 
 <p>第一个命令安装了LuaJIT和Torch需要的依赖。
 第二个命令安装了LuaJIT, LuaRocks,然后用LuaRocks安装了torch, nn，paths等.</p>
 
 <p>脚本也添加了torch PATH到环境中，所以需要重启终端或者运行</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">source</span> ~/.bashrc</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">source</span> ~/.bashrc</code></pre></figure>
 
 <p>有可能需要更新image包到最新</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">luarocks install image</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">luarocks <span class="nb">install </span>image</code></pre></figure>
 
-<h3 id="loadcaffe">安装loadcaffe</h3>
+<h3 id="安装loadcaffe">安装loadcaffe</h3>
 
 <p>caffe的依赖比较简单，只需要安装protobuf</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install libprotobuf-dev protobuf-compiler</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get <span class="nb">install </span>libprotobuf-dev protobuf-compiler</code></pre></figure>
 
 <p>然后安装loadcaffe</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">luarocks install loadcaffe</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">luarocks <span class="nb">install </span>loadcaffe</code></pre></figure>
 
-<h3 id="neural-style">下载Neural Style的实现</h3>
+<h3 id="下载neural-style的实现">下载Neural Style的实现</h3>
 
 <p>先移动到你想存放项目的目录下。</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">Git clone https://github.com/jcjohnson/neural-style.git
-sh models/download_models.sh</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Git clone https://github.com/jcjohnson/neural-style.git
+sh models/download_models.sh</code></pre></figure>
 
 <p>Git拷贝实现代码。</p>
 
@@ -196,7 +187,7 @@ sh models/download_models.sh</code></pre></div>
 
 <p>默认设置运行使用</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">th neural_style.lua -style_image &lt;image.jpg&gt; -content_image &lt;image.jpg&gt;</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">th neural_style.lua <span class="nt">-style_image</span> &lt;image.jpg&gt; <span class="nt">-content_image</span> &lt;image.jpg&gt;</code></pre></figure>
 
 <p>如果是公司电脑没有显卡，加上 -gpu -1</p>
 

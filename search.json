@@ -4,7 +4,8 @@
     {
       "title"			: "家庭网络升级路3-网络服务",
       "link"			: "http://wurui.cc/tech/home-network-upgrading-3/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>本文是家庭网络升级路的第三篇。前面两篇介绍了主干路由的升级情况，还购置了一台品牌NAS。那么除了单纯的上网冲浪，我们还能为家庭提供哪些便利的服务呢？</p>
+"
     }
   
 
@@ -12,7 +13,8 @@
     ,{
       "title"			: "家庭网络升级路2-NAS搭建",
       "link"			: "http://wurui.cc/tech/home-network-upgrading-2/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>每当手机空间不够用的时候，老爹都会删掉一些照片视频，颇为可惜。每次出游回家，从相机导出照片的时候，老爹又会说，买个大硬盘把这些照片都好好保存起来。周末在家打整好花园以后，老爹静态娱乐最大的爱好就是躺在罗汉床上看看老电影。综上，我认为家里还是有一些大容量存储，影音娱乐服务的需求的。</p>
+"
     }
   
 
@@ -20,7 +22,8 @@
     ,{
       "title"			: "家庭网络升级路1-骨干网升级",
       "link"			: "http://wurui.cc/tech/home-network-upgrading-1/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>2015年回成都以后，我多次对家庭网络进行升级。入户带宽从DSL的20Mbps提升到了光纤的300Mbps。这中间也有一些坎坷，简单记录一下。</p>
+"
     }
   
 
@@ -28,7 +31,8 @@
     ,{
       "title"			: "那人，那年，那些事儿",
       "link"			: "http://wurui.cc/blog/the-people-the-year-the-story/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>一</p>
+"
     }
   
 
@@ -36,7 +40,8 @@
     ,{
       "title"			: "车旋元年，木工房の诞生",
       "link"			: "http://wurui.cc/life/woodshop-2017/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>一切都源自上半年B站上看到的美国退休建筑师<a href="https://www.youtube.com/user/urbanTrash/videos">Frank Howarth</a>做木工的视频。这位哈弗毕业的大叔退休后住在Portland, Oregon，并在自家院子里建了一个独立的木工房。大叔不仅木工做得好，制作视频的水平更是远超一般的木工YouTuber。磁性的声音，定格动画技巧，gopro的应用，竭尽我空闲的时间，很快把油管上几十个视频都刷了一遍，还每天盼着更新。Frank的作品主要是一些碗，原木纹，拼花纹，每年圣诞节也一定会做一个ornament，让孩子们一起挂到圣诞树上。其余时候也像其他老外一样，改造木工房，做一些实用性的木工，修修补补等等。</p>
+"
     }
   
 
@@ -44,7 +49,8 @@
     ,{
       "title"			: "基于深度学习的二进制恶意样本检测",
       "link"			: "http://wurui.cc/tech/malware-detection-by-deep-learning/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>今年7月25日，我所在的公司瀚思科技在北京宣布完成B轮融资一亿元人民币，并且发布了新一代的病毒检测产品DeepSense。Deepsense可以做到沙箱同等水平的高检测率99%，而误报率低于1/1000。</p>
+"
     }
   
 
@@ -52,7 +58,8 @@
     ,{
       "title"			: "Lego Technic GMK 6400 Mobile Crane",
       "link"			: "http://wurui.cc/life/gmk-6400-mobile-crane/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>GMK6400是社区玩家合力升级自乐高科技系列42009大吊车而成，可谓是科技男孩儿的梦想之作，是一定程度上的巅峰。</p>
+"
     }
   
 
@@ -60,7 +67,8 @@
     ,{
       "title"			: "Lego Technic 42042RC",
       "link"			: "http://wurui.cc/life/lego-technic-42042rc/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>Extreme9398之后又复刻了荒川的Buggy3，42037到手后尝试着自己改了遥控，因为都是车所以没有做视频。这次带来的是大型工程机械42042R履带吊车。</p>
+"
     }
   
 
@@ -68,7 +76,8 @@
     ,{
       "title"			: "春夜喜雨",
       "link"			: "http://wurui.cc/blog/spring-rain/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/spring_rain.jpg" alt="Model-View-Controller" class="center-image" /></p>
+"
     }
   
 
@@ -76,7 +85,8 @@
     ,{
       "title"			: "神经网络风格画 Neural Style Art",
       "link"			: "http://wurui.cc/tech/neural-style/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><a href="http://arxiv.org/abs/1508.06576">A Neural Algorithm of Artistic Style</a>这篇论文说明了如何使用神经网络学习一副画的绘画风格，并把这种风格带入自选照片。</p>
+"
     }
   
 
@@ -84,7 +94,8 @@
     ,{
       "title"			: "紫光檀手镯",
       "link"			: "http://wurui.cc/life/wood-bracelet/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/wood_work_5.JPG" alt="Model-View-Controller" class="center-image" /></p>
+"
     }
   
 
@@ -92,7 +103,8 @@
     ,{
       "title"			: "橡皮章DIY",
       "link"			: "http://wurui.cc/life/eraser-print/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>橡皮章，简单的手工。</p>
+"
     }
   
 
@@ -100,7 +112,8 @@
     ,{
       "title"			: "小游戏1024自动机与AI",
       "link"			: "http://wurui.cc/tech/1024-autoplayer/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>之前看到<a href="http://c4fun.cn/">Coding 4 Fun</a>的博客，使用<a href="http://c4fun.cn/blog/2013/11/22/auto-aixiaochu-app/">Qt+BlueStack实现自动天天爱消除</a>。哇塞，好牛逼！写程序来开挂，这么高科技的玩法勾的我跃跃欲试了。</p>
+"
     }
   
 
@@ -108,7 +121,8 @@
     ,{
       "title"			: "分离无连接子图",
       "link"			: "http://wurui.cc/tech/isolate-disconnected-subgraph/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>实践中经常遇到这样一个小问题。有一套图数据，所有节点间并不是全部连通的（任意点间均有通路）。这必然导致出现相互隔离的子图，这时我们可能希望将所有分离的子图找出来，单独处理。这里给出解决这个问题的一小段程序。</p>
+"
     }
   
 
@@ -116,7 +130,8 @@
     ,{
       "title"			: "图数据库系列(一) 初见Neo4j",
       "link"			: "http://wurui.cc/tech/neo4j-first-sight/",
-      "excerpt"		: ""
+      "excerpt"		: "<h2 id="neo4j简介">Neo4j简介</h2>
+"
     }
   
 
@@ -124,7 +139,8 @@
     ,{
       "title"			: "时间序列异常检测",
       "link"			: "http://wurui.cc/tech/time-series-anomaly-detection/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>本文总结了我在时间序列异常算法方面的一些经验。读者需要对常规机械学习算法有一定的了解。希望本文能帮助有相关需求的工程师快速切入。</p>
+"
     }
   
 
@@ -132,7 +148,8 @@
     ,{
       "title"			: "知乎爬虫",
       "link"			: "http://wurui.cc/tech/zhihu-python-crawler/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>一直没有写过爬虫程序。感觉都不只是遗憾而是一种缺失了。之前在知乎看到类似<a href="http://www.zhihu.com/question/27621722">“能利用爬虫技术做到哪些很酷很有趣很有用的事情？”</a>，又一次激发了我玩一玩爬虫的兴趣。而爬虫的对象就用知乎好了，语言用我最近正在磨砺的Python。</p>
+"
     }
   
 
@@ -140,7 +157,8 @@
     ,{
       "title"			: "黄龙溪小游",
       "link"			: "http://wurui.cc/life/huanglongxi/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/exportIMG_5864-6150628.jpg" alt="Model-View-Controller" class="center-image" /></p>
+"
     }
   
 
@@ -148,7 +166,8 @@
     ,{
       "title"			: "D3 实战练手",
       "link"			: "http://wurui.cc/tech/d3-js/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>工作相关，了解流行的可视化库，（如百度echarts，GoogleCharts，Gephi等）最后还是<a href="https://github.com/mbostock/d3/wiki/Gallery">D3 Gallery</a>的诸多Demo惊艳了我。简单介绍后带来我的实战。</p>
+"
     }
   
 
@@ -156,7 +175,8 @@
     ,{
       "title"			: "可视化网络 Gephi",
       "link"			: "http://wurui.cc/tech/gephi/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/firewall_sigma_circle.png" alt="Model-View-Controller" /></p>
+"
     }
   
 
@@ -164,7 +184,8 @@
     ,{
       "title"			: "New Domain and Web Site",
       "link"			: "http://wurui.cc/tech/new-domain-and-web-site/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>After the expiration of ruiwu.me, I’m looking for a new cheap solution for my personal blog. The original AWS EC2 &amp; Wordpress solution is a little bit expensive for individuals and I know one of my friend <a href="http://hackecho.com/">Zhaoyu</a> is using a Github &amp; Jekyll solution. Since all those services are free and I bought the new domain wurui.cc for 7 years at the price 318 rmb, this solution should be easy and reasonable.</p>
+"
     }
   
 
@@ -172,7 +193,8 @@
     ,{
       "title"			: "Hello World",
       "link"			: "http://wurui.cc/blog/hello-world/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>这是雏龙的一声怒吼，wurui.cc 今天上线啦！这标志着即上代主页ruiwu.me之后，更轻巧，更持久的新生主页的破壳而出，惊动天地，紫云东方！</p>
+"
     }
   
 
@@ -180,7 +202,8 @@
     ,{
       "title"			: "Light Up",
       "link"			: "http://wurui.cc/life/light-up/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/export_2015-35-17.jpg" alt="Model-View-Controller" /></p>
+"
     }
   
 
@@ -188,7 +211,8 @@
     ,{
       "title"			: "2014 MIZZOU Homecoming",
       "link"			: "http://wurui.cc/life/2014-mizzou-homecoming/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>This Saturday we had the Homecoming Parade and I tried to comprehend a little bit of Documentary Photography.</p>
+"
     }
   
 
@@ -196,7 +220,8 @@
     ,{
       "title"			: "Horseshoe Canyon Ranch",
       "link"			: "http://wurui.cc/life/horseshoe-canyon-ranch/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/export_2014-31-13.jpg" alt="Model-View-Controller" /></p>
+"
     }
   
 
@@ -204,7 +229,8 @@
     ,{
       "title"			: "G高达定格——《自恋刑警》神同步",
       "link"			: "http://wurui.cc/life/gundam-figure-animation/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>百看不腻啊，每次都笑死了</p>
+"
     }
   
 
@@ -212,7 +238,8 @@
     ,{
       "title"			: "舞者",
       "link"			: "http://wurui.cc/blog/dancer/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>要是舞者不能跳舞的话，那活着也就没什么意思了。</p>
+"
     }
   
 
@@ -220,7 +247,8 @@
     ,{
       "title"			: "Run Walter, Run!!!",
       "link"			: "http://wurui.cc/life/run-walter-run/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>Siracusa, Sicily (ITALY). Walter, is a Labrador. He’s a special dog, who really loves the sea!</p>
+"
     }
   
 
@@ -228,7 +256,8 @@
     ,{
       "title"			: "Microsoft Coding Competition - University of Missouri III",
       "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-3/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>Here are two problems value 1 point each. Most team can get these 2 points and I spent 30 minutes on each one.</p>
+"
     }
   
 
@@ -236,7 +265,8 @@
     ,{
       "title"			: "Microsoft Coding Competition - University of Missouri II",
       "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-2/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>Here posts  3 problems without solution.</p>
+"
     }
   
 
@@ -244,7 +274,8 @@
     ,{
       "title"			: "Microsoft Coding Competition - University of Missouri I",
       "link"			: "http://wurui.cc/tech/microsoft-coding-competition-university-of-missouri-1/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>This is a Coding Competition MS held at University of Missouri - Columbia on Sep 17th 2014. Similar events will be held in several Universities.</p>
+"
     }
   
 
@@ -252,7 +283,8 @@
     ,{
       "title"			: "We Won This Game",
       "link"			: "http://wurui.cc/life/we-won-this-game/",
-      "excerpt"		: ""
+      "excerpt"		: "<h3 id="mizzou-vs-sdsu-8302014">MIZZOU VS SDSU 8/30/2014</h3>
+"
     }
   
 
@@ -260,7 +292,8 @@
     ,{
       "title"			: "How a Science Experiment Turns Into Art",
       "link"			: "http://wurui.cc/life/how-a-science-experiment-turns-into-art/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/orangeeee.jpg" alt="Model-View-Controller" /></p>
+"
     }
   
 
@@ -268,7 +301,8 @@
     ,{
       "title"			: "Google Code Jam 2014",
       "link"			: "http://wurui.cc/tech/google-code-jam-2014/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>The Qualification Round of Google Code Jam 2014 just ended. Here shares my solutions on the <a href="https://github.com/colin1990324/LeetCode/tree/master/src/codejam2014">Github</a> for the following problems.</p>
+"
     }
   
 
@@ -276,7 +310,8 @@
     ,{
       "title"			: "GoPro 360 Degree Video",
       "link"			: "http://wurui.cc/life/gopro-360-degree-video/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>This video is made by Jonas Ginter with 6 GoPro Cameras and I find it quite interesting.</p>
+"
     }
   
 
@@ -284,7 +319,10 @@
     ,{
       "title"			: "一地鸡毛",
       "link"			: "http://wurui.cc/blog/ground_covered_with_chicken_feathers/",
-      "excerpt"		: ""
+      "excerpt"		: "<blockquote>
+  <p>啤酒虽然夺了过去，但小林脑袋已经发懵，这天夜里睡得很死。半夜做了一个梦，梦见自己睡觉，上边盖着一堆鸡毛，下边铺着许多人掉下的皮屑，柔软舒服，度年如日。又梦见黑鸦鸦无边无际的人群向前涌动，又变成一队队祈雨的蚂蚁。</p>
+</blockquote>
+"
     }
   
 
@@ -292,7 +330,8 @@
     ,{
       "title"			: "《码农故事》",
       "link"			: "http://wurui.cc/blog/programmers-story/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>创业公司核心代码被盗，作案者到底是黑客还是内奸？社交网站遭遇DDoS攻击，究竟是何人所为？顶级大牛程序员改行送外卖的背后又有什么隐情？当精英创业团队面临理想与现实的冲突，他们各自做出了怎样的选择？前端女汉子和美女市场经理谁最终会得到钻石王老五的青睐？成功的曙光出现之时，又发生了什么匪夷所思的事情？当一切都尘埃落定之时，是技术改变了世界，还是资本扭曲了人性？————<a href="http://coderlmn.github.io/coderStory/">《码农故事》</a></p>
+"
     }
   
 
@@ -300,7 +339,8 @@
     ,{
       "title"			: "Promising Young Climbers",
       "link"			: "http://wurui.cc/life/promising-young-climbers/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>This girl is so cute and pretty, and she is one of the two 11-year old record keepers in the world. I like how she talks and smiles.</p>
+"
     }
   
 
@@ -308,7 +348,8 @@
     ,{
       "title"			: "An Invisible Sign",
       "link"			: "http://wurui.cc/blog/an-invisible-sign/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/An_Invisible_Sign_Poster.jpg" alt="Model-View-Controller" style="float:right" /></p>
+"
     }
   
 
@@ -316,7 +357,8 @@
     ,{
       "title"			: "Sanya",
       "link"			: "http://wurui.cc/life/sanya/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>Beautiful Sanya and my beautiful girl~</p>
+"
     }
   
 
@@ -324,7 +366,8 @@
     ,{
       "title"			: "The Romance of a Man",
       "link"			: "http://wurui.cc/life/the-romance-of-a-man/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>The first Gundam I had was Strike Freedom 1/100 I bought at Narita International Airport. Long after I saw my friends had their awesome action figures. So I guess I do this to make up something( which really costs a lot) missing from my childhood. :D</p>
+"
     }
   
 
@@ -332,7 +375,8 @@
     ,{
       "title"			: "Opening Orchid",
       "link"			: "http://wurui.cc/life/opening-orchid/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>Here’s the opening orchid in my parents’ house. Have a nice day!</p>
+"
     }
   
 
@@ -340,7 +384,8 @@
     ,{
       "title"			: "Alex Honnold - El Sendero Luminoso",
       "link"			: "http://wurui.cc/life/alex-honnold-el-sendero-luminoso/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>Alex, in my mind, is the best climber on active duty in the world! Every time I watch his video, I could feel his strong mind of pursuing bigger bigger challenge!</p>
+"
     }
   
 
@@ -348,7 +393,8 @@
     ,{
       "title"			: "Climbing at Red River George",
       "link"			: "http://wurui.cc/life/climbing-at-red-river-george/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>Happy journey with these guys~</p>
+"
     }
   
 
@@ -356,7 +402,8 @@
     ,{
       "title"			: "Go Tigers",
       "link"			: "http://wurui.cc/life/go-tigers/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>This is the first time I’m at the scene of a football game. People are passionate and roaring, “M-I-Z!!! Z-O-U!!!”.  And weather is quite cold anyway. :D</p>
+"
     }
   
 
@@ -364,7 +411,8 @@
     ,{
       "title"			: "Cicada Slough and Rosin",
       "link"			: "http://wurui.cc/life/cicada-slough-and-rosin/",
-      "excerpt"		: ""
+      "excerpt"		: "<h1 id="哥村拾遗蝉蜕和松香">哥村拾遗：蝉蜕和松香</h1>
+"
     }
   
 
@@ -372,7 +420,8 @@
     ,{
       "title"			: "Hermann",
       "link"			: "http://wurui.cc/life/hermann/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>When we visited this small town, the local people happened to hold their annual civil war event which was great fun.</p>
+"
     }
   
 
@@ -380,7 +429,8 @@
     ,{
       "title"			: "StarCraft II TVZ 4M Polt",
       "link"			: "http://wurui.cc/blog/starcraft-ii-tvz-4m-polt/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>I’ve played Starcraft since primary school. So when Starcraft II came out, I bought the game immediately. Here’s a article from <a href="http://www.teamliquid.net/forum/viewmessage.php?topic_id=432956">Teamliquit</a> analysing terrain player, WCS North American Champion, Polt’s TVZ strategy. And I translated it into Chinese, originally posted on <a href="bbs.neotv.cn">NeoTV BBS</a>.</p>
+"
     }
   
 
@@ -388,7 +438,8 @@
     ,{
       "title"			: "Havasupai",
       "link"			: "http://wurui.cc/life/havasupai/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>I had a fantastic spring break there with three of mine friends!</p>
+"
     }
   
 
@@ -396,7 +447,8 @@
     ,{
       "title"			: "Mount Siguniang Through Hike",
       "link"			: "http://wurui.cc/life/mount-siguniang-through-hike/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>It was a 3 days hiking. The plan was to start from the Valley Changping, Xiaojin, climb through the pass, 15600 feet, then get out from the Valley Bipeng, Li Xian.</p>
+"
     }
   
 
@@ -404,7 +456,8 @@
     ,{
       "title"			: "寝室吃酸柚子记",
       "link"			: "http://wurui.cc/blog/eat-sour-grapefruit/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>新年伊始，关山口技院，意淫十六分舵，四二五档口，李兄买了一酸柚子，生涩，不能入口，遂弃之桌侧。日暮，各兄弟归来，漫夜长长，无以聊赖，思卑鄙龌龊，蝇营狗苟之事。余曰，何不玩牌，失者食酸柚？众兄皆曰好。遂订下规矩，二十一点，轮胜一，终败者须食一柚。少倾，开战，激战三百回合，互有胜负，食柚者表情乖戾，似笑非笑，似哭非哭，无以言表，只以战意激扬，恨柚之瘦小。杜工部有诗云，“莫自使眼枯，收汝泪纵横。眼枯即见骨，天地终无情！存者无消息，死者为尘泥。贱子因阵败，归来寻旧蹊。久行见空巷，日瘦气惨凄。”可见战况之惨烈。须臾，战罢，众兄各食柚少许，欢愉而罢。</p>
+"
     }
   
 
@@ -412,7 +465,8 @@
     ,{
       "title"			: "Wuhan 2011",
       "link"			: "http://wurui.cc/life/wuhan-2011/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>终于拥有了自己的第一台单反相机。用生活费中攒下来的钱购入了落后一代的Canon 500D套装，后来还入了价廉物美的小痰盂。</p>
+"
     }
   
 
@@ -420,7 +474,8 @@
     ,{
       "title"			: "Qinghai Lake",
       "link"			: "http://wurui.cc/life/qinghai-lake/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>It’s a 3000 miles trip with my family during 2011 summer.</p>
+"
     }
   
 
@@ -428,7 +483,8 @@
     ,{
       "title"			: "惜春思夏",
       "link"			: "http://wurui.cc/blog/treasured-spring-wait-in-hope-of-summer/",
-      "excerpt"		: ""
+      "excerpt"		: "<p><img src="http://wurui.cc/images/blog/4820821926123735214.jpg" alt="Model-View-Controller" /></p>
+"
     }
   
 
@@ -449,13 +505,21 @@
   
 
   
+
+  
     ,{
-      "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/visual/sunburst/",
+      "title"			: "Whole Site Word Cloud",
+      "link"			: "http://wurui.cc/visual/word-cloud/",
       "excerpt"		: ""
     }
   
 
+  
+    ,{
+      "title"			: "Travel China",
+      "link"			: "http://wurui.cc/visual/travel-china/",
+      "excerpt"		: ""
+    }
   
 
   
@@ -468,8 +532,8 @@
 
   
     ,{
-      "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/visual/word-cloud/",
+      "title"			: "Zoomable Sunburst",
+      "link"			: "http://wurui.cc/visual/sunburst/",
       "excerpt"		: ""
     }
   
@@ -489,14 +553,6 @@
   
 
   
-    ,{
-      "title"			: "Travel China",
-      "link"			: "http://wurui.cc/visual/travel-china/",
-      "excerpt"		: ""
-    }
-  
-
-  
 
   
 
@@ -505,7 +561,7 @@
   
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/visual/sunburst/index_label.html",
+      "link"			: "http://wurui.cc/visual/sunburst/index_label/",
       "excerpt"		: ""
     }
   
@@ -513,7 +569,7 @@
   
     ,{
       "title"			: "Zoomable Sunburst",
-      "link"			: "http://wurui.cc/visual/sunburst/index_no_label.html",
+      "link"			: "http://wurui.cc/visual/sunburst/index_no_label/",
       "excerpt"		: ""
     }
   
@@ -521,9 +577,11 @@
   
     ,{
       "title"			: "Whole Site Word Cloud",
-      "link"			: "http://wurui.cc/visual/word-cloud/index_v1.html",
+      "link"			: "http://wurui.cc/visual/word-cloud/index_v1/",
       "excerpt"		: ""
     }
+  
+
   
 
   

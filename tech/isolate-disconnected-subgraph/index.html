@@ -6,14 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>分离无连接子图 &#8211; RuiMakes</title>
-
+<meta name="description" content="实践中经常遇到这样一个小问题。有一套图数据，所有节点间并不是全部连通的（任意点间均有通路）。这必然导致出现相互隔离的子图，这时我们可能希望将所有分离的子图找出来，单独处理。这里给出解决这个问题的一小段程序。
+">
 <meta name="keywords" content="graph, python">
-
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="分离无连接子图">
-
+<meta name="twitter:description" content="实践中经常遇到这样一个小问题。有一套图数据，所有节点间并不是全部连通的（任意点间均有通路）。这必然导致出现相互隔离的子图，这时我们可能希望将所有分离的子图找出来，单独处理。这里给出解决这个问题的一小段程序。
+">
 
 
 
@@ -24,7 +25,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="分离无连接子图">
-
+<meta property="og:description" content="实践中经常遇到这样一个小问题。有一套图数据，所有节点间并不是全部连通的（任意点间均有通路）。这必然导致出现相互隔离的子图，这时我们可能希望将所有分离的子图找出来，单独处理。这里给出解决这个问题的一小段程序。
+">
 <meta property="og:url" content="http://wurui.cc/tech/isolate-disconnected-subgraph/">
 <meta property="og:site_name" content="RuiMakes">
 
@@ -79,27 +81,17 @@
 	    <ul>
       
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/about/" >About</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/life/" >Life</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/search/" >Search</a></li>
 		  
@@ -135,7 +127,6 @@
       <footer class="entry-meta">
         
         
-        
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Wu Rui</span></span>
@@ -150,22 +141,22 @@
 
 <p>The problem is, given a set of edges(node, node), seperate all subgraphs that are isolated from each other. Isolation of two graphs Gx and Gy is defined as every node Xi in Gx has no edge(or path) to every node Yi in Gy.</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]]</span> 
-<span class="c"># expect output 2 subgraph of {1,2,3,4} and {5,6,7}</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]]</span> 
+<span class="c1"># expect output 2 subgraph of {1,2,3,4} and {5,6,7}</span></code></pre></figure>
 
 <p>naive idea, construct a set of nodes of a subgraph, a new node is added to the set if it can connect to any node in the set</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">getSubgraphs</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">getSubgraphs</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="n">rstList</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
         <span class="n">connect</span> <span class="o">=</span> <span class="bp">False</span>
         <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">rstList</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">s</span> <span class="ow">or</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-                <span class="n">s</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+                <span class="n">s</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
                 <span class="n">connect</span> <span class="o">=</span> <span class="bp">True</span>
                 <span class="k">break</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">connect</span><span class="p">:</span>
-            <span class="n">rstList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
+            <span class="n">rstList</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
             <span class="k">return</span> <span class="n">rstList</span>
 
 <span class="n">rstList</span> <span class="o">=</span> <span class="n">getSubgraphs</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -173,37 +164,37 @@
 
 <span class="p">[</span><span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]),</span> <span class="nb">set</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])]</span>
 
-<span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span> 
-<span class="c"># this edge should connect two subgraph</span>
-
+<span class="n">data</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span> 
+<span class="c1"># this edge should connect two subgraph
+</span>
 <span class="n">rstList</span> <span class="o">=</span> <span class="n">getSubgraphs</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">rstList</span>
 
-<span class="p">[</span><span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]),</span> <span class="nb">set</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])]</span></code></pre></div>
+<span class="p">[</span><span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]),</span> <span class="nb">set</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])]</span></code></pre></figure>
 
 <p>Not as expected, something must be wrong!</p>
 
 <p>Later added edges may connect preview added sets together, check every pair of sets to see if they have any intersection</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">itertools</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">itertools</span>
 <span class="k">def</span> <span class="nf">combineSet</span><span class="p">(</span><span class="n">rstList</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="n">rstList</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="n">itertools</span><span class="p">.</span><span class="n">product</span><span class="p">(</span><span class="n">rstList</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">a</span><span class="o">&lt;&gt;</span><span class="n">b</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="o">&amp;</span><span class="n">b</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">rstList</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-            <span class="n">rstList</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-            <span class="n">rstList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="o">|</span><span class="n">b</span><span class="p">)</span>
-            <span class="k">break</span></code></pre></div>
+            <span class="n">rstList</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+            <span class="n">rstList</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+            <span class="n">rstList</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="o">|</span><span class="n">b</span><span class="p">)</span>
+            <span class="k">break</span></code></pre></figure>
 
 <p>iterate to combine sets till length of list don’t change</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
     <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">rstList</span><span class="p">)</span>
     <span class="n">combineSet</span><span class="p">(</span><span class="n">rstList</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">length</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">rstList</span><span class="p">):</span>
         <span class="k">break</span>
 <span class="k">print</span> <span class="n">rstList</span>
 
-<span class="p">[</span><span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])]</span></code></pre></div>
+<span class="p">[</span><span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])]</span></code></pre></figure>
 
 <p>If you are familiar with Leetcode, you may feel like it is a real world practice of <a href="https://leetcode.com/problems/merge-intervals/">Merge Intervals</a>.</p>
 

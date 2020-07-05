@@ -6,14 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>知乎爬虫 &#8211; RuiMakes</title>
-
+<meta name="description" content="一直没有写过爬虫程序。感觉都不只是遗憾而是一种缺失了。之前在知乎看到类似“能利用爬虫技术做到哪些很酷很有趣很有用的事情？”，又一次激发了我玩一玩爬虫的兴趣。而爬虫的对象就用知乎好了，语言用我最近正在磨砺的Python。
+">
 <meta name="keywords" content="visualization, big data, graph, d3, 知乎">
-
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="知乎爬虫">
-
+<meta name="twitter:description" content="一直没有写过爬虫程序。感觉都不只是遗憾而是一种缺失了。之前在知乎看到类似“能利用爬虫技术做到哪些很酷很有趣很有用的事情？”，又一次激发了我玩一玩爬虫的兴趣。而爬虫的对象就用知乎好了，语言用我最近正在磨砺的Python。
+">
 
 
 
@@ -24,7 +25,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="知乎爬虫">
-
+<meta property="og:description" content="一直没有写过爬虫程序。感觉都不只是遗憾而是一种缺失了。之前在知乎看到类似“能利用爬虫技术做到哪些很酷很有趣很有用的事情？”，又一次激发了我玩一玩爬虫的兴趣。而爬虫的对象就用知乎好了，语言用我最近正在磨砺的Python。
+">
 <meta property="og:url" content="http://wurui.cc/tech/zhihu-python-crawler/">
 <meta property="og:site_name" content="RuiMakes">
 
@@ -79,27 +81,17 @@
 	    <ul>
       
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/about/" >About</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/life/" >Life</a></li>
 		  
 		    
-		        
-		    
 		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
 		  
-		    
-		        
 		    
 		    <li><a href="http://wurui.cc/search/" >Search</a></li>
 		  
@@ -135,7 +127,6 @@
       <footer class="entry-meta">
         
         
-        
           <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Wu Rui</span></span>
@@ -164,7 +155,7 @@
 
 <p>其他也有一些可以有的功能，但是为了简化砍掉了。我认为一张图不宜包含过量的信息，而应该让用户保持关注核心信息。新式图表容易包含过量，过杂，或者维度过高的信息。这样看起来炫目，然而并不利于用户使用。</p>
 
-<h3 id="section">实现细节</h3>
+<h3 id="实现细节">实现细节</h3>
 <hr />
 <p>Python爬虫现有成熟技术，使用 Beautiful Soup 4 解析 html 文档，使用 requests 处理 http 请求。可以预见已经有前辈做过知乎爬虫。在github搜索以后发现egrcc的<a href="https://github.com/egrcc/zhihu-python">zhihu-python</a> fork数高达207。浏览代码以后发现egrcc已经把提取‘问题’，‘用户’，‘回答’等封装的很完美了。</p>
 
@@ -172,33 +163,33 @@
 
 <p>然后遍历id，获得所以Users</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">User</span><span class="p">(</span><span class="n">user_url</span><span class="p">)</span> <span class="k">for</span> <span class="n">user_url</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">User</span><span class="p">(</span><span class="n">user_url</span><span class="p">)</span> <span class="k">for</span> <span class="n">user_url</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span></code></pre></figure>
 
 <p>分别获得每个user的提问和回答</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
-    <span class="n">answers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_answers</span><span class="p">())</span>
-    <span class="n">asks</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">get_asks</span><span class="p">())</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+    <span class="n">answers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="n">get_answers</span><span class="p">())</span>
+    <span class="n">asks</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="n">get_asks</span><span class="p">())</span></code></pre></figure>
 
 <p>为了简化图，强化社交熟悉，要求每个问题至少需要和两个以上用户产生链接。</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">questions</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">questions</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">ask</span> <span class="ow">in</span> <span class="n">asks</span><span class="p">:</span>        
-    <span class="n">questions</span><span class="p">[</span><span class="n">ask</span><span class="o">.</span><span class="n">get_question</span><span class="p">()</span><span class="o">.</span><span class="n">get_title</span><span class="p">()]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">questions</span><span class="p">[</span><span class="n">ask</span><span class="p">.</span><span class="n">get_question</span><span class="p">().</span><span class="n">get_title</span><span class="p">()]</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="k">for</span> <span class="n">answer</span> <span class="ow">in</span> <span class="n">answers</span><span class="p">:</span>     
-    <span class="n">questions</span><span class="p">[</span><span class="n">answer</span><span class="o">.</span><span class="n">get_question</span><span class="p">()</span><span class="o">.</span><span class="n">get_title</span><span class="p">()]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">questions</span><span class="p">[</span><span class="n">answer</span><span class="p">.</span><span class="n">get_question</span><span class="p">().</span><span class="n">get_title</span><span class="p">()]</span> <span class="o">+=</span> <span class="mi">1</span>
 
-<span class="n">questions</span> <span class="o">=</span> <span class="p">{</span> <span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">questions</span><span class="o">.</span><span class="n">iteritems</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">}</span></code></pre></div>
+<span class="n">questions</span> <span class="o">=</span> <span class="p">{</span> <span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">.</span><span class="n">iteritems</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">}</span></code></pre></figure>
 
 <p>最后我们将‘用户节点’，‘问题节点’，‘提问关系’，‘回答关系’一同写入json中，方便后面前段读取。</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">write_file</span><span class="p">(</span><span class="n">usersOut</span><span class="p">,</span><span class="n">questionOut</span><span class="p">,</span><span class="n">askOut</span><span class="p">,</span><span class="n">answerOut</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">write_file</span><span class="p">(</span><span class="n">usersOut</span><span class="p">,</span><span class="n">questionOut</span><span class="p">,</span><span class="n">askOut</span><span class="p">,</span><span class="n">answerOut</span><span class="p">)</span></code></pre></figure>
 
 <p>源代码请访问<a href="https://github.com/colin1990324/DataVisualization/tree/master/zhihui-python">github.com/colin1990324/</a></p>
 
-<h3 id="section-1">前端部分</h3>
+<h3 id="前端部分">前端部分</h3>
 <hr />
 <p>d3是我前端仅有的经验，这里使用d3.js的force directed graph。</p>
 
