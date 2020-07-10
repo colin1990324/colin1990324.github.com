@@ -4,13 +4,138 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2020-07-05T14:42:17+08:00</updated>
+<updated>2020-07-10T22:04:44+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
   <uri>http://wurui.cc/</uri>
   <email>ruiwu1990324@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[同时缴三份个税，互联网个税怎么算]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/blog/individual-income-tax-in-china/" />
+  <id>http://wurui.cc/blog/individual-income-tax-in-china</id>
+  <published>2020-07-08T16:00:20+08:00</published>
+  <updated>2020-07-08T16:00:20+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;身在互联网企业的同学每年都要缴纳数万甚至数十万的税款。而现行的个税计算方式确实比较复杂，一问同事都说不清楚，只感觉国家对中产阶级收割的厉害。那到底在新税法下，个税分为几部分收，有哪些税收优惠我们是确实享受到了的。下面用一篇文章尽量简短的说清楚。&lt;/p&gt;
+
+&lt;h2 id=&quot;个税组成&quot;&gt;个税组成&lt;/h2&gt;
+&lt;p&gt;对于一个在互联网企业工作的同学，特别是上市公司的。HR招聘的时候都会跟你提到一个年度总包的概念。这里以阿里为例，构成如下：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;年度总包&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;月度基本工资&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;第13薪&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;年终奖&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;股票行权所得&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;对年度总包，我们在纳税的时候其实分为了三部分：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;对基本工资的应纳税部分，按年度综合所得税表扣税。&lt;/li&gt;
+  &lt;li&gt;对年终奖每年仅一次享受优惠税表扣税。&lt;/li&gt;
+  &lt;li&gt;对股权行权所得的全额，再一次按年度综合所得税表扣税。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这里有一个Key Point，你的三部分收入是拆分开的，每一份都是享受了从3%-45%的梯度税率的。&lt;/p&gt;
+
+&lt;h2 id=&quot;年度综合所得&quot;&gt;年度综合所得&lt;/h2&gt;
+&lt;p&gt;即你的基本工资的计税方式。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;年度应纳税收入&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;工资&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;补贴&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;免税额&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;四金&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;六项附加扣除&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;工资税&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;年度应纳税收入&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;年度税率&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;速算扣除&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/monthly_trend.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;年终奖&quot;&gt;年终奖&lt;/h2&gt;
+&lt;p&gt;即你的年终奖的计税方式。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;月度税率&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;年终奖&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;月度税表&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;年终奖税&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;年终奖&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;月度税率&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;速算扣除&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;年终奖的税收优惠可以理解为，12个月的奖励也给你分摊到了12个月后来看税率。而且是基于一个新的从3%开始的梯度，而不是基于工资税已经累计的梯度。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/bonus_trend.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;年终奖多一块钱要多缴一千税&quot;&gt;年终奖多一块钱要多缴一千税？&lt;/h3&gt;
+&lt;p&gt;网上看到有人反馈，年终奖多了，到手的反而少了很多。这里的坑就在于税率变化的跳跃性，而速算扣除没有衔接上，导致了断崖。&lt;/p&gt;
+
+&lt;h2 id=&quot;股权激励&quot;&gt;股权激励&lt;/h2&gt;
+&lt;p&gt;即公司授予的股权在行权时的计税方式。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;股权激励收入&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;（&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;股票市价或公允价&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;行权价&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;）&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;行权数&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;股权税&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;股权激励收入&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;年度税率&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;速算扣除&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/stock_trend.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里和工资税一样仍然使用年度税表，没有扣除项。这里是你第三次享受阶梯税率。&lt;/p&gt;
+
+&lt;h2 id=&quot;未来变化&quot;&gt;未来变化&lt;/h2&gt;
+&lt;p&gt;根据《关于个人所得税法修改后有关优惠政策衔接问题的通知》第二条第（三）项规定，2022年1月1日之后的政策另行明确。&lt;/p&gt;
+
+&lt;p&gt;对未来政策的不明确，中产阶级最大的恐慌便在于此。如果2022之后年终奖和股权激励的拆分计税优惠取消，那个人三大收入来源都需要在一个阶梯上进行累加，在高税率梯度上的部分就会显著增加，可以说是刀刀都在肉上。&lt;/p&gt;
+
+&lt;p&gt;以个人年收入50W的张先生为例。假设张先生月收入2W，年终奖16W，股权激励10W。按现行税法，年缴税为8280+30590+7480共计46350元。而取消拆分优惠之后，年缴税则为60080元，增加了13730元之多。&lt;/p&gt;
+
+&lt;p&gt;希望到2022年时国家在家庭综合计税上能够更进一步吧。以家庭综合计税替换拆分优惠，更能适应国情，也能代位减轻家庭税务负担。&lt;/p&gt;
+
+&lt;h2 id=&quot;其他细节问题&quot;&gt;其他细节问题&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;什么是预扣税
+    &lt;ul&gt;
+      &lt;li&gt;按当月累计年收入，对应税表计算，扣除已交税后为当月预扣税。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;年度结算的时候为什么需要补税？
+    &lt;ul&gt;
+      &lt;li&gt;有换公司的同学，新公司对已缴税情况不清楚的，从0开始累计年收入。从而导致每个月的预扣税都不足，在年终汇算时会提示补税。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;年度结算的时候有没有可能退税？
+    &lt;ul&gt;
+      &lt;li&gt;个人经验一般是六项附件扣除没有填报，或者填报月数没有足额，在APP里修正后会提示可以退税。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;一年中股票多次行权怎么扣税？
+    &lt;ul&gt;
+      &lt;li&gt;需要合并计税。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;卖股票的时候还要再次缴税吗？
+    &lt;ul&gt;
+      &lt;li&gt;股权行权是缴税到行权时间点为止，以行权时价格为基准。后续股价如果涨了，则另行缴纳20%的资本得利税。跌了国家当然不会补贴你的。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;第13薪怎么缴税
+    &lt;ul&gt;
+      &lt;li&gt;由于年终奖的计税较为优惠，第13薪一般是和年终奖一并保税的。具体每家公司有所不同，优劣也要看你的年终奖数额和累计收入情况。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;年终奖也可以直接在年度综合所得计税，但是一般只对低收入人群有帮助。&lt;/li&gt;
+  &lt;li&gt;年终奖能否避免税率跳跃的坑？
+    &lt;ul&gt;
+      &lt;li&gt;一般需要公司合理规划年终奖发放，避免刚好跨过下一级税率的情况。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;引用&quot;&gt;引用&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;《关于个人所得税法修改后有关优惠政策衔接问题的通知》（财税〔2018〕164号）&lt;/li&gt;
+  &lt;li&gt;《财政部 国家税务总局关于个人股票期权所得征收个人所得税问题的通知》（财税〔2005〕35号）&lt;/li&gt;
+  &lt;li&gt;《全国人民代表大会常务委员会关于修改&lt;中华人民共和国个人所得税法&gt;的决定》&lt;/中华人民共和国个人所得税法&gt;&lt;/li&gt;
+  &lt;li&gt;《个人所得税扣缴申报管理办法（试行）》&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;代码&quot;&gt;代码&lt;/h2&gt;
+&lt;p&gt;各个计税函数、增长曲线、实例都在&lt;a href=&quot;http://wurui.cc/images/blog/税务估算.ipynb&quot;&gt;notebook&lt;/a&gt;中。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/blog/individual-income-tax-in-china/&quot;&gt;同时缴三份个税，互联网个税怎么算&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;RuiMakes&lt;/a&gt; on July 08, 2020.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
@@ -1759,100 +1884,6 @@ sh models/download_models.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/d3-js/&quot;&gt;D3 实战练手&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;RuiMakes&lt;/a&gt; on June 17, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[可视化网络 Gephi]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/gephi/" />
-  <id>http://wurui.cc/tech/gephi</id>
-  <published>2015-06-11T16:16:47+08:00</published>
-  <updated>2015-06-11T16:16:47+08:00</updated>
-  <author>
-    <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
-    <email>ruiwu1990324@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/firewall_sigma_circle.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Gephi是一个全平台的交互式可视化平台，它特别适用于复杂的大数据可视化工作。&lt;a href=&quot;http://gephi.github.io/&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;实时可视化&quot;&gt;实时可视化&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;http://gephi.github.io/images/screenshots/select-tool-mini.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Gephi使用的高速引擎可以快速迭代出你想要的图像。&lt;/li&gt;
-  &lt;li&gt;超大网络，从5w节点到100w节点都可以支持。&lt;/li&gt;
-  &lt;li&gt;大量可用工具。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;高效简易的布局工具&quot;&gt;高效简易的布局工具&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;http://gephi.github.io/images/screenshots/layout1.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;对复杂图进行布局是一个困难的问题，而Gephi提供了最简易高效的布局算法。软件还支持在迭代的同时移动单个或是一片节点。你还可以在market中下载更多的plugin，其中也包括了来自不同开发者的其他布局算法。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://gephi.github.io/features/&quot;&gt;简单翻译自 Gephi Features&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;快速入门&quot;&gt;快速入门&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://gephi.github.io/tutorials/gephi-tutorial-quick_start.pdf&quot;&gt;原始文档&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;图数据导入&quot;&gt;图数据导入&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;Gephi支持所有主流的图数据格式导入，例如GEFX，GraphML，GML。同时也支持简单的CSV格式导入，缺点是只认前三列，不方便添加Label或者其他属性。如果你在使用neo4j，可以使用neo4j-shell来导出图数据。如果以上方法都不合适，可以找到以上几种文件的格式，自己生产图文件。我有一些简单程序，有需要的可以留言。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.49.48%20PM.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;布局算法&quot;&gt;布局算法&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;在左下角有布局算法区，大可以随意尝试几种不同的算法和参数，点击run看看效果~&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.50.10%20PM.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;常用的汇聚算法有ForceAtlas，ForceAtlas2。分散法有Fruchterman。如果是Community比较分散的情况，Yifan Hu有不错的效果。&lt;/p&gt;
-
-&lt;p&gt;参数比较常用的有scale控制大小，speed控制迭代的速度和精度。有的算法也提供一个noverlap选项。&lt;/p&gt;
-
-&lt;h4 id=&quot;ranking&quot;&gt;Ranking&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;左中部有常用的Ranking功能，此功能够对节点的小大，颜色；边的颜色，粗细进行调节。一般进行完布局和大小调节以后，你的图就有了一定的信息量和可读性了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.46.45%20PM.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;统计和分割&quot;&gt;统计和分割&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;在窗口右边有各种统计功能，举个例子，像Modularity，能够对数据进行聚类，聚类的数据可以在子窗口调节。获得结果之后可以使用Ranking左边的Partition功能，这里提供根据之前的结果进行配色的方案。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.55.04%20PM.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;预览preview&quot;&gt;预览（Preview）&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;之前的操作都是在Overview视图中进行的，Gephi的预览视图提供了多套更为生动的整体配色模板。你也可以对具体的参数进行调节。在左下方有导出选项。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%204.58.34%20PM.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;数据实验室data-laboratory&quot;&gt;数据实验室（Data Laboratory）&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;数据实验室提供对具体数据进行操作的视图，然后并不怎么好用，推荐还是在生成导入文件的时候把需要的属性、标签都加入。Partition部分也支持使用标签来进行分类配色。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/colin1990324/Neo4j_EmailHeader/blob/master/data/image/Screen%20Shot%202015-06-11%20at%205.01.53%20PM.png?raw=true&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;sigmajs&quot;&gt;Sigma.js&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;p&gt;如果你对sigma.js很熟悉，或者希望得到能够在网页动态展示的数据，或者neo4j的展示能力不能满足你的需要，那sigma plugin就很对你的胃口。文章第一张图和下面这张是我生成的图在sigma.js上展示的效果。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/firewall_sigma.png&quot; alt=&quot;Model-View-Controller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这里要允许chrome从本地获取文件，在mac上的用法是 1 先关闭所有的chrome进程，2 带参数启动chrome。&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;/Applications/Google&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Chrome.app/Contents/MacOS/Google&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Chrome &lt;span class=&quot;nt&quot;&gt;--allow-file-access-from-files&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/gephi/&quot;&gt;可视化网络 Gephi&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;RuiMakes&lt;/a&gt; on June 11, 2015.&lt;/p&gt;
   </content>
 </entry>
 
