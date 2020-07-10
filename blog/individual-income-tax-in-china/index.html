@@ -173,15 +173,15 @@
 
 <p>年终奖的税收优惠可以理解为，12个月的奖励也给你分摊到了12个月后来看税率。而且是基于一个新的从3%开始的梯度，而不是基于工资税已经累计的梯度。</p>
 
-<p><img src="http://wurui.cc/images/blog/bonus_trend.jpg" alt="Model-View-Controller" class="center-image" /></p>
-
 <h3 id="年终奖多一块钱要多缴一千税">年终奖多一块钱要多缴一千税？</h3>
 <p>网上看到有人反馈，年终奖多了，到手的反而少了很多。这里的坑就在于税率变化的跳跃性，而速算扣除没有衔接上，导致了断崖。</p>
+
+<p><img src="http://wurui.cc/images/blog/bonus_trend.jpg" alt="Model-View-Controller" class="center-image" /></p>
 
 <h2 id="股权激励">股权激励</h2>
 <p>即公司授予的股权在行权时的计税方式。</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">股权激励收入</span> <span class="o">=</span> <span class="err">（</span><span class="n">股票市价或公允价</span> <span class="o">-</span> <span class="n">行权价</span><span class="err">）</span><span class="o">*</span> <span class="n">行权数</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">股权激励收入</span> <span class="o">=</span> <span class="p">(</span><span class="n">股票市价或公允价</span> <span class="o">-</span> <span class="n">行权价</span><span class="p">)</span> <span class="o">*</span> <span class="n">行权数</span>
 <span class="n">股权税</span> <span class="o">=</span> <span class="n">股权激励收入</span> <span class="o">*</span> <span class="n">年度税率</span> <span class="o">-</span> <span class="n">速算扣除</span></code></pre></figure>
 
 <p><img src="http://wurui.cc/images/blog/stock_trend.png" alt="Model-View-Controller" class="center-image" /></p>
