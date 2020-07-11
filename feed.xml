@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2020-07-11T09:09:51+08:00</updated>
+<updated>2020-07-11T13:59:36+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -48,7 +48,7 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;年度应纳税收入&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;工资&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;补贴&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;免税额&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;四金&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;六项附加扣除&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;工资税&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;年度应纳税收入&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;年度税率&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;速算扣除&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/monthly_trend.png&quot; alt=&quot;Model-View-Controller&quot; title=&quot;月收入-工资税增长曲线&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/monthly_trend.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;年终奖&quot;&gt;年终奖&lt;/h2&gt;
 &lt;p&gt;即你的年终奖的计税方式。&lt;/p&gt;
@@ -298,6 +298,217 @@
 &lt;/ol&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/home-network-upgrading-1/&quot;&gt;家庭网络升级路1-骨干网升级&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;RuiMakes&lt;/a&gt; on July 01, 2020.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[【异常检测】独孤九剑之破剑式——无监督算法]]></title>
+  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/anomaly-detection-unsupervised-learning/" />
+  <id>http://wurui.cc/tech/anomaly-detection-unsupervised-learning</id>
+  <published>2018-09-20T18:26:20+08:00</published>
+  <updated>2018-09-20T18:26:20+08:00</updated>
+  <author>
+    <name>Wu Rui</name>
+    <uri>http://wurui.cc</uri>
+    <email>ruiwu1990324@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;概述&quot;&gt;概述&lt;/h2&gt;
+&lt;p&gt;异常检测，文章中多见为anomaly detection、outlier detection、deviation detection等。在海量的数据中，总有一些不平常的行为潜藏其中，妄图浑水摸鱼，行不轨之事。异常检测算法就像一把精巧的手术刀，准确刻画正常组织的外缘，将各种异常组织依依剔除出来。总诀：归妹趋无妄，无妄趋同人，同人趋大有。&lt;/p&gt;
+
+&lt;p&gt;异常检测广泛应用于安全且不限于安全，比如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;反欺诈：如电信诈骗，信用卡盗刷，恶意注册、薅羊毛等&lt;/li&gt;
+  &lt;li&gt;入侵检测：外部入侵检测&lt;/li&gt;
+  &lt;li&gt;Insider Threat：内部威胁检测，账户异常、数据泄露等&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;工控、IoT安全：通过各种指标发现工业设施，IoT设备&lt;/td&gt;
+          &lt;td&gt;网络中的异常&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;生态灾难预警：各种自然灾害，极端天气的预警&lt;/li&gt;
+  &lt;li&gt;公共健康：禽流感等传染类疾病的提前发现&lt;/li&gt;
+  &lt;li&gt;数据去噪：一些机器学习算法对异常点非常敏感，利用异常检测除去噪声通常是数据预处理中很重要的一步。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;大部分的异常检测算法都基于两个基本假设：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;异常点是稀疏的&lt;/li&gt;
+  &lt;li&gt;异常点与正常点特征不一致&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;基于两点假设，算法通过对主体数据建立正常点的特征基线，从而分离出少量的偏离基线的异常点。&lt;/p&gt;
+
+&lt;h2 id=&quot;算法分类&quot;&gt;算法分类&lt;/h2&gt;
+&lt;p&gt;一般介绍异常检测的文章会从算法本身的分类出发。我却认为首先要从具体的异常场景出发，用业务的视角带入问题，甚至用不同的视角审视同一个问题。一个异常事件，肯定不会孤立发生，往往能从多个源，多个侧面去发现，相关关联，相互印证，得到完善的全面的场景描述。&lt;/p&gt;
+
+&lt;h3 id=&quot;异常域&quot;&gt;异常域&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;数值类异常
+    &lt;ul&gt;
+      &lt;li&gt;时间序列异常：应用最多的，无须赘述。&lt;/li&gt;
+      &lt;li&gt;周期分解：数据运营用的非常多，减掉周期后可检测异常点。&lt;/li&gt;
+      &lt;li&gt;历史基线：同一主体，以历史数据建立基线。&lt;/li&gt;
+      &lt;li&gt;群体基线：以主体所在的群体数据建立基线，检测离群主体。&lt;/li&gt;
+      &lt;li&gt;统计模型：基于数值分布的异常检测，需要先假设数据符合某一种分布模型。&lt;/li&gt;
+      &lt;li&gt;游离点检测：在高维特征下，检测游离点。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;关联关系类异常
+    &lt;ul&gt;
+      &lt;li&gt;新的关联关系：分析主体关联到新的实体，如登录新的设备。&lt;/li&gt;
+      &lt;li&gt;短时多个关联关系：分析主体在短时间内关联多个实体，如10分钟内登录10台设备。&lt;/li&gt;
+      &lt;li&gt;非法的关联关系：分析主体与实体的关联是非法的或者违反逻辑的，如手淘登录来源IP来自数据中心。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;行为序列类异常
+    &lt;ul&gt;
+      &lt;li&gt;按发生时间构建一个主体的行为序列，建立历史基线。小概率序列认为是异常。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;文本类异常
+    &lt;ul&gt;
+      &lt;li&gt;凡涉及到文本或字符串的异常，如垃圾邮件检测、webshell检测、xss检测、钓鱼邮件检测。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;图像类异常
+    &lt;ul&gt;
+      &lt;li&gt;图像中的异常检测。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;网络中的异常
+    &lt;ul&gt;
+      &lt;li&gt;将网络流量，行为构建为网络后，可以做基于网络的异常检测。常应用在反洗钱、反欺诈、网络安全中。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;地理位置类异常
+    &lt;ul&gt;
+      &lt;li&gt;移动速度异常：时间临近行为发生的地理位置偏差过大，国外称为land speed violation。&lt;/li&gt;
+      &lt;li&gt;地理位置基线：对日常活动范围建立基线。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上异常域每一个都从不同的视角切入。一个异常行为发生以后，让我们有多种不同的方式，不同的能力去检测发现，同时互为印证。无监督学习的业务刻画能力是有限的，基于多视角的检测能够很好的补偿算法本身的局限。&lt;/p&gt;
+
+&lt;h3 id=&quot;算法域&quot;&gt;算法域&lt;/h3&gt;
+
+&lt;p&gt;最全无监督异常检测算法分类在此：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;基于密度的
+    &lt;ul&gt;
+      &lt;li&gt;KNN、DBScan、KMeans：常见的密度聚类算法，小簇或者游离点为异常。如下图
+  &lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/13.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;LOF：根据数据点周围数据的密度来判断此数据是否为异常，所以是基于neighbor density的。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基于矩阵分解的
+    &lt;ul&gt;
+      &lt;li&gt;Robust PCA：将输入矩阵M分解为了低秩矩阵L+稀疏矩阵S+噪声N。如下图中输入图像被分解为背景和稀疏的动态人物。RPCA可以广泛应用在时间序列异常、基于基线的异常和基于特征的异常检测中。
+  &lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/17.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基于神经网络的
+    &lt;ul&gt;
+      &lt;li&gt;Replicator NN：也就是AutoEncoder，自还原网络。数据特征被压缩在网络参数中，正常数据通过网络可以完美还原，但是异常数据通过网络后不能被还原。
+  &lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/19.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;GAN：对抗网络在最近也被应用在视频异常检测中。在没有标记数据的情况下，加入时间维度，通过对抗网络识别出视频中的异常动态。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基于分布的
+    &lt;ul&gt;
+      &lt;li&gt;高斯分布：训练得到期望μ和方差σ^2，再确定阈值ε。
+  &lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/20.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;混合模型分布：两个以上混合概率分布。&lt;/li&gt;
+      &lt;li&gt;HBOS: Histogram-based Outlier Score，一定程度上依赖空间划分。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基于序列的
+    &lt;ul&gt;
+      &lt;li&gt;HMM：隐马尔科夫模型，训练得到状态转移矩阵，进而计算序列发生的概率。&lt;/li&gt;
+      &lt;li&gt;PST：概率后缀树，将行为构建为字符串，进而通过概率后缀树学习子串的发生概率。
+  &lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/21.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基于树的
+    &lt;ul&gt;
+      &lt;li&gt;Iforest：其实是基于森林的mass ensemble方法。在异常检测领域独树一帜，随机采样下健壮性也很强，适合高纬度的数据。周老师抓住了一个ground truth，即通过随机的属性和划分点，一些样本很快就到达了叶子节点（即叶子到根的距离d很短），那么它们很有可能是异常点。因为那些路径d比较短的样本，都是距离主要的样本点分布中心比较远的。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基于图的
+    &lt;ul&gt;
+      &lt;li&gt;传统子图特征：基于图的点、边数量、出入度信息、n度关联等信息构建特征集，进而检测异常点。&lt;/li&gt;
+      &lt;li&gt;Egonet：唯一中心节点(ego)，以及这个节点的邻居(alters)组成的子图。特征如上。&lt;/li&gt;
+      &lt;li&gt;network2vector：常见的算法如random walk，通过随机游走构建图的vector embedding。
+  &lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/22.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基于分类的
+    &lt;ul&gt;
+      &lt;li&gt;one-class SVM：虽然是分类，但其实是正常点在一边，异常点在另一边。好处是可以用SVM的各种kernel。
+  &lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/14.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;基于时序的
+    &lt;ul&gt;
+      &lt;li&gt;平滑模型：Moving Average Model、Olympic Model&lt;/li&gt;
+      &lt;li&gt;回归模型：Regression Models&lt;/li&gt;
+      &lt;li&gt;周期分解：seasonal decomposition&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;具体的算法细节不再累述，大家能google到许多文章。&lt;/p&gt;
+
+&lt;h3 id=&quot;应用举例&quot;&gt;应用举例&lt;/h3&gt;
+&lt;p&gt;那上文中的两种视角如何结合使用呢？举一个异常登录的场景，黑客H尝试使用社工库破解账户A的密码。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/25.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;结合异常域，我们知道可以从以下方向入手：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;数值类：登录的时间是否符合周期、登录的次数、登录失败的次数等是否符合个群基线&lt;/li&gt;
+  &lt;li&gt;关联关系：登录的设备对A是否是新设备、登录的设备是否登录了很多不同账户、登录的IP对A是否是新IP、IP是否是黑名单IP&lt;/li&gt;
+  &lt;li&gt;行为序列：是否符合登录-&amp;gt;浏览-&amp;gt;下单-&amp;gt;付款等大概率序列。结合人机识别数据，键盘、鼠标操作轨迹是否符合人的行为模型。&lt;/li&gt;
+  &lt;li&gt;网络图：将账户A、IP、浏览器特征、设备特征、访问的url、服务等实体构件为图。与所有登录行为一同计算异常。&lt;/li&gt;
+  &lt;li&gt;地理位置：登录的位置是否在日常正常范围内（省市区、经纬度距离），与上次记录到的行为做比对，是否符合正常的移动速度。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;然后针对每个可能的异常角度，我们再在算法域中寻找对应能够应用的算法，对应具体业务设置参数和阈值。从而完整的检测登录异常这个场景。&lt;/p&gt;
+
+&lt;h2 id=&quot;如何评价无监督算法&quot;&gt;如何评价无监督算法&lt;/h2&gt;
+&lt;p&gt;如何给算法输出的异常打分其实是一个非常头疼的问题，但针对不同模型我们也不失一些标准方法。&lt;/p&gt;
+
+&lt;h3 id=&quot;拉依达准则&quot;&gt;拉依达准则&lt;/h3&gt;
+&lt;p&gt;如果整体数据服从一元正态分布，则P(|x-μ |&amp;gt;3σ )&amp;lt;0.003,因此当数据对象值偏离均值3倍方差的时候，就认为该数据对象为异常点。&lt;/p&gt;
+
+&lt;h3 id=&quot;mahalanobis距离&quot;&gt;Mahalanobis距离&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/anomaly_detection/18.svg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;
+其中S为二元高斯分布的协方差矩阵，x上横为所有数据对象的均值。Mahalanobis距离越大，数据对象偏离均值越大，也就越异常。&lt;/p&gt;
+
+&lt;h3 id=&quot;聚类评价&quot;&gt;聚类评价&lt;/h3&gt;
+&lt;p&gt;在没有标签的情况下，根据聚类本身的特点，每个簇可以计算两个指标。一个是类内点间的平均距离I，一个是与类外点的平均距离O。那么I除以O就可以用于描述聚类结果的内聚度，俗称类内聚合度、类间低耦合。&lt;/p&gt;
+
+&lt;h3 id=&quot;reconstruction-error&quot;&gt;Reconstruction Error&lt;/h3&gt;
+&lt;p&gt;重构偏差也可以直接用作异常分。比如RPCA中的sparse矩阵，Replicator NN中还原向量与原始向量的差值。当然分母还要好好设计一下。&lt;/p&gt;
+
+&lt;h2 id=&quot;小结&quot;&gt;小结&lt;/h2&gt;
+&lt;p&gt;异常检测有非常广的应用领域，从网络安全到人体健康到自然灾害预测。甚至我们的大脑也运行着异常检测的程序。周一看到某个男同事剃了头，和大脑中飘逸发型的基线不匹配了。技术团队outing了发照片，一眼找出其中唯一的程序媛。&lt;/p&gt;
+
+&lt;p&gt;在不同业务场景中可能出现不同的异常域，相应的要用不同特性的算法去检测。最好是利用多种算法的不同视角去共同刻画，得到更准确更全面的结果！&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/anomaly-detection-unsupervised-learning/&quot;&gt;【异常检测】独孤九剑之破剑式——无监督算法&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;RuiMakes&lt;/a&gt; on September 20, 2018.&lt;/p&gt;
   </content>
 </entry>
 
@@ -1792,102 +2003,6 @@ sh models/download_models.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;一根面，不知何时成了黄龙溪的标配了。夏日里，吃点凉粉凉面，实惠又巴适！&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://wurui.cc/life/huanglongxi/&quot;&gt;黄龙溪小游&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;RuiMakes&lt;/a&gt; on June 29, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[D3 实战练手]]></title>
-  <link rel="alternate" type="text/html" href="http://wurui.cc/tech/d3-js/" />
-  <id>http://wurui.cc/tech/d3-js</id>
-  <published>2015-06-17T09:21:17+08:00</published>
-  <updated>2015-06-17T09:21:17+08:00</updated>
-  <author>
-    <name>Wu Rui</name>
-    <uri>http://wurui.cc</uri>
-    <email>ruiwu1990324@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;工作相关，了解流行的可视化库，（如百度echarts，GoogleCharts，Gephi等）最后还是&lt;a href=&quot;https://github.com/mbostock/d3/wiki/Gallery&quot;&gt;D3 Gallery&lt;/a&gt;的诸多Demo惊艳了我。简单介绍后带来我的实战。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;D3是一个基于数据操作文档JavaScript库。D3帮助你给数据带来活力通过使用HTML、SVG和CSS。D3重视Web标准为你提供现代浏览器的全部功能，而不是给你一个专有的框架。结合强大的可视化组件和数据驱动方式操作Dom。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;D3允许绑定任何数据到DOM对象模型，然后应用数据驱动转换到文档。例如：你可以用D3从数组生成HTML表格，或者使用相同数据平滑和动态创建一个SVG图表。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;D3不是一个庞大的框架，像想象那样提供许多功能。相反，D3解决这关键问题：基于数据文档高效操作。避免专有的表现，同时提供良好适应性。公开全部功能，如CSS3、HTML5和SVG网页标准，很少的开销，D3速度非常快。支持大数据集和动态交互和动画效果。D3的功能设计允许代码重用，通过集合不同的组件和插件。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;color:black; font-size: 100%; text-align: right;&quot;&gt;引用自&lt;a href=&quot;http://segmentfault.com/a/1190000000701746&quot;&gt;小渝人儿&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;实战一-标签云&quot;&gt;实战一 标签云&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/word_cloud.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/word-cloud/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;首先是数据准备，我用Java写了一个采集全站高频词的&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/blob/master/src/WordCloud/WordFrequency.java&quot;&gt;程序&lt;/a&gt;，输出一个&amp;lt;单词，字号&amp;gt;的map，让高频的词有更大的字体。&lt;/p&gt;
-
-&lt;p&gt;数据采集过程需要注意的是对中文进行分词，Stopwords的排除以及根据词频计算字号。&lt;/p&gt;
-
-&lt;p&gt;然后我们使用D3的布局函数d3.layout.cloud.js。再根据map设置字号，颜色随机就可以了~&lt;/p&gt;
-
-&lt;h3 id=&quot;实战二-sunburst&quot;&gt;实战二 Sunburst&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/sunburst.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/sunburst/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;sunburst不知道怎么翻译好，光芒？简而言之是一个圆盘的多级结构，也可以说是一个变异的树结构。&lt;/p&gt;
-
-&lt;p&gt;同样写一个&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/blob/master/src/Sunburst/Sunburst.java&quot;&gt;程序&lt;/a&gt;来获取数据。这次进步一点，把数据放在一个json文件中。这里我想展示一个博客-分类-文章的多级结构，最外圈每一个扇形的大小由文章的字节数来确定。内圈的累计计算由D3自动完成。&lt;/p&gt;
-
-&lt;p&gt;绘制部分感谢&lt;a href=&quot;http://bl.ocks.org/mbostock/4348373&quot;&gt;bl.ocks.org&lt;/a&gt;，这次没有现成的layout，基本靠画圈圈来完成的。&lt;/p&gt;
-
-&lt;p&gt;给每个部分加上标签坡费了我一番周折，最后还是没有理解mousemove事件返回的鼠标位置到底在哪儿，如果知道怎么调，欢迎留言。&lt;/p&gt;
-
-&lt;h3 id=&quot;实战三-geo-map&quot;&gt;实战三 Geo Map&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/travel-china.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/travel-china/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;在页面上绘制地图，这里每一条边都是现场绘制出来的哦。数据源请搜索“GeoJson china”（&lt;a href=&quot;https://github.com/colin1990324/colin1990324.github.io/tree/master/travel-china/Map_files&quot;&gt;懒人请进&lt;/a&gt;）。&lt;/p&gt;
-
-&lt;p&gt;源码简单易懂，值得一提的球体经纬度如何投影到二维平面上，这里使用常见的墨卡托投影。投影方式千奇百怪，世界中心到底在哪，有兴趣的同学可以&lt;a href=&quot;http://www.zhihu.com/question/27614116&quot;&gt;看一看&lt;/a&gt;。&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;projection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;geo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mercator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;添加一个map，根据我到过的省份频次给不同区块上色。&lt;/p&gt;
-
-&lt;p&gt;然后添加了简单的交互，类似刮刮乐，鼠标扫过便能揭开真相！&lt;/p&gt;
-
-&lt;h3 id=&quot;实战四-chord-diagram&quot;&gt;实战四 Chord Diagram&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/chord.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;&lt;a href=&quot;http://wurui.cc/visual/chord/&quot;&gt;Live Example: wurui.cc&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Chord既是和弦的意思，第一次看到这种类型的图时简直闪瞎我的狗眼，惹得我非常想自己做一个。&lt;/p&gt;
-
-&lt;p&gt;这个类型的图非常适合点对点的数据类型，比如&lt;a href=&quot;http://bost.ocks.org/mike/uberdata/&quot;&gt;Uber流量图&lt;/a&gt;。那我一个小博客，页面间跳转少的可怜，做个河图还可以，怎么也撑不起chord。哪里去找点对点的数据呢？最后我非常无耻的选择了pairwise document similarities。。。即博文间的相似度。。。。&lt;/p&gt;
-
-&lt;p&gt;这里又用到一些简单的自然语言处理方法（包括前面的stopwords）。用TF-IDF建立向量，简单的用余弦值来作相似度。&lt;a href=&quot;https://github.com/colin1990324/DataVisualization/blob/master/src/chordDiagram/TfIdfMain.java&quot;&gt;程序&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;D3提供现成的d3.layout.chord，调用即可，每条弦的宽度会根据你带入的值自动计算。再给不同分类的文章加上颜色，炫酷的Chord Diagram就出炉啦！&lt;/p&gt;
-
-&lt;h3 id=&quot;小结&quot;&gt;小结&lt;/h3&gt;
-
-&lt;p&gt;四篇实战之后，对D3的select, layout, data import, text, event, 回调函数有了简单的认识。&lt;/p&gt;
-
-&lt;p&gt;像我这样的前端小白也能成功做出一定的效果，这突显了D3的易用性。还没有体验过的朋友一定不要错过！做出了漂亮的效果也不要忘了留言分享哦~&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://wurui.cc/tech/d3-js/&quot;&gt;D3 实战练手&lt;/a&gt; was originally published by Wu Rui at &lt;a href=&quot;http://wurui.cc&quot;&gt;RuiMakes&lt;/a&gt; on June 17, 2015.&lt;/p&gt;
   </content>
 </entry>
 

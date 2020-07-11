@@ -1,0 +1,463 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>【异常检测】独孤九剑之破剑式——无监督算法 &#8211; RuiMakes</title>
+<meta name="description" content="概述
+异常检测，文章中多见为anomaly detection、outlier detection、deviation detection等。在海量的数据中，总有一些不平常的行为潜藏其中，妄图浑水摸鱼，行不轨之事。异常检测算法就像一把精巧的手术刀，准确刻画正常组织的外缘，将各种异常组织依依剔除出来。总诀：归妹趋无妄，无妄趋同人，同人趋大有。
+
+">
+<meta name="keywords" content="ML, Anomaly Detection, Security">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="【异常检测】独孤九剑之破剑式——无监督算法">
+<meta name="twitter:description" content="概述
+异常检测，文章中多见为anomaly detection、outlier detection、deviation detection等。在海量的数据中，总有一些不平常的行为潜藏其中，妄图浑水摸鱼，行不轨之事。异常检测算法就像一把精巧的手术刀，准确刻画正常组织的外缘，将各种异常组织依依剔除出来。总诀：归妹趋无妄，无妄趋同人，同人趋大有。
+
+">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wurui.cc/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【异常检测】独孤九剑之破剑式——无监督算法">
+<meta property="og:description" content="概述
+异常检测，文章中多见为anomaly detection、outlier detection、deviation detection等。在海量的数据中，总有一些不平常的行为潜藏其中，妄图浑水摸鱼，行不轨之事。异常检测算法就像一把精巧的手术刀，准确刻画正常组织的外缘，将各种异常组织依依剔除出来。总诀：归妹趋无妄，无妄趋同人，同人趋大有。
+
+">
+<meta property="og:url" content="http://wurui.cc/tech/anomaly-detection-unsupervised-learning/">
+<meta property="og:site_name" content="RuiMakes">
+
+
+
+
+
+<link rel="canonical" href="http://wurui.cc/tech/anomaly-detection-unsupervised-learning/">
+<link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="RuiMakes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://wurui.cc/assets/css/main.css">
+<!-- Webfonts -->
+<!-- <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script> --> 
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://wurui.cc/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://wurui.cc/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://wurui.cc/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://wurui.cc/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wurui.cc/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wurui.cc/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wurui.cc/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://wurui.cc/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://wurui.cc/life/" >Life</a></li>
+		  
+		    
+		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
+		  
+		    
+		    <li><a href="http://wurui.cc/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://wurui.cc/" class="site-logo" rel="home" title="RuiMakes"><img src="http://wurui.cc/images/site-logo.png" width="200" height="200" alt="RuiMakes logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://wurui.cc/">RuiMakes</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">独乐乐不如众乐乐</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="http://wurui.cc/tags/#ML" title="Pages tagged ML">ML</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Anomaly Detection" title="Pages tagged Anomaly Detection">Anomaly Detection</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Security" title="Pages tagged Security">Security</a></span>
+        
+          <h1 class="entry-title">【异常检测】独孤九剑之破剑式——无监督算法</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Wu Rui</span></span>
+        <span class="entry-date date published"><time datetime="2018-09-20T18:26:20+08:00"><i class="fa fa-calendar-o"></i> September 20, 2018</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <h2 id="概述">概述</h2>
+<p>异常检测，文章中多见为anomaly detection、outlier detection、deviation detection等。在海量的数据中，总有一些不平常的行为潜藏其中，妄图浑水摸鱼，行不轨之事。异常检测算法就像一把精巧的手术刀，准确刻画正常组织的外缘，将各种异常组织依依剔除出来。总诀：归妹趋无妄，无妄趋同人，同人趋大有。</p>
+
+<p>异常检测广泛应用于安全且不限于安全，比如：</p>
+
+<ul>
+  <li>反欺诈：如电信诈骗，信用卡盗刷，恶意注册、薅羊毛等</li>
+  <li>入侵检测：外部入侵检测</li>
+  <li>Insider Threat：内部威胁检测，账户异常、数据泄露等</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>工控、IoT安全：通过各种指标发现工业设施，IoT设备</td>
+          <td>网络中的异常</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>生态灾难预警：各种自然灾害，极端天气的预警</li>
+  <li>公共健康：禽流感等传染类疾病的提前发现</li>
+  <li>数据去噪：一些机器学习算法对异常点非常敏感，利用异常检测除去噪声通常是数据预处理中很重要的一步。</li>
+</ul>
+
+<p>大部分的异常检测算法都基于两个基本假设：</p>
+
+<ol>
+  <li>异常点是稀疏的</li>
+  <li>异常点与正常点特征不一致</li>
+</ol>
+
+<p>基于两点假设，算法通过对主体数据建立正常点的特征基线，从而分离出少量的偏离基线的异常点。</p>
+
+<h2 id="算法分类">算法分类</h2>
+<p>一般介绍异常检测的文章会从算法本身的分类出发。我却认为首先要从具体的异常场景出发，用业务的视角带入问题，甚至用不同的视角审视同一个问题。一个异常事件，肯定不会孤立发生，往往能从多个源，多个侧面去发现，相关关联，相互印证，得到完善的全面的场景描述。</p>
+
+<h3 id="异常域">异常域</h3>
+
+<ol>
+  <li>数值类异常
+    <ul>
+      <li>时间序列异常：应用最多的，无须赘述。</li>
+      <li>周期分解：数据运营用的非常多，减掉周期后可检测异常点。</li>
+      <li>历史基线：同一主体，以历史数据建立基线。</li>
+      <li>群体基线：以主体所在的群体数据建立基线，检测离群主体。</li>
+      <li>统计模型：基于数值分布的异常检测，需要先假设数据符合某一种分布模型。</li>
+      <li>游离点检测：在高维特征下，检测游离点。</li>
+    </ul>
+  </li>
+  <li>关联关系类异常
+    <ul>
+      <li>新的关联关系：分析主体关联到新的实体，如登录新的设备。</li>
+      <li>短时多个关联关系：分析主体在短时间内关联多个实体，如10分钟内登录10台设备。</li>
+      <li>非法的关联关系：分析主体与实体的关联是非法的或者违反逻辑的，如手淘登录来源IP来自数据中心。</li>
+    </ul>
+  </li>
+  <li>行为序列类异常
+    <ul>
+      <li>按发生时间构建一个主体的行为序列，建立历史基线。小概率序列认为是异常。</li>
+    </ul>
+  </li>
+  <li>文本类异常
+    <ul>
+      <li>凡涉及到文本或字符串的异常，如垃圾邮件检测、webshell检测、xss检测、钓鱼邮件检测。</li>
+    </ul>
+  </li>
+  <li>图像类异常
+    <ul>
+      <li>图像中的异常检测。</li>
+    </ul>
+  </li>
+  <li>网络中的异常
+    <ul>
+      <li>将网络流量，行为构建为网络后，可以做基于网络的异常检测。常应用在反洗钱、反欺诈、网络安全中。</li>
+    </ul>
+  </li>
+  <li>地理位置类异常
+    <ul>
+      <li>移动速度异常：时间临近行为发生的地理位置偏差过大，国外称为land speed violation。</li>
+      <li>地理位置基线：对日常活动范围建立基线。</li>
+    </ul>
+  </li>
+</ol>
+
+<p>以上异常域每一个都从不同的视角切入。一个异常行为发生以后，让我们有多种不同的方式，不同的能力去检测发现，同时互为印证。无监督学习的业务刻画能力是有限的，基于多视角的检测能够很好的补偿算法本身的局限。</p>
+
+<h3 id="算法域">算法域</h3>
+
+<p>最全无监督异常检测算法分类在此：</p>
+
+<ol>
+  <li>基于密度的
+    <ul>
+      <li>KNN、DBScan、KMeans：常见的密度聚类算法，小簇或者游离点为异常。如下图
+  <img src="http://wurui.cc/images/blog/anomaly_detection/13.png" alt="Model-View-Controller" class="center-image" /></li>
+      <li>LOF：根据数据点周围数据的密度来判断此数据是否为异常，所以是基于neighbor density的。</li>
+    </ul>
+  </li>
+  <li>基于矩阵分解的
+    <ul>
+      <li>Robust PCA：将输入矩阵M分解为了低秩矩阵L+稀疏矩阵S+噪声N。如下图中输入图像被分解为背景和稀疏的动态人物。RPCA可以广泛应用在时间序列异常、基于基线的异常和基于特征的异常检测中。
+  <img src="http://wurui.cc/images/blog/anomaly_detection/17.png" alt="Model-View-Controller" class="center-image" /></li>
+    </ul>
+  </li>
+  <li>基于神经网络的
+    <ul>
+      <li>Replicator NN：也就是AutoEncoder，自还原网络。数据特征被压缩在网络参数中，正常数据通过网络可以完美还原，但是异常数据通过网络后不能被还原。
+  <img src="http://wurui.cc/images/blog/anomaly_detection/19.png" alt="Model-View-Controller" class="center-image" /></li>
+      <li>GAN：对抗网络在最近也被应用在视频异常检测中。在没有标记数据的情况下，加入时间维度，通过对抗网络识别出视频中的异常动态。</li>
+    </ul>
+  </li>
+  <li>基于分布的
+    <ul>
+      <li>高斯分布：训练得到期望μ和方差σ^2，再确定阈值ε。
+  <img src="http://wurui.cc/images/blog/anomaly_detection/20.png" alt="Model-View-Controller" class="center-image" /></li>
+      <li>混合模型分布：两个以上混合概率分布。</li>
+      <li>HBOS: Histogram-based Outlier Score，一定程度上依赖空间划分。</li>
+    </ul>
+  </li>
+  <li>基于序列的
+    <ul>
+      <li>HMM：隐马尔科夫模型，训练得到状态转移矩阵，进而计算序列发生的概率。</li>
+      <li>PST：概率后缀树，将行为构建为字符串，进而通过概率后缀树学习子串的发生概率。
+  <img src="http://wurui.cc/images/blog/anomaly_detection/21.png" alt="Model-View-Controller" class="center-image" /></li>
+    </ul>
+  </li>
+  <li>基于树的
+    <ul>
+      <li>Iforest：其实是基于森林的mass ensemble方法。在异常检测领域独树一帜，随机采样下健壮性也很强，适合高纬度的数据。周老师抓住了一个ground truth，即通过随机的属性和划分点，一些样本很快就到达了叶子节点（即叶子到根的距离d很短），那么它们很有可能是异常点。因为那些路径d比较短的样本，都是距离主要的样本点分布中心比较远的。</li>
+    </ul>
+  </li>
+  <li>基于图的
+    <ul>
+      <li>传统子图特征：基于图的点、边数量、出入度信息、n度关联等信息构建特征集，进而检测异常点。</li>
+      <li>Egonet：唯一中心节点(ego)，以及这个节点的邻居(alters)组成的子图。特征如上。</li>
+      <li>network2vector：常见的算法如random walk，通过随机游走构建图的vector embedding。
+  <img src="http://wurui.cc/images/blog/anomaly_detection/22.png" alt="Model-View-Controller" class="center-image" /></li>
+    </ul>
+  </li>
+  <li>基于分类的
+    <ul>
+      <li>one-class SVM：虽然是分类，但其实是正常点在一边，异常点在另一边。好处是可以用SVM的各种kernel。
+  <img src="http://wurui.cc/images/blog/anomaly_detection/14.png" alt="Model-View-Controller" class="center-image" /></li>
+    </ul>
+  </li>
+  <li>基于时序的
+    <ul>
+      <li>平滑模型：Moving Average Model、Olympic Model</li>
+      <li>回归模型：Regression Models</li>
+      <li>周期分解：seasonal decomposition</li>
+    </ul>
+  </li>
+</ol>
+
+<p>具体的算法细节不再累述，大家能google到许多文章。</p>
+
+<h3 id="应用举例">应用举例</h3>
+<p>那上文中的两种视角如何结合使用呢？举一个异常登录的场景，黑客H尝试使用社工库破解账户A的密码。</p>
+
+<p><img src="http://wurui.cc/images/blog/anomaly_detection/25.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>结合异常域，我们知道可以从以下方向入手：</p>
+
+<ol>
+  <li>数值类：登录的时间是否符合周期、登录的次数、登录失败的次数等是否符合个群基线</li>
+  <li>关联关系：登录的设备对A是否是新设备、登录的设备是否登录了很多不同账户、登录的IP对A是否是新IP、IP是否是黑名单IP</li>
+  <li>行为序列：是否符合登录-&gt;浏览-&gt;下单-&gt;付款等大概率序列。结合人机识别数据，键盘、鼠标操作轨迹是否符合人的行为模型。</li>
+  <li>网络图：将账户A、IP、浏览器特征、设备特征、访问的url、服务等实体构件为图。与所有登录行为一同计算异常。</li>
+  <li>地理位置：登录的位置是否在日常正常范围内（省市区、经纬度距离），与上次记录到的行为做比对，是否符合正常的移动速度。</li>
+</ol>
+
+<p>然后针对每个可能的异常角度，我们再在算法域中寻找对应能够应用的算法，对应具体业务设置参数和阈值。从而完整的检测登录异常这个场景。</p>
+
+<h2 id="如何评价无监督算法">如何评价无监督算法</h2>
+<p>如何给算法输出的异常打分其实是一个非常头疼的问题，但针对不同模型我们也不失一些标准方法。</p>
+
+<h3 id="拉依达准则">拉依达准则</h3>
+<p>如果整体数据服从一元正态分布，则P(|x-μ |&gt;3σ )&lt;0.003,因此当数据对象值偏离均值3倍方差的时候，就认为该数据对象为异常点。</p>
+
+<h3 id="mahalanobis距离">Mahalanobis距离</h3>
+<p><img src="http://wurui.cc/images/blog/anomaly_detection/18.svg" alt="Model-View-Controller" class="center-image" />
+其中S为二元高斯分布的协方差矩阵，x上横为所有数据对象的均值。Mahalanobis距离越大，数据对象偏离均值越大，也就越异常。</p>
+
+<h3 id="聚类评价">聚类评价</h3>
+<p>在没有标签的情况下，根据聚类本身的特点，每个簇可以计算两个指标。一个是类内点间的平均距离I，一个是与类外点的平均距离O。那么I除以O就可以用于描述聚类结果的内聚度，俗称类内聚合度、类间低耦合。</p>
+
+<h3 id="reconstruction-error">Reconstruction Error</h3>
+<p>重构偏差也可以直接用作异常分。比如RPCA中的sparse矩阵，Replicator NN中还原向量与原始向量的差值。当然分母还要好好设计一下。</p>
+
+<h2 id="小结">小结</h2>
+<p>异常检测有非常广的应用领域，从网络安全到人体健康到自然灾害预测。甚至我们的大脑也运行着异常检测的程序。周一看到某个男同事剃了头，和大脑中飘逸发型的基线不匹配了。技术团队outing了发照片，一眼找出其中唯一的程序媛。</p>
+
+<p>在不同业务场景中可能出现不同的异常域，相应的要用不同特性的算法去检测。最好是利用多种算法的不同视角去共同刻画，得到更准确更全面的结果！</p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wurui-cc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://wurui.cc/blog/the-people-the-year-the-story/" class="btn" title="那人，那年，那些事儿">Previous</a>
+      
+      
+        <a href="http://wurui.cc/tech/home-network-upgrading-1/" class="btn" title="家庭网络升级路1-骨干网升级">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<!-- <div id="back-top"><a href="#top" title="Back To Top"></a></div> /old image version-->
+
+<div id="back-top" style="display: block;">
+  <svg id="rocket" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64">
+    <path fill="#CCCCCC" d="M42.057,37.732c0,0,4.139-25.58-9.78-36.207c-0.307-0.233-0.573-0.322-0.802-0.329
+        c-0.227,0.002-0.493,0.083-0.796,0.311c-13.676,10.31-8.95,35.992-8.95,35.992c-10.18,8-7.703,9.151-1.894,23.262
+        c1.108,2.693,3.048,2.06,3.926,0.115c0.877-1.943,2.815-6.232,2.815-6.232l11.029,0.128c0,0,2.035,4.334,2.959,6.298
+        c0.922,1.965,2.877,2.644,3.924-0.024C49.974,47.064,52.423,45.969,42.057,37.732z M31.726,23.155
+        c-2.546-0.03-4.633-2.118-4.664-4.665c-0.029-2.547,2.012-4.587,4.559-4.558c2.546,0.029,4.634,2.117,4.663,4.664
+        C36.314,21.143,34.272,23.184,31.726,23.155z">
+    </path>
+ </svg>
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    <!--  -->
+
+<span>&copy; 2020 Wu Rui. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	
+	<a href="http://facebook.com/colin.wu.92" title="Wu Rui on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="http://linkedin.com/in/ruiwu90" title="Wu Rui on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="http://instagram.com/colin1990324" title="Wu Rui on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/colin1990324" title="Wu Rui on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	<a href="http://www.weibo.com/colin1990324/" title="Wu Rui on Weibo" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+  <a href="http://wurui.cc/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://wurui.cc';
+</script>
+
+<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wurui.cc/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://wurui.cc/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-63900366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
