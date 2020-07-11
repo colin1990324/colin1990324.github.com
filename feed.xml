@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2020-07-11T14:05:36+08:00</updated>
+<updated>2020-07-11T14:12:02+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -324,14 +324,7 @@
 
 &lt;p&gt;所以虽然上文在&lt;a href=&quot;http://wurui.cc/tech/anomaly-detection-unsupervised-learning/#5&quot;&gt;如何评价无监督算法&lt;/a&gt;章节中介绍了一些异常分的算法，但任何场景通用的评分函数其实是不存在的。算法给出的统计异常、密度异常都是数学角度的离群点，并不能直接对应到业务异常。所以设计异常分值算法时，一定要紧贴业务，引入业务系数或者阈值。接入新业务时，一般就只需要对这两个参数做适配就可以了。&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;除了输出0&lt;/td&gt;
-      &lt;td&gt;1判断和0-1的异常分，还可以考虑使用分段的异常级别。如低危-中危-高危-极危。异常级别相对于异常分数更为直观，也便于在业务规则中使用。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;除了输出0、1判断和0-1的异常分，还可以考虑使用分段的异常级别。如低危-中危-高危-极危。异常级别相对于异常分数更为直观，也便于在业务规则中使用。&lt;/p&gt;
 
 &lt;h3 id=&quot;如何处理业务变化&quot;&gt;如何处理业务变化&lt;/h3&gt;
 
@@ -415,16 +408,7 @@
   &lt;li&gt;反欺诈：如电信诈骗，信用卡盗刷，恶意注册、薅羊毛等&lt;/li&gt;
   &lt;li&gt;入侵检测：外部入侵检测&lt;/li&gt;
   &lt;li&gt;Insider Threat：内部威胁检测，账户异常、数据泄露等&lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;工控、IoT安全：通过各种指标发现工业设施，IoT设备&lt;/td&gt;
-          &lt;td&gt;网络中的异常&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
+  &lt;li&gt;工控、IoT安全：通过各种指标发现工业设施，IoT设备网中的异常&lt;/li&gt;
   &lt;li&gt;生态灾难预警：各种自然灾害，极端天气的预警&lt;/li&gt;
   &lt;li&gt;公共健康：禽流感等传染类疾病的提前发现&lt;/li&gt;
   &lt;li&gt;数据去噪：一些机器学习算法对异常点非常敏感，利用异常检测除去噪声通常是数据预处理中很重要的一步。&lt;/li&gt;
