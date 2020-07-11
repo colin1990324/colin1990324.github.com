@@ -42,6 +42,17 @@
 
   
     ,{
+      "title"			: "【异常检测】独孤九剑之破刀式——最佳实践",
+      "link"			: "http://wurui.cc/tech/anomaly-detection-best-practice/",
+      "excerpt"		: "<h2 id="概述">概述</h2>
+<p>上文<a href="http://wurui.cc/tech/anomaly-detection-unsupervised-learning/">【异常检测】独孤九剑之破剑式——无监督算法</a>中，我从异常域和算法域两个维度总结了异常发现的视角和方法。但是只知道这些招法，不免味道寡淡，且有形无神。就像岳灵珊进入思过崖山洞，速成了五岳剑派丢失数十年的许多绝招。在五岳合派大会上横扫了一些三流角色，但戏份和境界也只能止步于此了。那么本文，我会与大家分享我在应用这些异常检测技术时，踩过哪些坑，发现了什么小技巧。希望能给大家一些心法上的提示吧。</p>
+
+"
+    }
+  
+
+  
+    ,{
       "title"			: "【异常检测】独孤九剑之破剑式——无监督算法",
       "link"			: "http://wurui.cc/tech/anomaly-detection-unsupervised-learning/",
       "excerpt"		: "<h2 id="概述">概述</h2>

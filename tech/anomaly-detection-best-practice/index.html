@@ -1,0 +1,344 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>【异常检测】独孤九剑之破刀式——最佳实践 &#8211; RuiMakes</title>
+<meta name="description" content="概述
+上文【异常检测】独孤九剑之破剑式——无监督算法中，我从异常域和算法域两个维度总结了异常发现的视角和方法。但是只知道这些招法，不免味道寡淡，且有形无神。就像岳灵珊进入思过崖山洞，速成了五岳剑派丢失数十年的许多绝招。在五岳合派大会上横扫了一些三流角色，但戏份和境界也只能止步于此了。那么本文，我会与大家分享我在应用这些异常检测技术时，踩过哪些坑，发现了什么小技巧。希望能给大家一些心法上的提示吧。
+
+">
+<meta name="keywords" content="ML, Anomaly Detection, Security">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="【异常检测】独孤九剑之破刀式——最佳实践">
+<meta name="twitter:description" content="概述
+上文【异常检测】独孤九剑之破剑式——无监督算法中，我从异常域和算法域两个维度总结了异常发现的视角和方法。但是只知道这些招法，不免味道寡淡，且有形无神。就像岳灵珊进入思过崖山洞，速成了五岳剑派丢失数十年的许多绝招。在五岳合派大会上横扫了一些三流角色，但戏份和境界也只能止步于此了。那么本文，我会与大家分享我在应用这些异常检测技术时，踩过哪些坑，发现了什么小技巧。希望能给大家一些心法上的提示吧。
+
+">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wurui.cc/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【异常检测】独孤九剑之破刀式——最佳实践">
+<meta property="og:description" content="概述
+上文【异常检测】独孤九剑之破剑式——无监督算法中，我从异常域和算法域两个维度总结了异常发现的视角和方法。但是只知道这些招法，不免味道寡淡，且有形无神。就像岳灵珊进入思过崖山洞，速成了五岳剑派丢失数十年的许多绝招。在五岳合派大会上横扫了一些三流角色，但戏份和境界也只能止步于此了。那么本文，我会与大家分享我在应用这些异常检测技术时，踩过哪些坑，发现了什么小技巧。希望能给大家一些心法上的提示吧。
+
+">
+<meta property="og:url" content="http://wurui.cc/tech/anomaly-detection-best-practice/">
+<meta property="og:site_name" content="RuiMakes">
+
+
+
+
+
+<link rel="canonical" href="http://wurui.cc/tech/anomaly-detection-best-practice/">
+<link href="http://wurui.cc/feed.xml" type="application/atom+xml" rel="alternate" title="RuiMakes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://wurui.cc/assets/css/main.css">
+<!-- Webfonts -->
+<!-- <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script> --> 
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://wurui.cc/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://wurui.cc/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://wurui.cc/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://wurui.cc/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://wurui.cc/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wurui.cc/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wurui.cc/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wurui.cc/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://wurui.cc/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://wurui.cc/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://wurui.cc/life/" >Life</a></li>
+		  
+		    
+		    <li><a href="http://wurui.cc/tech/" >Tech</a></li>
+		  
+		    
+		    <li><a href="http://wurui.cc/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://wurui.cc/" class="site-logo" rel="home" title="RuiMakes"><img src="http://wurui.cc/images/site-logo.png" width="200" height="200" alt="RuiMakes logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://wurui.cc/">RuiMakes</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">独乐乐不如众乐乐</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="http://wurui.cc/tags/#ML" title="Pages tagged ML">ML</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Anomaly Detection" title="Pages tagged Anomaly Detection">Anomaly Detection</a>&nbsp;&bull;&nbsp;<a href="http://wurui.cc/tags/#Security" title="Pages tagged Security">Security</a></span>
+        
+          <h1 class="entry-title">【异常检测】独孤九剑之破刀式——最佳实践</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://wurui.cc/images/bio-photo.jpg" class="bio-photo" alt="Wu Rui bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Wu Rui</span></span>
+        <span class="entry-date date published"><time datetime="2018-09-20T20:17:20+08:00"><i class="fa fa-calendar-o"></i> September 20, 2018</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <h2 id="概述">概述</h2>
+<p>上文<a href="http://wurui.cc/tech/anomaly-detection-unsupervised-learning/">【异常检测】独孤九剑之破剑式——无监督算法</a>中，我从异常域和算法域两个维度总结了异常发现的视角和方法。但是只知道这些招法，不免味道寡淡，且有形无神。就像岳灵珊进入思过崖山洞，速成了五岳剑派丢失数十年的许多绝招。在五岳合派大会上横扫了一些三流角色，但戏份和境界也只能止步于此了。那么本文，我会与大家分享我在应用这些异常检测技术时，踩过哪些坑，发现了什么小技巧。希望能给大家一些心法上的提示吧。</p>
+
+<h2 id="最佳实践">最佳实践</h2>
+
+<h3 id="偏离多少是异常">偏离多少是异常</h3>
+<p>处理过相关不平衡数据集的同学肯定有过这个疑问，不平衡变得多大时它应该被认为是一个异常。是应该相对来看吗，一串0构成的序列中插入一个1，偏离度无限，是异常吗？那绝对来看呢，输错密码异一次肯定不会是异常，那几次算呢？</p>
+
+<p>所以虽然上文在<a href="http://wurui.cc/tech/anomaly-detection-unsupervised-learning/#5">如何评价无监督算法</a>章节中介绍了一些异常分的算法，但任何场景通用的评分函数其实是不存在的。算法给出的统计异常、密度异常都是数学角度的离群点，并不能直接对应到业务异常。所以设计异常分值算法时，一定要紧贴业务，引入业务系数或者阈值。接入新业务时，一般就只需要对这两个参数做适配就可以了。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>除了输出0</td>
+      <td>1判断和0-1的异常分，还可以考虑使用分段的异常级别。如低危-中危-高危-极危。异常级别相对于异常分数更为直观，也便于在业务规则中使用。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="如何处理业务变化">如何处理业务变化</h3>
+
+<p>常见的业务变化主要有两类。一类是像双十一这样的大促，根据促销时长业务数值会出现区段的整体上升，或者短促的尖峰。同时为了保证业务数据正常流动，很多防护策略会做一定的让步。两方面的原因对数据扰动特别大，但好在大促事件我们都是提前知道的，可以做一些应对。如果有上线策略，那本着业务优先的考虑先降低告警阈值。然后从周期性考虑，可以差分后做年度的周期性模型。短周期模型中，这部分尖峰数据建议去掉，或者对大促单独做模型。</p>
+
+<p><img src="http://wurui.cc/images/blog/anomaly_detection/27.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>第二类是在某个时间点，新版本上线，业务曲线的区间发生突变。这种时候如果我们使用的是动态基线类的模型，那么即使不管，一段时间业务稳定后，模型也会自动适应，只需忽略掉突变期的误报。如果是非动态模型的，至少需要在业务稳定后，手动触发新模型的训练。</p>
+
+<h3 id="异常点合并">异常点合并</h3>
+<p>有时候，攻击可能是持续发生的，那对应异常在时间上也是持续的。在CEP中会有Contiguity within looping patterns的问题。如A连续登陆失败5次ABCDE，如果规则写的是连续4次及以上为异常，那么不同的规则引擎可能输出不同的结果：（1）ABCD，ABCDE，BCDE （2）ABCD，ABCDE （3）ABCDE。另一种情况，规则要求顺序匹配三个事件ABC，如果实际事件发生为ABBBC，那么不同的规则引擎可能输出：（1）ABC，ABC，ABC （2）ABC，ABC，ABC，ABBC，ABBC，ABBC（3）ABC，ABBC，ABBBC。熟悉CEP的同学知道这里采用了不同的匹配策略：Strict Contiguity，Relaxed Contiguity，Non-Deterministic Relaxed Contiguity等。</p>
+
+<p>我个人认为，告警应该做到尽量紧密。只要是各个属性相同的告警，在一个时间内的，应该计数合并。持续发生的，应该记录起始时间，在时间轴上持续显示，相应告警级别也要逐渐提升。</p>
+
+<h3 id="online的无监督算法">online的无监督算法</h3>
+<p>离线算法虽然容易实现，但实时场景才是更高的追求。在线算法各方面的优势对业务方有着巨大的吸引力。在线算法实时接收增量数据，并通过增量数据对模型进行调整，而不需要从头训练整个模型，即节省了空间也节省了时间。然而面对海量级的数据流，要保持一个无监督模型是在线的甚至是分布式的是很有挑战的。</p>
+
+<p>有的模型比较容易改造。比如基于概率分布的，概率后缀树每学习一个新序列，只需要在原来的概率树上更新某条路径上各节点的概率。概率树的模型大小至于序列的多样性有关而与数据的绝对规模无关。基于矩阵分解的个群基线也有在线的版本<a href="https://papers.nips.cc/paper/5131-online-robust-pca-via-stochastic-optimization">Online Robust PCA via Stochastic Optimization(NIPS 2013)</a>。另外矩阵分解也有GPU加速的底层库，真有大规模的应用场景，技术上一般问题不大。</p>
+
+<p>单次迭代就要依赖所有数据的，online版本肯定会遇到问题。类似KMeans的聚类算法先天就能够支持在线计算，但是复杂度会随着数据规模增加。再看神经网络，从模型上讲使用增量数据二次训练的模型似乎跟用全体数据一次性训练的结果应该一致。但是<a href="http://caffecn.cn/?/question/63">实践显示</a>，二次训练的模型往往达不到一次性训练模型的准确性。Isolation Forest也有<a href="https://ieeexplore.ieee.org/document/7969205/">在线版本的论文</a>，但实践还是比较少。</p>
+
+<p>最后但凡能够使用滑动窗口的业务模型，都可以做到T+1的mini batch模式。有的模型甚至能够直接输出边界，新的数据做检测时直接比对边界就可以了，而不用通过复杂模型，从而大大增强性能。</p>
+
+<h3 id="时序数据处理">时序数据处理</h3>
+
+<p>首先需要关注的是周期选择，配合业务特性选择分钟、小时、日，周，月，年。选择长周期时序处理时注意先差分去掉趋势。</p>
+
+<p>简单时序的话业界有一些开源的算法包，如Netflix的R语言包<a href="https://github.com/Netflix/Surus">Surus</a>，Yahoo的Java包<a href="https://github.com/yahoo/egads">EGADS</a>。</p>
+
+<p><img src="http://wurui.cc/images/blog/anomaly_detection/26.png" alt="Model-View-Controller" class="center-image" /></p>
+
+<p>常见操作是我们需要去拟合输入序列。那不同类型的数据可能适合不同的模型。EGADS中选择AutoForecastModel，程序会自动把所有TMM都跑一遍，并推选偏差值最小的模型送入异常检测模块。这里值得注意的是，自动选取只关注了还原度，但还原度高并不直接代表能更好的查找异常，在使用本方法的时候要留意在心。</p>
+
+<p>另外模型选择时使用多数投票法，不论在局部或者全局异常发现中，都是非常有效的。</p>
+
+<h3 id="密度聚类的特点">密度聚类的特点</h3>
+
+<p>密度聚类时可能存在三种情况。如果使用DBScan，那无法聚到类中的游离点是异常，点数较少的类可能是异常。但是如果数据主体是某些PV量较小的接口时，最大的类可能全部都是异常。这又给智能运维提出了很大的挑战，单纯依赖异常检测，黑白都可能会反转。一个非常有效的方法是引入领域知识做二次判断。比如在安全领域，可以引入威胁情报。访问IP是否是高危IP，UA是否是恶意UA，IP、账号是否关联了恶意域名等等。</p>
+
+<h3 id="噪音问题">噪音问题</h3>
+<p><img src="http://wurui.cc/images/blog/anomaly_detection/15.jpg" alt="Model-View-Controller" class="center-image" />
+数据集中存在系统性或者语义性的噪音是非常正常的。相比噪音，分析者更感兴趣的是异常点。
+<img src="http://wurui.cc/images/blog/anomaly_detection/24.jpg" alt="Model-View-Controller" class="center-image" />
+但噪音与异常点在数据表现上并不容易分开，可以看上图（a），当没有噪音时，我们可以认定A点就是异常点，然而当存在大量噪音时，如上图（b），点A附近有大量分布稀疏的点，当我们收起上帝视角时，你并没有很大把握判定A点就是一个异常点，因为与它相似的点还有很多。在基于密度的聚类中，噪音点会极大的影响质心的位置。在基于统计的模型中，会极大的带偏系统参数。这种两种情况都必须想办法清楚噪音。如果噪音点数量过多，类似于DBScan的方法会直接失效，数据点可能会连成一片。这时候除了手动筛选以外，最直接的方法是降低采样频率，降低整体数据的连接度。</p>
+
+<h3 id="工作流的创新">工作流的创新</h3>
+<p>首先不得不承认，基于无监督的异常检测是非常依赖运营的。那如果能提升运营的效率，也是和集团节能降费提效的工作目标非常契合的。</p>
+
+<p>传统工作流是将算法异常作为告警提交给运营同学做判断。那显而易见的问题是上下文不完整，误报高，海量告警无法处理。</p>
+
+<p>好一些的工作流增加了一层数据抽象，即威胁场景。威胁场景描述完整的攻击链条，包含多个通过场景规则关联到一起的告警。一方面将告警浓缩到场景，可以减少两个量级告警数量。另一方便，场景规则有效关联的告警通过相互印证，准确度是非常高的。单点异常来源的告警在这个环节自动被忽略掉了。</p>
+
+<p>运营的打标数据反馈到模型上，通过半监督算法提升模型准确度。这个虽然是我们强调的闭环的重要构成，但在实际应用中有诸多问题。那取代这个闭环的最新研究成果是无监督聚类-&gt;人工标注-&gt;有监督学习，以实现对已知场景的case by case击破，同时保持对未知异常持续发现的能力。</p>
+
+<h2 id="小结">小结</h2>
+<p>那么以上八点就是我在工作中总结出的一些经验技巧了，希望能够帮助到有需要的同学。</p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wurui-cc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://wurui.cc/tech/anomaly-detection-unsupervised-learning/" class="btn" title="【异常检测】独孤九剑之破剑式——无监督算法">Previous</a>
+      
+      
+        <a href="http://wurui.cc/tech/home-network-upgrading-1/" class="btn" title="家庭网络升级路1-骨干网升级">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<!-- <div id="back-top"><a href="#top" title="Back To Top"></a></div> /old image version-->
+
+<div id="back-top" style="display: block;">
+  <svg id="rocket" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64">
+    <path fill="#CCCCCC" d="M42.057,37.732c0,0,4.139-25.58-9.78-36.207c-0.307-0.233-0.573-0.322-0.802-0.329
+        c-0.227,0.002-0.493,0.083-0.796,0.311c-13.676,10.31-8.95,35.992-8.95,35.992c-10.18,8-7.703,9.151-1.894,23.262
+        c1.108,2.693,3.048,2.06,3.926,0.115c0.877-1.943,2.815-6.232,2.815-6.232l11.029,0.128c0,0,2.035,4.334,2.959,6.298
+        c0.922,1.965,2.877,2.644,3.924-0.024C49.974,47.064,52.423,45.969,42.057,37.732z M31.726,23.155
+        c-2.546-0.03-4.633-2.118-4.664-4.665c-0.029-2.547,2.012-4.587,4.559-4.558c2.546,0.029,4.634,2.117,4.663,4.664
+        C36.314,21.143,34.272,23.184,31.726,23.155z">
+    </path>
+ </svg>
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    <!--  -->
+
+<span>&copy; 2020 Wu Rui. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	
+	<a href="http://facebook.com/colin.wu.92" title="Wu Rui on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="http://linkedin.com/in/ruiwu90" title="Wu Rui on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="http://instagram.com/colin1990324" title="Wu Rui on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/colin1990324" title="Wu Rui on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	<a href="http://www.weibo.com/colin1990324/" title="Wu Rui on Weibo" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+  <a href="http://wurui.cc/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://wurui.cc';
+</script>
+
+<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wurui.cc/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://wurui.cc/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-63900366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
