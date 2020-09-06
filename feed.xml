@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://wurui.cc/feed.xml" />
 <link rel="alternate" type="text/html" href="http://wurui.cc" />
-<updated>2020-07-11T15:10:40+08:00</updated>
+<updated>2020-09-06T22:25:58+08:00</updated>
 <id>http://wurui.cc/</id>
 <author>
   <name>Wu Rui</name>
@@ -185,7 +185,12 @@
 &lt;p&gt;在主干网更新之后，我还购入了一台斐讯的N1盒子。刷好Openwrt系统接入主路由作为旁路由（单臂路由）。N1盒子是一款矿渣产品，便宜的时候只要八九十一台，性能却非常强悍，作为电视盒子可以解4K视频。刷了Openwrt以后就成为了一台非常强力的网络设备，功耗却不到3W。Openwrt提供了丰富的功能和插件，现在用到的有：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;VPN科学上网，openwrt有好多款支持的插件。我目前使用的是Passwall，看评测性能和开销都是尚可的。&lt;/li&gt;
+  &lt;li&gt;VPN科学上网，openwrt有好多款支持的插件。我目前使用的是Passwall，在N1上最高能跑到230M的v2ray加解密，油管4K毫无压力。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/network-upgrading/17.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;SmartDNS，启用以后可以为家庭网络提供私有DNS服务。能力是在域名查询时，返回你的网络环境下最低延时的IP，从而实现高速打开网页。同时支持第二DNS分组，配合Passwall，可以将内外网的DNS请求分流。避免国内服务查google DNS，国外服务查114导致的绕路情况。&lt;/li&gt;
   &lt;li&gt;Adblock广告屏蔽。原理很简单，就是对网页内嵌广告HTTP请求做了拦截。黑名单都是在网上同步获取的，使用起来很方便。启用以后在芒果TV看《向往的生活》再也不用等80秒的广告了。&lt;/li&gt;
   &lt;li&gt;以上服务在一起组合成了智能网关和智能DNS。由于我是旁路由接入的，希望使用这些功能的设备可以通过手动设置网关和DNS来接入。老人、访客等就使用主路由的默认功能就好了。&lt;/li&gt;
@@ -279,13 +284,14 @@
 &lt;p&gt;这次顺便把光猫改了桥接，由主路由7661来拨号。一方面降低光猫的负载，提高通路能力，一方面为后面申请公网IP，提供外网服务做好准备。至此基本上家庭网络的骨干就全部升级完成了，网络设备、网线、接口都满足千兆要求，应该可以用一阵子了。在300M光纤入户的情况下，测试成绩如下：&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;二楼书房台式机有线：下载410Mbps，上传38Mbps。&lt;/li&gt;
-  &lt;li&gt;一楼二楼wifi，300Mbps&lt;/li&gt;
-  &lt;li&gt;三楼主卧wifi一层Mesh中继，260Mbps&lt;/li&gt;
-  &lt;li&gt;三楼次卧wifi二层Mesh中继，140Mbps&lt;/li&gt;
+  &lt;li&gt;一楼wifi最强，单机覆盖整个楼层无压力：下载465Mbps，上传65Mbps。&lt;/li&gt;
+  &lt;li&gt;二楼书房台式机有线：下载428Mbps，上传66Mbps。&lt;/li&gt;
+  &lt;li&gt;二楼主卧wifi，也是向上发射源：下载306Mbps&lt;/li&gt;
+  &lt;li&gt;三楼主卧wifi一层无线中继：下载189Mbps&lt;/li&gt;
+  &lt;li&gt;三楼次卧wifi二层无线中继：下载95Mbps&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/network-upgrading/5.jpg&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wurui.cc/images/blog/network-upgrading/5.png&quot; alt=&quot;Model-View-Controller&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;家庭布网小贴士&quot;&gt;家庭布网小贴士&lt;/h3&gt;
 
